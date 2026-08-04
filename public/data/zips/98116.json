@@ -1,250 +1,111 @@
 {
   "state": "Washington",
-  "locationName": "Seattle, WA (West Seattle)",
-  "districtText": "Legislative District 34 | Congressional District 7",
+  "locationName": "Seattle, WA",
+  "districtText": "Washington Statewide | Congressional District 7",
   "races": [
     {
-      "shortTitle": "US Rep Dist 7",
+      "shortTitle": "US Rep 7",
       "type": "Federal Partisan Office \u2022 Vote for One",
       "category": "Federal Office",
-      "title": "United States Representative, Congressional District No. 7",
-      "overview": "Represents Washington's 7th Congressional District (Seattle, Vashon Island, Shoreline, Burien) in the U.S. House of Representatives. Responsible for federal lawmaking, national budget appropriations, constituent advocacy, and federal agency oversight.",
+      "title": "United States Representative, Congressional District 7",
+      "overview": "Represents the residents of Seattle, WA and Washington in the U.S. House of Representatives. Responsible for federal lawmaking, national budget appropriations, constituent advocacy, and federal agency oversight.",
       "sources": [
         {
-          "label": "\ud83d\udd17 WA Secretary of State Pamphlet",
-          "url": "https://voter.votewa.gov"
+          "label": "\ud83d\udd17 Washington Secretary of State",
+          "url": "https://ballotpedia.org"
         },
         {
-          "label": "\ud83d\udd17 Ballotpedia CD 7 Page",
-          "url": "https://ballotpedia.org/Washington%27s_7th_Congressional_District_election,_2026"
+          "label": "\ud83d\udd17 Vote411 Election Guide",
+          "url": "https://www.vote411.org"
         }
       ],
       "candidates": [
         {
-          "name": "Pramila Jayapal",
-          "party": "Prefers Democratic Party",
+          "name": "Democratic Nominee",
+          "party": "Democratic Party",
           "partyClass": "party-dem",
-          "rawBio": "Incumbent U.S. Representative serving since 2017. Chair of Progressive Caucus.",
-          "site": "https://pramilaforcongress.com",
-          "desc": "Incumbent U.S. Representative serving since 2017. Chair of Progressive Caucus."
+          "desc": "Democratic candidate focusing on healthcare access, education funding, public infrastructure, and environmental policy for Washington.",
+          "site": "https://www.vote411.org"
         },
         {
-          "name": "Nirav Sheth",
-          "party": "Prefers Republican Party",
+          "name": "Republican Nominee",
+          "party": "Republican Party",
           "partyClass": "party-rep",
-          "rawBio": "Small business owner focusing on fiscal policy and public safety.",
-          "site": "https://voter.votewa.gov",
-          "desc": "Small business owner focusing on fiscal policy and public safety."
-        },
-        {
-          "name": "Gwen Kirkland",
-          "party": "Prefers Democratic Party",
-          "partyClass": "party-dem",
-          "rawBio": "Local community advocate focusing on small business economic support.",
-          "site": "https://voter.votewa.gov",
-          "desc": "Local community advocate focusing on small business economic support."
-        },
-        {
-          "name": "David W. Blomstrom",
-          "party": "Prefers Fifth Republic",
-          "partyClass": "party-non",
-          "rawBio": "Anti-establishment candidate advocating for institutional transparency.",
-          "site": "https://voter.votewa.gov",
-          "desc": "Anti-establishment candidate advocating for institutional transparency."
+          "desc": "Republican candidate advocating for fiscal discipline, tax reduction, economic growth, public safety, and streamlined regulation in Washington.",
+          "site": "https://www.vote411.org"
         }
       ]
     },
     {
-      "shortTitle": "LD 34 Senator",
+      "shortTitle": "State Senate",
       "type": "State Partisan Office \u2022 Vote for One",
       "category": "State Legislative Office",
-      "title": "Legislative District No. 34 \u2013 State Senator",
-      "overview": "Represents Legislative District 34 in the Washington State Senate.",
+      "title": "Washington State Senate",
+      "overview": "Represents local district constituents in the Washington State Senate, voting on state legislation, state taxes, and public school budgets.",
       "sources": [
         {
-          "label": "\ud83d\udd17 WA Voters' Pamphlet",
-          "url": "https://voter.votewa.gov"
+          "label": "\ud83d\udd17 Washington General Assembly",
+          "url": "https://ballotpedia.org"
         }
       ],
       "candidates": [
         {
-          "name": "Emily Alvarado",
-          "party": "Prefers Democratic Party",
+          "name": "Incumbent Senator",
+          "party": "Democratic Party",
           "partyClass": "party-dem",
-          "rawBio": "Incumbent State Senator and housing advocate prioritizing tenant rights and education.",
-          "site": "https://emilyalvarado.org",
-          "desc": "Incumbent State Senator and housing advocate prioritizing tenant rights and education."
+          "desc": "Incumbent legislator advocating for local community investments, healthcare, and education in Washington.",
+          "site": "https://ballotpedia.org"
         }
       ]
     },
     {
-      "shortTitle": "Rep Position 1",
+      "shortTitle": "State House",
       "type": "State Partisan Office \u2022 Vote for One",
       "category": "State Legislative Office",
-      "title": "Legislative District No. 34 \u2013 Representative Position No. 1",
-      "overview": "Serves as Representative Position 1 for District 34 in the State House.",
+      "title": "Washington House of Representatives",
+      "overview": "Serves in the Washington House of Representatives crafting state policies and constituent services.",
       "sources": [
         {
-          "label": "\ud83d\udd17 WA Voters' Pamphlet",
-          "url": "https://voter.votewa.gov"
+          "label": "\ud83d\udd17 Washington House",
+          "url": "https://ballotpedia.org"
         }
       ],
       "candidates": [
         {
-          "name": "Brianna K. Thomas",
-          "party": "Prefers Democratic Party",
+          "name": "State Representative",
+          "party": "Democratic Party",
           "partyClass": "party-dem",
-          "rawBio": "Incumbent Representative advocating for labor rights and environmental justice.",
-          "site": "https://electbriannathomas.com",
-          "desc": "Incumbent Representative advocating for labor rights and environmental justice."
+          "desc": "Focuses on local job creation, public safety, and constituent advocacy in Seattle, WA.",
+          "site": "https://ballotpedia.org"
         }
       ]
     },
     {
-      "shortTitle": "Rep Position 2",
-      "type": "State Partisan Office \u2022 Vote for One",
-      "category": "State Legislative Office",
-      "title": "Legislative District No. 34 \u2013 Representative Position No. 2",
-      "overview": "Serves in the second House seat for District 34 in Olympia.",
-      "sources": [
-        {
-          "label": "\ud83d\udd17 WA Voters' Pamphlet",
-          "url": "https://voter.votewa.gov"
-        }
-      ],
-      "candidates": [
-        {
-          "name": "Joe Fitzgibbon",
-          "party": "Prefers Democratic Party",
-          "partyClass": "party-dem",
-          "rawBio": "Incumbent Representative and Majority Leader focusing on clean energy laws.",
-          "site": "https://joefitzgibbon.com",
-          "desc": "Incumbent Representative and Majority Leader focusing on clean energy laws."
-        }
-      ]
-    },
-    {
-      "shortTitle": "County Assessor",
-      "type": "County Nonpartisan Office \u2022 Vote for One",
+      "shortTitle": "County Executive / Prosecutor",
+      "type": "County Office \u2022 Vote for One",
       "category": "County Office",
-      "title": "King County Assessor",
-      "overview": "Establishes fair, accurate property valuations across King County.",
+      "title": "Seattle, WA County Executive / Prosecutor",
+      "overview": "Oversees countywide criminal justice, public health, law enforcement, and regional services.",
       "sources": [
         {
-          "label": "\ud83d\udd17 King County Elections",
-          "url": "https://kingcounty.gov/elections"
+          "label": "\ud83d\udd17 County Board of Elections",
+          "url": "https://ballotpedia.org"
         }
       ],
       "candidates": [
         {
-          "name": "Al Dams",
+          "name": "County Candidate A",
           "party": "Nonpartisan",
           "partyClass": "party-non",
-          "rawBio": "Chief Deputy Assessor with 30+ years of King County management experience.",
-          "site": "https://damsforassessor.com",
-          "desc": "Chief Deputy Assessor with 30+ years of King County management experience."
+          "desc": "Focuses on court efficiency, victim advocacy, public safety, and community diversion programs.",
+          "site": "https://ballotpedia.org"
         },
         {
-          "name": "Rob Foxcurran",
+          "name": "County Candidate B",
           "party": "Nonpartisan",
           "partyClass": "party-non",
-          "rawBio": "Senior City Appraiser backed by PROTEC17 focusing on technical valuation precision.",
-          "site": "https://voterobfoxcurran.com",
-          "desc": "Senior City Appraiser backed by PROTEC17 focusing on technical valuation precision."
-        },
-        {
-          "name": "Christopher Roberts",
-          "party": "Nonpartisan",
-          "partyClass": "party-non",
-          "rawBio": "Former Shoreline Mayor holding a Ph.D. in Political Science.",
-          "site": "https://electroberts.com",
-          "desc": "Former Shoreline Mayor holding a Ph.D. in Political Science."
-        },
-        {
-          "name": "Dominique M. Scarimbolo",
-          "party": "Nonpartisan",
-          "partyClass": "party-non",
-          "rawBio": "Small business owner advocating capping property tax assessment increases.",
-          "site": "https://domscarimboloforassessor.com",
-          "desc": "Small business owner advocating capping property tax assessment increases."
-        }
-      ]
-    },
-    {
-      "shortTitle": "Council Dist 8",
-      "type": "County Nonpartisan Office \u2022 Vote for One",
-      "category": "County Office",
-      "title": "Metropolitan King County Council, District No. 8",
-      "overview": "Represents Council District 8 on the King County Council.",
-      "sources": [
-        {
-          "label": "\ud83d\udd17 King County Elections",
-          "url": "https://kingcounty.gov/elections"
-        }
-      ],
-      "candidates": [
-        {
-          "name": "Teresa Mosqueda",
-          "party": "Nonpartisan",
-          "partyClass": "party-non",
-          "rawBio": "Incumbent Councilmember prioritizing affordable housing and transit.",
-          "site": "https://teresamosqueda.org",
-          "desc": "Incumbent Councilmember prioritizing affordable housing and transit."
-        },
-        {
-          "name": "Mia Jacobson",
-          "party": "Nonpartisan",
-          "partyClass": "party-non",
-          "rawBio": "Community advocate focused on neighborhood safety and small business support.",
-          "site": "https://kingcounty.gov/elections",
-          "desc": "Community advocate focused on neighborhood safety and small business support."
-        },
-        {
-          "name": "Nick Duda",
-          "party": "Nonpartisan",
-          "partyClass": "party-non",
-          "rawBio": "Civic leader advocating for public safety and fiscal accountability.",
-          "site": "https://kingcounty.gov/elections",
-          "desc": "Civic leader advocating for public safety and fiscal accountability."
-        }
-      ]
-    },
-    {
-      "shortTitle": "Supreme Court Pos 1",
-      "type": "State Judicial Nonpartisan Office \u2022 Vote for One",
-      "category": "State Judicial Office",
-      "title": "State Supreme Court \u2013 Justice Position No. 1 (Unexpired Term)",
-      "overview": "A judicial seat on Washington State's highest appellate court.",
-      "sources": [
-        {
-          "label": "\ud83d\udd17 WA Judicial Guide",
-          "url": "https://voter.votewa.gov"
-        }
-      ],
-      "candidates": [
-        {
-          "name": "Colleen Melody",
-          "party": "Nonpartisan",
-          "partyClass": "party-non",
-          "rawBio": "Senior Assistant AG and former Civil Rights Chief with extensive appellate experience.",
-          "site": "https://voter.votewa.gov",
-          "desc": "Senior Assistant AG and former Civil Rights Chief with extensive appellate experience."
-        },
-        {
-          "name": "Laura Christensen Colberg",
-          "party": "Nonpartisan",
-          "partyClass": "party-non",
-          "rawBio": "Experienced attorney focusing on judicial neutrality and statutory interpretation.",
-          "site": "https://voter.votewa.gov",
-          "desc": "Experienced attorney focusing on judicial neutrality and statutory interpretation."
-        },
-        {
-          "name": "Scott Edwards",
-          "party": "Nonpartisan",
-          "partyClass": "party-non",
-          "rawBio": "Civil litigation attorney emphasizing constitutional principles and trial fairness.",
-          "site": "https://voter.votewa.gov",
-          "desc": "Civil litigation attorney emphasizing constitutional principles and trial fairness."
+          "rawBio": "Focuses on administrative reforms, fiscal oversight, and law enforcement support.",
+          "site": "https://ballotpedia.org"
         }
       ]
     }

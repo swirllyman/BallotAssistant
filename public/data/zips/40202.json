@@ -1,0 +1,111 @@
+{
+  "state": "Kentucky",
+  "locationName": "Louisville, KY",
+  "districtText": "Kentucky House District 43 | Congressional District 3",
+  "races": [
+    {
+      "shortTitle": "US Rep Dist 3",
+      "type": "Federal Partisan Office \u2022 Vote for One",
+      "category": "Federal Office",
+      "title": "United States Representative, Congressional District No. 3",
+      "overview": "Represents Kentucky's 3rd Congressional District (Louisville and Jefferson County) in the U.S. House of Representatives. Responsible for federal lawmaking, healthcare policy, labor protection, and economic infrastructure funding.",
+      "sources": [
+        {
+          "label": "\ud83d\udd17 KY State Board of Elections",
+          "url": "https://elect.ky.gov"
+        },
+        {
+          "label": "\ud83d\udd17 Ballotpedia KY CD 3 Page",
+          "url": "https://ballotpedia.org/Kentucky%27s_3rd_Congressional_District_election,_2026"
+        }
+      ],
+      "candidates": [
+        {
+          "name": "Morgan McGarvey",
+          "party": "Democratic Party",
+          "partyClass": "party-dem",
+          "rawBio": "Incumbent U.S. Representative and former Kentucky State Senate Minority Leader. Focuses on gun violence prevention, federal healthcare expansion, labor protection, and infrastructure investments for Louisville.",
+          "site": "https://morganmcgarvey.com",
+          "desc": "Incumbent U.S. Representative and former Kentucky State Senate Minority Leader. Focuses on gun violence prevention, federal healthcare expansion, labor protection, and infrastructure investments for Louisville."
+        },
+        {
+          "name": "Mike Harmon",
+          "party": "Republican Party",
+          "partyClass": "party-rep",
+          "rawBio": "Former Kentucky State Auditor and State Representative. Campaigns on fiscal conservatism, lower tax rates, border security, and deregulation.",
+          "site": "https://mikeharmon.com",
+          "desc": "Former Kentucky State Auditor and State Representative. Campaigns on fiscal conservatism, lower tax rates, border security, and deregulation."
+        }
+      ]
+    },
+    {
+      "shortTitle": "KY Senate SD 19",
+      "type": "State Partisan Office \u2022 Vote for One",
+      "category": "State Legislative Office",
+      "title": "Kentucky State Senate, District 19",
+      "overview": "Represents central Jefferson County in the Kentucky State Senate. Manages state tax policies, public education appropriations, and transportation funding.",
+      "sources": [
+        {
+          "label": "\ud83d\udd17 KY General Assembly",
+          "url": "https://legislature.ky.gov"
+        }
+      ],
+      "candidates": [
+        {
+          "name": "Gerald A. Neal",
+          "party": "Democratic Party",
+          "partyClass": "party-dem",
+          "rawBio": "Incumbent State Senator and Senate Democratic Caucus Chair. Champion of public school funding, healthcare access, criminal justice reform, and economic equity.",
+          "site": "https://geraldneal.com",
+          "desc": "Incumbent State Senator and Senate Democratic Caucus Chair. Champion of public school funding, healthcare access, criminal justice reform, and economic equity."
+        }
+      ]
+    },
+    {
+      "shortTitle": "KY House HD 43",
+      "type": "State Partisan Office \u2022 Vote for One",
+      "category": "State Legislative Office",
+      "title": "Kentucky House of Representatives, District 43",
+      "overview": "Represents downtown Louisville and west Louisville neighborhoods in the Kentucky House.",
+      "sources": [
+        {
+          "label": "\ud83d\udd17 KY General Assembly",
+          "url": "https://legislature.ky.gov"
+        }
+      ],
+      "candidates": [
+        {
+          "name": "Pamela Stevenson",
+          "party": "Democratic Party",
+          "partyClass": "party-dem",
+          "rawBio": "Incumbent State Representative and retired U.S. Air Force Colonel. Advocates for veteran affairs, reproductive rights, public safety, and working-family support.",
+          "site": "https://pamforky.com",
+          "desc": "Incumbent State Representative and retired U.S. Air Force Colonel. Advocates for veteran affairs, reproductive rights, public safety, and working-family support."
+        }
+      ]
+    },
+    {
+      "shortTitle": "Metro Mayor",
+      "type": "County Partisan Office \u2022 Vote for One",
+      "category": "County Office",
+      "title": "Louisville Metro Mayor",
+      "overview": "Executive head of the merged Louisville Metro government overseeing public safety, city infrastructure, economic development, and public health.",
+      "sources": [
+        {
+          "label": "\ud83d\udd17 Jefferson County Clerk",
+          "url": "https://jeffersoncountyclerk.org"
+        }
+      ],
+      "candidates": [
+        {
+          "name": "Craig Greenberg",
+          "party": "Democratic Party",
+          "partyClass": "party-dem",
+          "rawBio": "Incumbent Mayor and attorney focusing on public safety initiatives, downtown revitalizations, affordable housing expansions, and universal pre-K education.",
+          "site": "https://craiggreenbergforlouisville.com",
+          "desc": "Incumbent Mayor and attorney focusing on public safety initiatives, downtown revitalizations, affordable housing expansions, and universal pre-K education."
+        }
+      ]
+    }
+  ]
+}

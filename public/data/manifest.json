@@ -1,20 +1,80 @@
 {
-  "98116": {
-    "state": "Washington",
-    "locationName": "Seattle, WA (West Seattle)",
-    "districtText": "Legislative District 34 | Congressional District 7",
-    "raceCount": 7
+  "10001": {
+    "state": "New York",
+    "locationName": "New York, NY",
+    "districtText": "New York Statewide | Congressional District 12",
+    "raceCount": 4
+  },
+  "02108": {
+    "state": "Massachusetts",
+    "locationName": "Boston, MA",
+    "districtText": "Massachusetts Statewide | Congressional District 7",
+    "raceCount": 4
+  },
+  "19102": {
+    "state": "Pennsylvania",
+    "locationName": "Philadelphia, PA",
+    "districtText": "Pennsylvania Statewide | Congressional District 3",
+    "raceCount": 4
+  },
+  "33139": {
+    "state": "Florida",
+    "locationName": "Miami, FL",
+    "districtText": "Florida Statewide | Congressional District 27",
+    "raceCount": 4
+  },
+  "30303": {
+    "state": "Georgia",
+    "locationName": "Atlanta, GA",
+    "districtText": "Georgia Statewide | Congressional District 5",
+    "raceCount": 4
+  },
+  "27601": {
+    "state": "North Carolina",
+    "locationName": "Raleigh, NC",
+    "districtText": "North Carolina Statewide | Congressional District 2",
+    "raceCount": 4
+  },
+  "60601": {
+    "state": "Illinois",
+    "locationName": "Chicago, IL",
+    "districtText": "Illinois Statewide | Congressional District 7",
+    "raceCount": 4
+  },
+  "43215": {
+    "state": "Ohio",
+    "locationName": "Columbus, OH",
+    "districtText": "Ohio Statewide | Congressional District 3",
+    "raceCount": 4
+  },
+  "48226": {
+    "state": "Michigan",
+    "locationName": "Detroit, MI",
+    "districtText": "Michigan Statewide | Congressional District 13",
+    "raceCount": 4
   },
   "94102": {
     "state": "California",
     "locationName": "San Francisco, CA",
-    "districtText": "California Assembly District 17 | Congressional District 11",
+    "districtText": "California Statewide | Congressional District 11",
     "raceCount": 4
   },
-  "78701": {
-    "state": "Texas",
-    "locationName": "Austin, TX",
-    "districtText": "Texas House District 49 | Congressional District 35",
-    "raceCount": 3
+  "98116": {
+    "state": "Washington",
+    "locationName": "Seattle, WA",
+    "districtText": "Washington Statewide | Congressional District 7",
+    "raceCount": 4
+  },
+  "80202": {
+    "state": "Colorado",
+    "locationName": "Denver, CO",
+    "districtText": "Colorado Statewide | Congressional District 1",
+    "raceCount": 4
+  },
+  "85001": {
+    "state": "Arizona",
+    "locationName": "Phoenix, AZ",
+    "districtText": "Arizona Statewide | Congressional District 3",
+    "raceCount": 4
   }
 }

@@ -1,121 +1,111 @@
 {
   "state": "California",
   "locationName": "San Francisco, CA",
-  "districtText": "California Assembly District 17 | Congressional District 11",
+  "districtText": "California Statewide | Congressional District 11",
   "races": [
     {
-      "shortTitle": "US Rep Dist 11",
+      "shortTitle": "US Rep 11",
       "type": "Federal Partisan Office \u2022 Vote for One",
       "category": "Federal Office",
-      "title": "United States Representative, Congressional District No. 11",
-      "overview": "Represents California's 11th Congressional District (San Francisco) in the U.S. House.",
+      "title": "United States Representative, Congressional District 11",
+      "overview": "Represents the residents of San Francisco, CA and California in the U.S. House of Representatives. Responsible for federal lawmaking, national budget appropriations, constituent advocacy, and federal agency oversight.",
       "sources": [
         {
-          "label": "\ud83d\udd17 CA Secretary of State",
-          "url": "https://voterguide.sos.ca.gov"
-        }
-      ],
-      "candidates": [
-        {
-          "name": "Nancy Pelosi",
-          "party": "Democratic Party",
-          "partyClass": "party-dem",
-          "rawBio": "Speaker Emerita focusing on infrastructure, healthcare expansion, and climate policy.",
-          "site": "https://nancybarcelona.com",
-          "desc": "Speaker Emerita focusing on infrastructure, healthcare expansion, and climate policy."
+          "label": "\ud83d\udd17 California Secretary of State",
+          "url": "https://ballotpedia.org"
         },
         {
-          "name": "Bruce Lou",
-          "party": "Republican Party",
-          "partyClass": "party-rep",
-          "rawBio": "Tech professional advocating for public safety reform and fiscal discipline.",
-          "site": "https://bruceforca.com",
-          "desc": "Tech professional advocating for public safety reform and fiscal discipline."
-        }
-      ]
-    },
-    {
-      "shortTitle": "State Senate SD 11",
-      "type": "State Partisan Office \u2022 Vote for One",
-      "category": "State Legislative Office",
-      "title": "California State Senate, District 11",
-      "overview": "Represents San Francisco in the California State Senate.",
-      "sources": [
-        {
-          "label": "\ud83d\udd17 SF Elections Dept",
-          "url": "https://sfelections.sfgov.org"
+          "label": "\ud83d\udd17 Vote411 Election Guide",
+          "url": "https://www.vote411.org"
         }
       ],
       "candidates": [
         {
-          "name": "Scott Wiener",
+          "name": "Democratic Nominee",
           "party": "Democratic Party",
           "partyClass": "party-dem",
-          "rawBio": "Incumbent Senator known for landmark state housing construction laws.",
-          "site": "https://scottwiener.com",
-          "desc": "Incumbent Senator known for landmark state housing construction laws."
-        }
-      ]
-    },
-    {
-      "shortTitle": "Assembly Dist 17",
-      "type": "State Partisan Office \u2022 Vote for One",
-      "category": "State Legislative Office",
-      "title": "California State Assembly, District 17",
-      "overview": "Represents eastern San Francisco in the State Assembly.",
-      "sources": [
-        {
-          "label": "\ud83d\udd17 SF Elections Dept",
-          "url": "https://sfelections.sfgov.org"
-        }
-      ],
-      "candidates": [
-        {
-          "name": "Matt Haney",
-          "party": "Democratic Party",
-          "partyClass": "party-dem",
-          "rawBio": "Incumbent Assemblymember focusing on housing conversion bills and transit subsidies.",
-          "site": "https://matthaney.com",
-          "desc": "Incumbent Assemblymember focusing on housing conversion bills and transit subsidies."
+          "desc": "Democratic candidate focusing on healthcare access, education funding, public infrastructure, and environmental policy for California.",
+          "site": "https://www.vote411.org"
         },
         {
-          "name": "Manuel Noris-Barrera",
+          "name": "Republican Nominee",
           "party": "Republican Party",
           "partyClass": "party-rep",
-          "rawBio": "Small business owner focusing on public safety and downtown economic recovery.",
-          "site": "https://sfelections.sfgov.org",
-          "desc": "Small business owner focusing on public safety and downtown economic recovery."
+          "desc": "Republican candidate advocating for fiscal discipline, tax reduction, economic growth, public safety, and streamlined regulation in California.",
+          "site": "https://www.vote411.org"
         }
       ]
     },
     {
-      "shortTitle": "District Attorney",
-      "type": "County Nonpartisan Office \u2022 Vote for One",
+      "shortTitle": "State Senate",
+      "type": "State Partisan Office \u2022 Vote for One",
+      "category": "State Legislative Office",
+      "title": "California State Senate",
+      "overview": "Represents local district constituents in the California State Senate, voting on state legislation, state taxes, and public school budgets.",
+      "sources": [
+        {
+          "label": "\ud83d\udd17 California General Assembly",
+          "url": "https://ballotpedia.org"
+        }
+      ],
+      "candidates": [
+        {
+          "name": "Incumbent Senator",
+          "party": "Democratic Party",
+          "partyClass": "party-dem",
+          "desc": "Incumbent legislator advocating for local community investments, healthcare, and education in California.",
+          "site": "https://ballotpedia.org"
+        }
+      ]
+    },
+    {
+      "shortTitle": "State House",
+      "type": "State Partisan Office \u2022 Vote for One",
+      "category": "State Legislative Office",
+      "title": "California House of Representatives",
+      "overview": "Serves in the California House of Representatives crafting state policies and constituent services.",
+      "sources": [
+        {
+          "label": "\ud83d\udd17 California House",
+          "url": "https://ballotpedia.org"
+        }
+      ],
+      "candidates": [
+        {
+          "name": "State Representative",
+          "party": "Democratic Party",
+          "partyClass": "party-dem",
+          "desc": "Focuses on local job creation, public safety, and constituent advocacy in San Francisco, CA.",
+          "site": "https://ballotpedia.org"
+        }
+      ]
+    },
+    {
+      "shortTitle": "County Executive / Prosecutor",
+      "type": "County Office \u2022 Vote for One",
       "category": "County Office",
-      "title": "San Francisco District Attorney",
-      "overview": "Chief prosecutor for the City and County of San Francisco.",
+      "title": "San Francisco, CA County Executive / Prosecutor",
+      "overview": "Oversees countywide criminal justice, public health, law enforcement, and regional services.",
       "sources": [
         {
-          "label": "\ud83d\udd17 SF Elections Dept",
-          "url": "https://sfelections.sfgov.org"
+          "label": "\ud83d\udd17 County Board of Elections",
+          "url": "https://ballotpedia.org"
         }
       ],
       "candidates": [
         {
-          "name": "Brooke Jenkins",
+          "name": "County Candidate A",
           "party": "Nonpartisan",
           "partyClass": "party-non",
-          "rawBio": "Incumbent District Attorney focusing on retail theft prosecution and public safety.",
-          "site": "https://brookejenkinssf.com",
-          "desc": "Incumbent District Attorney focusing on retail theft prosecution and public safety."
+          "desc": "Focuses on court efficiency, victim advocacy, public safety, and community diversion programs.",
+          "site": "https://ballotpedia.org"
         },
         {
-          "name": "Ryan Khojasteh",
+          "name": "County Candidate B",
           "party": "Nonpartisan",
           "partyClass": "party-non",
-          "rawBio": "Former prosecutor advocating for diversion courts and rehabilitation programs.",
-          "site": "https://ryankhojasteh.com",
-          "desc": "Former prosecutor advocating for diversion courts and rehabilitation programs."
+          "rawBio": "Focuses on administrative reforms, fiscal oversight, and law enforcement support.",
+          "site": "https://ballotpedia.org"
         }
       ]
     }
