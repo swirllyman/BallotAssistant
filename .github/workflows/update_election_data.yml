@@ -1,0 +1,32 @@
+name: Update Election Ballot Data
+
+on:
+  schedule:
+    - cron: '0 0 * * 0' # Runs automatically every Sunday at midnight
+  workflow_dispatch:     # Allows manual trigger from GitHub Actions UI tab
+
+jobs:
+  build-and-summarize:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run Ballot Build & AI Summarization
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          python scripts/build_ballot_data.py
+
+      - name: Commit & Push Updated Data Files
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "robot: update static ballot datasets & manifest [skip ci]"
+          branch: main
+          file_pattern: 'public/data/*'

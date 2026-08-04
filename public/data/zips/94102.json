@@ -1,0 +1,123 @@
+{
+  "state": "California",
+  "locationName": "San Francisco, CA",
+  "districtText": "California Assembly District 17 | Congressional District 11",
+  "races": [
+    {
+      "shortTitle": "US Rep Dist 11",
+      "type": "Federal Partisan Office \u2022 Vote for One",
+      "category": "Federal Office",
+      "title": "United States Representative, Congressional District No. 11",
+      "overview": "Represents California's 11th Congressional District (San Francisco) in the U.S. House.",
+      "sources": [
+        {
+          "label": "\ud83d\udd17 CA Secretary of State",
+          "url": "https://voterguide.sos.ca.gov"
+        }
+      ],
+      "candidates": [
+        {
+          "name": "Nancy Pelosi",
+          "party": "Democratic Party",
+          "partyClass": "party-dem",
+          "rawBio": "Speaker Emerita focusing on infrastructure, healthcare expansion, and climate policy.",
+          "site": "https://nancybarcelona.com",
+          "desc": "Speaker Emerita focusing on infrastructure, healthcare expansion, and climate policy."
+        },
+        {
+          "name": "Bruce Lou",
+          "party": "Republican Party",
+          "partyClass": "party-rep",
+          "rawBio": "Tech professional advocating for public safety reform and fiscal discipline.",
+          "site": "https://bruceforca.com",
+          "desc": "Tech professional advocating for public safety reform and fiscal discipline."
+        }
+      ]
+    },
+    {
+      "shortTitle": "State Senate SD 11",
+      "type": "State Partisan Office \u2022 Vote for One",
+      "category": "State Legislative Office",
+      "title": "California State Senate, District 11",
+      "overview": "Represents San Francisco in the California State Senate.",
+      "sources": [
+        {
+          "label": "\ud83d\udd17 SF Elections Dept",
+          "url": "https://sfelections.sfgov.org"
+        }
+      ],
+      "candidates": [
+        {
+          "name": "Scott Wiener",
+          "party": "Democratic Party",
+          "partyClass": "party-dem",
+          "rawBio": "Incumbent Senator known for landmark state housing construction laws.",
+          "site": "https://scottwiener.com",
+          "desc": "Incumbent Senator known for landmark state housing construction laws."
+        }
+      ]
+    },
+    {
+      "shortTitle": "Assembly Dist 17",
+      "type": "State Partisan Office \u2022 Vote for One",
+      "category": "State Legislative Office",
+      "title": "California State Assembly, District 17",
+      "overview": "Represents eastern San Francisco in the State Assembly.",
+      "sources": [
+        {
+          "label": "\ud83d\udd17 SF Elections Dept",
+          "url": "https://sfelections.sfgov.org"
+        }
+      ],
+      "candidates": [
+        {
+          "name": "Matt Haney",
+          "party": "Democratic Party",
+          "partyClass": "party-dem",
+          "rawBio": "Incumbent Assemblymember focusing on housing conversion bills and transit subsidies.",
+          "site": "https://matthaney.com",
+          "desc": "Incumbent Assemblymember focusing on housing conversion bills and transit subsidies."
+        },
+        {
+          "name": "Manuel Noris-Barrera",
+          "party": "Republican Party",
+          "partyClass": "party-rep",
+          "rawBio": "Small business owner focusing on public safety and downtown economic recovery.",
+          "site": "https://sfelections.sfgov.org",
+          "desc": "Small business owner focusing on public safety and downtown economic recovery."
+        }
+      ]
+    },
+    {
+      "shortTitle": "District Attorney",
+      "type": "County Nonpartisan Office \u2022 Vote for One",
+      "category": "County Office",
+      "title": "San Francisco District Attorney",
+      "overview": "Chief prosecutor for the City and County of San Francisco.",
+      "sources": [
+        {
+          "label": "\ud83d\udd17 SF Elections Dept",
+          "url": "https://sfelections.sfgov.org"
+        }
+      ],
+      "candidates": [
+        {
+          "name": "Brooke Jenkins",
+          "party": "Nonpartisan",
+          "partyClass": "party-non",
+          "rawBio": "Incumbent District Attorney focusing on retail theft prosecution and public safety.",
+          "site": "https://brookejenkinssf.com",
+          "desc": "Incumbent District Attorney focusing on retail theft prosecution and public safety."
+        },
+        {
+          "name": "Ryan Khojasteh",
+          "party": "Nonpartisan",
+          "partyClass": "party-non",
+          "rawBio": "Former prosecutor advocating for diversion courts and rehabilitation programs.",
+          "site": "https://ryankhojasteh.com",
+          "desc": "Former prosecutor advocating for diversion courts and rehabilitation programs."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,194 @@
+{
+  "98116": {
+    "state": "Washington",
+    "locationName": "Seattle, WA (West Seattle)",
+    "districtText": "Legislative District 34 | Congressional District 7",
+    "races": [
+      {
+        "shortTitle": "US Rep Dist 7",
+        "type": "Federal Partisan Office • Vote for One",
+        "category": "Federal Office",
+        "title": "United States Representative, Congressional District No. 7",
+        "overview": "Represents Washington's 7th Congressional District (Seattle, Vashon Island, Shoreline, Burien) in the U.S. House of Representatives. Responsible for federal lawmaking, national budget appropriations, constituent advocacy, and federal agency oversight.",
+        "sources": [
+          { "label": "🔗 WA Secretary of State Pamphlet", "url": "https://voter.votewa.gov" },
+          { "label": "🔗 Ballotpedia CD 7 Page", "url": "https://ballotpedia.org/Washington%27s_7th_Congressional_District_election,_2026" }
+        ],
+        "candidates": [
+          { "name": "Pramila Jayapal", "party": "Prefers Democratic Party", "partyClass": "party-dem", "rawBio": "Incumbent U.S. Representative serving since 2017. Chair of Progressive Caucus.", "site": "https://pramilaforcongress.com" },
+          { "name": "Nirav Sheth", "party": "Prefers Republican Party", "partyClass": "party-rep", "rawBio": "Small business owner focusing on fiscal policy and public safety.", "site": "https://voter.votewa.gov" },
+          { "name": "Gwen Kirkland", "party": "Prefers Democratic Party", "partyClass": "party-dem", "rawBio": "Local community advocate focusing on small business economic support.", "site": "https://voter.votewa.gov" },
+          { "name": "David W. Blomstrom", "party": "Prefers Fifth Republic", "partyClass": "party-non", "rawBio": "Anti-establishment candidate advocating for institutional transparency.", "site": "https://voter.votewa.gov" }
+        ]
+      },
+      {
+        "shortTitle": "LD 34 Senator",
+        "type": "State Partisan Office • Vote for One",
+        "category": "State Legislative Office",
+        "title": "Legislative District No. 34 – State Senator",
+        "overview": "Represents Legislative District 34 in the Washington State Senate.",
+        "sources": [{ "label": "🔗 WA Voters' Pamphlet", "url": "https://voter.votewa.gov" }],
+        "candidates": [
+          { "name": "Emily Alvarado", "party": "Prefers Democratic Party", "partyClass": "party-dem", "rawBio": "Incumbent State Senator and housing advocate prioritizing tenant rights and education.", "site": "https://emilyalvarado.org" }
+        ]
+      },
+      {
+        "shortTitle": "Rep Position 1",
+        "type": "State Partisan Office • Vote for One",
+        "category": "State Legislative Office",
+        "title": "Legislative District No. 34 – Representative Position No. 1",
+        "overview": "Serves as Representative Position 1 for District 34 in the State House.",
+        "sources": [{ "label": "🔗 WA Voters' Pamphlet", "url": "https://voter.votewa.gov" }],
+        "candidates": [
+          { "name": "Brianna K. Thomas", "party": "Prefers Democratic Party", "partyClass": "party-dem", "rawBio": "Incumbent Representative advocating for labor rights and environmental justice.", "site": "https://electbriannathomas.com" }
+        ]
+      },
+      {
+        "shortTitle": "Rep Position 2",
+        "type": "State Partisan Office • Vote for One",
+        "category": "State Legislative Office",
+        "title": "Legislative District No. 34 – Representative Position No. 2",
+        "overview": "Serves in the second House seat for District 34 in Olympia.",
+        "sources": [{ "label": "🔗 WA Voters' Pamphlet", "url": "https://voter.votewa.gov" }],
+        "candidates": [
+          { "name": "Joe Fitzgibbon", "party": "Prefers Democratic Party", "partyClass": "party-dem", "rawBio": "Incumbent Representative and Majority Leader focusing on clean energy laws.", "site": "https://joefitzgibbon.com" }
+        ]
+      },
+      {
+        "shortTitle": "County Assessor",
+        "type": "County Nonpartisan Office • Vote for One",
+        "category": "County Office",
+        "title": "King County Assessor",
+        "overview": "Establishes fair, accurate property valuations across King County.",
+        "sources": [{ "label": "🔗 King County Elections", "url": "https://kingcounty.gov/elections" }],
+        "candidates": [
+          { "name": "Al Dams", "party": "Nonpartisan", "partyClass": "party-non", "rawBio": "Chief Deputy Assessor with 30+ years of King County management experience.", "site": "https://damsforassessor.com" },
+          { "name": "Rob Foxcurran", "party": "Nonpartisan", "partyClass": "party-non", "rawBio": "Senior City Appraiser backed by PROTEC17 focusing on technical valuation precision.", "site": "https://voterobfoxcurran.com" },
+          { "name": "Christopher Roberts", "party": "Nonpartisan", "partyClass": "party-non", "rawBio": "Former Shoreline Mayor holding a Ph.D. in Political Science.", "site": "https://electroberts.com" },
+          { "name": "Dominique M. Scarimbolo", "party": "Nonpartisan", "partyClass": "party-non", "rawBio": "Small business owner advocating capping property tax assessment increases.", "site": "https://domscarimboloforassessor.com" }
+        ]
+      },
+      {
+        "shortTitle": "Council Dist 8",
+        "type": "County Nonpartisan Office • Vote for One",
+        "category": "County Office",
+        "title": "Metropolitan King County Council, District No. 8",
+        "overview": "Represents Council District 8 on the King County Council.",
+        "sources": [{ "label": "🔗 King County Elections", "url": "https://kingcounty.gov/elections" }],
+        "candidates": [
+          { "name": "Teresa Mosqueda", "party": "Nonpartisan", "partyClass": "party-non", "rawBio": "Incumbent Councilmember prioritizing affordable housing and transit.", "site": "https://teresamosqueda.org" },
+          { "name": "Mia Jacobson", "party": "Nonpartisan", "partyClass": "party-non", "rawBio": "Community advocate focused on neighborhood safety and small business support.", "site": "https://kingcounty.gov/elections" },
+          { "name": "Nick Duda", "party": "Nonpartisan", "partyClass": "party-non", "rawBio": "Civic leader advocating for public safety and fiscal accountability.", "site": "https://kingcounty.gov/elections" }
+        ]
+      },
+      {
+        "shortTitle": "Supreme Court Pos 1",
+        "type": "State Judicial Nonpartisan Office • Vote for One",
+        "category": "State Judicial Office",
+        "title": "State Supreme Court – Justice Position No. 1 (Unexpired Term)",
+        "overview": "A judicial seat on Washington State's highest appellate court.",
+        "sources": [{ "label": "🔗 WA Judicial Guide", "url": "https://voter.votewa.gov" }],
+        "candidates": [
+          { "name": "Colleen Melody", "party": "Nonpartisan", "partyClass": "party-non", "rawBio": "Senior Assistant AG and former Civil Rights Chief with extensive appellate experience.", "site": "https://voter.votewa.gov" },
+          { "name": "Laura Christensen Colberg", "party": "Nonpartisan", "partyClass": "party-non", "rawBio": "Experienced attorney focusing on judicial neutrality and statutory interpretation.", "site": "https://voter.votewa.gov" },
+          { "name": "Scott Edwards", "party": "Nonpartisan", "partyClass": "party-non", "rawBio": "Civil litigation attorney emphasizing constitutional principles and trial fairness.", "site": "https://voter.votewa.gov" }
+        ]
+      }
+    ]
+  },
+  "94102": {
+    "state": "California",
+    "locationName": "San Francisco, CA",
+    "districtText": "California Assembly District 17 | Congressional District 11",
+    "races": [
+      {
+        "shortTitle": "US Rep Dist 11",
+        "type": "Federal Partisan Office • Vote for One",
+        "category": "Federal Office",
+        "title": "United States Representative, Congressional District No. 11",
+        "overview": "Represents California's 11th Congressional District (San Francisco) in the U.S. House.",
+        "sources": [{ "label": "🔗 CA Secretary of State", "url": "https://voterguide.sos.ca.gov" }],
+        "candidates": [
+          { "name": "Nancy Pelosi", "party": "Democratic Party", "partyClass": "party-dem", "rawBio": "Speaker Emerita focusing on infrastructure, healthcare expansion, and climate policy.", "site": "https://nancybarcelona.com" },
+          { "name": "Bruce Lou", "party": "Republican Party", "partyClass": "party-rep", "rawBio": "Tech professional advocating for public safety reform and fiscal discipline.", "site": "https://bruceforca.com" }
+        ]
+      },
+      {
+        "shortTitle": "State Senate SD 11",
+        "type": "State Partisan Office • Vote for One",
+        "category": "State Legislative Office",
+        "title": "California State Senate, District 11",
+        "overview": "Represents San Francisco in the California State Senate.",
+        "sources": [{ "label": "🔗 SF Elections Dept", "url": "https://sfelections.sfgov.org" }],
+        "candidates": [
+          { "name": "Scott Wiener", "party": "Democratic Party", "partyClass": "party-dem", "rawBio": "Incumbent Senator known for landmark state housing construction laws.", "site": "https://scottwiener.com" }
+        ]
+      },
+      {
+        "shortTitle": "Assembly Dist 17",
+        "type": "State Partisan Office • Vote for One",
+        "category": "State Legislative Office",
+        "title": "California State Assembly, District 17",
+        "overview": "Represents eastern San Francisco in the State Assembly.",
+        "sources": [{ "label": "🔗 SF Elections Dept", "url": "https://sfelections.sfgov.org" }],
+        "candidates": [
+          { "name": "Matt Haney", "party": "Democratic Party", "partyClass": "party-dem", "rawBio": "Incumbent Assemblymember focusing on housing conversion bills and transit subsidies.", "site": "https://matthaney.com" },
+          { "name": "Manuel Noris-Barrera", "party": "Republican Party", "partyClass": "party-rep", "rawBio": "Small business owner focusing on public safety and downtown economic recovery.", "site": "https://sfelections.sfgov.org" }
+        ]
+      },
+      {
+        "shortTitle": "District Attorney",
+        "type": "County Nonpartisan Office • Vote for One",
+        "category": "County Office",
+        "title": "San Francisco District Attorney",
+        "overview": "Chief prosecutor for the City and County of San Francisco.",
+        "sources": [{ "label": "🔗 SF Elections Dept", "url": "https://sfelections.sfgov.org" }],
+        "candidates": [
+          { "name": "Brooke Jenkins", "party": "Nonpartisan", "partyClass": "party-non", "rawBio": "Incumbent District Attorney focusing on retail theft prosecution and public safety.", "site": "https://brookejenkinssf.com" },
+          { "name": "Ryan Khojasteh", "party": "Nonpartisan", "partyClass": "party-non", "rawBio": "Former prosecutor advocating for diversion courts and rehabilitation programs.", "site": "https://ryankhojasteh.com" }
+        ]
+      }
+    ]
+  },
+  "78701": {
+    "state": "Texas",
+    "locationName": "Austin, TX",
+    "districtText": "Texas House District 49 | Congressional District 35",
+    "races": [
+      {
+        "shortTitle": "US Rep Dist 35",
+        "type": "Federal Partisan Office • Vote for One",
+        "category": "Federal Office",
+        "title": "United States Representative, Congressional District No. 35",
+        "overview": "Represents Texas Congressional District 35 (Austin to San Antonio) in the U.S. House.",
+        "sources": [{ "label": "🔗 TX Secretary of State", "url": "https://sos.state.tx.us" }],
+        "candidates": [
+          { "name": "Greg Casar", "party": "Democratic Party", "partyClass": "party-dem", "rawBio": "Incumbent Representative focusing on labor rights, minimum wage, and climate investment.", "site": "https://casarforcongress.com" },
+          { "name": "Steven Wright", "party": "Republican Party", "partyClass": "party-rep", "rawBio": "Retired law enforcement officer advocating for border security and lower spending.", "site": "https://wrightfortexas.com" }
+        ]
+      },
+      {
+        "shortTitle": "TX Senate SD 14",
+        "type": "State Partisan Office • Vote for One",
+        "category": "State Legislative Office",
+        "title": "Texas State Senate, District 14",
+        "overview": "Represents Travis County in the Texas Senate.",
+        "sources": [{ "label": "🔗 Travis County Elections", "url": "https://elections.traviscountytx.gov" }],
+        "candidates": [
+          { "name": "Sarah Eckhardt", "party": "Democratic Party", "partyClass": "party-dem", "rawBio": "Incumbent Senator prioritizing school funding and environmental conservation.", "site": "https://saraheckhardt.com" }
+        ]
+      },
+      {
+        "shortTitle": "TX House HD 49",
+        "type": "State Partisan Office • Vote for One",
+        "category": "State Legislative Office",
+        "title": "Texas House of Representatives, District 49",
+        "overview": "Represents central Austin in the Texas House.",
+        "sources": [{ "label": "🔗 Travis County Elections", "url": "https://elections.traviscountytx.gov" }],
+        "candidates": [
+          { "name": "Gina Hinojosa", "party": "Democratic Party", "partyClass": "party-dem", "rawBio": "Incumbent Representative focusing on public education funding and teacher pay.", "site": "https://ginahinojosa.com" }
+        ]
+      }
+    ]
+  }
+}

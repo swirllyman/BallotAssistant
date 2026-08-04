@@ -1,0 +1,20 @@
+{
+  "98116": {
+    "state": "Washington",
+    "locationName": "Seattle, WA (West Seattle)",
+    "districtText": "Legislative District 34 | Congressional District 7",
+    "raceCount": 7
+  },
+  "94102": {
+    "state": "California",
+    "locationName": "San Francisco, CA",
+    "districtText": "California Assembly District 17 | Congressional District 11",
+    "raceCount": 4
+  },
+  "78701": {
+    "state": "Texas",
+    "locationName": "Austin, TX",
+    "districtText": "Texas House District 49 | Congressional District 35",
+    "raceCount": 3
+  }
+}

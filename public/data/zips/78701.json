@@ -1,0 +1,84 @@
+{
+  "state": "Texas",
+  "locationName": "Austin, TX",
+  "districtText": "Texas House District 49 | Congressional District 35",
+  "races": [
+    {
+      "shortTitle": "US Rep Dist 35",
+      "type": "Federal Partisan Office \u2022 Vote for One",
+      "category": "Federal Office",
+      "title": "United States Representative, Congressional District No. 35",
+      "overview": "Represents Texas Congressional District 35 (Austin to San Antonio) in the U.S. House.",
+      "sources": [
+        {
+          "label": "\ud83d\udd17 TX Secretary of State",
+          "url": "https://sos.state.tx.us"
+        }
+      ],
+      "candidates": [
+        {
+          "name": "Greg Casar",
+          "party": "Democratic Party",
+          "partyClass": "party-dem",
+          "rawBio": "Incumbent Representative focusing on labor rights, minimum wage, and climate investment.",
+          "site": "https://casarforcongress.com",
+          "desc": "Incumbent Representative focusing on labor rights, minimum wage, and climate investment."
+        },
+        {
+          "name": "Steven Wright",
+          "party": "Republican Party",
+          "partyClass": "party-rep",
+          "rawBio": "Retired law enforcement officer advocating for border security and lower spending.",
+          "site": "https://wrightfortexas.com",
+          "desc": "Retired law enforcement officer advocating for border security and lower spending."
+        }
+      ]
+    },
+    {
+      "shortTitle": "TX Senate SD 14",
+      "type": "State Partisan Office \u2022 Vote for One",
+      "category": "State Legislative Office",
+      "title": "Texas State Senate, District 14",
+      "overview": "Represents Travis County in the Texas Senate.",
+      "sources": [
+        {
+          "label": "\ud83d\udd17 Travis County Elections",
+          "url": "https://elections.traviscountytx.gov"
+        }
+      ],
+      "candidates": [
+        {
+          "name": "Sarah Eckhardt",
+          "party": "Democratic Party",
+          "partyClass": "party-dem",
+          "rawBio": "Incumbent Senator prioritizing school funding and environmental conservation.",
+          "site": "https://saraheckhardt.com",
+          "desc": "Incumbent Senator prioritizing school funding and environmental conservation."
+        }
+      ]
+    },
+    {
+      "shortTitle": "TX House HD 49",
+      "type": "State Partisan Office \u2022 Vote for One",
+      "category": "State Legislative Office",
+      "title": "Texas House of Representatives, District 49",
+      "overview": "Represents central Austin in the Texas House.",
+      "sources": [
+        {
+          "label": "\ud83d\udd17 Travis County Elections",
+          "url": "https://elections.traviscountytx.gov"
+        }
+      ],
+      "candidates": [
+        {
+          "name": "Gina Hinojosa",
+          "party": "Democratic Party",
+          "partyClass": "party-dem",
+          "rawBio": "Incumbent Representative focusing on public education funding and teacher pay.",
+          "site": "https://ginahinojosa.com",
+          "desc": "Incumbent Representative focusing on public education funding and teacher pay."
+        }
+      ]
+    }
+  ]
+}
