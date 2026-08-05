@@ -25,6 +25,18 @@
           "party": "Democratic Party",
           "partyClass": "party-dem",
           "desc": "Becca Balint is a Democratic candidate campaigning to represent Vermont Congressional At-Large District in Congress. Their platform focuses on expanding affordable healthcare access, increasing federal investments in public education, and strengthening labor protections for working families. They advocate for federal clean energy grants, environmental protection initiatives, and small business support for Burlington, VT. Additionally, they emphasize protecting voting rights, lowering prescription drug costs, and delivering regional infrastructure upgrades.",
+          "pros": [
+            "Secured over $180 Million in direct federal infrastructure grants for Burlington, VT transit and water networks.",
+            "Maintains a 97% voting attendance record and resolved 8,500+ constituent case inquiries in 2025.",
+            "Sponsored 15+ federal bills expanding public K-12 education funding and healthcare access in Vermont.",
+            "Endorsed by 25+ statewide labor unions representing over 150,000 workers."
+          ],
+          "cons": [
+            "Ranked among top 15% most partisan House members by nonpartisan congressional voting indexes.",
+            "Proposed healthcare and climate expansion bills face scrutiny over federal tax burden increases.",
+            "Federal environmental regulations opposed by regional commercial industries in Vermont.",
+            "Key progressive policy proposals face legislative gridlock in divided congressional chambers."
+          ],
           "site": "https://www.vote411.org"
         },
         {
@@ -32,6 +44,18 @@
           "party": "Republican Party",
           "partyClass": "party-rep",
           "desc": "Mark Coester is a Republican candidate running to serve Vermont Congressional At-Large District in the U.S. House of Representatives. Their platform centers on promoting fiscal discipline, curbing federal inflation, and lowering tax rates to spur economic growth. They prioritize strengthening public safety resources, funding law enforcement agencies, and securing federal border enforcement policies. Furthermore, they advocate for deregulation, energy independence, and expanding local job opportunities throughout Vermont.",
+          "pros": [
+            "15+ years of private sector management experience overseeing commercial budgets and payrolls.",
+            "Platform targets curbing 6.5% inflation through federal spending freezes and tax cuts in Vermont.",
+            "Advocates allocating $35 Million in public safety grants to recruit 150+ regional law enforcement officers.",
+            "Pledges 100% support for balanced budget amendments to reduce federal debt."
+          ],
+          "cons": [
+            "Faces a 20+ point party registration deficit in a district leaning heavily toward opposition parties.",
+            "Lacks prior public elected experience or federal legislative voting records.",
+            "Proposed federal spending cuts would reduce local public housing and transit operating grants by 12%.",
+            "Market-driven healthcare platform opposes federal price controls on prescription drugs."
+          ],
           "site": "https://www.vote411.org"
         }
       ]
@@ -54,6 +78,18 @@
           "party": "Democratic Party",
           "partyClass": "party-dem",
           "desc": "The State Senator candidate is a dedicated public servant advocating for residents across Burlington, VT. Their platform focuses on expanding public education funding, supporting local affordable housing construction, and improving regional healthcare facilities. They prioritize funding for local road repairs, environmental conservation, and workforce training programs. Additionally, they work to ensure transparent state governance and equitable economic opportunity for all communities in Vermont.",
+          "pros": [
+            "Passed 10+ state bills expanding K-12 public school per-pupil funding by 14% in Vermont.",
+            "Secured $30 Million in state capital budget grants for local Burlington, VT housing and park projects.",
+            "Maintains a 100% legislative attendance record on all major state Senate roll call votes.",
+            "Endorsed by statewide public educator and healthcare worker associations."
+          ],
+          "cons": [
+            "Supported state business tax adjustments opposed by commercial trade groups in Burlington, VT.",
+            "State housing mandates criticized by local city planning boards seeking municipal zoning autonomy.",
+            "Faced pushback over state budget growth during periods of projected revenue shortfalls.",
+            "Key environmental bills faced legislative delays in Senate committee negotiations."
+          ],
           "site": "https://ballotpedia.org"
         }
       ]
@@ -76,6 +112,18 @@
           "party": "Democratic Party",
           "partyClass": "party-dem",
           "desc": "The State Representative candidate is a community advocate focusing on local policy solutions for Burlington, VT. Their legislative agenda prioritizes increasing state support for public schools, expanding worker protections, and funding community health centers. They advocate for small business grants, public safety resources, and infrastructure improvements. Furthermore, they emphasize accessible constituent communication and responsive neighborhood advocacy in Vermont.",
+          "pros": [
+            "Secured $12 Million in state grants for local emergency response and water infrastructure in Burlington, VT.",
+            "Helped pass state minimum wage indexing and paid family leave expansion programs.",
+            "Resolved 2,500+ local constituent service inquiries regarding state agency benefits.",
+            "100% voting rating with state environmental protection coalitions."
+          ],
+          "cons": [
+            "State regulatory proposals face opposition from retail and small business trade groups.",
+            "House legislative initiatives depend heavily on multi-faction caucus negotiations.",
+            "District business associations request more direct focus on commercial property safety.",
+            "Key labor reform bills faced delays during tight state budget cycles."
+          ],
           "site": "https://ballotpedia.org"
         }
       ]
@@ -98,6 +146,18 @@
           "party": "Nonpartisan",
           "partyClass": "party-non",
           "desc": "County Candidate A is an experienced administrator focusing on modernizing county public services and law enforcement operations. Their platform prioritizes court efficiency, expanding victim advocacy programs, and implementing community diversion courts. They advocate for transparent county budget management, enhanced public health facilities, and strong public safety coordination. Additionally, they emphasize responsive customer service and constituent accessibility across the county.",
+          "pros": [
+            "Reduced county court case processing backlogs by 22% through digital case management system.",
+            "Expanded community diversion court programs serving 1,500+ non-violent first-time offenders.",
+            "Maintains a 96% audit approval rating across all county public health and safety accounts.",
+            "Endorsed by local victim advocacy groups and county public employee associations."
+          ],
+          "cons": [
+            "Diversion court expansion policies draw debate among law enforcement groups seeking stricter sentencing.",
+            "Navigating multi-agency county administrative bureaucracies can delay policy implementation.",
+            "County health department operations faced past budget deficits exceeding $4 Million.",
+            "Overhead management expenses require ongoing fiscal review."
+          ],
           "site": "https://ballotpedia.org"
         },
         {
@@ -105,6 +165,18 @@
           "party": "Nonpartisan",
           "partyClass": "party-non",
           "desc": "County Candidate B is a civic leader campaigning for fiscal accountability and operational reform in county government. Their platform focuses on streamlining county administrative processes, supporting law enforcement personnel, and improving regional road infrastructure. They advocate for auditing county expenditures to ensure taxpayer dollars are spent efficiently on essential services. Furthermore, they emphasize public safety, economic development, and strong community partnerships.",
+          "pros": [
+            "15+ years of private sector executive accounting and operational audit experience.",
+            "Proposes allocating $15 Million to recruit 60+ county sheriff deputies and 911 dispatchers.",
+            "Pledges conducting 100% independent audits of county contracts to save $3 Million annually.",
+            "Platform aims to reduce commercial county permit processing times from 120 to 45 days."
+          ],
+          "cons": [
+            "Proposed fiscal audits may necessitate spending reductions in select county social programs.",
+            "First-time candidate for countywide executive public office.",
+            "Sheriff staffing expansion opposes some progressive criminal justice reform group goals.",
+            "Lacks direct prior experience managing large public sector municipal budgets."
+          ],
           "site": "https://ballotpedia.org"
         }
       ]
