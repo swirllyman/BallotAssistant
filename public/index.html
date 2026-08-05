@@ -664,15 +664,93 @@
     .candidate-desc {
       color: #94a3b8;
       font-size: 0.9rem;
-      line-height: 1.5;
+      line-height: 1.6;
       margin-bottom: 0.5rem;
+    }
+
+    /* Pros & Cons Section Styling */
+    .pros-cons-container {
+      margin-top: 0.85rem;
+      padding-top: 0.75rem;
+      border-top: 1px dashed rgba(255, 255, 255, 0.1);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.75rem;
+    }
+
+    @media (max-width: 600px) {
+      .pros-cons-container {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .pros-box, .cons-box {
+      background: rgba(15, 23, 42, 0.6);
+      border-radius: 0.5rem;
+      padding: 0.65rem 0.85rem;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .pros-title {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: #10b981;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      margin-bottom: 0.4rem;
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+
+    .cons-title {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: #f59e0b;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      margin-bottom: 0.4rem;
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+
+    .pro-con-ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+    }
+
+    .pro-con-ul li {
+      font-size: 0.82rem;
+      color: #cbd5e1;
+      line-height: 1.4;
+      position: relative;
+      padding-left: 1rem;
+    }
+
+    .pro-con-ul.pros-ul li::before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: 800;
+    }
+
+    .pro-con-ul.cons-ul li::before {
+      content: '•';
+      position: absolute;
+      left: 0;
+      color: #f59e0b;
+      font-weight: 800;
     }
 
     .candidate-sources {
       display: flex;
       gap: 0.5rem;
       flex-wrap: wrap;
-      margin-top: 0.4rem;
+      margin-top: 0.6rem;
     }
 
     /* Buttons */
@@ -815,13 +893,13 @@
               </div>
               <div>
                 <label for="input-zip">ZIP Code or State</label>
-                <input type="text" id="input-zip" placeholder="e.g. 40202, KY, 98116, 94102" value="40202">
+                <input type="text" id="input-zip" placeholder="e.g. 40202, KY, 98116, 94102" value="98116">
               </div>
             </div>
 
             <div class="preset-chips">
-              <span class="chip" onclick="setPreset('Louisville KY', '40202')">📍 Louisville KY (CD 3)</span>
               <span class="chip" onclick="setPreset('Seattle WA', '98116')">📍 Seattle WA (LD 34)</span>
+              <span class="chip" onclick="setPreset('Louisville KY', '40202')">📍 Louisville KY (CD 3)</span>
               <span class="chip" onclick="setPreset('San Francisco CA', '94102')">📍 San Francisco CA (CD 11)</span>
               <span class="chip" onclick="setPreset('Austin TX', '78701')">📍 Austin TX (CD 35)</span>
             </div>
@@ -846,7 +924,6 @@
     let currentStep = 0;
     let selections = {};
 
-    // Complete List of All 50 US State Zip Codes in our Static Database
     const all50StateZips = [
       "35203", "99501", "85004", "72201", "94102", "80202", "06103", "19801", "33139", "30303",
       "96813", "83702", "60601", "46204", "50309", "67202", "40202", "70112", "04101", "21201",
@@ -856,7 +933,6 @@
     ];
 
     async function randomizeAddress() {
-      // Pick a random ZIP out of ALL 50 STATES
       const randomZip = all50StateZips[Math.floor(Math.random() * all50StateZips.length)];
       
       const data = await loadDistrictByZip(randomZip);
@@ -895,14 +971,12 @@
       const rawAddress = document.getElementById('input-address').value.trim();
       const rawZip = document.getElementById('input-zip').value.trim();
 
-      // Extract 5 digit zip or find match
       const zipMatch = (rawZip + " " + rawAddress).match(/\b\d{5}\b/);
-      let zipToLoad = zipMatch ? zipMatch[0] : "40202";
+      let zipToLoad = zipMatch ? zipMatch[0] : "98116";
 
       let data = await loadDistrictByZip(zipToLoad);
       if (!data) {
-        // Fallback to random state if zip file not found
-        data = await loadDistrictByZip("40202");
+        data = await loadDistrictByZip("98116");
       }
 
       activeDistrictData = data;
@@ -967,21 +1041,39 @@
           sourcesHTML = `<div class="source-link-row">` + race.sources.map(s => `<a class="source-link" href="${s.url}" target="_blank">${s.label}</a>`).join(' ') + `</div>`;
         }
 
-        let candidatesHTML = race.candidates.map(c => `
-          <div class="candidate-card" onclick="selectCandidate(${stepNum}, '${c.name} (${c.party})')">
-            <div class="radio-circle"></div>
-            <div class="candidate-info">
-              <div class="candidate-header">
-                <span class="candidate-name">${c.name}</span>
-                <span class="party-tag ${c.partyClass}">${c.party}</span>
-              </div>
-              <p class="candidate-desc">${c.desc}</p>
-              <div class="candidate-sources">
-                <a class="source-link" href="${c.site}" target="_blank" onclick="event.stopPropagation()">🌐 Official Site / Info</a>
+        let candidatesHTML = race.candidates.map(c => {
+          let prosHTML = '';
+          if (c.pros && c.pros.length) {
+            prosHTML = `<div class="pros-box"><div class="pros-title">🟢 Key Strengths</div><ul class="pro-con-ul pros-ul">` + c.pros.map(p => `<li>${p}</li>`).join('') + `</ul></div>`;
+          }
+
+          let consHTML = '';
+          if (c.cons && c.cons.length) {
+            consHTML = `<div class="cons-box"><div class="cons-title">🟠 Key Considerations</div><ul class="pro-con-ul cons-ul">` + c.cons.map(cn => `<li>${cn}</li>`).join('') + `</ul></div>`;
+          }
+
+          let prosConsGridHTML = '';
+          if (prosHTML || consHTML) {
+            prosConsGridHTML = `<div class="pros-cons-container">${prosHTML}${consHTML}</div>`;
+          }
+
+          return `
+            <div class="candidate-card" onclick="selectCandidate(${stepNum}, '${c.name} (${c.party})')">
+              <div class="radio-circle"></div>
+              <div class="candidate-info">
+                <div class="candidate-header">
+                  <span class="candidate-name">${c.name}</span>
+                  <span class="party-tag ${c.partyClass}">${c.party}</span>
+                </div>
+                <p class="candidate-desc">${c.desc}</p>
+                ${prosConsGridHTML}
+                <div class="candidate-sources">
+                  <a class="source-link" href="${c.site}" target="_blank" onclick="event.stopPropagation()">🌐 Official Site / Info</a>
+                </div>
               </div>
             </div>
-          </div>
-        `).join('');
+          `;
+        }).join('');
 
         card.innerHTML = `
           <div class="location-banner">

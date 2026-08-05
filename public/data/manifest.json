@@ -275,12 +275,6 @@
     "districtText": "Virginia Statewide | Virginia Congressional District 4",
     "raceCount": 4
   },
-  "98116": {
-    "state": "Washington",
-    "locationName": "Seattle, WA",
-    "districtText": "Washington Statewide | Washington Congressional District 7",
-    "raceCount": 7
-  },
   "25301": {
     "state": "West Virginia",
     "locationName": "Charleston, WV",
@@ -298,5 +292,11 @@
     "locationName": "Cheyenne, WY",
     "districtText": "Wyoming Statewide | Wyoming Congressional At-Large District",
     "raceCount": 4
+  },
+  "98116": {
+    "state": "Washington",
+    "locationName": "Seattle, WA (West Seattle)",
+    "districtText": "Legislative District 34 | Congressional District 7 | King County",
+    "raceCount": 7
   }
 }

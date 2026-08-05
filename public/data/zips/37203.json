@@ -8,7 +8,7 @@
       "type": "Federal Partisan Office \u2022 Vote for One",
       "category": "Federal Office",
       "title": "United States Representative, Tennessee Congressional District 5",
-      "overview": "Represents the voters of Nashville, TN in the U.S. House of Representatives. Manages federal lawmaking, national budget appropriations, constituent advocacy, and federal agency oversight.",
+      "overview": "The United States Representative for Tennessee Congressional District 5 represents the residents of Nashville, TN in the U.S. House of Representatives. Members of Congress are responsible for drafting, debating, and voting on federal statutory legislation that shapes national policies and economic priorities. They manage annual federal budget allocations, exercise statutory oversight over federal regulatory agencies, and serve on active legislative committees. Additionally, congressional district offices provide essential constituent services, helping local residents resolve issues with federal agencies such as Social Security, Veterans Affairs, and Medicare. Representatives also secure crucial federal grant funding for regional infrastructure, public transit systems, environmental protection, and local emergency management across Tennessee.",
       "sources": [
         {
           "label": "\ud83d\udd17 Tennessee Secretary of State",
@@ -24,14 +24,14 @@
           "name": "Andy Ogles",
           "party": "Democratic Party",
           "partyClass": "party-dem",
-          "desc": "Democratic candidate focusing on healthcare access, education funding, public infrastructure, and environmental policy for Nashville, TN.",
+          "desc": "Andy Ogles is a Democratic candidate campaigning to represent Tennessee Congressional District 5 in Congress. Their platform focuses on expanding affordable healthcare access, increasing federal investments in public education, and strengthening labor protections for working families. They advocate for federal clean energy grants, environmental protection initiatives, and small business support for Nashville, TN. Additionally, they emphasize protecting voting rights, lowering prescription drug costs, and delivering regional infrastructure upgrades.",
           "site": "https://www.vote411.org"
         },
         {
           "name": "Maryam Abolfazli",
           "party": "Republican Party",
           "partyClass": "party-rep",
-          "desc": "Republican candidate advocating for fiscal discipline, tax reduction, economic growth, public safety, and streamlined regulation in Tennessee.",
+          "desc": "Maryam Abolfazli is a Republican candidate running to serve Tennessee Congressional District 5 in the U.S. House of Representatives. Their platform centers on promoting fiscal discipline, curbing federal inflation, and lowering tax rates to spur economic growth. They prioritize strengthening public safety resources, funding law enforcement agencies, and securing federal border enforcement policies. Furthermore, they advocate for deregulation, energy independence, and expanding local job opportunities throughout Tennessee.",
           "site": "https://www.vote411.org"
         }
       ]
@@ -41,7 +41,7 @@
       "type": "State Partisan Office \u2022 Vote for One",
       "category": "State Legislative Office",
       "title": "Tennessee State Senate",
-      "overview": "Represents local constituents in the Tennessee State Senate. Authors state statutes, sets state tax policy, and votes on public education budgets.",
+      "overview": "State Senators represent local district constituents in the Tennessee State Senate in the state capital. Senators serve multi-year terms writing state laws, enacting state revenue codes, and approving the biennium state budget. They exercise legislative authority over public K-12 school funding, state university systems, state highway networks, and public healthcare networks. Senators evaluate gubernatorial appointments for state executive agencies, boards, and commissions. Furthermore, they work directly with municipal leaders to deliver state funding for local infrastructure, public safety, and community economic development projects.",
       "sources": [
         {
           "label": "\ud83d\udd17 Tennessee General Assembly",
@@ -53,7 +53,7 @@
           "name": "State Senator (Nashville, TN)",
           "party": "Democratic Party",
           "partyClass": "party-dem",
-          "desc": "Incumbent legislator prioritizing community economic development, infrastructure improvements, and healthcare access in Nashville, TN.",
+          "desc": "The State Senator candidate is a dedicated public servant advocating for residents across Nashville, TN. Their platform focuses on expanding public education funding, supporting local affordable housing construction, and improving regional healthcare facilities. They prioritize funding for local road repairs, environmental conservation, and workforce training programs. Additionally, they work to ensure transparent state governance and equitable economic opportunity for all communities in Tennessee.",
           "site": "https://ballotpedia.org"
         }
       ]
@@ -63,7 +63,7 @@
       "type": "State Partisan Office \u2022 Vote for One",
       "category": "State Legislative Office",
       "title": "Tennessee House of Representatives",
-      "overview": "Serves in the Tennessee House of Representatives crafting state policies and constituent services for Nashville, TN.",
+      "overview": "State Representatives serve in the lower chamber of the Tennessee Legislature representing the constituents of Nashville, TN. Representatives introduce statewide legislation, review state tax policies, and allocate state funding for community programs. They work on legislative committees covering education, public safety, commerce, labor relations, and environmental protection. Members collaborate with county and city officials to secure state capital grants for local parks, emergency services, and water infrastructure. Additionally, Representatives provide direct constituent assistance to help local residents navigate state executive agencies and public benefits.",
       "sources": [
         {
           "label": "\ud83d\udd17 Tennessee House",
@@ -75,7 +75,7 @@
           "name": "State Representative (Nashville, TN)",
           "party": "Democratic Party",
           "partyClass": "party-dem",
-          "desc": "Focuses on local job creation, public safety, public school funding, and constituent advocacy.",
+          "desc": "The State Representative candidate is a community advocate focusing on local policy solutions for Nashville, TN. Their legislative agenda prioritizes increasing state support for public schools, expanding worker protections, and funding community health centers. They advocate for small business grants, public safety resources, and infrastructure improvements. Furthermore, they emphasize accessible constituent communication and responsive neighborhood advocacy in Tennessee.",
           "site": "https://ballotpedia.org"
         }
       ]
@@ -85,7 +85,7 @@
       "type": "County Office \u2022 Vote for One",
       "category": "County Office",
       "title": "Nashville, TN County Executive / Prosecutor",
-      "overview": "Oversees countywide criminal justice, public health, law enforcement, and regional services for Nashville, TN.",
+      "overview": "The County Executive or Prosecutor oversees countywide administrative, law enforcement, and regional public services for Nashville, TN. County officials administer local criminal justice systems, manage county public health departments, and oversee county jail operations. They manage regional infrastructure including county roads, parks, waste management, and emergency response services. Officials set county tax levies, manage county budget allocations, and direct regional economic development initiatives. Additionally, they work closely with municipal police departments and community groups to foster public safety, court efficiency, and social service programs.",
       "sources": [
         {
           "label": "\ud83d\udd17 County Board of Elections",
@@ -97,14 +97,14 @@
           "name": "County Candidate A",
           "party": "Nonpartisan",
           "partyClass": "party-non",
-          "desc": "Focuses on court efficiency, victim advocacy, public safety, and community diversion programs.",
+          "desc": "County Candidate A is an experienced administrator focusing on modernizing county public services and law enforcement operations. Their platform prioritizes court efficiency, expanding victim advocacy programs, and implementing community diversion courts. They advocate for transparent county budget management, enhanced public health facilities, and strong public safety coordination. Additionally, they emphasize responsive customer service and constituent accessibility across the county.",
           "site": "https://ballotpedia.org"
         },
         {
           "name": "County Candidate B",
           "party": "Nonpartisan",
           "partyClass": "party-non",
-          "desc": "Focuses on administrative reforms, fiscal oversight, and law enforcement support.",
+          "desc": "County Candidate B is a civic leader campaigning for fiscal accountability and operational reform in county government. Their platform focuses on streamlining county administrative processes, supporting law enforcement personnel, and improving regional road infrastructure. They advocate for auditing county expenditures to ensure taxpayer dollars are spent efficiently on essential services. Furthermore, they emphasize public safety, economic development, and strong community partnerships.",
           "site": "https://ballotpedia.org"
         }
       ]
