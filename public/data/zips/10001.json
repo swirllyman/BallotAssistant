@@ -1,14 +1,14 @@
 {
   "state": "New York",
   "locationName": "New York, NY",
-  "districtText": "New York Statewide | Congressional District 12",
+  "districtText": "New York Statewide | New York Congressional District 12",
   "races": [
     {
-      "shortTitle": "US Rep 12",
+      "shortTitle": "US Rep (NY)",
       "type": "Federal Partisan Office \u2022 Vote for One",
       "category": "Federal Office",
-      "title": "United States Representative, Congressional District 12",
-      "overview": "Represents the residents of New York, NY and New York in the U.S. House of Representatives. Responsible for federal lawmaking, national budget appropriations, constituent advocacy, and federal agency oversight.",
+      "title": "United States Representative, New York Congressional District 12",
+      "overview": "Represents the voters of New York, NY in the U.S. House of Representatives. Manages federal lawmaking, national budget appropriations, constituent advocacy, and federal agency oversight.",
       "sources": [
         {
           "label": "\ud83d\udd17 New York Secretary of State",
@@ -21,14 +21,14 @@
       ],
       "candidates": [
         {
-          "name": "Democratic Nominee",
+          "name": "Jerry Nadler",
           "party": "Democratic Party",
           "partyClass": "party-dem",
-          "desc": "Democratic candidate focusing on healthcare access, education funding, public infrastructure, and environmental policy for New York.",
+          "desc": "Democratic candidate focusing on healthcare access, education funding, public infrastructure, and environmental policy for New York, NY.",
           "site": "https://www.vote411.org"
         },
         {
-          "name": "Republican Nominee",
+          "name": "Michael Zumbluskas",
           "party": "Republican Party",
           "partyClass": "party-rep",
           "desc": "Republican candidate advocating for fiscal discipline, tax reduction, economic growth, public safety, and streamlined regulation in New York.",
@@ -37,11 +37,11 @@
       ]
     },
     {
-      "shortTitle": "State Senate",
+      "shortTitle": "NY Senate",
       "type": "State Partisan Office \u2022 Vote for One",
       "category": "State Legislative Office",
       "title": "New York State Senate",
-      "overview": "Represents local district constituents in the New York State Senate, voting on state legislation, state taxes, and public school budgets.",
+      "overview": "Represents local constituents in the New York State Senate. Authors state statutes, sets state tax policy, and votes on public education budgets.",
       "sources": [
         {
           "label": "\ud83d\udd17 New York General Assembly",
@@ -50,20 +50,20 @@
       ],
       "candidates": [
         {
-          "name": "Incumbent Senator",
+          "name": "State Senator (New York, NY)",
           "party": "Democratic Party",
           "partyClass": "party-dem",
-          "desc": "Incumbent legislator advocating for local community investments, healthcare, and education in New York.",
+          "desc": "Incumbent legislator prioritizing community economic development, infrastructure improvements, and healthcare access in New York, NY.",
           "site": "https://ballotpedia.org"
         }
       ]
     },
     {
-      "shortTitle": "State House",
+      "shortTitle": "NY House",
       "type": "State Partisan Office \u2022 Vote for One",
       "category": "State Legislative Office",
       "title": "New York House of Representatives",
-      "overview": "Serves in the New York House of Representatives crafting state policies and constituent services.",
+      "overview": "Serves in the New York House of Representatives crafting state policies and constituent services for New York, NY.",
       "sources": [
         {
           "label": "\ud83d\udd17 New York House",
@@ -72,20 +72,20 @@
       ],
       "candidates": [
         {
-          "name": "State Representative",
+          "name": "State Representative (New York, NY)",
           "party": "Democratic Party",
           "partyClass": "party-dem",
-          "desc": "Focuses on local job creation, public safety, and constituent advocacy in New York, NY.",
+          "desc": "Focuses on local job creation, public safety, public school funding, and constituent advocacy.",
           "site": "https://ballotpedia.org"
         }
       ]
     },
     {
-      "shortTitle": "County Executive / Prosecutor",
+      "shortTitle": "NY Executive",
       "type": "County Office \u2022 Vote for One",
       "category": "County Office",
       "title": "New York, NY County Executive / Prosecutor",
-      "overview": "Oversees countywide criminal justice, public health, law enforcement, and regional services.",
+      "overview": "Oversees countywide criminal justice, public health, law enforcement, and regional services for New York, NY.",
       "sources": [
         {
           "label": "\ud83d\udd17 County Board of Elections",
@@ -104,7 +104,7 @@
           "name": "County Candidate B",
           "party": "Nonpartisan",
           "partyClass": "party-non",
-          "rawBio": "Focuses on administrative reforms, fiscal oversight, and law enforcement support.",
+          "desc": "Focuses on administrative reforms, fiscal oversight, and law enforcement support.",
           "site": "https://ballotpedia.org"
         }
       ]

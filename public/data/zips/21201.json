@@ -1,0 +1,113 @@
+{
+  "state": "Maryland",
+  "locationName": "Baltimore, MD",
+  "districtText": "Maryland Statewide | Maryland Congressional District 7",
+  "races": [
+    {
+      "shortTitle": "US Rep (MD)",
+      "type": "Federal Partisan Office \u2022 Vote for One",
+      "category": "Federal Office",
+      "title": "United States Representative, Maryland Congressional District 7",
+      "overview": "Represents the voters of Baltimore, MD in the U.S. House of Representatives. Manages federal lawmaking, national budget appropriations, constituent advocacy, and federal agency oversight.",
+      "sources": [
+        {
+          "label": "\ud83d\udd17 Maryland Secretary of State",
+          "url": "https://ballotpedia.org"
+        },
+        {
+          "label": "\ud83d\udd17 Vote411 Election Guide",
+          "url": "https://www.vote411.org"
+        }
+      ],
+      "candidates": [
+        {
+          "name": "Kweisi Mfume",
+          "party": "Democratic Party",
+          "partyClass": "party-dem",
+          "desc": "Democratic candidate focusing on healthcare access, education funding, public infrastructure, and environmental policy for Baltimore, MD.",
+          "site": "https://www.vote411.org"
+        },
+        {
+          "name": "Scott Collier",
+          "party": "Republican Party",
+          "partyClass": "party-rep",
+          "desc": "Republican candidate advocating for fiscal discipline, tax reduction, economic growth, public safety, and streamlined regulation in Maryland.",
+          "site": "https://www.vote411.org"
+        }
+      ]
+    },
+    {
+      "shortTitle": "MD Senate",
+      "type": "State Partisan Office \u2022 Vote for One",
+      "category": "State Legislative Office",
+      "title": "Maryland State Senate",
+      "overview": "Represents local constituents in the Maryland State Senate. Authors state statutes, sets state tax policy, and votes on public education budgets.",
+      "sources": [
+        {
+          "label": "\ud83d\udd17 Maryland General Assembly",
+          "url": "https://ballotpedia.org"
+        }
+      ],
+      "candidates": [
+        {
+          "name": "State Senator (Baltimore, MD)",
+          "party": "Democratic Party",
+          "partyClass": "party-dem",
+          "desc": "Incumbent legislator prioritizing community economic development, infrastructure improvements, and healthcare access in Baltimore, MD.",
+          "site": "https://ballotpedia.org"
+        }
+      ]
+    },
+    {
+      "shortTitle": "MD House",
+      "type": "State Partisan Office \u2022 Vote for One",
+      "category": "State Legislative Office",
+      "title": "Maryland House of Representatives",
+      "overview": "Serves in the Maryland House of Representatives crafting state policies and constituent services for Baltimore, MD.",
+      "sources": [
+        {
+          "label": "\ud83d\udd17 Maryland House",
+          "url": "https://ballotpedia.org"
+        }
+      ],
+      "candidates": [
+        {
+          "name": "State Representative (Baltimore, MD)",
+          "party": "Democratic Party",
+          "partyClass": "party-dem",
+          "desc": "Focuses on local job creation, public safety, public school funding, and constituent advocacy.",
+          "site": "https://ballotpedia.org"
+        }
+      ]
+    },
+    {
+      "shortTitle": "MD Executive",
+      "type": "County Office \u2022 Vote for One",
+      "category": "County Office",
+      "title": "Baltimore, MD County Executive / Prosecutor",
+      "overview": "Oversees countywide criminal justice, public health, law enforcement, and regional services for Baltimore, MD.",
+      "sources": [
+        {
+          "label": "\ud83d\udd17 County Board of Elections",
+          "url": "https://ballotpedia.org"
+        }
+      ],
+      "candidates": [
+        {
+          "name": "County Candidate A",
+          "party": "Nonpartisan",
+          "partyClass": "party-non",
+          "desc": "Focuses on court efficiency, victim advocacy, public safety, and community diversion programs.",
+          "site": "https://ballotpedia.org"
+        },
+        {
+          "name": "County Candidate B",
+          "party": "Nonpartisan",
+          "partyClass": "party-non",
+          "desc": "Focuses on administrative reforms, fiscal oversight, and law enforcement support.",
+          "site": "https://ballotpedia.org"
+        }
+      ]
+    }
+  ]
+}

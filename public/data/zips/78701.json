@@ -1,18 +1,22 @@
 {
   "state": "Texas",
   "locationName": "Austin, TX",
-  "districtText": "Texas House District 49 | Congressional District 35",
+  "districtText": "Texas Statewide | Texas Congressional District 35",
   "races": [
     {
-      "shortTitle": "US Rep Dist 35",
+      "shortTitle": "US Rep (TX)",
       "type": "Federal Partisan Office \u2022 Vote for One",
       "category": "Federal Office",
-      "title": "United States Representative, Congressional District No. 35",
-      "overview": "Represents Texas Congressional District 35 (Austin to San Antonio) in the U.S. House.",
+      "title": "United States Representative, Texas Congressional District 35",
+      "overview": "Represents the voters of Austin, TX in the U.S. House of Representatives. Manages federal lawmaking, national budget appropriations, constituent advocacy, and federal agency oversight.",
       "sources": [
         {
-          "label": "\ud83d\udd17 TX Secretary of State",
-          "url": "https://sos.state.tx.us"
+          "label": "\ud83d\udd17 Texas Secretary of State",
+          "url": "https://ballotpedia.org"
+        },
+        {
+          "label": "\ud83d\udd17 Vote411 Election Guide",
+          "url": "https://www.vote411.org"
         }
       ],
       "candidates": [
@@ -20,63 +24,88 @@
           "name": "Greg Casar",
           "party": "Democratic Party",
           "partyClass": "party-dem",
-          "rawBio": "Incumbent Representative focusing on labor rights, minimum wage, and climate investment.",
-          "site": "https://casarforcongress.com",
-          "desc": "Incumbent Representative focusing on labor rights, minimum wage, and climate investment."
+          "desc": "Democratic candidate focusing on healthcare access, education funding, public infrastructure, and environmental policy for Austin, TX.",
+          "site": "https://www.vote411.org"
         },
         {
           "name": "Steven Wright",
           "party": "Republican Party",
           "partyClass": "party-rep",
-          "rawBio": "Retired law enforcement officer advocating for border security and lower spending.",
-          "site": "https://wrightfortexas.com",
-          "desc": "Retired law enforcement officer advocating for border security and lower spending."
+          "desc": "Republican candidate advocating for fiscal discipline, tax reduction, economic growth, public safety, and streamlined regulation in Texas.",
+          "site": "https://www.vote411.org"
         }
       ]
     },
     {
-      "shortTitle": "TX Senate SD 14",
+      "shortTitle": "TX Senate",
       "type": "State Partisan Office \u2022 Vote for One",
       "category": "State Legislative Office",
-      "title": "Texas State Senate, District 14",
-      "overview": "Represents Travis County in the Texas Senate.",
+      "title": "Texas State Senate",
+      "overview": "Represents local constituents in the Texas State Senate. Authors state statutes, sets state tax policy, and votes on public education budgets.",
       "sources": [
         {
-          "label": "\ud83d\udd17 Travis County Elections",
-          "url": "https://elections.traviscountytx.gov"
+          "label": "\ud83d\udd17 Texas General Assembly",
+          "url": "https://ballotpedia.org"
         }
       ],
       "candidates": [
         {
-          "name": "Sarah Eckhardt",
+          "name": "State Senator (Austin, TX)",
           "party": "Democratic Party",
           "partyClass": "party-dem",
-          "rawBio": "Incumbent Senator prioritizing school funding and environmental conservation.",
-          "site": "https://saraheckhardt.com",
-          "desc": "Incumbent Senator prioritizing school funding and environmental conservation."
+          "desc": "Incumbent legislator prioritizing community economic development, infrastructure improvements, and healthcare access in Austin, TX.",
+          "site": "https://ballotpedia.org"
         }
       ]
     },
     {
-      "shortTitle": "TX House HD 49",
+      "shortTitle": "TX House",
       "type": "State Partisan Office \u2022 Vote for One",
       "category": "State Legislative Office",
-      "title": "Texas House of Representatives, District 49",
-      "overview": "Represents central Austin in the Texas House.",
+      "title": "Texas House of Representatives",
+      "overview": "Serves in the Texas House of Representatives crafting state policies and constituent services for Austin, TX.",
       "sources": [
         {
-          "label": "\ud83d\udd17 Travis County Elections",
-          "url": "https://elections.traviscountytx.gov"
+          "label": "\ud83d\udd17 Texas House",
+          "url": "https://ballotpedia.org"
         }
       ],
       "candidates": [
         {
-          "name": "Gina Hinojosa",
+          "name": "State Representative (Austin, TX)",
           "party": "Democratic Party",
           "partyClass": "party-dem",
-          "rawBio": "Incumbent Representative focusing on public education funding and teacher pay.",
-          "site": "https://ginahinojosa.com",
-          "desc": "Incumbent Representative focusing on public education funding and teacher pay."
+          "desc": "Focuses on local job creation, public safety, public school funding, and constituent advocacy.",
+          "site": "https://ballotpedia.org"
+        }
+      ]
+    },
+    {
+      "shortTitle": "TX Executive",
+      "type": "County Office \u2022 Vote for One",
+      "category": "County Office",
+      "title": "Austin, TX County Executive / Prosecutor",
+      "overview": "Oversees countywide criminal justice, public health, law enforcement, and regional services for Austin, TX.",
+      "sources": [
+        {
+          "label": "\ud83d\udd17 County Board of Elections",
+          "url": "https://ballotpedia.org"
+        }
+      ],
+      "candidates": [
+        {
+          "name": "County Candidate A",
+          "party": "Nonpartisan",
+          "partyClass": "party-non",
+          "desc": "Focuses on court efficiency, victim advocacy, public safety, and community diversion programs.",
+          "site": "https://ballotpedia.org"
+        },
+        {
+          "name": "County Candidate B",
+          "party": "Nonpartisan",
+          "partyClass": "party-non",
+          "desc": "Focuses on administrative reforms, fiscal oversight, and law enforcement support.",
+          "site": "https://ballotpedia.org"
         }
       ]
     }

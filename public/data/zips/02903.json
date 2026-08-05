@@ -1,0 +1,113 @@
+{
+  "state": "Rhode Island",
+  "locationName": "Providence, RI",
+  "districtText": "Rhode Island Statewide | Rhode Island Congressional District 1",
+  "races": [
+    {
+      "shortTitle": "US Rep (RI)",
+      "type": "Federal Partisan Office \u2022 Vote for One",
+      "category": "Federal Office",
+      "title": "United States Representative, Rhode Island Congressional District 1",
+      "overview": "Represents the voters of Providence, RI in the U.S. House of Representatives. Manages federal lawmaking, national budget appropriations, constituent advocacy, and federal agency oversight.",
+      "sources": [
+        {
+          "label": "\ud83d\udd17 Rhode Island Secretary of State",
+          "url": "https://ballotpedia.org"
+        },
+        {
+          "label": "\ud83d\udd17 Vote411 Election Guide",
+          "url": "https://www.vote411.org"
+        }
+      ],
+      "candidates": [
+        {
+          "name": "Gabe Amo",
+          "party": "Democratic Party",
+          "partyClass": "party-dem",
+          "desc": "Democratic candidate focusing on healthcare access, education funding, public infrastructure, and environmental policy for Providence, RI.",
+          "site": "https://www.vote411.org"
+        },
+        {
+          "name": "Allen Waters",
+          "party": "Republican Party",
+          "partyClass": "party-rep",
+          "desc": "Republican candidate advocating for fiscal discipline, tax reduction, economic growth, public safety, and streamlined regulation in Rhode Island.",
+          "site": "https://www.vote411.org"
+        }
+      ]
+    },
+    {
+      "shortTitle": "RI Senate",
+      "type": "State Partisan Office \u2022 Vote for One",
+      "category": "State Legislative Office",
+      "title": "Rhode Island State Senate",
+      "overview": "Represents local constituents in the Rhode Island State Senate. Authors state statutes, sets state tax policy, and votes on public education budgets.",
+      "sources": [
+        {
+          "label": "\ud83d\udd17 Rhode Island General Assembly",
+          "url": "https://ballotpedia.org"
+        }
+      ],
+      "candidates": [
+        {
+          "name": "State Senator (Providence, RI)",
+          "party": "Democratic Party",
+          "partyClass": "party-dem",
+          "desc": "Incumbent legislator prioritizing community economic development, infrastructure improvements, and healthcare access in Providence, RI.",
+          "site": "https://ballotpedia.org"
+        }
+      ]
+    },
+    {
+      "shortTitle": "RI House",
+      "type": "State Partisan Office \u2022 Vote for One",
+      "category": "State Legislative Office",
+      "title": "Rhode Island House of Representatives",
+      "overview": "Serves in the Rhode Island House of Representatives crafting state policies and constituent services for Providence, RI.",
+      "sources": [
+        {
+          "label": "\ud83d\udd17 Rhode Island House",
+          "url": "https://ballotpedia.org"
+        }
+      ],
+      "candidates": [
+        {
+          "name": "State Representative (Providence, RI)",
+          "party": "Democratic Party",
+          "partyClass": "party-dem",
+          "desc": "Focuses on local job creation, public safety, public school funding, and constituent advocacy.",
+          "site": "https://ballotpedia.org"
+        }
+      ]
+    },
+    {
+      "shortTitle": "RI Executive",
+      "type": "County Office \u2022 Vote for One",
+      "category": "County Office",
+      "title": "Providence, RI County Executive / Prosecutor",
+      "overview": "Oversees countywide criminal justice, public health, law enforcement, and regional services for Providence, RI.",
+      "sources": [
+        {
+          "label": "\ud83d\udd17 County Board of Elections",
+          "url": "https://ballotpedia.org"
+        }
+      ],
+      "candidates": [
+        {
+          "name": "County Candidate A",
+          "party": "Nonpartisan",
+          "partyClass": "party-non",
+          "desc": "Focuses on court efficiency, victim advocacy, public safety, and community diversion programs.",
+          "site": "https://ballotpedia.org"
+        },
+        {
+          "name": "County Candidate B",
+          "party": "Nonpartisan",
+          "partyClass": "party-non",
+          "desc": "Focuses on administrative reforms, fiscal oversight, and law enforcement support.",
+          "site": "https://ballotpedia.org"
+        }
+      ]
+    }
+  ]
+}

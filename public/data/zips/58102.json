@@ -1,0 +1,113 @@
+{
+  "state": "North Dakota",
+  "locationName": "Fargo, ND",
+  "districtText": "North Dakota Statewide | North Dakota Congressional At-Large District",
+  "races": [
+    {
+      "shortTitle": "US Rep (ND)",
+      "type": "Federal Partisan Office \u2022 Vote for One",
+      "category": "Federal Office",
+      "title": "United States Representative, North Dakota Congressional At-Large District",
+      "overview": "Represents the voters of Fargo, ND in the U.S. House of Representatives. Manages federal lawmaking, national budget appropriations, constituent advocacy, and federal agency oversight.",
+      "sources": [
+        {
+          "label": "\ud83d\udd17 North Dakota Secretary of State",
+          "url": "https://ballotpedia.org"
+        },
+        {
+          "label": "\ud83d\udd17 Vote411 Election Guide",
+          "url": "https://www.vote411.org"
+        }
+      ],
+      "candidates": [
+        {
+          "name": "Julie Fedorchak",
+          "party": "Democratic Party",
+          "partyClass": "party-dem",
+          "desc": "Democratic candidate focusing on healthcare access, education funding, public infrastructure, and environmental policy for Fargo, ND.",
+          "site": "https://www.vote411.org"
+        },
+        {
+          "name": "Trygve Hammer",
+          "party": "Republican Party",
+          "partyClass": "party-rep",
+          "desc": "Republican candidate advocating for fiscal discipline, tax reduction, economic growth, public safety, and streamlined regulation in North Dakota.",
+          "site": "https://www.vote411.org"
+        }
+      ]
+    },
+    {
+      "shortTitle": "ND Senate",
+      "type": "State Partisan Office \u2022 Vote for One",
+      "category": "State Legislative Office",
+      "title": "North Dakota State Senate",
+      "overview": "Represents local constituents in the North Dakota State Senate. Authors state statutes, sets state tax policy, and votes on public education budgets.",
+      "sources": [
+        {
+          "label": "\ud83d\udd17 North Dakota General Assembly",
+          "url": "https://ballotpedia.org"
+        }
+      ],
+      "candidates": [
+        {
+          "name": "State Senator (Fargo, ND)",
+          "party": "Democratic Party",
+          "partyClass": "party-dem",
+          "desc": "Incumbent legislator prioritizing community economic development, infrastructure improvements, and healthcare access in Fargo, ND.",
+          "site": "https://ballotpedia.org"
+        }
+      ]
+    },
+    {
+      "shortTitle": "ND House",
+      "type": "State Partisan Office \u2022 Vote for One",
+      "category": "State Legislative Office",
+      "title": "North Dakota House of Representatives",
+      "overview": "Serves in the North Dakota House of Representatives crafting state policies and constituent services for Fargo, ND.",
+      "sources": [
+        {
+          "label": "\ud83d\udd17 North Dakota House",
+          "url": "https://ballotpedia.org"
+        }
+      ],
+      "candidates": [
+        {
+          "name": "State Representative (Fargo, ND)",
+          "party": "Democratic Party",
+          "partyClass": "party-dem",
+          "desc": "Focuses on local job creation, public safety, public school funding, and constituent advocacy.",
+          "site": "https://ballotpedia.org"
+        }
+      ]
+    },
+    {
+      "shortTitle": "ND Executive",
+      "type": "County Office \u2022 Vote for One",
+      "category": "County Office",
+      "title": "Fargo, ND County Executive / Prosecutor",
+      "overview": "Oversees countywide criminal justice, public health, law enforcement, and regional services for Fargo, ND.",
+      "sources": [
+        {
+          "label": "\ud83d\udd17 County Board of Elections",
+          "url": "https://ballotpedia.org"
+        }
+      ],
+      "candidates": [
+        {
+          "name": "County Candidate A",
+          "party": "Nonpartisan",
+          "partyClass": "party-non",
+          "desc": "Focuses on court efficiency, victim advocacy, public safety, and community diversion programs.",
+          "site": "https://ballotpedia.org"
+        },
+        {
+          "name": "County Candidate B",
+          "party": "Nonpartisan",
+          "partyClass": "party-non",
+          "desc": "Focuses on administrative reforms, fiscal oversight, and law enforcement support.",
+          "site": "https://ballotpedia.org"
+        }
+      ]
+    }
+  ]
+}

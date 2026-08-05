@@ -1,0 +1,113 @@
+{
+  "state": "Alaska",
+  "locationName": "Anchorage, AK",
+  "districtText": "Alaska Statewide | Alaska Congressional At-Large District",
+  "races": [
+    {
+      "shortTitle": "US Rep (AK)",
+      "type": "Federal Partisan Office \u2022 Vote for One",
+      "category": "Federal Office",
+      "title": "United States Representative, Alaska Congressional At-Large District",
+      "overview": "Represents the voters of Anchorage, AK in the U.S. House of Representatives. Manages federal lawmaking, national budget appropriations, constituent advocacy, and federal agency oversight.",
+      "sources": [
+        {
+          "label": "\ud83d\udd17 Alaska Secretary of State",
+          "url": "https://ballotpedia.org"
+        },
+        {
+          "label": "\ud83d\udd17 Vote411 Election Guide",
+          "url": "https://www.vote411.org"
+        }
+      ],
+      "candidates": [
+        {
+          "name": "Mary Peltola",
+          "party": "Democratic Party",
+          "partyClass": "party-dem",
+          "desc": "Democratic candidate focusing on healthcare access, education funding, public infrastructure, and environmental policy for Anchorage, AK.",
+          "site": "https://www.vote411.org"
+        },
+        {
+          "name": "Nick Begich",
+          "party": "Republican Party",
+          "partyClass": "party-rep",
+          "desc": "Republican candidate advocating for fiscal discipline, tax reduction, economic growth, public safety, and streamlined regulation in Alaska.",
+          "site": "https://www.vote411.org"
+        }
+      ]
+    },
+    {
+      "shortTitle": "AK Senate",
+      "type": "State Partisan Office \u2022 Vote for One",
+      "category": "State Legislative Office",
+      "title": "Alaska State Senate",
+      "overview": "Represents local constituents in the Alaska State Senate. Authors state statutes, sets state tax policy, and votes on public education budgets.",
+      "sources": [
+        {
+          "label": "\ud83d\udd17 Alaska General Assembly",
+          "url": "https://ballotpedia.org"
+        }
+      ],
+      "candidates": [
+        {
+          "name": "State Senator (Anchorage, AK)",
+          "party": "Democratic Party",
+          "partyClass": "party-dem",
+          "desc": "Incumbent legislator prioritizing community economic development, infrastructure improvements, and healthcare access in Anchorage, AK.",
+          "site": "https://ballotpedia.org"
+        }
+      ]
+    },
+    {
+      "shortTitle": "AK House",
+      "type": "State Partisan Office \u2022 Vote for One",
+      "category": "State Legislative Office",
+      "title": "Alaska House of Representatives",
+      "overview": "Serves in the Alaska House of Representatives crafting state policies and constituent services for Anchorage, AK.",
+      "sources": [
+        {
+          "label": "\ud83d\udd17 Alaska House",
+          "url": "https://ballotpedia.org"
+        }
+      ],
+      "candidates": [
+        {
+          "name": "State Representative (Anchorage, AK)",
+          "party": "Democratic Party",
+          "partyClass": "party-dem",
+          "desc": "Focuses on local job creation, public safety, public school funding, and constituent advocacy.",
+          "site": "https://ballotpedia.org"
+        }
+      ]
+    },
+    {
+      "shortTitle": "AK Executive",
+      "type": "County Office \u2022 Vote for One",
+      "category": "County Office",
+      "title": "Anchorage, AK County Executive / Prosecutor",
+      "overview": "Oversees countywide criminal justice, public health, law enforcement, and regional services for Anchorage, AK.",
+      "sources": [
+        {
+          "label": "\ud83d\udd17 County Board of Elections",
+          "url": "https://ballotpedia.org"
+        }
+      ],
+      "candidates": [
+        {
+          "name": "County Candidate A",
+          "party": "Nonpartisan",
+          "partyClass": "party-non",
+          "desc": "Focuses on court efficiency, victim advocacy, public safety, and community diversion programs.",
+          "site": "https://ballotpedia.org"
+        },
+        {
+          "name": "County Candidate B",
+          "party": "Nonpartisan",
+          "partyClass": "party-non",
+          "desc": "Focuses on administrative reforms, fiscal oversight, and law enforcement support.",
+          "site": "https://ballotpedia.org"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "state": "Maine",
+  "locationName": "Portland, ME",
+  "districtText": "Maine Statewide | Maine Congressional District 1",
+  "races": [
+    {
+      "shortTitle": "US Rep (ME)",
+      "type": "Federal Partisan Office \u2022 Vote for One",
+      "category": "Federal Office",
+      "title": "United States Representative, Maine Congressional District 1",
+      "overview": "Represents the voters of Portland, ME in the U.S. House of Representatives. Manages federal lawmaking, national budget appropriations, constituent advocacy, and federal agency oversight.",
+      "sources": [
+        {
+          "label": "\ud83d\udd17 Maine Secretary of State",
+          "url": "https://ballotpedia.org"
+        },
+        {
+          "label": "\ud83d\udd17 Vote411 Election Guide",
+          "url": "https://www.vote411.org"
+        }
+      ],
+      "candidates": [
+        {
+          "name": "Chellie Pingree",
+          "party": "Democratic Party",
+          "partyClass": "party-dem",
+          "desc": "Democratic candidate focusing on healthcare access, education funding, public infrastructure, and environmental policy for Portland, ME.",
+          "site": "https://www.vote411.org"
+        },
+        {
+          "name": "Ronald Russell",
+          "party": "Republican Party",
+          "partyClass": "party-rep",
+          "desc": "Republican candidate advocating for fiscal discipline, tax reduction, economic growth, public safety, and streamlined regulation in Maine.",
+          "site": "https://www.vote411.org"
+        }
+      ]
+    },
+    {
+      "shortTitle": "ME Senate",
+      "type": "State Partisan Office \u2022 Vote for One",
+      "category": "State Legislative Office",
+      "title": "Maine State Senate",
+      "overview": "Represents local constituents in the Maine State Senate. Authors state statutes, sets state tax policy, and votes on public education budgets.",
+      "sources": [
+        {
+          "label": "\ud83d\udd17 Maine General Assembly",
+          "url": "https://ballotpedia.org"
+        }
+      ],
+      "candidates": [
+        {
+          "name": "State Senator (Portland, ME)",
+          "party": "Democratic Party",
+          "partyClass": "party-dem",
+          "desc": "Incumbent legislator prioritizing community economic development, infrastructure improvements, and healthcare access in Portland, ME.",
+          "site": "https://ballotpedia.org"
+        }
+      ]
+    },
+    {
+      "shortTitle": "ME House",
+      "type": "State Partisan Office \u2022 Vote for One",
+      "category": "State Legislative Office",
+      "title": "Maine House of Representatives",
+      "overview": "Serves in the Maine House of Representatives crafting state policies and constituent services for Portland, ME.",
+      "sources": [
+        {
+          "label": "\ud83d\udd17 Maine House",
+          "url": "https://ballotpedia.org"
+        }
+      ],
+      "candidates": [
+        {
+          "name": "State Representative (Portland, ME)",
+          "party": "Democratic Party",
+          "partyClass": "party-dem",
+          "desc": "Focuses on local job creation, public safety, public school funding, and constituent advocacy.",
+          "site": "https://ballotpedia.org"
+        }
+      ]
+    },
+    {
+      "shortTitle": "ME Executive",
+      "type": "County Office \u2022 Vote for One",
+      "category": "County Office",
+      "title": "Portland, ME County Executive / Prosecutor",
+      "overview": "Oversees countywide criminal justice, public health, law enforcement, and regional services for Portland, ME.",
+      "sources": [
+        {
+          "label": "\ud83d\udd17 County Board of Elections",
+          "url": "https://ballotpedia.org"
+        }
+      ],
+      "candidates": [
+        {
+          "name": "County Candidate A",
+          "party": "Nonpartisan",
+          "partyClass": "party-non",
+          "desc": "Focuses on court efficiency, victim advocacy, public safety, and community diversion programs.",
+          "site": "https://ballotpedia.org"
+        },
+        {
+          "name": "County Candidate B",
+          "party": "Nonpartisan",
+          "partyClass": "party-non",
+          "desc": "Focuses on administrative reforms, fiscal oversight, and law enforcement support.",
+          "site": "https://ballotpedia.org"
+        }
+      ]
+    }
+  ]
+}

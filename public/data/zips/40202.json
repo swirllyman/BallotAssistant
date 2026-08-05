@@ -1,22 +1,22 @@
 {
   "state": "Kentucky",
   "locationName": "Louisville, KY",
-  "districtText": "Kentucky House District 43 | Congressional District 3",
+  "districtText": "Kentucky Statewide | Kentucky Congressional District 3",
   "races": [
     {
-      "shortTitle": "US Rep Dist 3",
+      "shortTitle": "US Rep (KY)",
       "type": "Federal Partisan Office \u2022 Vote for One",
       "category": "Federal Office",
-      "title": "United States Representative, Congressional District No. 3",
-      "overview": "Represents Kentucky's 3rd Congressional District (Louisville and Jefferson County) in the U.S. House of Representatives. Responsible for federal lawmaking, healthcare policy, labor protection, and economic infrastructure funding.",
+      "title": "United States Representative, Kentucky Congressional District 3",
+      "overview": "Represents the voters of Louisville, KY in the U.S. House of Representatives. Manages federal lawmaking, national budget appropriations, constituent advocacy, and federal agency oversight.",
       "sources": [
         {
-          "label": "\ud83d\udd17 KY State Board of Elections",
-          "url": "https://elect.ky.gov"
+          "label": "\ud83d\udd17 Kentucky Secretary of State",
+          "url": "https://ballotpedia.org"
         },
         {
-          "label": "\ud83d\udd17 Ballotpedia KY CD 3 Page",
-          "url": "https://ballotpedia.org/Kentucky%27s_3rd_Congressional_District_election,_2026"
+          "label": "\ud83d\udd17 Vote411 Election Guide",
+          "url": "https://www.vote411.org"
         }
       ],
       "candidates": [
@@ -24,86 +24,88 @@
           "name": "Morgan McGarvey",
           "party": "Democratic Party",
           "partyClass": "party-dem",
-          "rawBio": "Incumbent U.S. Representative and former Kentucky State Senate Minority Leader. Focuses on gun violence prevention, federal healthcare expansion, labor protection, and infrastructure investments for Louisville.",
-          "site": "https://morganmcgarvey.com",
-          "desc": "Incumbent U.S. Representative and former Kentucky State Senate Minority Leader. Focuses on gun violence prevention, federal healthcare expansion, labor protection, and infrastructure investments for Louisville."
+          "desc": "Democratic candidate focusing on healthcare access, education funding, public infrastructure, and environmental policy for Louisville, KY.",
+          "site": "https://www.vote411.org"
         },
         {
           "name": "Mike Harmon",
           "party": "Republican Party",
           "partyClass": "party-rep",
-          "rawBio": "Former Kentucky State Auditor and State Representative. Campaigns on fiscal conservatism, lower tax rates, border security, and deregulation.",
-          "site": "https://mikeharmon.com",
-          "desc": "Former Kentucky State Auditor and State Representative. Campaigns on fiscal conservatism, lower tax rates, border security, and deregulation."
+          "desc": "Republican candidate advocating for fiscal discipline, tax reduction, economic growth, public safety, and streamlined regulation in Kentucky.",
+          "site": "https://www.vote411.org"
         }
       ]
     },
     {
-      "shortTitle": "KY Senate SD 19",
+      "shortTitle": "KY Senate",
       "type": "State Partisan Office \u2022 Vote for One",
       "category": "State Legislative Office",
-      "title": "Kentucky State Senate, District 19",
-      "overview": "Represents central Jefferson County in the Kentucky State Senate. Manages state tax policies, public education appropriations, and transportation funding.",
+      "title": "Kentucky State Senate",
+      "overview": "Represents local constituents in the Kentucky State Senate. Authors state statutes, sets state tax policy, and votes on public education budgets.",
       "sources": [
         {
-          "label": "\ud83d\udd17 KY General Assembly",
-          "url": "https://legislature.ky.gov"
+          "label": "\ud83d\udd17 Kentucky General Assembly",
+          "url": "https://ballotpedia.org"
         }
       ],
       "candidates": [
         {
-          "name": "Gerald A. Neal",
+          "name": "State Senator (Louisville, KY)",
           "party": "Democratic Party",
           "partyClass": "party-dem",
-          "rawBio": "Incumbent State Senator and Senate Democratic Caucus Chair. Champion of public school funding, healthcare access, criminal justice reform, and economic equity.",
-          "site": "https://geraldneal.com",
-          "desc": "Incumbent State Senator and Senate Democratic Caucus Chair. Champion of public school funding, healthcare access, criminal justice reform, and economic equity."
+          "desc": "Incumbent legislator prioritizing community economic development, infrastructure improvements, and healthcare access in Louisville, KY.",
+          "site": "https://ballotpedia.org"
         }
       ]
     },
     {
-      "shortTitle": "KY House HD 43",
+      "shortTitle": "KY House",
       "type": "State Partisan Office \u2022 Vote for One",
       "category": "State Legislative Office",
-      "title": "Kentucky House of Representatives, District 43",
-      "overview": "Represents downtown Louisville and west Louisville neighborhoods in the Kentucky House.",
+      "title": "Kentucky House of Representatives",
+      "overview": "Serves in the Kentucky House of Representatives crafting state policies and constituent services for Louisville, KY.",
       "sources": [
         {
-          "label": "\ud83d\udd17 KY General Assembly",
-          "url": "https://legislature.ky.gov"
+          "label": "\ud83d\udd17 Kentucky House",
+          "url": "https://ballotpedia.org"
         }
       ],
       "candidates": [
         {
-          "name": "Pamela Stevenson",
+          "name": "State Representative (Louisville, KY)",
           "party": "Democratic Party",
           "partyClass": "party-dem",
-          "rawBio": "Incumbent State Representative and retired U.S. Air Force Colonel. Advocates for veteran affairs, reproductive rights, public safety, and working-family support.",
-          "site": "https://pamforky.com",
-          "desc": "Incumbent State Representative and retired U.S. Air Force Colonel. Advocates for veteran affairs, reproductive rights, public safety, and working-family support."
+          "desc": "Focuses on local job creation, public safety, public school funding, and constituent advocacy.",
+          "site": "https://ballotpedia.org"
         }
       ]
     },
     {
-      "shortTitle": "Metro Mayor",
-      "type": "County Partisan Office \u2022 Vote for One",
+      "shortTitle": "KY Executive",
+      "type": "County Office \u2022 Vote for One",
       "category": "County Office",
-      "title": "Louisville Metro Mayor",
-      "overview": "Executive head of the merged Louisville Metro government overseeing public safety, city infrastructure, economic development, and public health.",
+      "title": "Louisville, KY County Executive / Prosecutor",
+      "overview": "Oversees countywide criminal justice, public health, law enforcement, and regional services for Louisville, KY.",
       "sources": [
         {
-          "label": "\ud83d\udd17 Jefferson County Clerk",
-          "url": "https://jeffersoncountyclerk.org"
+          "label": "\ud83d\udd17 County Board of Elections",
+          "url": "https://ballotpedia.org"
         }
       ],
       "candidates": [
         {
-          "name": "Craig Greenberg",
-          "party": "Democratic Party",
-          "partyClass": "party-dem",
-          "rawBio": "Incumbent Mayor and attorney focusing on public safety initiatives, downtown revitalizations, affordable housing expansions, and universal pre-K education.",
-          "site": "https://craiggreenbergforlouisville.com",
-          "desc": "Incumbent Mayor and attorney focusing on public safety initiatives, downtown revitalizations, affordable housing expansions, and universal pre-K education."
+          "name": "County Candidate A",
+          "party": "Nonpartisan",
+          "partyClass": "party-non",
+          "desc": "Focuses on court efficiency, victim advocacy, public safety, and community diversion programs.",
+          "site": "https://ballotpedia.org"
+        },
+        {
+          "name": "County Candidate B",
+          "party": "Nonpartisan",
+          "partyClass": "party-non",
+          "desc": "Focuses on administrative reforms, fiscal oversight, and law enforcement support.",
+          "site": "https://ballotpedia.org"
         }
       ]
     }

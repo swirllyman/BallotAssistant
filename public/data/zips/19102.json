@@ -1,14 +1,14 @@
 {
   "state": "Pennsylvania",
   "locationName": "Philadelphia, PA",
-  "districtText": "Pennsylvania Statewide | Congressional District 3",
+  "districtText": "Pennsylvania Statewide | Pennsylvania Congressional District 3",
   "races": [
     {
-      "shortTitle": "US Rep 3",
+      "shortTitle": "US Rep (PA)",
       "type": "Federal Partisan Office \u2022 Vote for One",
       "category": "Federal Office",
-      "title": "United States Representative, Congressional District 3",
-      "overview": "Represents the residents of Philadelphia, PA and Pennsylvania in the U.S. House of Representatives. Responsible for federal lawmaking, national budget appropriations, constituent advocacy, and federal agency oversight.",
+      "title": "United States Representative, Pennsylvania Congressional District 3",
+      "overview": "Represents the voters of Philadelphia, PA in the U.S. House of Representatives. Manages federal lawmaking, national budget appropriations, constituent advocacy, and federal agency oversight.",
       "sources": [
         {
           "label": "\ud83d\udd17 Pennsylvania Secretary of State",
@@ -21,14 +21,14 @@
       ],
       "candidates": [
         {
-          "name": "Democratic Nominee",
+          "name": "Dwight Evans",
           "party": "Democratic Party",
           "partyClass": "party-dem",
-          "desc": "Democratic candidate focusing on healthcare access, education funding, public infrastructure, and environmental policy for Pennsylvania.",
+          "desc": "Democratic candidate focusing on healthcare access, education funding, public infrastructure, and environmental policy for Philadelphia, PA.",
           "site": "https://www.vote411.org"
         },
         {
-          "name": "Republican Nominee",
+          "name": "Christopher Hoeppner",
           "party": "Republican Party",
           "partyClass": "party-rep",
           "desc": "Republican candidate advocating for fiscal discipline, tax reduction, economic growth, public safety, and streamlined regulation in Pennsylvania.",
@@ -37,11 +37,11 @@
       ]
     },
     {
-      "shortTitle": "State Senate",
+      "shortTitle": "PA Senate",
       "type": "State Partisan Office \u2022 Vote for One",
       "category": "State Legislative Office",
       "title": "Pennsylvania State Senate",
-      "overview": "Represents local district constituents in the Pennsylvania State Senate, voting on state legislation, state taxes, and public school budgets.",
+      "overview": "Represents local constituents in the Pennsylvania State Senate. Authors state statutes, sets state tax policy, and votes on public education budgets.",
       "sources": [
         {
           "label": "\ud83d\udd17 Pennsylvania General Assembly",
@@ -50,20 +50,20 @@
       ],
       "candidates": [
         {
-          "name": "Incumbent Senator",
+          "name": "State Senator (Philadelphia, PA)",
           "party": "Democratic Party",
           "partyClass": "party-dem",
-          "desc": "Incumbent legislator advocating for local community investments, healthcare, and education in Pennsylvania.",
+          "desc": "Incumbent legislator prioritizing community economic development, infrastructure improvements, and healthcare access in Philadelphia, PA.",
           "site": "https://ballotpedia.org"
         }
       ]
     },
     {
-      "shortTitle": "State House",
+      "shortTitle": "PA House",
       "type": "State Partisan Office \u2022 Vote for One",
       "category": "State Legislative Office",
       "title": "Pennsylvania House of Representatives",
-      "overview": "Serves in the Pennsylvania House of Representatives crafting state policies and constituent services.",
+      "overview": "Serves in the Pennsylvania House of Representatives crafting state policies and constituent services for Philadelphia, PA.",
       "sources": [
         {
           "label": "\ud83d\udd17 Pennsylvania House",
@@ -72,20 +72,20 @@
       ],
       "candidates": [
         {
-          "name": "State Representative",
+          "name": "State Representative (Philadelphia, PA)",
           "party": "Democratic Party",
           "partyClass": "party-dem",
-          "desc": "Focuses on local job creation, public safety, and constituent advocacy in Philadelphia, PA.",
+          "desc": "Focuses on local job creation, public safety, public school funding, and constituent advocacy.",
           "site": "https://ballotpedia.org"
         }
       ]
     },
     {
-      "shortTitle": "County Executive / Prosecutor",
+      "shortTitle": "PA Executive",
       "type": "County Office \u2022 Vote for One",
       "category": "County Office",
       "title": "Philadelphia, PA County Executive / Prosecutor",
-      "overview": "Oversees countywide criminal justice, public health, law enforcement, and regional services.",
+      "overview": "Oversees countywide criminal justice, public health, law enforcement, and regional services for Philadelphia, PA.",
       "sources": [
         {
           "label": "\ud83d\udd17 County Board of Elections",
@@ -104,7 +104,7 @@
           "name": "County Candidate B",
           "party": "Nonpartisan",
           "partyClass": "party-non",
-          "rawBio": "Focuses on administrative reforms, fiscal oversight, and law enforcement support.",
+          "desc": "Focuses on administrative reforms, fiscal oversight, and law enforcement support.",
           "site": "https://ballotpedia.org"
         }
       ]

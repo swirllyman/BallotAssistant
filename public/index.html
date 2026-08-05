@@ -828,7 +828,7 @@
 
             <div class="btn-row-address">
               <button type="submit" class="btn-submit-address" id="btn-submit-main">Retrieve Ballot →</button>
-              <button type="button" class="btn-randomize" onclick="randomizeAddress()">🎲 Randomize State/District</button>
+              <button type="button" class="btn-randomize" onclick="randomizeAddress()">🎲 50-State Randomizer</button>
             </div>
           </form>
         </div>
@@ -846,131 +846,19 @@
     let currentStep = 0;
     let selections = {};
 
-    const sampleZips = ["40202", "98116", "94102", "78701"];
-
-    // Real-Time ZIP Code / Address Resolver
-    async function resolveStateAndZip(rawZipInput, rawAddressInput) {
-      const combined = (rawZipInput + " " + rawAddressInput).trim().toUpperCase();
-
-      // 1. Check for 5-digit ZIP code
-      const zipMatch = combined.match(/\b\d{5}\b/);
-      let extractedZip = zipMatch ? zipMatch[0] : "";
-
-      // 2. Direct static cache match
-      if (extractedZip) {
-        try {
-          const res = await fetch(`./data/zips/${extractedZip}.json`);
-          if (res.ok) {
-            return await res.json();
-          }
-        } catch (e) {}
-      }
-
-      // 3. Fallback Mapping by State Code
-      if (combined.includes("KY") || combined.includes("KENTUCKY") || combined.includes("LOUISVILLE")) {
-        return await fetchDistrictData("40202");
-      }
-      if (combined.includes("CA") || combined.includes("CALIFORNIA") || combined.includes("SAN FRANCISCO")) {
-        return await fetchDistrictData("94102");
-      }
-      if (combined.includes("TX") || combined.includes("TEXAS") || combined.includes("AUSTIN")) {
-        return await fetchDistrictData("78701");
-      }
-      if (combined.includes("WA") || combined.includes("WASHINGTON") || combined.includes("SEATTLE")) {
-        return await fetchDistrictData("98116");
-      }
-
-      // 4. Free Real-time Geocoding via Zippopotam API for any valid 5-digit US ZIP
-      if (extractedZip) {
-        try {
-          const geoRes = await fetch(`https://api.zippopotam.us/us/${extractedZip}`);
-          if (geoRes.ok) {
-            const geoData = await geoRes.json();
-            const place = geoData.places[0];
-            const stateName = place['state'];
-            const stateAbbr = place['state abbreviation'];
-            const cityName = place['place name'];
-
-            return generateOnTheFlyDistrict(extractedZip, cityName, stateName, stateAbbr);
-          }
-        } catch (e) {
-          console.warn("Geocoding lookup failed:", e);
-        }
-      }
-
-      // Default fallback
-      return await fetchDistrictData("40202");
-    }
-
-    async function fetchDistrictData(zipCode) {
-      try {
-        const res = await fetch(`./data/zips/${zipCode}.json`);
-        if (res.ok) return await res.json();
-      } catch (e) {}
-      return null;
-    }
-
-    function generateOnTheFlyDistrict(zipCode, cityName, stateName, stateAbbr) {
-      return {
-        state: stateName,
-        locationName: `${cityName}, ${stateAbbr}`,
-        districtText: `${stateName} Statewide | Congressional District 1`,
-        races: [
-          {
-            shortTitle: "US Representative",
-            type: "Federal Partisan Office • Vote for One",
-            category: "Federal Office",
-            title: `United States Representative, ${stateName} District 1`,
-            overview: `Represents the voters of ${cityName}, ${stateName} in the U.S. House of Representatives. Responsible for federal lawmaking, national budget appropriations, constituent advocacy, and federal agency oversight.`,
-            sources: [
-              { label: `🔗 ${stateName} Secretary of State`, url: "https://ballotpedia.org" },
-              { label: "🔗 Vote411 Election Guide", url: "https://www.vote411.org" }
-            ],
-            candidates: [
-              { name: "Democratic Nominee", party: "Democratic Party", partyClass: "party-dem", desc: `Democratic candidate focusing on healthcare expansion, public education funding, environmental policy, and working-family tax relief for ${cityName}.`, site: "https://www.vote411.org" },
-              { name: "Republican Nominee", party: "Republican Party", partyClass: "party-rep", desc: `Republican candidate advocating for fiscal discipline, tax reduction, economic growth, public safety, and energy independence in ${stateName}.`, site: "https://www.vote411.org" }
-            ]
-          },
-          {
-            shortTitle: `${stateAbbr} State Senate`,
-            type: "State Partisan Office • Vote for One",
-            category: "State Legislative Office",
-            title: `${stateName} State Senate`,
-            overview: `Represents local constituents in the ${stateName} State Senate. Authors state statutes, sets state tax policy, and votes on public education budgets.`,
-            sources: [{ label: `🔗 ${stateName} General Assembly`, url: "https://ballotpedia.org" }],
-            candidates: [
-              { name: "Incumbent Senator", party: "Democratic Party", partyClass: "party-dem", desc: `Incumbent legislator prioritizing community economic development, infrastructure improvements, and healthcare access in ${cityName}.`, site: "https://ballotpedia.org" }
-            ]
-          },
-          {
-            shortTitle: `${stateAbbr} State House`,
-            type: "State Partisan Office • Vote for One",
-            category: "State Legislative Office",
-            title: `${stateName} House of Representatives`,
-            overview: `Serves in the ${stateName} House of Representatives crafting state policies and constituent services.`,
-            sources: [{ label: `🔗 ${stateName} Legislature`, url: "https://ballotpedia.org" }],
-            candidates: [
-              { name: "State Representative", party: "Democratic Party", partyClass: "party-dem", desc: `Focuses on local job creation, public safety, public school funding, and local constituent advocacy.`, site: "https://ballotpedia.org" }
-            ]
-          },
-          {
-            shortTitle: "County Executive / Prosecutor",
-            type: "County Office • Vote for One",
-            category: "County Office",
-            title: `${cityName} County Executive / Prosecutor`,
-            overview: `Oversees countywide criminal justice, public health, law enforcement, and regional services for ${cityName}.`,
-            sources: [{ label: "🔗 County Board of Elections", url: "https://ballotpedia.org" }],
-            candidates: [
-              { name: "County Candidate A", party: "Nonpartisan", partyClass: "party-non", desc: "Focuses on court efficiency, victim advocacy, public safety, and community diversion programs.", site: "https://ballotpedia.org" },
-              { name: "County Candidate B", party: "Nonpartisan", partyClass: "party-non", desc: "Focuses on administrative reforms, fiscal oversight, and law enforcement support.", site: "https://ballotpedia.org" }
-            ]
-          }
-        ]
-      };
-    }
+    // Complete List of All 50 US State Zip Codes in our Static Database
+    const all50StateZips = [
+      "35203", "99501", "85004", "72201", "94102", "80202", "06103", "19801", "33139", "30303",
+      "96813", "83702", "60601", "46204", "50309", "67202", "40202", "70112", "04101", "21201",
+      "02108", "48226", "55401", "39201", "63101", "59101", "68102", "89101", "03101", "07102",
+      "87102", "10001", "27601", "58102", "43215", "73102", "97205", "19102", "02903", "29401",
+      "57104", "37203", "78701", "84101", "05401", "23219", "98116", "25301", "53202", "82001"
+    ];
 
     async function randomizeAddress() {
-      const randomZip = sampleZips[Math.floor(Math.random() * sampleZips.length)];
+      // Pick a random ZIP out of ALL 50 STATES
+      const randomZip = all50StateZips[Math.floor(Math.random() * all50StateZips.length)];
+      
       const data = await loadDistrictByZip(randomZip);
       if (data) {
         activeDistrictData = data;
@@ -980,11 +868,19 @@
       }
     }
 
+    async function loadDistrictByZip(zipCode) {
+      try {
+        const res = await fetch(`./data/zips/${zipCode}.json`);
+        if (res.ok) return await res.json();
+      } catch (e) {}
+      return null;
+    }
+
     async function setPreset(neighborhood, zip) {
       document.getElementById('input-address').value = `${neighborhood} Address`;
       document.getElementById('input-zip').value = zip;
       
-      const data = await resolveStateAndZip(zip, neighborhood);
+      const data = await loadDistrictByZip(zip);
       if (data) {
         activeDistrictData = data;
         renderDistrictData();
@@ -998,10 +894,18 @@
 
       const rawAddress = document.getElementById('input-address').value.trim();
       const rawZip = document.getElementById('input-zip').value.trim();
-      
-      const data = await resolveStateAndZip(rawZip, rawAddress);
+
+      // Extract 5 digit zip or find match
+      const zipMatch = (rawZip + " " + rawAddress).match(/\b\d{5}\b/);
+      let zipToLoad = zipMatch ? zipMatch[0] : "40202";
+
+      let data = await loadDistrictByZip(zipToLoad);
+      if (!data) {
+        // Fallback to random state if zip file not found
+        data = await loadDistrictByZip("40202");
+      }
+
       activeDistrictData = data;
-      
       btn.textContent = 'Retrieve Ballot →';
       renderDistrictData();
     }

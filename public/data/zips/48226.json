@@ -1,14 +1,14 @@
 {
   "state": "Michigan",
   "locationName": "Detroit, MI",
-  "districtText": "Michigan Statewide | Congressional District 13",
+  "districtText": "Michigan Statewide | Michigan Congressional District 13",
   "races": [
     {
-      "shortTitle": "US Rep 13",
+      "shortTitle": "US Rep (MI)",
       "type": "Federal Partisan Office \u2022 Vote for One",
       "category": "Federal Office",
-      "title": "United States Representative, Congressional District 13",
-      "overview": "Represents the residents of Detroit, MI and Michigan in the U.S. House of Representatives. Responsible for federal lawmaking, national budget appropriations, constituent advocacy, and federal agency oversight.",
+      "title": "United States Representative, Michigan Congressional District 13",
+      "overview": "Represents the voters of Detroit, MI in the U.S. House of Representatives. Manages federal lawmaking, national budget appropriations, constituent advocacy, and federal agency oversight.",
       "sources": [
         {
           "label": "\ud83d\udd17 Michigan Secretary of State",
@@ -21,14 +21,14 @@
       ],
       "candidates": [
         {
-          "name": "Democratic Nominee",
+          "name": "Shri Thanedar",
           "party": "Democratic Party",
           "partyClass": "party-dem",
-          "desc": "Democratic candidate focusing on healthcare access, education funding, public infrastructure, and environmental policy for Michigan.",
+          "desc": "Democratic candidate focusing on healthcare access, education funding, public infrastructure, and environmental policy for Detroit, MI.",
           "site": "https://www.vote411.org"
         },
         {
-          "name": "Republican Nominee",
+          "name": "Martell Bivings",
           "party": "Republican Party",
           "partyClass": "party-rep",
           "desc": "Republican candidate advocating for fiscal discipline, tax reduction, economic growth, public safety, and streamlined regulation in Michigan.",
@@ -37,11 +37,11 @@
       ]
     },
     {
-      "shortTitle": "State Senate",
+      "shortTitle": "MI Senate",
       "type": "State Partisan Office \u2022 Vote for One",
       "category": "State Legislative Office",
       "title": "Michigan State Senate",
-      "overview": "Represents local district constituents in the Michigan State Senate, voting on state legislation, state taxes, and public school budgets.",
+      "overview": "Represents local constituents in the Michigan State Senate. Authors state statutes, sets state tax policy, and votes on public education budgets.",
       "sources": [
         {
           "label": "\ud83d\udd17 Michigan General Assembly",
@@ -50,20 +50,20 @@
       ],
       "candidates": [
         {
-          "name": "Incumbent Senator",
+          "name": "State Senator (Detroit, MI)",
           "party": "Democratic Party",
           "partyClass": "party-dem",
-          "desc": "Incumbent legislator advocating for local community investments, healthcare, and education in Michigan.",
+          "desc": "Incumbent legislator prioritizing community economic development, infrastructure improvements, and healthcare access in Detroit, MI.",
           "site": "https://ballotpedia.org"
         }
       ]
     },
     {
-      "shortTitle": "State House",
+      "shortTitle": "MI House",
       "type": "State Partisan Office \u2022 Vote for One",
       "category": "State Legislative Office",
       "title": "Michigan House of Representatives",
-      "overview": "Serves in the Michigan House of Representatives crafting state policies and constituent services.",
+      "overview": "Serves in the Michigan House of Representatives crafting state policies and constituent services for Detroit, MI.",
       "sources": [
         {
           "label": "\ud83d\udd17 Michigan House",
@@ -72,20 +72,20 @@
       ],
       "candidates": [
         {
-          "name": "State Representative",
+          "name": "State Representative (Detroit, MI)",
           "party": "Democratic Party",
           "partyClass": "party-dem",
-          "desc": "Focuses on local job creation, public safety, and constituent advocacy in Detroit, MI.",
+          "desc": "Focuses on local job creation, public safety, public school funding, and constituent advocacy.",
           "site": "https://ballotpedia.org"
         }
       ]
     },
     {
-      "shortTitle": "County Executive / Prosecutor",
+      "shortTitle": "MI Executive",
       "type": "County Office \u2022 Vote for One",
       "category": "County Office",
       "title": "Detroit, MI County Executive / Prosecutor",
-      "overview": "Oversees countywide criminal justice, public health, law enforcement, and regional services.",
+      "overview": "Oversees countywide criminal justice, public health, law enforcement, and regional services for Detroit, MI.",
       "sources": [
         {
           "label": "\ud83d\udd17 County Board of Elections",
@@ -104,7 +104,7 @@
           "name": "County Candidate B",
           "party": "Nonpartisan",
           "partyClass": "party-non",
-          "rawBio": "Focuses on administrative reforms, fiscal oversight, and law enforcement support.",
+          "desc": "Focuses on administrative reforms, fiscal oversight, and law enforcement support.",
           "site": "https://ballotpedia.org"
         }
       ]

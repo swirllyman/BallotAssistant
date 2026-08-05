@@ -1,14 +1,14 @@
 {
   "state": "Illinois",
   "locationName": "Chicago, IL",
-  "districtText": "Illinois Statewide | Congressional District 7",
+  "districtText": "Illinois Statewide | Illinois Congressional District 7",
   "races": [
     {
-      "shortTitle": "US Rep 7",
+      "shortTitle": "US Rep (IL)",
       "type": "Federal Partisan Office \u2022 Vote for One",
       "category": "Federal Office",
-      "title": "United States Representative, Congressional District 7",
-      "overview": "Represents the residents of Chicago, IL and Illinois in the U.S. House of Representatives. Responsible for federal lawmaking, national budget appropriations, constituent advocacy, and federal agency oversight.",
+      "title": "United States Representative, Illinois Congressional District 7",
+      "overview": "Represents the voters of Chicago, IL in the U.S. House of Representatives. Manages federal lawmaking, national budget appropriations, constituent advocacy, and federal agency oversight.",
       "sources": [
         {
           "label": "\ud83d\udd17 Illinois Secretary of State",
@@ -21,14 +21,14 @@
       ],
       "candidates": [
         {
-          "name": "Democratic Nominee",
+          "name": "Danny Davis",
           "party": "Democratic Party",
           "partyClass": "party-dem",
-          "desc": "Democratic candidate focusing on healthcare access, education funding, public infrastructure, and environmental policy for Illinois.",
+          "desc": "Democratic candidate focusing on healthcare access, education funding, public infrastructure, and environmental policy for Chicago, IL.",
           "site": "https://www.vote411.org"
         },
         {
-          "name": "Republican Nominee",
+          "name": "Chad Koppie",
           "party": "Republican Party",
           "partyClass": "party-rep",
           "desc": "Republican candidate advocating for fiscal discipline, tax reduction, economic growth, public safety, and streamlined regulation in Illinois.",
@@ -37,11 +37,11 @@
       ]
     },
     {
-      "shortTitle": "State Senate",
+      "shortTitle": "IL Senate",
       "type": "State Partisan Office \u2022 Vote for One",
       "category": "State Legislative Office",
       "title": "Illinois State Senate",
-      "overview": "Represents local district constituents in the Illinois State Senate, voting on state legislation, state taxes, and public school budgets.",
+      "overview": "Represents local constituents in the Illinois State Senate. Authors state statutes, sets state tax policy, and votes on public education budgets.",
       "sources": [
         {
           "label": "\ud83d\udd17 Illinois General Assembly",
@@ -50,20 +50,20 @@
       ],
       "candidates": [
         {
-          "name": "Incumbent Senator",
+          "name": "State Senator (Chicago, IL)",
           "party": "Democratic Party",
           "partyClass": "party-dem",
-          "desc": "Incumbent legislator advocating for local community investments, healthcare, and education in Illinois.",
+          "desc": "Incumbent legislator prioritizing community economic development, infrastructure improvements, and healthcare access in Chicago, IL.",
           "site": "https://ballotpedia.org"
         }
       ]
     },
     {
-      "shortTitle": "State House",
+      "shortTitle": "IL House",
       "type": "State Partisan Office \u2022 Vote for One",
       "category": "State Legislative Office",
       "title": "Illinois House of Representatives",
-      "overview": "Serves in the Illinois House of Representatives crafting state policies and constituent services.",
+      "overview": "Serves in the Illinois House of Representatives crafting state policies and constituent services for Chicago, IL.",
       "sources": [
         {
           "label": "\ud83d\udd17 Illinois House",
@@ -72,20 +72,20 @@
       ],
       "candidates": [
         {
-          "name": "State Representative",
+          "name": "State Representative (Chicago, IL)",
           "party": "Democratic Party",
           "partyClass": "party-dem",
-          "desc": "Focuses on local job creation, public safety, and constituent advocacy in Chicago, IL.",
+          "desc": "Focuses on local job creation, public safety, public school funding, and constituent advocacy.",
           "site": "https://ballotpedia.org"
         }
       ]
     },
     {
-      "shortTitle": "County Executive / Prosecutor",
+      "shortTitle": "IL Executive",
       "type": "County Office \u2022 Vote for One",
       "category": "County Office",
       "title": "Chicago, IL County Executive / Prosecutor",
-      "overview": "Oversees countywide criminal justice, public health, law enforcement, and regional services.",
+      "overview": "Oversees countywide criminal justice, public health, law enforcement, and regional services for Chicago, IL.",
       "sources": [
         {
           "label": "\ud83d\udd17 County Board of Elections",
@@ -104,7 +104,7 @@
           "name": "County Candidate B",
           "party": "Nonpartisan",
           "partyClass": "party-non",
-          "rawBio": "Focuses on administrative reforms, fiscal oversight, and law enforcement support.",
+          "desc": "Focuses on administrative reforms, fiscal oversight, and law enforcement support.",
           "site": "https://ballotpedia.org"
         }
       ]
