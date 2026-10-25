@@ -1,6 +1,8 @@
-# 🗳️ U.S. Ballot Assistant (Nationwide Guided Primary Guide)
+# 🗳️ U.S. Ballot Assistant (Guided Ballot Guide)
 
-A lightweight, 0-API-cost, privacy-first web application that helps voters navigate their local U.S. primary & special election ballots step-by-step.
+A lightweight, 0-API-cost, privacy-first web application that helps voters navigate their local U.S. ballots step-by-step.
+
+> **Data rule:** a ZIP file in `public/data/zips/` is only shown to voters if it has an `election` block (`name`, `date`, `type`) saying which election it covers. Files without it are treated as unverified, and the app points voters to vote.gov / Vote411 instead. If the election date has passed, the app warns that the guide is out of date.
 
 ## 🚀 Architecture & Overview
 

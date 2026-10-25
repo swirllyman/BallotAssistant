@@ -5,6 +5,9 @@ on:
     - cron: '0 0 * * 0' # Runs automatically every Sunday at midnight
   workflow_dispatch:     # Allows manual trigger from GitHub Actions UI tab
 
+permissions:
+  contents: write        # Needed so the auto-commit step can push (runs were failing with 403)
+
 jobs:
   build-and-summarize:
     runs-on: ubuntu-latest

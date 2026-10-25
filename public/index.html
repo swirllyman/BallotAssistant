@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>U.S. Primary & Special Election Ballot Helper</title>
+  <title>U.S. Ballot Assistant</title>
   <style>
     :root {
       --bg-gradient: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #0f172a 100%);
@@ -392,6 +392,29 @@
     input[type="text"]:focus {
       border-color: var(--accent);
       box-shadow: 0 0 10px rgba(99, 102, 241, 0.3);
+    }
+
+    .election-notice {
+      background: rgba(245, 158, 11, 0.12);
+      border: 1px solid rgba(245, 158, 11, 0.4);
+      color: #fde68a;
+      border-radius: 12px;
+      padding: 0.85rem 1rem;
+      margin-bottom: 1.25rem;
+      font-size: 0.9rem;
+      line-height: 1.5;
+      text-align: left;
+    }
+
+    .election-notice.info {
+      background: var(--accent-light);
+      border-color: rgba(99, 102, 241, 0.4);
+      color: #c7d2fe;
+    }
+
+    .election-notice a {
+      color: inherit;
+      font-weight: 600;
     }
 
     .preset-chips {
@@ -840,8 +863,8 @@
 
   <div class="container">
     <header>
-      <h1 id="app-main-title">U.S. Primary Ballot Assistant</h1>
-      <p class="subtitle" id="app-sub-title">2026 Nationwide Primary & Special Election Guide</p>
+      <h1 id="app-main-title">U.S. Ballot Assistant</h1>
+      <p class="subtitle" id="app-sub-title">2026 U.S. General Election • Tuesday, November 3, 2026</p>
     </header>
 
     <div class="app-layout single-column" id="app-layout">
@@ -882,31 +905,31 @@
 
         <!-- STEP 0: ADDRESS LANDING CARD -->
         <div class="step-card address-card active" id="step-0">
-          <h2>🔍 Retrieve Any U.S. Official Ballot</h2>
-          <p>Enter any residential street address, city, state, or 5-digit ZIP code in the USA to load your specific ballot guides, candidate bios, and verified data sources.</p>
+          <h2>🔍 Find Your Ballot Guide</h2>
+          <p>Enter your street address and 5-digit ZIP code to load the ballot guide for your area, if we have one.</p>
+
+          <div class="election-notice info" id="election-day-notice"></div>
+
+          <div class="election-notice" id="lookup-message" style="display: none;"></div>
 
           <form onsubmit="handleAddressLookup(event)">
             <div class="input-group">
               <div>
                 <label for="input-address">Street Address / City</label>
-                <input type="text" id="input-address" placeholder="e.g. 7001 Rainbow Dr, Louisville KY" value="7001 Rainbow Dr">
+                <input type="text" id="input-address" placeholder="e.g. 4500 SW Alaska St, Seattle WA">
               </div>
               <div>
-                <label for="input-zip">ZIP Code or State</label>
-                <input type="text" id="input-zip" placeholder="e.g. 40202, KY, 98116, 94102" value="98116">
+                <label for="input-zip">ZIP Code</label>
+                <input type="text" id="input-zip" placeholder="e.g. 98116" inputmode="numeric" maxlength="5">
               </div>
             </div>
 
             <div class="preset-chips">
               <span class="chip" onclick="setPreset('Seattle WA', '98116')">📍 Seattle WA (LD 34)</span>
-              <span class="chip" onclick="setPreset('Louisville KY', '40202')">📍 Louisville KY (CD 3)</span>
-              <span class="chip" onclick="setPreset('San Francisco CA', '94102')">📍 San Francisco CA (CD 11)</span>
-              <span class="chip" onclick="setPreset('Austin TX', '78701')">📍 Austin TX (CD 35)</span>
             </div>
 
             <div class="btn-row-address">
               <button type="submit" class="btn-submit-address" id="btn-submit-main">Retrieve Ballot →</button>
-              <button type="button" class="btn-randomize" onclick="randomizeAddress()">🎲 50-State Randomizer</button>
             </div>
           </form>
         </div>
@@ -924,30 +947,45 @@
     let currentStep = 0;
     let selections = {};
 
-    const all50StateZips = [
-      "35203", "99501", "85004", "72201", "94102", "80202", "06103", "19801", "33139", "30303",
-      "96813", "83702", "60601", "46204", "50309", "67202", "40202", "70112", "04101", "21201",
-      "02108", "48226", "55401", "39201", "63101", "59101", "68102", "89101", "03101", "07102",
-      "87102", "10001", "27601", "58102", "43215", "73102", "97205", "19102", "02903", "29401",
-      "57104", "37203", "78701", "84101", "05401", "23219", "98116", "25301", "53202", "82001"
-    ];
+    // Next statewide election this guide is preparing voters for.
+    const UPCOMING_ELECTION = { name: '2026 U.S. General Election', date: '2026-11-03' };
 
-    async function randomizeAddress() {
-      const randomZip = all50StateZips[Math.floor(Math.random() * all50StateZips.length)];
-      
-      const data = await loadDistrictByZip(randomZip);
-      if (data) {
-        activeDistrictData = data;
-        document.getElementById('input-address').value = `${data.locationName} Address`;
-        document.getElementById('input-zip').value = randomZip;
-        renderDistrictData();
-      }
+    const OFFICIAL_LOOKUP_HTML = `Check your registration and see your official sample ballot at
+      <a href="https://vote.gov" target="_blank" rel="noopener">vote.gov</a> or
+      <a href="https://www.vote411.org/ballot" target="_blank" rel="noopener">Vote411</a>.`;
+
+    function escapeHTML(value) {
+      return String(value ?? '').replace(/[&<>"']/g, ch => ({
+        '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+      })[ch]);
     }
 
+    function formatElectionDate(isoDate) {
+      const [y, m, d] = isoDate.split('-').map(Number);
+      return new Date(y, m - 1, d).toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' });
+    }
+
+    function isPastDate(isoDate) {
+      const [y, m, d] = isoDate.split('-').map(Number);
+      const endOfDay = new Date(y, m - 1, d, 23, 59, 59);
+      return endOfDay < new Date();
+    }
+
+    function showLookupMessage(html) {
+      const el = document.getElementById('lookup-message');
+      el.innerHTML = html;
+      el.style.display = html ? 'block' : 'none';
+    }
+
+    // Only ZIP files tagged with the election they cover are treated as real ballot
+    // guides. Older generated placeholder files have no "election" metadata.
     async function loadDistrictByZip(zipCode) {
       try {
         const res = await fetch(`./data/zips/${zipCode}.json`);
-        if (res.ok) return await res.json();
+        if (res.ok) {
+          const data = await res.json();
+          if (data && data.election && data.election.date) return data;
+        }
       } catch (e) {}
       return null;
     }
@@ -958,6 +996,7 @@
       
       const data = await loadDistrictByZip(zip);
       if (data) {
+        showLookupMessage('');
         activeDistrictData = data;
         renderDistrictData();
       }
@@ -972,15 +1011,23 @@
       const rawZip = document.getElementById('input-zip').value.trim();
 
       const zipMatch = (rawZip + " " + rawAddress).match(/\b\d{5}\b/);
-      let zipToLoad = zipMatch ? zipMatch[0] : "98116";
-
-      let data = await loadDistrictByZip(zipToLoad);
-      if (!data) {
-        data = await loadDistrictByZip("98116");
+      if (!zipMatch) {
+        btn.textContent = 'Retrieve Ballot →';
+        showLookupMessage('Please enter a 5-digit ZIP code.');
+        return;
       }
 
-      activeDistrictData = data;
+      const data = await loadDistrictByZip(zipMatch[0]);
       btn.textContent = 'Retrieve Ballot →';
+
+      // Never substitute another area's ballot for a ZIP we don't cover.
+      if (!data) {
+        showLookupMessage(`We don't have a verified ballot guide for ZIP ${escapeHTML(zipMatch[0])} yet. ${OFFICIAL_LOOKUP_HTML}`);
+        return;
+      }
+
+      showLookupMessage('');
+      activeDistrictData = data;
       renderDistrictData();
     }
 
@@ -990,8 +1037,15 @@
       const addr = document.getElementById('input-address').value.trim() || activeDistrictData.locationName;
       const zip = document.getElementById('input-zip').value.trim() || "";
       
-      document.getElementById('app-main-title').textContent = `${activeDistrictData.state} Primary Ballot Assistant`;
-      document.getElementById('app-sub-title').textContent = `${activeDistrictData.locationName} • 2026 Primary Election Guide`;
+      const election = activeDistrictData.election;
+      const electionDateText = formatElectionDate(election.date);
+      document.getElementById('app-main-title').textContent = `${activeDistrictData.state} Ballot Assistant`;
+      document.getElementById('app-sub-title').textContent = `${activeDistrictData.locationName} • ${election.name} • ${electionDateText}`;
+
+      let electionNoticeHTML = '';
+      if (isPastDate(election.date)) {
+        electionNoticeHTML = `<div class="election-notice">⚠️ This guide covers the <strong>${escapeHTML(election.name)}</strong> (${escapeHTML(electionDateText)}), which has already happened. It has not been updated for the ${escapeHTML(UPCOMING_ELECTION.name)} on ${escapeHTML(formatElectionDate(UPCOMING_ELECTION.date))}, so candidates and measures on your ballot may differ. ${OFFICIAL_LOOKUP_HTML}</div>`;
+      }
 
       selections = {};
 
@@ -1007,7 +1061,7 @@
         navItem.onclick = () => goToStep(stepNum);
         navItem.innerHTML = `
           <span class="nav-status-icon">○</span>
-          <span class="nav-label">${stepNum}. ${race.shortTitle}</span>
+          <span class="nav-label">${stepNum}. ${escapeHTML(race.shortTitle)}</span>
         `;
         navList.appendChild(navItem);
       });
@@ -1038,18 +1092,18 @@
 
         let sourcesHTML = '';
         if (race.sources && race.sources.length) {
-          sourcesHTML = `<div class="source-link-row">` + race.sources.map(s => `<a class="source-link" href="${s.url}" target="_blank">${s.label}</a>`).join(' ') + `</div>`;
+          sourcesHTML = `<div class="source-link-row">` + race.sources.map(s => `<a class="source-link" href="${escapeHTML(s.url)}" target="_blank" rel="noopener">${escapeHTML(s.label)}</a>`).join(' ') + `</div>`;
         }
 
-        let candidatesHTML = race.candidates.map(c => {
+        let candidatesHTML = race.candidates.map((c, candIdx) => {
           let prosHTML = '';
           if (c.pros && c.pros.length) {
-            prosHTML = `<div class="pros-box"><div class="pros-title">🟢 Key Strengths</div><ul class="pro-con-ul pros-ul">` + c.pros.map(p => `<li>${p}</li>`).join('') + `</ul></div>`;
+            prosHTML = `<div class="pros-box"><div class="pros-title">🟢 Key Strengths</div><ul class="pro-con-ul pros-ul">` + c.pros.map(p => `<li>${escapeHTML(p)}</li>`).join('') + `</ul></div>`;
           }
 
           let consHTML = '';
           if (c.cons && c.cons.length) {
-            consHTML = `<div class="cons-box"><div class="cons-title">🟠 Key Considerations</div><ul class="pro-con-ul cons-ul">` + c.cons.map(cn => `<li>${cn}</li>`).join('') + `</ul></div>`;
+            consHTML = `<div class="cons-box"><div class="cons-title">🟠 Key Considerations</div><ul class="pro-con-ul cons-ul">` + c.cons.map(cn => `<li>${escapeHTML(cn)}</li>`).join('') + `</ul></div>`;
           }
 
           let prosConsGridHTML = '';
@@ -1058,17 +1112,17 @@
           }
 
           return `
-            <div class="candidate-card" onclick="selectCandidate(${stepNum}, '${c.name} (${c.party})')">
+            <div class="candidate-card" data-cand-index="${candIdx}" onclick="selectCandidate(${stepNum}, ${candIdx})">
               <div class="radio-circle"></div>
               <div class="candidate-info">
                 <div class="candidate-header">
-                  <span class="candidate-name">${c.name}</span>
-                  <span class="party-tag ${c.partyClass}">${c.party}</span>
+                  <span class="candidate-name">${escapeHTML(c.name)}</span>
+                  <span class="party-tag ${escapeHTML(c.partyClass)}">${escapeHTML(c.party)}</span>
                 </div>
-                <p class="candidate-desc">${c.desc}</p>
+                <p class="candidate-desc">${escapeHTML(c.desc)}</p>
                 ${prosConsGridHTML}
                 <div class="candidate-sources">
-                  <a class="source-link" href="${c.site}" target="_blank" onclick="event.stopPropagation()">🌐 Official Site / Info</a>
+                  <a class="source-link" href="${escapeHTML(c.site)}" target="_blank" rel="noopener" onclick="event.stopPropagation()">🌐 Official Site / Info</a>
                 </div>
               </div>
             </div>
@@ -1078,20 +1132,20 @@
         card.innerHTML = `
           <div class="location-banner">
             <div class="location-info">
-              📍 Official Ballot Loaded for: <strong>${addr} ${zip ? '(' + zip + ')' : ''}</strong> • <span>${activeDistrictData.districtText}</span>
+              📍 Ballot guide for: <strong>${escapeHTML(addr)} ${zip ? '(' + escapeHTML(zip) + ')' : ''}</strong> • <span>${escapeHTML(activeDistrictData.districtText)}</span>
             </div>
             <div class="loc-btn-group">
               <button class="change-loc-btn" onclick="resetToAddressScreen()">🏠 Change Address</button>
-              <button class="change-loc-btn" onclick="randomizeAddress()">🎲 Randomize</button>
             </div>
           </div>
+          ${electionNoticeHTML}
 
-          <div class="race-type">${race.type}</div>
-          <div class="race-title">${race.title}</div>
+          <div class="race-type">${escapeHTML(race.type)}</div>
+          <div class="race-title">${escapeHTML(race.title)}</div>
           
           <div class="overview-box">
             <h4>Race & Office Overview</h4>
-            ${race.overview}
+            ${escapeHTML(race.overview)}
             ${sourcesHTML}
           </div>
 
@@ -1115,14 +1169,14 @@
       
       let summaryItemsHTML = activeDistrictData.races.map((r, idx) => `
         <div class="summary-item">
-          <span class="summary-race">${r.shortTitle}</span>
+          <span class="summary-race">${escapeHTML(r.shortTitle)}</span>
           <span class="summary-choice" id="sum-${idx + 1}">Not Selected</span>
         </div>
       `).join('');
 
       summaryCard.innerHTML = `
         <div class="race-type" style="background: rgba(16, 185, 129, 0.2); color: #6ee7b7;">Ballot Summary Ready</div>
-        <div class="race-title">Your Completed ${activeDistrictData.state} Ballot Selections</div>
+        <div class="race-title">Your Completed ${escapeHTML(activeDistrictData.state)} Ballot Selections</div>
         
         <p style="color: var(--text-muted); margin-bottom: 1.5rem; font-size: 0.95rem;">
           Review your selections below. Click the button to copy your full response breakdown directly onto your physical ballot envelope or notebook.
@@ -1245,19 +1299,15 @@
       document.getElementById('step-category').textContent = category;
     }
 
-    function selectCandidate(step, candidateName) {
-      selections[step] = candidateName;
+    function selectCandidate(step, candIdx) {
+      const cand = activeDistrictData.races[step - 1].candidates[candIdx];
+      selections[step] = `${cand.name} (${cand.party})`;
       
       const stepElement = document.querySelector(`.step-card[data-step="${step}"]`);
       if (stepElement) {
         const cards = stepElement.querySelectorAll('.candidate-card');
         cards.forEach(card => {
-          const nameEl = card.querySelector('.candidate-name');
-          if (nameEl && candidateName.includes(nameEl.textContent.trim())) {
-            card.classList.add('selected');
-          } else {
-            card.classList.remove('selected');
-          }
+          card.classList.toggle('selected', Number(card.dataset.candIndex) === candIdx);
         });
       }
 
@@ -1314,6 +1364,8 @@
     }
 
     window.addEventListener('DOMContentLoaded', () => {
+      document.getElementById('election-day-notice').innerHTML =
+        `🗳️ <strong>Election Day is ${escapeHTML(formatElectionDate(UPCOMING_ELECTION.date))}.</strong> ${OFFICIAL_LOOKUP_HTML}`;
       updateSidebarStatus();
     });
   </script>

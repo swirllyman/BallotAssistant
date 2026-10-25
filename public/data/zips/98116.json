@@ -2,6 +2,11 @@
   "state": "Washington",
   "locationName": "Seattle, WA (West Seattle)",
   "districtText": "Legislative District 34 | Congressional District 7 | King County",
+  "election": {
+    "name": "2026 Washington Primary Election",
+    "date": "2026-08-04",
+    "type": "primary"
+  },
   "races": [
     {
       "shortTitle": "US Rep Dist 7",
