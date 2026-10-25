@@ -1,302 +1,363 @@
 {
-  "35203": {
-    "state": "Alabama",
-    "locationName": "Birmingham, AL",
-    "districtText": "Alabama Statewide | Alabama Congressional District 7",
-    "raceCount": 4
-  },
-  "99501": {
-    "state": "Alaska",
-    "locationName": "Anchorage, AK",
-    "districtText": "Alaska Statewide | Alaska Congressional At-Large District",
-    "raceCount": 4
-  },
-  "85004": {
-    "state": "Arizona",
-    "locationName": "Phoenix, AZ",
-    "districtText": "Arizona Statewide | Arizona Congressional District 3",
-    "raceCount": 4
-  },
-  "72201": {
-    "state": "Arkansas",
-    "locationName": "Little Rock, AR",
-    "districtText": "Arkansas Statewide | Arkansas Congressional District 2",
-    "raceCount": 4
-  },
-  "94102": {
-    "state": "California",
-    "locationName": "San Francisco, CA",
-    "districtText": "California Statewide | California Congressional District 11",
-    "raceCount": 4
-  },
-  "80202": {
-    "state": "Colorado",
-    "locationName": "Denver, CO",
-    "districtText": "Colorado Statewide | Colorado Congressional District 1",
-    "raceCount": 4
-  },
-  "06103": {
-    "state": "Connecticut",
-    "locationName": "Hartford, CT",
-    "districtText": "Connecticut Statewide | Connecticut Congressional District 1",
-    "raceCount": 4
-  },
-  "19801": {
-    "state": "Delaware",
-    "locationName": "Wilmington, DE",
-    "districtText": "Delaware Statewide | Delaware Congressional At-Large District",
-    "raceCount": 4
-  },
-  "33139": {
-    "state": "Florida",
-    "locationName": "Miami, FL",
-    "districtText": "Florida Statewide | Florida Congressional District 27",
-    "raceCount": 4
-  },
-  "30303": {
-    "state": "Georgia",
-    "locationName": "Atlanta, GA",
-    "districtText": "Georgia Statewide | Georgia Congressional District 5",
-    "raceCount": 4
-  },
-  "96813": {
-    "state": "Hawaii",
-    "locationName": "Honolulu, HI",
-    "districtText": "Hawaii Statewide | Hawaii Congressional District 1",
-    "raceCount": 4
-  },
-  "83702": {
-    "state": "Idaho",
-    "locationName": "Boise, ID",
-    "districtText": "Idaho Statewide | Idaho Congressional District 2",
-    "raceCount": 4
-  },
-  "60601": {
-    "state": "Illinois",
-    "locationName": "Chicago, IL",
-    "districtText": "Illinois Statewide | Illinois Congressional District 7",
-    "raceCount": 4
-  },
-  "46204": {
-    "state": "Indiana",
-    "locationName": "Indianapolis, IN",
-    "districtText": "Indiana Statewide | Indiana Congressional District 7",
-    "raceCount": 4
-  },
-  "50309": {
-    "state": "Iowa",
-    "locationName": "Des Moines, IA",
-    "districtText": "Iowa Statewide | Iowa Congressional District 3",
-    "raceCount": 4
-  },
-  "67202": {
-    "state": "Kansas",
-    "locationName": "Wichita, KS",
-    "districtText": "Kansas Statewide | Kansas Congressional District 4",
-    "raceCount": 4
-  },
-  "40202": {
-    "state": "Kentucky",
-    "locationName": "Louisville, KY",
-    "districtText": "Kentucky Statewide | Kentucky Congressional District 3",
-    "raceCount": 4
-  },
-  "70112": {
-    "state": "Louisiana",
-    "locationName": "New Orleans, LA",
-    "districtText": "Louisiana Statewide | Louisiana Congressional District 2",
-    "raceCount": 4
-  },
-  "04101": {
-    "state": "Maine",
-    "locationName": "Portland, ME",
-    "districtText": "Maine Statewide | Maine Congressional District 1",
-    "raceCount": 4
-  },
-  "21201": {
-    "state": "Maryland",
-    "locationName": "Baltimore, MD",
-    "districtText": "Maryland Statewide | Maryland Congressional District 7",
-    "raceCount": 4
-  },
   "02108": {
     "state": "Massachusetts",
     "locationName": "Boston, MA",
     "districtText": "Massachusetts Statewide | Massachusetts Congressional District 7",
-    "raceCount": 4
-  },
-  "48226": {
-    "state": "Michigan",
-    "locationName": "Detroit, MI",
-    "districtText": "Michigan Statewide | Michigan Congressional District 13",
-    "raceCount": 4
-  },
-  "55401": {
-    "state": "Minnesota",
-    "locationName": "Minneapolis, MN",
-    "districtText": "Minnesota Statewide | Minnesota Congressional District 5",
-    "raceCount": 4
-  },
-  "39201": {
-    "state": "Mississippi",
-    "locationName": "Jackson, MS",
-    "districtText": "Mississippi Statewide | Mississippi Congressional District 2",
-    "raceCount": 4
-  },
-  "63101": {
-    "state": "Missouri",
-    "locationName": "St. Louis, MO",
-    "districtText": "Missouri Statewide | Missouri Congressional District 1",
-    "raceCount": 4
-  },
-  "59101": {
-    "state": "Montana",
-    "locationName": "Billings, MT",
-    "districtText": "Montana Statewide | Montana Congressional District 2",
-    "raceCount": 4
-  },
-  "68102": {
-    "state": "Nebraska",
-    "locationName": "Omaha, NE",
-    "districtText": "Nebraska Statewide | Nebraska Congressional District 2",
-    "raceCount": 4
-  },
-  "89101": {
-    "state": "Nevada",
-    "locationName": "Las Vegas, NV",
-    "districtText": "Nevada Statewide | Nevada Congressional District 1",
-    "raceCount": 4
-  },
-  "03101": {
-    "state": "New Hampshire",
-    "locationName": "Manchester, NH",
-    "districtText": "New Hampshire Statewide | New Hampshire Congressional District 1",
-    "raceCount": 4
-  },
-  "07102": {
-    "state": "New Jersey",
-    "locationName": "Newark, NJ",
-    "districtText": "New Jersey Statewide | New Jersey Congressional District 10",
-    "raceCount": 4
-  },
-  "87102": {
-    "state": "New Mexico",
-    "locationName": "Albuquerque, NM",
-    "districtText": "New Mexico Statewide | New Mexico Congressional District 1",
-    "raceCount": 4
-  },
-  "10001": {
-    "state": "New York",
-    "locationName": "New York, NY",
-    "districtText": "New York Statewide | New York Congressional District 12",
-    "raceCount": 4
-  },
-  "27601": {
-    "state": "North Carolina",
-    "locationName": "Raleigh, NC",
-    "districtText": "North Carolina Statewide | North Carolina Congressional District 2",
-    "raceCount": 4
-  },
-  "58102": {
-    "state": "North Dakota",
-    "locationName": "Fargo, ND",
-    "districtText": "North Dakota Statewide | North Dakota Congressional At-Large District",
-    "raceCount": 4
-  },
-  "43215": {
-    "state": "Ohio",
-    "locationName": "Columbus, OH",
-    "districtText": "Ohio Statewide | Ohio Congressional District 3",
-    "raceCount": 4
-  },
-  "73102": {
-    "state": "Oklahoma",
-    "locationName": "Oklahoma City, OK",
-    "districtText": "Oklahoma Statewide | Oklahoma Congressional District 5",
-    "raceCount": 4
-  },
-  "97205": {
-    "state": "Oregon",
-    "locationName": "Portland, OR",
-    "districtText": "Oregon Statewide | Oregon Congressional District 3",
-    "raceCount": 4
-  },
-  "19102": {
-    "state": "Pennsylvania",
-    "locationName": "Philadelphia, PA",
-    "districtText": "Pennsylvania Statewide | Pennsylvania Congressional District 3",
+    "election": null,
     "raceCount": 4
   },
   "02903": {
     "state": "Rhode Island",
     "locationName": "Providence, RI",
     "districtText": "Rhode Island Statewide | Rhode Island Congressional District 1",
+    "election": null,
     "raceCount": 4
   },
-  "29401": {
-    "state": "South Carolina",
-    "locationName": "Charleston, SC",
-    "districtText": "South Carolina Statewide | South Carolina Congressional District 1",
+  "03101": {
+    "state": "New Hampshire",
+    "locationName": "Manchester, NH",
+    "districtText": "New Hampshire Statewide | New Hampshire Congressional District 1",
+    "election": null,
     "raceCount": 4
   },
-  "57104": {
-    "state": "South Dakota",
-    "locationName": "Sioux Falls, SD",
-    "districtText": "South Dakota Statewide | South Dakota Congressional At-Large District",
-    "raceCount": 4
-  },
-  "37203": {
-    "state": "Tennessee",
-    "locationName": "Nashville, TN",
-    "districtText": "Tennessee Statewide | Tennessee Congressional District 5",
-    "raceCount": 4
-  },
-  "78701": {
-    "state": "Texas",
-    "locationName": "Austin, TX",
-    "districtText": "Texas Statewide | Texas Congressional District 35",
-    "raceCount": 4
-  },
-  "84101": {
-    "state": "Utah",
-    "locationName": "Salt Lake City, UT",
-    "districtText": "Utah Statewide | Utah Congressional District 2",
+  "04101": {
+    "state": "Maine",
+    "locationName": "Portland, ME",
+    "districtText": "Maine Statewide | Maine Congressional District 1",
+    "election": null,
     "raceCount": 4
   },
   "05401": {
     "state": "Vermont",
     "locationName": "Burlington, VT",
     "districtText": "Vermont Statewide | Vermont Congressional At-Large District",
+    "election": null,
+    "raceCount": 4
+  },
+  "06103": {
+    "state": "Connecticut",
+    "locationName": "Hartford, CT",
+    "districtText": "Connecticut Statewide | Connecticut Congressional District 1",
+    "election": null,
+    "raceCount": 4
+  },
+  "07102": {
+    "state": "New Jersey",
+    "locationName": "Newark, NJ",
+    "districtText": "New Jersey Statewide | New Jersey Congressional District 10",
+    "election": null,
+    "raceCount": 4
+  },
+  "10001": {
+    "state": "New York",
+    "locationName": "New York, NY",
+    "districtText": "New York Statewide | New York Congressional District 12",
+    "election": null,
+    "raceCount": 4
+  },
+  "19102": {
+    "state": "Pennsylvania",
+    "locationName": "Philadelphia, PA",
+    "districtText": "Pennsylvania Statewide | Pennsylvania Congressional District 3",
+    "election": null,
+    "raceCount": 4
+  },
+  "19801": {
+    "state": "Delaware",
+    "locationName": "Wilmington, DE",
+    "districtText": "Delaware Statewide | Delaware Congressional At-Large District",
+    "election": null,
+    "raceCount": 4
+  },
+  "21201": {
+    "state": "Maryland",
+    "locationName": "Baltimore, MD",
+    "districtText": "Maryland Statewide | Maryland Congressional District 7",
+    "election": null,
     "raceCount": 4
   },
   "23219": {
     "state": "Virginia",
     "locationName": "Richmond, VA",
     "districtText": "Virginia Statewide | Virginia Congressional District 4",
+    "election": null,
     "raceCount": 4
   },
   "25301": {
     "state": "West Virginia",
     "locationName": "Charleston, WV",
     "districtText": "West Virginia Statewide | West Virginia Congressional District 1",
+    "election": null,
+    "raceCount": 4
+  },
+  "27601": {
+    "state": "North Carolina",
+    "locationName": "Raleigh, NC",
+    "districtText": "North Carolina Statewide | North Carolina Congressional District 2",
+    "election": null,
+    "raceCount": 4
+  },
+  "29401": {
+    "state": "South Carolina",
+    "locationName": "Charleston, SC",
+    "districtText": "South Carolina Statewide | South Carolina Congressional District 1",
+    "election": null,
+    "raceCount": 4
+  },
+  "30303": {
+    "state": "Georgia",
+    "locationName": "Atlanta, GA",
+    "districtText": "Georgia Statewide | Georgia Congressional District 5",
+    "election": null,
+    "raceCount": 4
+  },
+  "33139": {
+    "state": "Florida",
+    "locationName": "Miami, FL",
+    "districtText": "Florida Statewide | Florida Congressional District 27",
+    "election": null,
+    "raceCount": 4
+  },
+  "35203": {
+    "state": "Alabama",
+    "locationName": "Birmingham, AL",
+    "districtText": "Alabama Statewide | Alabama Congressional District 7",
+    "election": null,
+    "raceCount": 4
+  },
+  "37203": {
+    "state": "Tennessee",
+    "locationName": "Nashville, TN",
+    "districtText": "Tennessee Statewide | Tennessee Congressional District 5",
+    "election": null,
+    "raceCount": 4
+  },
+  "39201": {
+    "state": "Mississippi",
+    "locationName": "Jackson, MS",
+    "districtText": "Mississippi Statewide | Mississippi Congressional District 2",
+    "election": null,
+    "raceCount": 4
+  },
+  "40202": {
+    "state": "Kentucky",
+    "locationName": "Louisville, KY",
+    "districtText": "Kentucky Statewide | Kentucky Congressional District 3",
+    "election": null,
+    "raceCount": 4
+  },
+  "43215": {
+    "state": "Ohio",
+    "locationName": "Columbus, OH",
+    "districtText": "Ohio Statewide | Ohio Congressional District 3",
+    "election": null,
+    "raceCount": 4
+  },
+  "46204": {
+    "state": "Indiana",
+    "locationName": "Indianapolis, IN",
+    "districtText": "Indiana Statewide | Indiana Congressional District 7",
+    "election": null,
+    "raceCount": 4
+  },
+  "48226": {
+    "state": "Michigan",
+    "locationName": "Detroit, MI",
+    "districtText": "Michigan Statewide | Michigan Congressional District 13",
+    "election": null,
+    "raceCount": 4
+  },
+  "50309": {
+    "state": "Iowa",
+    "locationName": "Des Moines, IA",
+    "districtText": "Iowa Statewide | Iowa Congressional District 3",
+    "election": null,
     "raceCount": 4
   },
   "53202": {
     "state": "Wisconsin",
     "locationName": "Milwaukee, WI",
     "districtText": "Wisconsin Statewide | Wisconsin Congressional District 4",
+    "election": null,
+    "raceCount": 4
+  },
+  "55401": {
+    "state": "Minnesota",
+    "locationName": "Minneapolis, MN",
+    "districtText": "Minnesota Statewide | Minnesota Congressional District 5",
+    "election": null,
+    "raceCount": 4
+  },
+  "57104": {
+    "state": "South Dakota",
+    "locationName": "Sioux Falls, SD",
+    "districtText": "South Dakota Statewide | South Dakota Congressional At-Large District",
+    "election": null,
+    "raceCount": 4
+  },
+  "58102": {
+    "state": "North Dakota",
+    "locationName": "Fargo, ND",
+    "districtText": "North Dakota Statewide | North Dakota Congressional At-Large District",
+    "election": null,
+    "raceCount": 4
+  },
+  "59101": {
+    "state": "Montana",
+    "locationName": "Billings, MT",
+    "districtText": "Montana Statewide | Montana Congressional District 2",
+    "election": null,
+    "raceCount": 4
+  },
+  "60601": {
+    "state": "Illinois",
+    "locationName": "Chicago, IL",
+    "districtText": "Illinois Statewide | Illinois Congressional District 7",
+    "election": null,
+    "raceCount": 4
+  },
+  "63101": {
+    "state": "Missouri",
+    "locationName": "St. Louis, MO",
+    "districtText": "Missouri Statewide | Missouri Congressional District 1",
+    "election": null,
+    "raceCount": 4
+  },
+  "67202": {
+    "state": "Kansas",
+    "locationName": "Wichita, KS",
+    "districtText": "Kansas Statewide | Kansas Congressional District 4",
+    "election": null,
+    "raceCount": 4
+  },
+  "68102": {
+    "state": "Nebraska",
+    "locationName": "Omaha, NE",
+    "districtText": "Nebraska Statewide | Nebraska Congressional District 2",
+    "election": null,
+    "raceCount": 4
+  },
+  "70112": {
+    "state": "Louisiana",
+    "locationName": "New Orleans, LA",
+    "districtText": "Louisiana Statewide | Louisiana Congressional District 2",
+    "election": null,
+    "raceCount": 4
+  },
+  "72201": {
+    "state": "Arkansas",
+    "locationName": "Little Rock, AR",
+    "districtText": "Arkansas Statewide | Arkansas Congressional District 2",
+    "election": null,
+    "raceCount": 4
+  },
+  "73102": {
+    "state": "Oklahoma",
+    "locationName": "Oklahoma City, OK",
+    "districtText": "Oklahoma Statewide | Oklahoma Congressional District 5",
+    "election": null,
+    "raceCount": 4
+  },
+  "78701": {
+    "state": "Texas",
+    "locationName": "Austin, TX",
+    "districtText": "Texas Statewide | Texas Congressional District 35",
+    "election": null,
+    "raceCount": 4
+  },
+  "80202": {
+    "state": "Colorado",
+    "locationName": "Denver, CO",
+    "districtText": "Colorado Statewide | Colorado Congressional District 1",
+    "election": null,
     "raceCount": 4
   },
   "82001": {
     "state": "Wyoming",
     "locationName": "Cheyenne, WY",
     "districtText": "Wyoming Statewide | Wyoming Congressional At-Large District",
+    "election": null,
+    "raceCount": 4
+  },
+  "83702": {
+    "state": "Idaho",
+    "locationName": "Boise, ID",
+    "districtText": "Idaho Statewide | Idaho Congressional District 2",
+    "election": null,
+    "raceCount": 4
+  },
+  "84101": {
+    "state": "Utah",
+    "locationName": "Salt Lake City, UT",
+    "districtText": "Utah Statewide | Utah Congressional District 2",
+    "election": null,
+    "raceCount": 4
+  },
+  "85001": {
+    "state": "Arizona",
+    "locationName": "Phoenix, AZ",
+    "districtText": "Arizona Statewide | Congressional District 3",
+    "election": null,
+    "raceCount": 4
+  },
+  "85004": {
+    "state": "Arizona",
+    "locationName": "Phoenix, AZ",
+    "districtText": "Arizona Statewide | Arizona Congressional District 3",
+    "election": null,
+    "raceCount": 4
+  },
+  "87102": {
+    "state": "New Mexico",
+    "locationName": "Albuquerque, NM",
+    "districtText": "New Mexico Statewide | New Mexico Congressional District 1",
+    "election": null,
+    "raceCount": 4
+  },
+  "89101": {
+    "state": "Nevada",
+    "locationName": "Las Vegas, NV",
+    "districtText": "Nevada Statewide | Nevada Congressional District 1",
+    "election": null,
+    "raceCount": 4
+  },
+  "94102": {
+    "state": "California",
+    "locationName": "San Francisco, CA",
+    "districtText": "California Statewide | California Congressional District 11",
+    "election": null,
+    "raceCount": 4
+  },
+  "96813": {
+    "state": "Hawaii",
+    "locationName": "Honolulu, HI",
+    "districtText": "Hawaii Statewide | Hawaii Congressional District 1",
+    "election": null,
+    "raceCount": 4
+  },
+  "97205": {
+    "state": "Oregon",
+    "locationName": "Portland, OR",
+    "districtText": "Oregon Statewide | Oregon Congressional District 3",
+    "election": null,
     "raceCount": 4
   },
   "98116": {
     "state": "Washington",
     "locationName": "Seattle, WA (West Seattle)",
     "districtText": "Legislative District 34 | Congressional District 7 | King County",
+    "election": {
+      "name": "2026 Washington Primary Election",
+      "date": "2026-08-04",
+      "type": "primary"
+    },
     "raceCount": 7
+  },
+  "99501": {
+    "state": "Alaska",
+    "locationName": "Anchorage, AK",
+    "districtText": "Alaska Statewide | Alaska Congressional At-Large District",
+    "election": null,
+    "raceCount": 4
   }
 }
