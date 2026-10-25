@@ -28,7 +28,10 @@
   ];
 
   // Text under these is never rewritten by the translator.
-  const NO_TRANSLATE = 'script, style, noscript, textarea, select, option, .a11y-own, [translate="no"], .notranslate, .candidate-name';
+  const NO_TRANSLATE = 'script, style, noscript, textarea, select, option, .a11y-own, [translate="no"], .notranslate';
+  // Candidate names only get exact dictionary matches (ballot measure "Yes"/"No"),
+  // never machine translation.
+  const NAME = '.candidate-name';
   // Text under these is not read when reading a whole page or section.
   const NO_READ = 'script, style, noscript, textarea, select, option, button, .a11y-own, [aria-hidden="true"]';
   // Sections that get their own "read this" button.
@@ -128,6 +131,9 @@
       return any ? parts.join(sep) : null;
     }
 
+    const date = localizeDate(core, lang);
+    if (date != null) return date;
+
     const tpls = I18N.templates[lang] || {};
     for (const tpl of templates) {
       const m = core.match(tpl.re);
@@ -138,7 +144,43 @@
         return tr != null ? tr : part;
       });
     }
+
+    // Several sentences in one text node. If some are unknown (an address, say),
+    // leave the whole node to the machine translator when there is one, else
+    // translate the known sentences. "U.S. General" is not a sentence break.
+    const sentences = core.split(/(?<=[a-z0-9)][.!?])\s+(?=[A-Z(])/);
+    if (sentences.length > 1) {
+      let known = 0;
+      const out = sentences.map(sentence => {
+        const tr = translateString(sentence, lang);
+        if (tr == null) return sentence;
+        known++;
+        return tr;
+      });
+      if (!known || (known < sentences.length && mt.status === 'ready')) return null;
+      return out.join(/^(zh|ja)/.test(lang) ? '' : ' ');
+    }
     return null;
+  }
+
+  const WEEKDAYS = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+  const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+  const DATE_RE = new RegExp('^(' + WEEKDAYS.join('|') + '), (' + MONTHS.join('|') + ') (\\d{1,2}), (\\d{4})$');
+
+  // "Tuesday, November 3, 2026" in the reader's language.
+  function localizeDate(text, lang) {
+    const m = text.match(DATE_RE);
+    if (!m) return null;
+    const date = new Date(Number(m[4]), MONTHS.indexOf(m[2]), Number(m[3]));
+    const meta = langMeta(lang);
+    if (meta.dateNames) {
+      return `${meta.dateNames.days[date.getDay()]} ${date.getDate()} ${meta.dateNames.months[date.getMonth()]} ${date.getFullYear()}`;
+    }
+    try {
+      return date.toLocaleDateString(meta.intl || meta.html, { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' });
+    } catch (e) {
+      return null;
+    }
   }
 
   function splitAffixes(text) {
@@ -186,6 +228,11 @@
 
     const ui = translateString(src, state.lang);
     if (ui != null) { setText(node, ui, 'ui'); return; }
+    if (node.parentElement.closest(NAME)) {
+      const exact = lookup(src.trim(), state.lang);
+      setText(node, exact != null ? src.replace(src.trim(), exact) : src, exact != null ? 'ui' : 'en');
+      return;
+    }
     const cached = mtCached(src);
     if (cached != null) { applyMT(node, src, cached); return; }
     setText(node, src, 'en');
@@ -453,7 +500,11 @@
       const el = blockAncestor(n.parentElement, root, cache);
       const lang = speechLangFor(n);
       if (cur && cur.el === el && cur.lang === lang) {
-        cur.text += (endsSentence(cur.text) || cur.lastParent === n.parentElement ? ' ' : ', ') + text;
+        // Items laid out side by side (name and party) get a pause; inline text runs on.
+        const display = cache.get(el) || getComputedStyle(el).display;
+        const sideBySide = /flex|grid/.test(display) || (cur.lastParent.closest('a') && n.parentElement.closest('a'));
+        const pause = sideBySide && cur.lastParent !== n.parentElement && !endsSentence(cur.text);
+        cur.text += (pause ? ', ' : ' ') + text;
       } else {
         cur = { el, lang, text };
         blocks.push(cur);
@@ -466,7 +517,7 @@
   // Break long text into sentence-sized pieces; some engines stop reading
   // utterances that run longer than about 15 seconds.
   function chunk(text, max) {
-    const sentences = text.split(/(?<=[.!?؟।])\s+|(?<=[。！？])\s*/u).filter(Boolean);
+    const sentences = text.split(/(?<=[\p{Ll}\d)][.!?])\s+|(?<=[؟।])\s+|(?<=[。！？])\s*/u).filter(Boolean);
     const out = [];
     let buf = '';
     for (let s of sentences) {
