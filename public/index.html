@@ -854,6 +854,212 @@
     .copy-btn:hover {
       background: #059669;
     }
+
+    /* Voting Plan Recap */
+    .recap-hero {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .recap-location {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      margin-top: 0.35rem;
+    }
+
+    .recap-countdown {
+      background: var(--accent-light);
+      border: 1px solid rgba(99, 102, 241, 0.4);
+      border-radius: 0.75rem;
+      padding: 0.6rem 1rem;
+      text-align: center;
+      min-width: 140px;
+    }
+
+    .recap-countdown-number {
+      font-size: 1.75rem;
+      font-weight: 800;
+      color: #c7d2fe;
+      line-height: 1.1;
+    }
+
+    .recap-countdown-label {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+
+    .recap-plain {
+      background: rgba(16, 185, 129, 0.08);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      border-radius: 0.75rem;
+      padding: 1rem 1.25rem;
+      color: #d1fae5;
+      font-size: 0.95rem;
+      line-height: 1.6;
+      margin-bottom: 1.25rem;
+    }
+
+    .recap-plain.incomplete {
+      background: rgba(245, 158, 11, 0.08);
+      border-color: rgba(245, 158, 11, 0.35);
+      color: #fde68a;
+    }
+
+    .recap-section-title {
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--text-muted);
+      margin: 1.5rem 0 0.75rem;
+    }
+
+    .recap-group-title {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: #a5b4fc;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      padding: 0.75rem 0 0.25rem;
+    }
+
+    .recap-group-title:first-child {
+      padding-top: 0;
+    }
+
+    .recap-row {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 0.75rem;
+      align-items: center;
+      padding: 0.75rem 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .recap-row:last-child {
+      border-bottom: none;
+    }
+
+    .recap-race-title {
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      margin-bottom: 0.2rem;
+    }
+
+    .recap-choice {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.5rem;
+      font-weight: 700;
+      color: #ffffff;
+      font-size: 1rem;
+    }
+
+    .recap-choice.skipped {
+      color: var(--warning);
+      font-weight: 600;
+    }
+
+    .recap-edit-btn {
+      background: transparent;
+      border: 1px solid var(--card-border);
+      color: var(--text-muted);
+      padding: 0.4rem 0.8rem;
+      font-size: 0.8rem;
+    }
+
+    .recap-edit-btn:hover {
+      border-color: var(--accent);
+      color: white;
+    }
+
+    .recap-steps {
+      list-style: none;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+
+    @media (max-width: 600px) {
+      .recap-steps {
+        grid-template-columns: 1fr;
+      }
+      .recap-row {
+        grid-template-columns: 1fr;
+      }
+      .recap-edit-btn {
+        justify-self: start;
+      }
+    }
+
+    .recap-step {
+      background: rgba(15, 23, 42, 0.6);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 0.75rem;
+      padding: 0.9rem 1rem;
+    }
+
+    .recap-step-title {
+      font-weight: 700;
+      font-size: 0.95rem;
+      margin-bottom: 0.3rem;
+      display: flex;
+      gap: 0.4rem;
+    }
+
+    .recap-step p {
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      line-height: 1.5;
+    }
+
+    .recap-step a {
+      color: #a5b4fc;
+    }
+
+    .recap-disclaimer {
+      color: var(--text-dim);
+      font-size: 0.8rem;
+      line-height: 1.5;
+      margin-bottom: 1.25rem;
+    }
+
+    @media print {
+      body {
+        background: #ffffff !important;
+        color: #000000 !important;
+        padding: 0;
+      }
+      header, .sidebar-panel, .sidebar-backdrop, .mobile-nav-toggle,
+      .stepper-header, .progress-bar-container, .recap-actions, .recap-edit-btn {
+        display: none !important;
+      }
+      .app-layout {
+        display: block !important;
+      }
+      .step-card, .summary-card, .recap-step, .recap-plain, .recap-countdown {
+        background: #ffffff !important;
+        border: 1px solid #cccccc !important;
+        box-shadow: none !important;
+        backdrop-filter: none !important;
+        color: #000000 !important;
+      }
+      .race-type, .race-title, .recap-choice, .recap-race-title, .recap-step p,
+      .recap-location, .recap-countdown-number, .recap-countdown-label,
+      .recap-section-title, .recap-group-title, .recap-disclaimer, .party-tag {
+        color: #000000 !important;
+        -webkit-text-fill-color: #000000 !important;
+      }
+      .recap-row, .recap-step {
+        break-inside: avoid;
+      }
+    }
   </style>
 </head>
 <body>
@@ -1198,35 +1404,10 @@
         stepCardsContainer.appendChild(card);
       });
 
-      // 3. Build Summary Card
+      // 3. Build Summary Card (filled in by renderRecap when shown)
       const summaryCard = document.createElement('div');
       summaryCard.className = 'step-card';
       summaryCard.id = 'summary-card';
-      
-      let summaryItemsHTML = activeDistrictData.races.map((r, idx) => `
-        <div class="summary-item">
-          <span class="summary-race">${escapeHTML(r.shortTitle)}</span>
-          <span class="summary-choice" id="sum-${idx + 1}">Not Selected</span>
-        </div>
-      `).join('');
-
-      summaryCard.innerHTML = `
-        <div class="race-type" style="background: rgba(16, 185, 129, 0.2); color: #6ee7b7;">Ballot Summary Ready</div>
-        <div class="race-title">Your Completed ${escapeHTML(activeDistrictData.state)} Ballot Selections</div>
-        
-        <p style="color: var(--text-muted); margin-bottom: 1.5rem; font-size: 0.95rem;">
-          Review your selections below. Click the button to copy your full response breakdown directly onto your physical ballot envelope or notebook.
-        </p>
-
-        <div class="summary-card">
-          ${summaryItemsHTML}
-        </div>
-
-        <div class="btn-group" style="flex-direction: column; gap: 0.75rem;">
-          <button class="copy-btn" id="copy-btn" onclick="copyCheatSheet()">📋 Copy Ballot Response Breakdown</button>
-          <button class="btn-prev" onclick="resetToAddressScreen()" style="width: 100%;">🏠 Return to Address Search</button>
-        </div>
-      `;
 
       stepCardsContainer.appendChild(summaryCard);
 
@@ -1369,31 +1550,310 @@
       updateProgress();
       updateSidebarStatus();
 
-      for (let i = 1; i <= totalRaces; i++) {
-        const el = document.getElementById(`sum-${i}`);
-        if (el) el.textContent = selections[i] || 'Not Selected';
+      renderRecap();
+    }
+
+    // ---------- Voting Plan Recap ----------
+    // All recap wording lives here as full sentences so it is easy to translate and reads well aloud.
+    const ELECTION_DAY_ISO = '2026-11-03';
+
+    const RECAP_TEXT = {
+      badge: 'Your Voting Plan',
+      title: (state) => `Your ${state} Ballot Recap`,
+      location: (place, district) => [place, district].filter(Boolean).map(part => `${part}.`).join(' '),
+      daysLeftLabel: (n) => n === 1 ? 'day until Election Day' : 'days until Election Day',
+      todayLabel: 'Election Day is today',
+      allDone: (count, date) => `You made a choice in all ${count} races. Keep this plan handy when you fill out your ballot, and vote by ${date}.`,
+      someDone: (done, count, date) => `You made a choice in ${done} of ${count} races. You can still go back and decide on the rest before you vote by ${date}. It is also fine to leave a race blank on your real ballot.`,
+      noneDone: (count) => `You have not picked anyone yet in the ${count} races on this ballot. Use the Edit buttons below to go back and make your choices.`,
+      choicesHeading: 'How you plan to vote',
+      notDecided: 'Not decided yet',
+      editButton: 'Edit',
+      editAria: (race) => `Edit your choice for ${race}`,
+      howHeading: 'How and where to vote',
+      steps: [
+        {
+          icon: '✅',
+          title: 'Check your registration',
+          body: (links) => `Make sure you are registered at your current address. Deadlines differ by state, and some states let you register on Election Day. ${links.state}`
+        },
+        {
+          icon: '📬',
+          title: 'Voting by mail',
+          body: () => 'If you have a mail ballot, read the instructions, sign the envelope, and return it by your state\'s deadline. Many places also have official ballot drop boxes.'
+        },
+        {
+          icon: '📍',
+          title: 'Find your polling place',
+          body: (links, hasPlace) => hasPlace
+            ? `Your voting locations are listed above. Hours and locations can change, so check them again before you go. ${links.poll}`
+            : `Your polling place and hours are set by your county or local election office. Look them up before you go. ${links.poll}`
+        },
+        {
+          icon: '🪪',
+          title: 'Know what to bring',
+          body: (links) => `Some states ask for a photo ID and others do not. Check your state's rules before you go. ${links.id}`
+        }
+      ],
+      linkState: 'Check your registration on Can I Vote.',
+      linkPoll: 'Look up your polling place on Can I Vote.',
+      linkId: 'See voter ID rules on Can I Vote.',
+      officialLinkState: 'Check your registration with your state election office.',
+      officialLinkPoll: 'Look up your polling place with your state election office.',
+      placesHeading: 'Where you can vote',
+      placeKinds: {
+        polling: 'Your polling place',
+        early: 'Early voting site',
+        dropoff: 'Ballot drop-off location'
+      },
+      placeHours: (hours) => `Hours: ${hours}`,
+      directions: (name) => `Get directions to ${name}.`,
+      disclaimer: 'This recap is a personal planning note, not an official ballot, and it only repeats the choices you made. Voting help links go to your state election office or to Can I Vote, run by the National Association of Secretaries of State. Always follow the instructions on your official ballot and from your local election office.',
+      copyButton: 'Copy my voting plan',
+      copiedButton: 'Copied to clipboard',
+      printButton: 'Print my voting plan',
+      homeButton: 'Return to address search',
+      copyHeader: (state, place) => `MY ${state.toUpperCase()} VOTING PLAN (${place})`,
+      copyElectionDay: (date) => `Election Day: ${date}`,
+      copyChecklist: 'Before you vote: check your registration, find your polling place, and check your state\'s ID rules at canivote.org.'
+    };
+
+    function escapeRecapHTML(str) {
+      return String(str).replace(/[&<>"']/g, ch => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[ch]));
+    }
+
+    // Accepts the app's own "election.date" or the Civic Information API's "election.electionDay".
+    function getRecapElectionDate() {
+      const election = (activeDistrictData && activeDistrictData.election) || {};
+      const iso = election.date || election.electionDay || (activeDistrictData && activeDistrictData.electionDate) || ELECTION_DAY_ISO;
+      const [y, m, d] = iso.split('-').map(Number);
+      return new Date(y, m - 1, d);
+    }
+
+    function getRecapElectionDateText() {
+      const lang = document.documentElement.lang || 'en';
+      return getRecapElectionDate().toLocaleDateString(lang, { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+    }
+
+    function getDaysUntilElection() {
+      const today = new Date();
+      today.setHours(0, 0, 0, 0);
+      return Math.round((getRecapElectionDate() - today) / 86400000);
+    }
+
+    // Field names follow the Google Civic Information API (state[].electionAdministrationBody).
+    function getElectionOffice() {
+      const data = activeDistrictData || {};
+      if (data.electionAdministrationBody) return data.electionAdministrationBody;
+      const st = Array.isArray(data.state) ? data.state[0] : null;
+      return (st && (st.electionAdministrationBody || (st.local_jurisdiction && st.local_jurisdiction.electionAdministrationBody))) || {};
+    }
+
+    function getStateName() {
+      const st = activeDistrictData && activeDistrictData.state;
+      if (typeof st === 'string') return st;
+      return (Array.isArray(st) && st[0] && st[0].name) || '';
+    }
+
+    function recapLink(url, label) {
+      return `<a href="${escapeRecapHTML(url)}" target="_blank" rel="noopener">${escapeRecapHTML(label)}</a>`;
+    }
+
+    // Uses the state's own election office links when the data has them, otherwise the
+    // official lookup tools from the National Association of Secretaries of State (canivote.org).
+    function getVoterLinks() {
+      const office = getElectionOffice();
+      const nass = (path) => `https://www.nass.org/can-i-vote/${path}`;
+      return {
+        state: office.electionRegistrationConfirmationUrl || office.electionRegistrationUrl
+          ? recapLink(office.electionRegistrationConfirmationUrl || office.electionRegistrationUrl, RECAP_TEXT.officialLinkState)
+          : recapLink(nass('voter-registration-status'), RECAP_TEXT.linkState),
+        poll: office.votingLocationFinderUrl
+          ? recapLink(office.votingLocationFinderUrl, RECAP_TEXT.officialLinkPoll)
+          : recapLink(nass('find-your-polling-place'), RECAP_TEXT.linkPoll),
+        id: recapLink(nass('valid-forms-id'), RECAP_TEXT.linkId)
+      };
+    }
+
+    // Voting locations in the Civic Information API shape: { address: { locationName, line1, city, state, zip }, pollingHours, notes }.
+    function getVotingPlaces() {
+      const data = activeDistrictData || {};
+      const first = (list) => Array.isArray(list) && list.length ? list[0] : null;
+      return [
+        { kind: 'polling', place: data.pollingPlace || first(data.pollingLocations) },
+        { kind: 'early', place: first(data.earlyVoteSites) },
+        { kind: 'dropoff', place: first(data.dropOffLocations) }
+      ].filter(p => p.place && p.place.address);
+    }
+
+    function renderVotingPlace({ kind, place }) {
+      const a = place.address;
+      const name = a.locationName || RECAP_TEXT.placeKinds[kind];
+      const street = [a.line1, a.line2, a.line3].filter(Boolean).join(', ');
+      const cityLine = [a.city, [a.state, a.zip].filter(Boolean).join(' ')].filter(Boolean).join(', ');
+      const query = encodeURIComponent([a.locationName, street, cityLine].filter(Boolean).join(', '));
+      return `
+        <li class="recap-step">
+          <div class="recap-step-title"><span aria-hidden="true">📍</span><span>${RECAP_TEXT.placeKinds[kind]}</span></div>
+          <p><strong>${escapeRecapHTML(name)}</strong></p>
+          ${street ? `<p>${escapeRecapHTML(street)}</p>` : ''}
+          ${cityLine ? `<p>${escapeRecapHTML(cityLine)}</p>` : ''}
+          ${place.pollingHours ? `<p>${escapeRecapHTML(RECAP_TEXT.placeHours(place.pollingHours))}</p>` : ''}
+          ${place.notes ? `<p>${escapeRecapHTML(place.notes)}</p>` : ''}
+          <p>${recapLink(`https://www.google.com/maps/search/?api=1&query=${query}`, RECAP_TEXT.directions(name))}</p>
+        </li>`;
+    }
+
+    // Race fields fall back to Civic Information API contest names (office, ballotTitle, referendumTitle).
+    function getRaceTitle(race) {
+      return race.title || race.office || race.ballotTitle || race.referendumTitle || race.shortTitle || '';
+    }
+
+    function getRaceCategory(race) {
+      return race.category || race.level || '';
+    }
+
+    // Looks up the chosen candidate object for a race, so the recap can show its party tag.
+    function getSelectedCandidate(race, step) {
+      const choice = selections[step];
+      if (!choice) return null;
+      return (race.candidates || []).find(c => `${c.name} (${c.party})` === choice || c.name === choice) || { name: choice, party: '', partyClass: '' };
+    }
+
+    function renderRecap() {
+      const card = document.getElementById('summary-card');
+      if (!card || !activeDistrictData) return;
+
+      const races = activeDistrictData.races;
+      const total = races.length;
+      const done = races.filter((r, idx) => selections[idx + 1]).length;
+      const dateText = getRecapElectionDateText();
+      const daysLeft = getDaysUntilElection();
+
+      let plainText;
+      if (done === total) plainText = RECAP_TEXT.allDone(total, dateText);
+      else if (done === 0) plainText = RECAP_TEXT.noneDone(total);
+      else plainText = RECAP_TEXT.someDone(done, total, dateText);
+
+      let countdownHTML = '';
+      if (daysLeft === 0) {
+        countdownHTML = `<div class="recap-countdown"><div class="recap-countdown-label">${RECAP_TEXT.todayLabel}</div></div>`;
+      } else if (daysLeft > 0) {
+        countdownHTML = `
+          <div class="recap-countdown">
+            <div class="recap-countdown-number">${daysLeft}</div>
+            <div class="recap-countdown-label">${RECAP_TEXT.daysLeftLabel(daysLeft)}</div>
+            <div class="recap-countdown-label">${escapeRecapHTML(dateText)}</div>
+          </div>`;
       }
+
+      // Group races by category, keeping ballot order.
+      let lastCategory = null;
+      const rowsHTML = races.map((race, idx) => {
+        const step = idx + 1;
+        const cand = getSelectedCandidate(race, step);
+        let groupHTML = '';
+        const category = getRaceCategory(race);
+        if (category && category !== lastCategory) {
+          lastCategory = category;
+          groupHTML = `<div class="recap-group-title">${escapeRecapHTML(category)}</div>`;
+        }
+        const choiceHTML = cand
+          ? `<div class="recap-choice"><span>${escapeRecapHTML(cand.name)}</span>${cand.party ? `<span class="party-tag ${escapeRecapHTML(cand.partyClass)}">${escapeRecapHTML(cand.party)}</span>` : ''}</div>`
+          : `<div class="recap-choice skipped">${RECAP_TEXT.notDecided}</div>`;
+        return `
+          ${groupHTML}
+          <div class="recap-row">
+            <div>
+              <div class="recap-race-title">${escapeRecapHTML(getRaceTitle(race))}</div>
+              ${choiceHTML}
+            </div>
+            <button class="recap-edit-btn" onclick="goToStep(${step})" aria-label="${escapeRecapHTML(RECAP_TEXT.editAria(getRaceTitle(race)))}">${RECAP_TEXT.editButton}</button>
+          </div>`;
+      }).join('');
+
+      const links = getVoterLinks();
+      const places = getVotingPlaces();
+      const placesHTML = places.length ? `
+        <h3 class="recap-section-title">${RECAP_TEXT.placesHeading}</h3>
+        <ul class="recap-steps">
+          ${places.map(renderVotingPlace).join('')}
+        </ul>` : '';
+      const stepsHTML = RECAP_TEXT.steps.map(st => `
+        <li class="recap-step">
+          <div class="recap-step-title"><span aria-hidden="true">${st.icon}</span><span>${st.title}</span></div>
+          <p>${st.body(links, places.length > 0)}</p>
+        </li>`).join('');
+
+      card.innerHTML = `
+        <div class="recap-hero">
+          <div>
+            <div class="race-type" style="background: rgba(16, 185, 129, 0.2); color: #6ee7b7;">${RECAP_TEXT.badge}</div>
+            <div class="race-title">${escapeRecapHTML(RECAP_TEXT.title(getStateName()))}</div>
+            <div class="recap-location">${escapeRecapHTML(RECAP_TEXT.location(activeDistrictData.locationName || '', (activeDistrictData.districtText || '').replace(/\s*\|\s*/g, ', ')))}</div>
+          </div>
+          ${countdownHTML}
+        </div>
+
+        <p class="recap-plain ${done === total ? '' : 'incomplete'}" id="recap-plain-summary">${escapeRecapHTML(plainText)}</p>
+
+        <h3 class="recap-section-title">${RECAP_TEXT.choicesHeading}</h3>
+        <div class="summary-card">
+          ${rowsHTML}
+        </div>
+
+        ${placesHTML}
+
+        <h3 class="recap-section-title">${RECAP_TEXT.howHeading}</h3>
+        <ul class="recap-steps">
+          ${stepsHTML}
+        </ul>
+
+        <p class="recap-disclaimer">${RECAP_TEXT.disclaimer}</p>
+
+        <div class="btn-group recap-actions" style="flex-direction: column; gap: 0.75rem;">
+          <button class="copy-btn" id="copy-btn" onclick="copyCheatSheet()"><span aria-hidden="true">📋 </span><span id="copy-btn-label">${RECAP_TEXT.copyButton}</span></button>
+          <button class="btn-prev" onclick="window.print()" style="width: 100%;"><span aria-hidden="true">🖨️ </span>${RECAP_TEXT.printButton}</button>
+          <button class="btn-prev" onclick="resetToAddressScreen()" style="width: 100%;"><span aria-hidden="true">🏠 </span>${RECAP_TEXT.homeButton}</button>
+        </div>
+      `;
     }
 
     function copyCheatSheet() {
       if (!activeDistrictData) return;
-      let text = `=====================================================\n`;
-      text += `    MY ${activeDistrictData.state.toUpperCase()} BALLOT SELECTIONS (${activeDistrictData.locationName})\n`;
-      text += `=====================================================\n`;
-      
+      const line = `=====================================================\n`;
+      let text = line;
+      text += `    ${RECAP_TEXT.copyHeader(getStateName(), activeDistrictData.locationName || '')}\n`;
+      text += `    ${RECAP_TEXT.copyElectionDay(getRecapElectionDateText())}\n`;
+      text += line;
+
+      let lastCategory = null;
       activeDistrictData.races.forEach((r, idx) => {
-        const choice = selections[idx + 1] || 'Not Selected';
-        text += `${idx + 1}. ${r.shortTitle}: ${choice}\n`;
+        const category = getRaceCategory(r);
+        if (category && category !== lastCategory) {
+          lastCategory = category;
+          text += `\n${category.toUpperCase()}\n`;
+        }
+        const cand = getSelectedCandidate(r, idx + 1);
+        const choice = cand ? (cand.party ? `${cand.name} (${cand.party})` : cand.name) : RECAP_TEXT.notDecided;
+        text += `${idx + 1}. ${getRaceTitle(r)}: ${choice}\n`;
       });
 
-      text += `=====================================================`;
+      getVotingPlaces().forEach(({ kind, place }) => {
+        const a = place.address;
+        const addr = [a.locationName, a.line1, a.city, [a.state, a.zip].filter(Boolean).join(' ')].filter(Boolean).join(', ');
+        text += `\n${RECAP_TEXT.placeKinds[kind]}: ${addr}${place.pollingHours ? ` (${place.pollingHours})` : ''}`;
+      });
+      text += `\n\n${RECAP_TEXT.copyChecklist}\n`;
+      text += line;
 
       navigator.clipboard.writeText(text).then(() => {
         const btn = document.getElementById('copy-btn');
-        btn.textContent = '✓ Copied to Clipboard!';
+        const label = document.getElementById('copy-btn-label');
+        label.textContent = RECAP_TEXT.copiedButton;
         btn.style.background = '#059669';
         setTimeout(() => {
-          btn.textContent = '📋 Copy Ballot Response Breakdown';
+          label.textContent = RECAP_TEXT.copyButton;
           btn.style.background = 'var(--success)';
         }, 3000);
       });
