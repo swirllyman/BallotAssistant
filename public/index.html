@@ -526,6 +526,97 @@
       display: none;
     }
 
+    /* Detail level switch */
+    .detail-bar {
+      display: none;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem 1rem;
+      flex-wrap: wrap;
+      margin-bottom: 1rem;
+    }
+
+    body.ballot-mode .detail-bar {
+      display: flex;
+    }
+
+    .detail-bar-label {
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--text-dim);
+    }
+
+    .detail-switch {
+      display: inline-flex;
+      padding: 3px;
+      gap: 2px;
+      border-radius: 10px;
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+    }
+
+    .detail-option {
+      border: none;
+      background: transparent;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      font-weight: 500;
+      padding: 0.35rem 0.85rem;
+      border-radius: 7px;
+    }
+
+    .detail-option:hover {
+      color: var(--text);
+    }
+
+    .detail-option[aria-checked="true"] {
+      background: var(--surface);
+      color: var(--text);
+      font-weight: 600;
+      box-shadow: var(--shadow), 0 0 0 1px var(--border);
+    }
+
+    /* What each level shows */
+    body.detail-brief .detail-standard,
+    body.detail-brief .detail-detailed,
+    body.detail-standard .detail-detailed {
+      display: none !important;
+    }
+
+    body.detail-brief .overview-box:not(.detail-standard) {
+      padding-bottom: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .full-text {
+      margin-top: 0.5rem;
+      white-space: pre-line;
+      max-height: 24rem;
+      overflow-y: auto;
+      font-size: 0.875rem;
+      padding: 0.75rem;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+    }
+
+    .neutrality-note {
+      margin-top: 1.5rem;
+      font-size: 0.8rem;
+      line-height: 1.5;
+      color: var(--text-dim);
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      .detail-switch {
+        flex: 1;
+      }
+      .detail-option {
+        flex: 1;
+        padding-inline: 0.5rem;
+      }
+    }
+
     /* Progress */
     .stepper-header {
       justify-content: space-between;
@@ -640,28 +731,6 @@
       box-shadow: 0 0 0 3px var(--accent-soft);
     }
 
-    .example-row {
-      margin-top: 1rem;
-      font-size: 0.875rem;
-      color: var(--text-dim);
-      text-align: center;
-    }
-
-    .chip {
-      background: none;
-      border: none;
-      padding: 0;
-      font: inherit;
-      color: var(--accent);
-      font-weight: 500;
-      cursor: pointer;
-    }
-
-    .chip:hover {
-      text-decoration: underline;
-      text-underline-offset: 3px;
-    }
-
     /* Callouts */
     .election-notice {
       background: var(--warning-soft);
@@ -727,7 +796,9 @@
       margin-bottom: 0.35rem;
     }
 
-    .overview-box p {
+    .overview-box p + p,
+    .overview-box div > p,
+    .overview-box .pros-cons-details {
       margin-top: 0.6rem;
     }
 
@@ -962,8 +1033,8 @@
       border-radius: 50%;
     }
 
-    .pro-con-ul.pros-ul li::before { background: var(--success); }
-    .pro-con-ul.cons-ul li::before { background: var(--warning); }
+    /* Both columns look the same so neither side reads as the "good" one. */
+    .pro-con-ul li::before { background: var(--text-dim); }
 
     /* Buttons */
     button {
@@ -1299,7 +1370,7 @@
         background: #ffffff !important;
         color: #000000 !important;
       }
-      .topbar, .sidebar-panel, .sidebar-backdrop, .mobile-nav-toggle, .ballot-context, #ballot-notice,
+      .topbar, .sidebar-panel, .sidebar-backdrop, .mobile-nav-toggle, .ballot-context, #ballot-notice, .detail-bar, .neutrality-note,
       .stepper-header, .progress-bar-container, .recap-actions, .recap-edit-btn, .a11y-say, .a11y-player {
         display: none !important;
       }
@@ -1370,6 +1441,15 @@
         </div>
         <div id="ballot-notice"></div>
 
+        <div class="detail-bar" id="detail-bar">
+          <span class="detail-bar-label" id="detail-bar-label">Detail level</span>
+          <div class="detail-switch" role="radiogroup" aria-labelledby="detail-bar-label">
+            <button type="button" class="detail-option" role="radio" data-level="brief" onclick="setDetailLevel('brief')">Brief</button>
+            <button type="button" class="detail-option" role="radio" data-level="standard" onclick="setDetailLevel('standard')">Standard</button>
+            <button type="button" class="detail-option" role="radio" data-level="detailed" onclick="setDetailLevel('detailed')">Detailed</button>
+          </div>
+        </div>
+
         <div class="stepper-header" id="stepper-header">
           <span id="step-indicator">Step 1 of 5</span>
           <span id="step-category">Federal Office</span>
@@ -1406,6 +1486,8 @@
         </div>
 
         <div id="dynamic-step-cards-container"></div>
+
+        <p class="neutrality-note">This guide does not endorse any candidate, party or position. Candidates and measures appear in the order the election data lists them, not ranked. Descriptions are shown only when they link to their source.</p>
       </main>
     </div>
   </div>
@@ -1521,6 +1603,34 @@
       return String(text ?? '').replace(/^[\p{Extended_Pictographic}\uFE0F\u200D\s]+/u, '');
     }
 
+    // Contact details from the official candidate filing, shown at the Detailed level.
+    function renderCandidateContact(c) {
+      const items = [];
+      if (c.email && /^[^\s@<>"]+@[^\s@<>"]+$/.test(c.email)) {
+        items.push(`<a class="source-link" href="mailto:${escapeHTML(c.email)}" onclick="event.stopPropagation()">${escapeHTML(c.email)}</a>`);
+      }
+      if (c.phone) {
+        items.push(`<a class="source-link" href="tel:${escapeHTML(c.phone.replace(/[^\d+]/g, ''))}" onclick="event.stopPropagation()">${escapeHTML(c.phone)}</a>`);
+      }
+      (c.channels || []).forEach(ch => {
+        const url = safeUrl(ch.id);
+        if (url) items.push(`<a class="source-link" href="${escapeHTML(url)}" target="_blank" rel="noopener" onclick="event.stopPropagation()">${escapeHTML(ch.type)}${ICON_EXTERNAL}</a>`);
+      });
+      return items.length ? `<div class="candidate-sources detail-detailed">${items.join(' ')}</div>` : '';
+    }
+
+    // Passage rules and the full measure text, shown at the Detailed level.
+    function renderMeasureFacts(race) {
+      const d = race.details || {};
+      const facts = [];
+      if (d.passageThreshold) facts.push(`<p><strong>Needed to pass:</strong> ${escapeHTML(d.passageThreshold)}</p>`);
+      if (d.effectOfAbstain) facts.push(`<p><strong>If you leave it blank:</strong> ${escapeHTML(d.effectOfAbstain)}</p>`);
+      if (d.fullText && d.fullText !== race.overview) {
+        facts.push(`<details class="pros-cons-details full-text-details" open><summary>${ICON_CHEVRON}<span>Full text of the measure</span></summary><p class="full-text">${escapeHTML(d.fullText)}</p></details>`);
+      }
+      return facts.length ? `<div class="detail-detailed">${facts.join('')}</div>` : '';
+    }
+
     function renderDistrictData() {
       if (!activeDistrictData) return;
 
@@ -1612,6 +1722,7 @@
         card.className = 'step-card';
         card.setAttribute('data-step', stepNum);
 
+        const isMeasure = race.category === 'Ballot Measure';
         let sourcesHTML = '';
         if (race.sources && race.sources.length) {
           sourcesHTML = `<div class="source-link-row">` + race.sources.filter(s => safeUrl(s.url)).map(s => `<a class="source-link" href="${escapeHTML(safeUrl(s.url))}" target="_blank" rel="noopener">${escapeHTML(stripLeadingEmoji(s.label))}${ICON_EXTERNAL}</a>`).join(' ') + `</div>`;
@@ -1636,7 +1747,7 @@
           let prosConsGridHTML = '';
           if (prosHTML || consHTML) {
             prosConsGridHTML = `
-              <details class="pros-cons-details" onclick="event.stopPropagation()">
+              <details class="pros-cons-details detail-standard" onclick="event.stopPropagation()"${detailLevel === 'detailed' ? ' open' : ''}>
                 <summary>${ICON_CHEVRON}<span>Strengths and considerations</span></summary>
                 <div class="pros-cons-container">${prosHTML}${consHTML}</div>
               </details>`;
@@ -1652,9 +1763,10 @@
                   <span class="candidate-name">${escapeHTML(c.name)}</span>
                   ${c.party ? `<span class="party-tag ${escapeHTML(c.partyClass)}">${escapeHTML(c.party)}</span>` : ''}
                 </div>
-                ${showClaims && c.desc ? `<p class="candidate-desc">${escapeHTML(c.desc)}</p>` : ''}
+                ${showClaims && c.desc ? `<p class="candidate-desc detail-standard">${escapeHTML(c.desc)}</p>` : ''}
                 ${prosConsGridHTML}
-                ${safeUrl(c.site) || showClaims ? `<div class="candidate-sources">
+                ${renderCandidateContact(c)}
+                ${safeUrl(c.site) || showClaims ? `<div class="candidate-sources detail-standard">
                   ${safeUrl(c.site) ? `<a class="source-link" href="${escapeHTML(safeUrl(c.site))}" target="_blank" rel="noopener" onclick="event.stopPropagation()">Candidate Website${ICON_EXTERNAL}</a>` : ''}
                   ${candSources.map(src => `<a class="source-link" href="${escapeHTML(safeUrl(src.url))}" target="_blank" rel="noopener" onclick="event.stopPropagation()">${escapeHTML(stripLeadingEmoji(src.label || 'Source'))}${ICON_EXTERNAL}</a>`).join(' ')}
                 </div>` : ''}
@@ -1668,13 +1780,16 @@
           <div class="race-type">${escapeHTML(race.type)}</div>
           <h2 class="race-title">${escapeHTML(race.title)}</h2>
           
-          ${race.overview || sourcesHTML || race.details ? `<div class="overview-box">
-            <h4>${race.category === 'Ballot Measure' ? 'About This Measure' : 'Race & Office Overview'}</h4>
-            ${escapeHTML(race.overview)}
+          ${race.overview || sourcesHTML || race.details ? `<div class="overview-box ${isMeasure ? '' : 'detail-standard'}">
+            <h4>${isMeasure ? 'About This Measure' : 'Race & Office Overview'}</h4>
+            ${race.overview ? `<p class="overview-text">${escapeHTML(race.overview)}</p>` : ''}
             ${race.details && (race.details.pro || race.details.con) ? `
-              <p><strong>Argument for:</strong> ${race.details.pro ? escapeHTML(race.details.pro) : '<em>No argument for was submitted.</em>'}</p>
-              <p><strong>Argument against:</strong> ${race.details.con ? escapeHTML(race.details.con) : '<em>No argument against was submitted.</em>'}</p>` : ''}
-            ${sourcesHTML}
+              <div class="detail-standard">
+                <p><strong>Argument for:</strong> ${race.details.pro ? escapeHTML(race.details.pro) : '<em>No argument for was submitted.</em>'}</p>
+                <p><strong>Argument against:</strong> ${race.details.con ? escapeHTML(race.details.con) : '<em>No argument against was submitted.</em>'}</p>
+              </div>` : ''}
+            ${renderMeasureFacts(race)}
+            <div class="detail-standard">${sourcesHTML}</div>
           </div>` : ''}
 
           <div class="options-grid" role="radiogroup" aria-label="${escapeHTML(race.title)}">
@@ -1712,6 +1827,31 @@
       currentStep = 0;
       closeMobileSidebar();
       window.scrollTo(0, 0);
+    }
+
+    // How much to show for each contest: brief (names and parties), standard, or detailed (everything sourced).
+    const DETAIL_LEVELS = ['brief', 'standard', 'detailed'];
+    let detailLevel = 'standard';
+    try {
+      const saved = localStorage.getItem('ba-detail');
+      if (DETAIL_LEVELS.includes(saved)) detailLevel = saved;
+    } catch (e) {}
+
+    function applyDetailLevel() {
+      document.body.classList.remove(...DETAIL_LEVELS.map(l => 'detail-' + l));
+      document.body.classList.add('detail-' + detailLevel);
+      document.querySelectorAll('.detail-option').forEach(btn => {
+        btn.setAttribute('aria-checked', String(btn.dataset.level === detailLevel));
+      });
+      // Detailed opens every folded section; the other levels fold them again.
+      document.querySelectorAll('.candidate-card .pros-cons-details').forEach(d => { d.open = detailLevel === 'detailed'; });
+    }
+
+    function setDetailLevel(level) {
+      if (!DETAIL_LEVELS.includes(level)) return;
+      detailLevel = level;
+      try { localStorage.setItem('ba-detail', level); } catch (e) {}
+      applyDetailLevel();
     }
 
     function syncThemeButton() {
@@ -2157,6 +2297,7 @@
 
     window.addEventListener('DOMContentLoaded', () => {
       syncThemeButton();
+      applyDetailLevel();
       document.getElementById('election-day-notice').innerHTML =
         `<strong>Election Day is ${escapeHTML(formatElectionDate(UPCOMING_ELECTION.date))}.</strong> ${OFFICIAL_LOOKUP_HTML}`;
       updateSidebarStatus();
