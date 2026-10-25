@@ -1748,7 +1748,8 @@
           lastCategory = category;
           text += `\n${category.toUpperCase()}\n`;
         }
-        const choice = selections[idx + 1] || RECAP_TEXT.notDecided;
+        const cand = getSelectedCandidate(r, idx + 1);
+        const choice = cand ? (cand.party ? `${cand.name} (${cand.party})` : cand.name) : RECAP_TEXT.notDecided;
         text += `${idx + 1}. ${getRaceTitle(r)}: ${choice}\n`;
       });
 
