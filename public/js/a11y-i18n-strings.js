@@ -632,7 +632,7 @@ window.BA_I18N = {
     "Democratic Party": "Đảng Dân Chủ",
     "Republican Party": "Đảng Cộng Hòa",
     "Nonpartisan": "Không đảng phái",
-    "Libertarian Party": "Đảng Tự Do",
+    "Libertarian Party": "Đảng Tự do Cá nhân",
     "Green Party": "Đảng Xanh",
     "Independent": "Độc lập",
     "Language": "Ngôn ngữ",
@@ -693,7 +693,7 @@ window.BA_I18N = {
     "No": "Không",
     "Democratic": "Dân Chủ",
     "Republican": "Cộng Hòa",
-    "Libertarian": "Tự Do",
+    "Libertarian": "Tự do Cá nhân",
     "Green": "Đảng Xanh"
   },
   "ko": {
@@ -748,7 +748,7 @@ window.BA_I18N = {
     "Democratic Party": "민주당",
     "Republican Party": "공화당",
     "Nonpartisan": "비정당",
-    "Libertarian Party": "자유당",
+    "Libertarian Party": "자유지상당",
     "Green Party": "녹색당",
     "Independent": "무소속",
     "Language": "언어",
@@ -809,7 +809,7 @@ window.BA_I18N = {
     "No": "반대",
     "Democratic": "민주당",
     "Republican": "공화당",
-    "Libertarian": "자유당",
+    "Libertarian": "자유지상당",
     "Green": "녹색당"
   },
   "tl": {
