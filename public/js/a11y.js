@@ -111,6 +111,8 @@
   }
 
   function translateCore(core, lang) {
+    // Templates can leave doubled spaces where a value was empty.
+    core = core.replace(/\s{2,}/g, ' ');
     let v = lookup(core, lang);
     if (v != null) return v;
 
@@ -159,6 +161,12 @@
       });
       if (!known || (known < sentences.length && mt.status === 'ready')) return null;
       return out.join(/^(zh|ja)/.test(lang) ? '' : ' ');
+    }
+
+    // "Washington General Election." matches a template once the period is off.
+    if (punct && punct[1]) {
+      v = translateCore(punct[1], lang);
+      if (v != null) return v + punct[2];
     }
     return null;
   }
