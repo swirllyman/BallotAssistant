@@ -279,7 +279,18 @@ window.BA_I18N = {
     "Race and candidate details were translated automatically by your browser and may contain errors. Always check your official voter guide.": "Los detalles de las contiendas y los candidatos fueron traducidos automáticamente por su navegador y pueden contener errores. Consulte siempre su guía oficial para votantes.",
     "Race and candidate details are shown in English because this browser cannot translate them automatically. Your county election office may provide an official voter guide in your language.": "Los detalles de las contiendas y los candidatos se muestran en inglés porque este navegador no puede traducirlos automáticamente. La oficina electoral de su condado puede ofrecer una guía oficial para votantes en su idioma.",
     "Translating…": "Traduciendo…",
-    "Turn on automatic translation": "Activar traducción automática"
+    "Turn on automatic translation": "Activar traducción automática",
+    "Your ballot": "Su boleta",
+    "Find your ballot guide": "Busque su guía de boleta",
+    "Enter your ZIP code to load the ballot guide for your area, if we have one": "Escriba su código postal para cargar la guía de boleta de su zona, si la tenemos",
+    "Street address or city": "Dirección o ciudad",
+    "Optional": "Opcional",
+    "ZIP code": "Código postal",
+    "Find my ballot": "Buscar mi boleta",
+    "Finding your ballot": "Buscando su boleta",
+    "Try an example": "Pruebe un ejemplo",
+    "Strengths and considerations": "Fortalezas y consideraciones",
+    "Reading options": "Opciones de lectura"
   },
   "zh-Hans": {
     "U.S. Primary Ballot Assistant": "美国初选选票助手",
@@ -356,7 +367,18 @@ window.BA_I18N = {
     "Race and candidate details were translated automatically by your browser and may contain errors. Always check your official voter guide.": "选举和候选人详情由您的浏览器自动翻译，可能存在错误。请务必以官方选民指南为准。",
     "Race and candidate details are shown in English because this browser cannot translate them automatically. Your county election office may provide an official voter guide in your language.": "由于此浏览器无法自动翻译，选举和候选人详情以英文显示。您所在县的选举办公室可能提供您所用语言的官方选民指南。",
     "Translating…": "正在翻译…",
-    "Turn on automatic translation": "开启自动翻译"
+    "Turn on automatic translation": "开启自动翻译",
+    "Your ballot": "您的选票",
+    "Find your ballot guide": "查找您的选票指南",
+    "Enter your ZIP code to load the ballot guide for your area, if we have one": "输入您的邮政编码，加载您所在地区的选票指南（如有）",
+    "Street address or city": "街道地址或城市",
+    "Optional": "可选",
+    "ZIP code": "邮政编码",
+    "Find my ballot": "查找我的选票",
+    "Finding your ballot": "正在查找您的选票",
+    "Try an example": "试试示例",
+    "Strengths and considerations": "优势与考虑因素",
+    "Reading options": "朗读选项"
   },
   "zh-Hant": {
     "U.S. Primary Ballot Assistant": "美國初選選票助手",
@@ -433,7 +455,18 @@ window.BA_I18N = {
     "Race and candidate details were translated automatically by your browser and may contain errors. Always check your official voter guide.": "選舉和候選人詳情由您的瀏覽器自動翻譯，可能有錯誤。請務必以官方選民指南為準。",
     "Race and candidate details are shown in English because this browser cannot translate them automatically. Your county election office may provide an official voter guide in your language.": "由於此瀏覽器無法自動翻譯，選舉和候選人詳情以英文顯示。您所在縣的選舉辦公室可能提供您所用語言的官方選民指南。",
     "Translating…": "正在翻譯…",
-    "Turn on automatic translation": "開啟自動翻譯"
+    "Turn on automatic translation": "開啟自動翻譯",
+    "Your ballot": "您的選票",
+    "Find your ballot guide": "查找您的選票指南",
+    "Enter your ZIP code to load the ballot guide for your area, if we have one": "輸入您的郵遞區號，載入您所在地區的選票指南（如有）",
+    "Street address or city": "街道地址或城市",
+    "Optional": "選填",
+    "ZIP code": "郵遞區號",
+    "Find my ballot": "查找我的選票",
+    "Finding your ballot": "正在查找您的選票",
+    "Try an example": "試試範例",
+    "Strengths and considerations": "優勢與考量因素",
+    "Reading options": "朗讀選項"
   },
   "vi": {
     "U.S. Primary Ballot Assistant": "Trợ lý lá phiếu bầu cử sơ bộ Hoa Kỳ",
@@ -510,7 +543,18 @@ window.BA_I18N = {
     "Race and candidate details were translated automatically by your browser and may contain errors. Always check your official voter guide.": "Thông tin về cuộc đua và ứng cử viên được trình duyệt của bạn dịch tự động và có thể có lỗi. Hãy luôn kiểm tra hướng dẫn cử tri chính thức.",
     "Race and candidate details are shown in English because this browser cannot translate them automatically. Your county election office may provide an official voter guide in your language.": "Thông tin về cuộc đua và ứng cử viên được hiển thị bằng tiếng Anh vì trình duyệt này không thể tự động dịch. Văn phòng bầu cử quận của bạn có thể cung cấp hướng dẫn cử tri chính thức bằng ngôn ngữ của bạn.",
     "Translating…": "Đang dịch…",
-    "Turn on automatic translation": "Bật dịch tự động"
+    "Turn on automatic translation": "Bật dịch tự động",
+    "Your ballot": "Lá phiếu của bạn",
+    "Find your ballot guide": "Tìm hướng dẫn lá phiếu của bạn",
+    "Enter your ZIP code to load the ballot guide for your area, if we have one": "Nhập mã ZIP để tải hướng dẫn lá phiếu cho khu vực của bạn, nếu chúng tôi có",
+    "Street address or city": "Địa chỉ hoặc thành phố",
+    "Optional": "Không bắt buộc",
+    "ZIP code": "Mã ZIP",
+    "Find my ballot": "Tìm lá phiếu của tôi",
+    "Finding your ballot": "Đang tìm lá phiếu của bạn",
+    "Try an example": "Thử một ví dụ",
+    "Strengths and considerations": "Điểm mạnh và điều cần cân nhắc",
+    "Reading options": "Tùy chọn đọc"
   },
   "ko": {
     "U.S. Primary Ballot Assistant": "미국 예비선거 투표 도우미",
@@ -587,7 +631,18 @@ window.BA_I18N = {
     "Race and candidate details were translated automatically by your browser and may contain errors. Always check your official voter guide.": "선거 및 후보자 정보는 브라우저에서 자동으로 번역되었으며 오류가 있을 수 있습니다. 반드시 공식 유권자 안내서를 확인하세요.",
     "Race and candidate details are shown in English because this browser cannot translate them automatically. Your county election office may provide an official voter guide in your language.": "이 브라우저는 자동 번역을 지원하지 않아 선거 및 후보자 정보가 영어로 표시됩니다. 카운티 선거 사무소에서 한국어 공식 유권자 안내서를 제공할 수 있습니다.",
     "Translating…": "번역 중…",
-    "Turn on automatic translation": "자동 번역 켜기"
+    "Turn on automatic translation": "자동 번역 켜기",
+    "Your ballot": "내 투표용지",
+    "Find your ballot guide": "투표용지 안내 찾기",
+    "Enter your ZIP code to load the ballot guide for your area, if we have one": "ZIP 코드를 입력하면 해당 지역의 투표용지 안내를 불러옵니다(제공되는 경우)",
+    "Street address or city": "도로명 주소 또는 도시",
+    "Optional": "선택 사항",
+    "ZIP code": "ZIP 코드",
+    "Find my ballot": "내 투표용지 찾기",
+    "Finding your ballot": "투표용지를 찾는 중",
+    "Try an example": "예시 보기",
+    "Strengths and considerations": "강점 및 고려 사항",
+    "Reading options": "읽기 옵션"
   },
   "tl": {
     "U.S. Primary Ballot Assistant": "Katulong sa Balota ng Primary sa U.S.",
@@ -664,7 +719,18 @@ window.BA_I18N = {
     "Race and candidate details were translated automatically by your browser and may contain errors. Always check your official voter guide.": "Ang mga detalye ng halalan at kandidato ay awtomatikong isinalin ng iyong browser at maaaring may mga mali. Palaging tingnan ang iyong opisyal na gabay para sa botante.",
     "Race and candidate details are shown in English because this browser cannot translate them automatically. Your county election office may provide an official voter guide in your language.": "Ang mga detalye ng halalan at kandidato ay nasa Ingles dahil hindi ito awtomatikong maisalin ng browser na ito. Maaaring may opisyal na gabay para sa botante sa iyong wika ang tanggapan ng halalan ng iyong county.",
     "Translating…": "Isinasalin…",
-    "Turn on automatic translation": "I-on ang awtomatikong pagsasalin"
+    "Turn on automatic translation": "I-on ang awtomatikong pagsasalin",
+    "Your ballot": "Ang iyong balota",
+    "Find your ballot guide": "Hanapin ang gabay sa iyong balota",
+    "Enter your ZIP code to load the ballot guide for your area, if we have one": "Ilagay ang iyong ZIP code para i-load ang gabay sa balota para sa iyong lugar, kung mayroon kami",
+    "Street address or city": "Address o lungsod",
+    "Optional": "Opsyonal",
+    "ZIP code": "ZIP code",
+    "Find my ballot": "Hanapin ang aking balota",
+    "Finding your ballot": "Hinahanap ang iyong balota",
+    "Try an example": "Subukan ang isang halimbawa",
+    "Strengths and considerations": "Mga kalakasan at dapat isaalang-alang",
+    "Reading options": "Mga opsyon sa pagbasa"
   },
   "ja": {
     "U.S. Primary Ballot Assistant": "米国予備選挙 投票アシスタント",
@@ -741,7 +807,18 @@ window.BA_I18N = {
     "Race and candidate details were translated automatically by your browser and may contain errors. Always check your official voter guide.": "選挙と候補者の詳細はブラウザによって自動翻訳されており、誤りが含まれる場合があります。必ず公式の有権者ガイドをご確認ください。",
     "Race and candidate details are shown in English because this browser cannot translate them automatically. Your county election office may provide an official voter guide in your language.": "このブラウザでは自動翻訳ができないため、選挙と候補者の詳細は英語で表示されます。郡の選挙管理事務所が日本語の公式有権者ガイドを提供している場合があります。",
     "Translating…": "翻訳中…",
-    "Turn on automatic translation": "自動翻訳をオンにする"
+    "Turn on automatic translation": "自動翻訳をオンにする",
+    "Your ballot": "あなたの投票用紙",
+    "Find your ballot guide": "投票ガイドを探す",
+    "Enter your ZIP code to load the ballot guide for your area, if we have one": "郵便番号を入力すると、お住まいの地域の投票ガイドを表示します（ある場合）",
+    "Street address or city": "住所または市区町村",
+    "Optional": "任意",
+    "ZIP code": "郵便番号",
+    "Find my ballot": "投票用紙を探す",
+    "Finding your ballot": "投票用紙を検索中",
+    "Try an example": "例を試す",
+    "Strengths and considerations": "強みと検討事項",
+    "Reading options": "読み上げオプション"
   },
   "bn": {
     "U.S. Primary Ballot Assistant": "মার্কিন প্রাইমারি ব্যালট সহায়ক",
@@ -818,7 +895,18 @@ window.BA_I18N = {
     "Race and candidate details were translated automatically by your browser and may contain errors. Always check your official voter guide.": "নির্বাচন ও প্রার্থীদের তথ্য আপনার ব্রাউজার স্বয়ংক্রিয়ভাবে অনুবাদ করেছে এবং এতে ভুল থাকতে পারে। সবসময় আপনার সরকারি ভোটার নির্দেশিকা দেখে নিন।",
     "Race and candidate details are shown in English because this browser cannot translate them automatically. Your county election office may provide an official voter guide in your language.": "এই ব্রাউজার স্বয়ংক্রিয়ভাবে অনুবাদ করতে পারে না, তাই নির্বাচন ও প্রার্থীদের তথ্য ইংরেজিতে দেখানো হচ্ছে। আপনার কাউন্টির নির্বাচন অফিস আপনার ভাষায় সরকারি ভোটার নির্দেশিকা দিতে পারে।",
     "Translating…": "অনুবাদ হচ্ছে…",
-    "Turn on automatic translation": "স্বয়ংক্রিয় অনুবাদ চালু করুন"
+    "Turn on automatic translation": "স্বয়ংক্রিয় অনুবাদ চালু করুন",
+    "Your ballot": "আপনার ব্যালট",
+    "Find your ballot guide": "আপনার ব্যালট নির্দেশিকা খুঁজুন",
+    "Enter your ZIP code to load the ballot guide for your area, if we have one": "আপনার এলাকার ব্যালট নির্দেশিকা দেখতে আপনার ZIP কোড লিখুন, যদি আমাদের কাছে থাকে",
+    "Street address or city": "রাস্তার ঠিকানা বা শহর",
+    "Optional": "ঐচ্ছিক",
+    "ZIP code": "ZIP কোড",
+    "Find my ballot": "আমার ব্যালট খুঁজুন",
+    "Finding your ballot": "আপনার ব্যালট খোঁজা হচ্ছে",
+    "Try an example": "একটি উদাহরণ দেখুন",
+    "Strengths and considerations": "শক্তি ও বিবেচ্য বিষয়",
+    "Reading options": "পড়ার বিকল্প"
   },
   "hi": {
     "U.S. Primary Ballot Assistant": "अमेरिकी प्राइमरी मतपत्र सहायक",
@@ -895,7 +983,18 @@ window.BA_I18N = {
     "Race and candidate details were translated automatically by your browser and may contain errors. Always check your official voter guide.": "चुनाव और उम्मीदवारों की जानकारी का आपके ब्राउज़र ने अपने-आप अनुवाद किया है और इसमें गलतियाँ हो सकती हैं। हमेशा अपनी आधिकारिक मतदाता गाइड देखें।",
     "Race and candidate details are shown in English because this browser cannot translate them automatically. Your county election office may provide an official voter guide in your language.": "यह ब्राउज़र अपने-आप अनुवाद नहीं कर सकता, इसलिए चुनाव और उम्मीदवारों की जानकारी अंग्रेज़ी में दिखाई गई है। आपके काउंटी का चुनाव कार्यालय आपकी भाषा में आधिकारिक मतदाता गाइड दे सकता है।",
     "Translating…": "अनुवाद हो रहा है…",
-    "Turn on automatic translation": "स्वचालित अनुवाद चालू करें"
+    "Turn on automatic translation": "स्वचालित अनुवाद चालू करें",
+    "Your ballot": "आपका मतपत्र",
+    "Find your ballot guide": "अपनी मतपत्र गाइड खोजें",
+    "Enter your ZIP code to load the ballot guide for your area, if we have one": "अपने क्षेत्र की मतपत्र गाइड देखने के लिए अपना ZIP कोड दर्ज करें, यदि हमारे पास है",
+    "Street address or city": "सड़क का पता या शहर",
+    "Optional": "वैकल्पिक",
+    "ZIP code": "ZIP कोड",
+    "Find my ballot": "मेरा मतपत्र खोजें",
+    "Finding your ballot": "आपका मतपत्र खोजा जा रहा है",
+    "Try an example": "एक उदाहरण आज़माएँ",
+    "Strengths and considerations": "खूबियाँ और विचारणीय बातें",
+    "Reading options": "पढ़ने के विकल्प"
   },
   "ar": {
     "U.S. Primary Ballot Assistant": "مساعد بطاقة الاقتراع للانتخابات التمهيدية الأمريكية",
@@ -972,7 +1071,18 @@ window.BA_I18N = {
     "Race and candidate details were translated automatically by your browser and may contain errors. Always check your official voter guide.": "تمت ترجمة تفاصيل السباقات والمرشحين تلقائيًا بواسطة متصفحك وقد تحتوي على أخطاء. تحقق دائمًا من دليل الناخب الرسمي.",
     "Race and candidate details are shown in English because this browser cannot translate them automatically. Your county election office may provide an official voter guide in your language.": "تُعرض تفاصيل السباقات والمرشحين باللغة الإنجليزية لأن هذا المتصفح لا يستطيع ترجمتها تلقائيًا. قد يوفر مكتب الانتخابات في مقاطعتك دليل ناخب رسميًا بلغتك.",
     "Translating…": "جارٍ الترجمة…",
-    "Turn on automatic translation": "تشغيل الترجمة التلقائية"
+    "Turn on automatic translation": "تشغيل الترجمة التلقائية",
+    "Your ballot": "بطاقة اقتراعك",
+    "Find your ballot guide": "ابحث عن دليل بطاقة اقتراعك",
+    "Enter your ZIP code to load the ballot guide for your area, if we have one": "أدخل الرمز البريدي لتحميل دليل بطاقة الاقتراع لمنطقتك، إن كان متوفرًا لدينا",
+    "Street address or city": "عنوان الشارع أو المدينة",
+    "Optional": "اختياري",
+    "ZIP code": "الرمز البريدي",
+    "Find my ballot": "ابحث عن بطاقة اقتراعي",
+    "Finding your ballot": "جارٍ البحث عن بطاقة اقتراعك",
+    "Try an example": "جرّب مثالًا",
+    "Strengths and considerations": "نقاط القوة والاعتبارات",
+    "Reading options": "خيارات القراءة"
   },
   "ht": {
     "U.S. Primary Ballot Assistant": "Asistan Bilten Vòt Primè Etazini",
@@ -1049,7 +1159,18 @@ window.BA_I18N = {
     "Race and candidate details were translated automatically by your browser and may contain errors. Always check your official voter guide.": "Navigatè w la tradui detay eleksyon yo ak kandida yo otomatikman, e yo ka gen erè. Toujou verifye gid ofisyèl pou votè a.",
     "Race and candidate details are shown in English because this browser cannot translate them automatically. Your county election office may provide an official voter guide in your language.": "Detay eleksyon yo ak kandida yo parèt an angle paske navigatè sa a pa ka tradui yo otomatikman. Biwo eleksyon konte w la ka genyen yon gid ofisyèl pou votè nan lang ou.",
     "Translating…": "N ap tradui…",
-    "Turn on automatic translation": "Aktive tradiksyon otomatik"
+    "Turn on automatic translation": "Aktive tradiksyon otomatik",
+    "Your ballot": "Bilten vòt ou",
+    "Find your ballot guide": "Jwenn gid bilten vòt ou",
+    "Enter your ZIP code to load the ballot guide for your area, if we have one": "Antre kòd postal ou pou w chaje gid bilten vòt pou zòn ou, si nou genyen l",
+    "Street address or city": "Adrès oswa vil",
+    "Optional": "Opsyonèl",
+    "ZIP code": "Kòd postal",
+    "Find my ballot": "Jwenn bilten vòt mwen",
+    "Finding your ballot": "N ap chèche bilten vòt ou",
+    "Try an example": "Eseye yon egzanp",
+    "Strengths and considerations": "Pwen fò ak sa pou konsidere",
+    "Reading options": "Opsyon lekti"
   },
   "ru": {
     "U.S. Primary Ballot Assistant": "Помощник по бюллетеням праймериз США",
@@ -1126,7 +1247,18 @@ window.BA_I18N = {
     "Race and candidate details were translated automatically by your browser and may contain errors. Always check your official voter guide.": "Сведения о выборах и кандидатах автоматически переведены вашим браузером и могут содержать ошибки. Всегда сверяйтесь с официальным руководством для избирателей.",
     "Race and candidate details are shown in English because this browser cannot translate them automatically. Your county election office may provide an official voter guide in your language.": "Сведения о выборах и кандидатах показаны на английском языке, потому что этот браузер не может перевести их автоматически. Избирательная комиссия вашего округа может предоставить официальное руководство для избирателей на вашем языке.",
     "Translating…": "Перевод…",
-    "Turn on automatic translation": "Включить автоматический перевод"
+    "Turn on automatic translation": "Включить автоматический перевод",
+    "Your ballot": "Ваш бюллетень",
+    "Find your ballot guide": "Найдите справочник по бюллетеню",
+    "Enter your ZIP code to load the ballot guide for your area, if we have one": "Введите почтовый индекс, чтобы загрузить справочник по бюллетеню для вашего района, если он у нас есть",
+    "Street address or city": "Адрес или город",
+    "Optional": "Необязательно",
+    "ZIP code": "Почтовый индекс (ZIP)",
+    "Find my ballot": "Найти мой бюллетень",
+    "Finding your ballot": "Ищем ваш бюллетень",
+    "Try an example": "Попробуйте пример",
+    "Strengths and considerations": "Сильные стороны и соображения",
+    "Reading options": "Параметры чтения"
   },
   "pt": {
     "U.S. Primary Ballot Assistant": "Assistente de Cédula das Primárias dos EUA",
@@ -1203,7 +1335,18 @@ window.BA_I18N = {
     "Race and candidate details were translated automatically by your browser and may contain errors. Always check your official voter guide.": "Os detalhes das disputas e dos candidatos foram traduzidos automaticamente pelo seu navegador e podem conter erros. Sempre consulte o guia oficial do eleitor.",
     "Race and candidate details are shown in English because this browser cannot translate them automatically. Your county election office may provide an official voter guide in your language.": "Os detalhes das disputas e dos candidatos estão em inglês porque este navegador não consegue traduzi-los automaticamente. O escritório eleitoral do seu condado pode oferecer um guia oficial do eleitor no seu idioma.",
     "Translating…": "Traduzindo…",
-    "Turn on automatic translation": "Ativar tradução automática"
+    "Turn on automatic translation": "Ativar tradução automática",
+    "Your ballot": "Sua cédula",
+    "Find your ballot guide": "Encontre o guia da sua cédula",
+    "Enter your ZIP code to load the ballot guide for your area, if we have one": "Digite seu CEP (ZIP code) para carregar o guia da cédula da sua região, se tivermos",
+    "Street address or city": "Endereço ou cidade",
+    "Optional": "Opcional",
+    "ZIP code": "CEP (ZIP code)",
+    "Find my ballot": "Encontrar minha cédula",
+    "Finding your ballot": "Procurando sua cédula",
+    "Try an example": "Veja um exemplo",
+    "Strengths and considerations": "Pontos fortes e pontos a considerar",
+    "Reading options": "Opções de leitura"
   }
 },
 

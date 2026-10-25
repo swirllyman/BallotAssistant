@@ -579,45 +579,71 @@
 
   let bar, player, notice;
 
+  const ICON_SPEAKER = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13"/></svg>';
+
   function buildToolbar() {
     bar = document.createElement('div');
     bar.className = 'a11y-bar a11y-own';
     bar.setAttribute('role', 'region');
     bar.innerHTML = `
-      <label class="a11y-field">
-        <span aria-hidden="true">🌐</span>
-        <span data-k="Language"></span>
+      <label class="a11y-field a11y-lang-field">
+        <svg class="a11y-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>
+        <span class="a11y-visually-hidden" data-k="Language"></span>
         <select id="a11y-lang" translate="no">
           ${LANGS.map(l => `<option value="${l.code}" lang="${l.html}">${l.native}${l.native !== l.name ? ' (' + l.name + ')' : ''}</option>`).join('')}
         </select>
       </label>
       <button type="button" class="a11y-btn a11y-primary" id="a11y-read">
-        <span aria-hidden="true">🔊</span> <span id="a11y-read-label" data-k="Read this page"></span>
+        ${ICON_SPEAKER} <span id="a11y-read-label" data-k="Read this page"></span>
       </button>
-      <label class="a11y-field">
-        <span data-k="Reading speed"></span>
-        <select id="a11y-rate">
-          ${RATES.map(r => `<option value="${r.value}" data-k="${r.key}"></option>`).join('')}
-        </select>
-      </label>
-      <label class="a11y-check"><input type="checkbox" id="a11y-auto"> <span data-k="Read each step aloud automatically"></span></label>
-      <label class="a11y-check"><input type="checkbox" id="a11y-tap"> <span data-k="Tap any text to hear it"></span></label>
-      <div class="a11y-notice" id="a11y-notice" role="status" aria-live="polite" hidden></div>
+      <details class="a11y-options">
+        <summary class="a11y-btn" aria-haspopup="true">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h10M18 7h2M4 17h4M12 17h8"/><circle cx="16" cy="7" r="2"/><circle cx="10" cy="17" r="2"/></svg>
+          <span class="a11y-visually-hidden" data-k="Reading options"></span>
+        </summary>
+        <div class="a11y-options-panel">
+          <label class="a11y-field a11y-stack">
+            <span data-k="Reading speed"></span>
+            <select id="a11y-rate">
+              ${RATES.map(r => `<option value="${r.value}" data-k="${r.key}"></option>`).join('')}
+            </select>
+          </label>
+          <label class="a11y-check"><input type="checkbox" id="a11y-auto"> <span data-k="Read each step aloud automatically"></span></label>
+          <label class="a11y-check"><input type="checkbox" id="a11y-tap"> <span data-k="Tap any text to hear it"></span></label>
+        </div>
+      </details>
     `;
+    const slot = document.getElementById('a11y-slot');
     const container = document.querySelector('.container');
-    if (container) container.insertBefore(bar, container.firstChild);
+    if (slot) slot.appendChild(bar);
+    else if (container) container.insertBefore(bar, container.firstChild);
     else document.body.insertBefore(bar, document.body.firstChild);
+
+    // Notices about voices and translation sit under the top bar, full width.
+    const noticeEl = document.createElement('div');
+    noticeEl.className = 'a11y-notice a11y-own';
+    noticeEl.id = 'a11y-notice';
+    noticeEl.setAttribute('role', 'status');
+    noticeEl.setAttribute('aria-live', 'polite');
+    noticeEl.hidden = true;
+    const topbar = document.querySelector('.topbar');
+    if (topbar) topbar.after(noticeEl);
+    else bar.appendChild(noticeEl);
+
+    const options = bar.querySelector('.a11y-options');
+    document.addEventListener('click', e => { if (options.open && !options.contains(e.target)) options.open = false; });
+    options.addEventListener('keydown', e => { if (e.key === 'Escape' && options.open) { options.open = false; options.querySelector('summary').focus(); } });
 
     player = document.createElement('div');
     player.className = 'a11y-player a11y-own';
     player.hidden = true;
     player.innerHTML = `
-      <span class="a11y-player-label"><span aria-hidden="true">🔊</span> <span data-k="Reading aloud"></span></span>
+      <span class="a11y-player-label">${ICON_SPEAKER} <span data-k="Reading aloud"></span></span>
       <button type="button" class="a11y-btn" id="a11y-pause"></button>
-      <button type="button" class="a11y-btn" id="a11y-stop"><span aria-hidden="true">⏹</span> <span data-k="Stop"></span></button>
+      <button type="button" class="a11y-btn" id="a11y-stop"><span aria-hidden="true">■</span> <span data-k="Stop"></span></button>
     `;
     document.body.appendChild(player);
-    notice = bar.querySelector('#a11y-notice');
+    notice = noticeEl;
 
     const langSel = bar.querySelector('#a11y-lang');
     langSel.value = state.lang;
@@ -649,6 +675,8 @@
   function renderOwnText() {
     document.querySelectorAll('.a11y-own [data-k]').forEach(el => { el.textContent = t(el.dataset.k); });
     bar.setAttribute('aria-label', t('Read aloud & language'));
+    const optionsToggle = bar.querySelector('.a11y-options summary');
+    if (optionsToggle) optionsToggle.title = t('Reading options');
     document.querySelectorAll('.a11y-say').forEach(b => {
       b.setAttribute('aria-label', t('Read this section aloud'));
       b.title = t('Read this section aloud');
@@ -714,7 +742,7 @@
         const b = document.createElement('button');
         b.type = 'button';
         b.className = 'a11y-say a11y-own';
-        b.innerHTML = '<span aria-hidden="true">🔊</span>';
+        b.innerHTML = ICON_SPEAKER;
         b.setAttribute('aria-label', t('Read this section aloud'));
         b.title = t('Read this section aloud');
         b._a11ySection = section;
