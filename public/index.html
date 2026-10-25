@@ -1477,7 +1477,7 @@
       location: (place, district) => [place, district].filter(Boolean).map(part => `${part}.`).join(' '),
       daysLeftLabel: (n) => n === 1 ? 'day until Election Day' : 'days until Election Day',
       todayLabel: 'Election Day is today',
-      allDone: (count, date) => `You made a choice in all ${count} races. Bring this plan with you, or keep it next to your mail ballot, and vote by ${date}.`,
+      allDone: (count, date) => `You made a choice in all ${count} races. Keep this plan handy when you fill out your ballot, and vote by ${date}.`,
       someDone: (done, count, date) => `You made a choice in ${done} of ${count} races. You can still go back and decide on the rest before you vote by ${date}. It is also fine to leave a race blank on your real ballot.`,
       noneDone: (count) => `You have not picked anyone yet in the ${count} races on this ballot. Use the Edit buttons below to go back and make your choices.`,
       choicesHeading: 'How you plan to vote',
@@ -1494,7 +1494,7 @@
         {
           icon: '📬',
           title: 'Voting by mail',
-          body: () => 'If you have a mail ballot, read the instructions, sign the envelope, and return it by your state\'s deadline. Many places have secure drop boxes.'
+          body: () => 'If you have a mail ballot, read the instructions, sign the envelope, and return it by your state\'s deadline. Many places also have official ballot drop boxes.'
         },
         {
           icon: '📍',
@@ -1522,7 +1522,7 @@
       },
       placeHours: (hours) => `Hours: ${hours}`,
       directions: (name) => `Get directions to ${name}.`,
-      disclaimer: 'This recap is a personal planning note, not an official ballot. Always follow the instructions on your official ballot and from your local election office.',
+      disclaimer: 'This recap is a personal planning note, not an official ballot, and it only repeats the choices you made. Voting help links go to your state election office or to Can I Vote, run by the National Association of Secretaries of State. Always follow the instructions on your official ballot and from your local election office.',
       copyButton: 'Copy my voting plan',
       copiedButton: 'Copied to clipboard',
       printButton: 'Print my voting plan',
