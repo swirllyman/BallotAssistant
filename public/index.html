@@ -986,6 +986,19 @@
       padding-inline-end: 3rem;
     }
 
+    /* Phones: the overview uses the full card width under the name and party. */
+    @media (max-width: 600px) {
+      .candidate-card {
+        padding-inline-end: 1rem;
+      }
+      .candidate-card > .candidate-header {
+        padding-inline-end: 2rem;
+      }
+      .candidate-card > .candidate-info {
+        grid-column: 1 / -1;
+      }
+    }
+
     /* Candidate overviews: 2 lines (Brief), 4 lines (Standard), everything (Detailed). */
     .candidate-desc {
       color: var(--text-muted);
