@@ -1152,6 +1152,15 @@
       flex-shrink: 0;
     }
 
+    .recap-places .recap-step-title::before {
+      content: none;
+    }
+
+    .recap-places .recap-step-title svg {
+      color: var(--accent);
+      flex-shrink: 0;
+    }
+
     .recap-step p {
       color: var(--text-muted);
       font-size: 0.875rem;
@@ -1755,7 +1764,7 @@
     const RECAP_TEXT = {
       badge: 'Your Voting Plan',
       title: (state) => `Your ${state} Ballot Recap`,
-      location: (place, district) => `${place}. ${district}.`,
+      location: (place, district) => [place, district].filter(Boolean).map(part => `${part}.`).join(' '),
       daysLeftLabel: (n) => n === 1 ? 'day until Election Day' : 'days until Election Day',
       todayLabel: 'Election Day is today',
       allDone: (count, date) => `You made a choice in all ${count} races. Bring this plan with you, or keep it next to your mail ballot, and vote by ${date}.`,
@@ -1777,7 +1786,9 @@
         },
         {
           title: 'Find your polling place',
-          body: (links) => `Your polling place and hours are set by your county or local election office. Look them up before you go. ${links.poll}`
+          body: (links, hasPlace) => hasPlace
+            ? `Your voting locations are listed above. Hours and locations can change, so check them again before you go. ${links.poll}`
+            : `Your polling place and hours are set by your county or local election office. Look them up before you go. ${links.poll}`
         },
         {
           title: 'Know what to bring',
@@ -1787,6 +1798,16 @@
       linkState: 'Check your registration on Can I Vote.',
       linkPoll: 'Look up your polling place on Can I Vote.',
       linkId: 'See voter ID rules on Can I Vote.',
+      officialLinkState: 'Check your registration with your state election office.',
+      officialLinkPoll: 'Look up your polling place with your state election office.',
+      placesHeading: 'Where you can vote',
+      placeKinds: {
+        polling: 'Your polling place',
+        early: 'Early voting site',
+        dropoff: 'Ballot drop-off location'
+      },
+      placeHours: (hours) => `Hours: ${hours}`,
+      directions: (name) => `Get directions to ${name}.`,
       disclaimer: 'This recap is a personal planning note, not an official ballot. Always follow the instructions on your official ballot and from your local election office.',
       copyButton: 'Copy my voting plan',
       copiedButton: 'Copied to clipboard',
@@ -1801,40 +1822,102 @@
       return String(str).replace(/[&<>"']/g, ch => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[ch]));
     }
 
-    // Counts down to the guide's own election if it is still ahead, otherwise to the next general election.
-    function getElectionDate() {
-      const guideDate = activeDistrictData && activeDistrictData.election && activeDistrictData.election.date;
-      const iso = guideDate && !isPastDate(guideDate) ? guideDate : ELECTION_DAY_ISO;
+    // Accepts the app's own "election.date" or the Civic Information API's "election.electionDay".
+    function getRecapElectionDate() {
+      const election = (activeDistrictData && activeDistrictData.election) || {};
+      const iso = election.date || election.electionDay || (activeDistrictData && activeDistrictData.electionDate) || ELECTION_DAY_ISO;
       const [y, m, d] = iso.split('-').map(Number);
       return new Date(y, m - 1, d);
     }
 
-    function formatRecapElectionDate() {
+    function getRecapElectionDateText() {
       const lang = document.documentElement.lang || 'en';
-      return getElectionDate().toLocaleDateString(lang, { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+      return getRecapElectionDate().toLocaleDateString(lang, { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
     }
 
     function getDaysUntilElection() {
       const today = new Date();
       today.setHours(0, 0, 0, 0);
-      return Math.round((getElectionDate() - today) / 86400000);
+      return Math.round((getRecapElectionDate() - today) / 86400000);
     }
 
-    // Official lookup tools from the National Association of Secretaries of State (canivote.org).
+    // Field names follow the Google Civic Information API (state[].electionAdministrationBody).
+    function getElectionOffice() {
+      const data = activeDistrictData || {};
+      if (data.electionAdministrationBody) return data.electionAdministrationBody;
+      const st = Array.isArray(data.state) ? data.state[0] : null;
+      return (st && (st.electionAdministrationBody || (st.local_jurisdiction && st.local_jurisdiction.electionAdministrationBody))) || {};
+    }
+
+    function getStateName() {
+      const st = activeDistrictData && activeDistrictData.state;
+      if (typeof st === 'string') return st;
+      return (Array.isArray(st) && st[0] && st[0].name) || '';
+    }
+
+    function recapLink(url, label) {
+      return `<a href="${escapeRecapHTML(url)}" target="_blank" rel="noopener">${escapeRecapHTML(label)}</a>`;
+    }
+
+    // Uses the state's own election office links when the data has them, otherwise the
+    // official lookup tools from the National Association of Secretaries of State (canivote.org).
     function getVoterLinks() {
-      const link = (path, label) => `<a href="https://www.nass.org/can-i-vote/${path}" target="_blank" rel="noopener">${escapeRecapHTML(label)}</a>`;
+      const office = getElectionOffice();
+      const nass = (path) => `https://www.nass.org/can-i-vote/${path}`;
       return {
-        state: link('voter-registration-status', RECAP_TEXT.linkState),
-        poll: link('find-your-polling-place', RECAP_TEXT.linkPoll),
-        id: link('valid-forms-id', RECAP_TEXT.linkId)
+        state: office.electionRegistrationConfirmationUrl || office.electionRegistrationUrl
+          ? recapLink(office.electionRegistrationConfirmationUrl || office.electionRegistrationUrl, RECAP_TEXT.officialLinkState)
+          : recapLink(nass('voter-registration-status'), RECAP_TEXT.linkState),
+        poll: office.votingLocationFinderUrl
+          ? recapLink(office.votingLocationFinderUrl, RECAP_TEXT.officialLinkPoll)
+          : recapLink(nass('find-your-polling-place'), RECAP_TEXT.linkPoll),
+        id: recapLink(nass('valid-forms-id'), RECAP_TEXT.linkId)
       };
+    }
+
+    // Voting locations in the Civic Information API shape: { address: { locationName, line1, city, state, zip }, pollingHours, notes }.
+    function getVotingPlaces() {
+      const data = activeDistrictData || {};
+      const first = (list) => Array.isArray(list) && list.length ? list[0] : null;
+      return [
+        { kind: 'polling', place: data.pollingPlace || first(data.pollingLocations) },
+        { kind: 'early', place: first(data.earlyVoteSites) },
+        { kind: 'dropoff', place: first(data.dropOffLocations) }
+      ].filter(p => p.place && p.place.address);
+    }
+
+    function renderVotingPlace({ kind, place }) {
+      const a = place.address;
+      const name = a.locationName || RECAP_TEXT.placeKinds[kind];
+      const street = [a.line1, a.line2, a.line3].filter(Boolean).join(', ');
+      const cityLine = [a.city, [a.state, a.zip].filter(Boolean).join(' ')].filter(Boolean).join(', ');
+      const query = encodeURIComponent([a.locationName, street, cityLine].filter(Boolean).join(', '));
+      return `
+        <li class="recap-step">
+          <div class="recap-step-title"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span>${RECAP_TEXT.placeKinds[kind]}</span></div>
+          <p><strong>${escapeRecapHTML(name)}</strong></p>
+          ${street ? `<p>${escapeRecapHTML(street)}</p>` : ''}
+          ${cityLine ? `<p>${escapeRecapHTML(cityLine)}</p>` : ''}
+          ${place.pollingHours ? `<p>${escapeRecapHTML(RECAP_TEXT.placeHours(place.pollingHours))}</p>` : ''}
+          ${place.notes ? `<p>${escapeRecapHTML(place.notes)}</p>` : ''}
+          <p>${recapLink(`https://www.google.com/maps/search/?api=1&query=${query}`, RECAP_TEXT.directions(name))}</p>
+        </li>`;
+    }
+
+    // Race fields fall back to Civic Information API contest names (office, ballotTitle, referendumTitle).
+    function getRaceTitle(race) {
+      return race.title || race.office || race.ballotTitle || race.referendumTitle || race.shortTitle || '';
+    }
+
+    function getRaceCategory(race) {
+      return race.category || race.level || '';
     }
 
     // Looks up the chosen candidate object for a race, so the recap can show its party tag.
     function getSelectedCandidate(race, step) {
       const choice = selections[step];
       if (!choice) return null;
-      return race.candidates.find(c => `${c.name} (${c.party})` === choice) || { name: choice, party: '', partyClass: '' };
+      return (race.candidates || []).find(c => `${c.name} (${c.party})` === choice || c.name === choice) || { name: choice, party: '', partyClass: '' };
     }
 
     function renderRecap() {
@@ -1844,7 +1927,7 @@
       const races = activeDistrictData.races;
       const total = races.length;
       const done = races.filter((r, idx) => selections[idx + 1]).length;
-      const dateText = formatRecapElectionDate();
+      const dateText = getRecapElectionDateText();
       const daysLeft = getDaysUntilElection();
 
       let plainText;
@@ -1870,9 +1953,10 @@
         const step = idx + 1;
         const cand = getSelectedCandidate(race, step);
         let groupHTML = '';
-        if (race.category !== lastCategory) {
-          lastCategory = race.category;
-          groupHTML = `<div class="recap-group-title">${escapeRecapHTML(race.category)}</div>`;
+        const category = getRaceCategory(race);
+        if (category && category !== lastCategory) {
+          lastCategory = category;
+          groupHTML = `<div class="recap-group-title">${escapeRecapHTML(category)}</div>`;
         }
         const choiceHTML = cand
           ? `<div class="recap-choice"><span>${escapeRecapHTML(cand.name)}</span>${cand.party ? `<span class="party-tag ${escapeRecapHTML(cand.partyClass)}">${escapeRecapHTML(cand.party)}</span>` : ''}</div>`
@@ -1881,26 +1965,32 @@
           ${groupHTML}
           <div class="recap-row">
             <div>
-              <div class="recap-race-title">${escapeRecapHTML(race.title)}</div>
+              <div class="recap-race-title">${escapeRecapHTML(getRaceTitle(race))}</div>
               ${choiceHTML}
             </div>
-            <button class="recap-edit-btn" onclick="goToStep(${step})" aria-label="${escapeRecapHTML(RECAP_TEXT.editAria(race.title))}">${RECAP_TEXT.editButton}</button>
+            <button class="recap-edit-btn" onclick="goToStep(${step})" aria-label="${escapeRecapHTML(RECAP_TEXT.editAria(getRaceTitle(race)))}">${RECAP_TEXT.editButton}</button>
           </div>`;
       }).join('');
 
       const links = getVoterLinks();
+      const places = getVotingPlaces();
+      const placesHTML = places.length ? `
+        <h3 class="recap-section-title">${RECAP_TEXT.placesHeading}</h3>
+        <ul class="recap-steps recap-places">
+          ${places.map(renderVotingPlace).join('')}
+        </ul>` : '';
       const stepsHTML = RECAP_TEXT.steps.map(st => `
         <li class="recap-step">
           <div class="recap-step-title"><span>${st.title}</span></div>
-          <p>${st.body(links)}</p>
+          <p>${st.body(links, places.length > 0)}</p>
         </li>`).join('');
 
       card.innerHTML = `
         <div class="recap-hero">
           <div>
             <div class="race-type recap-badge">${RECAP_TEXT.badge}</div>
-            <h2 class="race-title">${escapeRecapHTML(RECAP_TEXT.title(activeDistrictData.state))}</h2>
-            <div class="recap-location">${escapeRecapHTML(RECAP_TEXT.location(activeDistrictData.locationName, activeDistrictData.districtText.replace(/\s*\|\s*/g, ', ')))}</div>
+            <h2 class="race-title">${escapeRecapHTML(RECAP_TEXT.title(getStateName()))}</h2>
+            <div class="recap-location">${escapeRecapHTML(RECAP_TEXT.location(activeDistrictData.locationName || '', (activeDistrictData.districtText || '').replace(/\s*\|\s*/g, ', ')))}</div>
           </div>
           ${countdownHTML}
         </div>
@@ -1911,6 +2001,8 @@
         <div class="summary-card">
           ${rowsHTML}
         </div>
+
+        ${placesHTML}
 
         <h3 class="recap-section-title">${RECAP_TEXT.howHeading}</h3>
         <ul class="recap-steps">
@@ -1931,21 +2023,28 @@
       if (!activeDistrictData) return;
       const line = `=====================================================\n`;
       let text = line;
-      text += `    ${RECAP_TEXT.copyHeader(activeDistrictData.state, activeDistrictData.locationName)}\n`;
-      text += `    ${RECAP_TEXT.copyElectionDay(formatRecapElectionDate())}\n`;
+      text += `    ${RECAP_TEXT.copyHeader(getStateName(), activeDistrictData.locationName || '')}\n`;
+      text += `    ${RECAP_TEXT.copyElectionDay(getRecapElectionDateText())}\n`;
       text += line;
 
       let lastCategory = null;
       activeDistrictData.races.forEach((r, idx) => {
-        if (r.category !== lastCategory) {
-          lastCategory = r.category;
-          text += `\n${r.category.toUpperCase()}\n`;
+        const category = getRaceCategory(r);
+        if (category && category !== lastCategory) {
+          lastCategory = category;
+          text += `\n${category.toUpperCase()}\n`;
         }
-        const choice = selections[idx + 1] || RECAP_TEXT.notDecided;
-        text += `${idx + 1}. ${r.title}: ${choice}\n`;
+        const cand = getSelectedCandidate(r, idx + 1);
+        const choice = cand ? (cand.party ? `${cand.name} (${cand.party})` : cand.name) : RECAP_TEXT.notDecided;
+        text += `${idx + 1}. ${getRaceTitle(r)}: ${choice}\n`;
       });
 
-      text += `\n${RECAP_TEXT.copyChecklist}\n`;
+      getVotingPlaces().forEach(({ kind, place }) => {
+        const a = place.address;
+        const addr = [a.locationName, a.line1, a.city, [a.state, a.zip].filter(Boolean).join(' ')].filter(Boolean).join(', ');
+        text += `\n${RECAP_TEXT.placeKinds[kind]}: ${addr}${place.pollingHours ? ` (${place.pollingHours})` : ''}`;
+      });
+      text += `\n\n${RECAP_TEXT.copyChecklist}\n`;
       text += line;
 
       navigator.clipboard.writeText(text).then(() => {
