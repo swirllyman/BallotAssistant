@@ -35,6 +35,14 @@
     return [addr.locationName, street, cityLine].filter(Boolean).join(', ');
   }
 
+  function electionTypeFor(name) {
+    const n = (name || '').toLowerCase();
+    if (n.includes('runoff')) return 'runoff';
+    if (n.includes('primary')) return 'primary';
+    if (n.includes('special')) return 'special';
+    return 'general';
+  }
+
   function categoryFor(contest) {
     const level = (contest.level || [])[0];
     if (contest.type === 'Referendum') return 'Ballot Measure';
@@ -105,7 +113,7 @@
       election: {
         name: res.election.name,
         date: res.election.electionDay,
-        type: 'general'
+        type: electionTypeFor(res.election.name)
       },
       votingInfo: {
         pollingLocation: pollingLocation ? formatAddress(pollingLocation.address) : '',

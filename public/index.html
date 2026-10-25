@@ -916,16 +916,12 @@
             <div class="input-group">
               <div>
                 <label for="input-address">Street Address / City</label>
-                <input type="text" id="input-address" placeholder="e.g. 4500 SW Alaska St, Seattle WA">
+                <input type="text" id="input-address" placeholder="e.g. 123 Main St, Springfield">
               </div>
               <div>
                 <label for="input-zip">ZIP Code</label>
-                <input type="text" id="input-zip" placeholder="e.g. 98116" inputmode="numeric" maxlength="5">
+                <input type="text" id="input-zip" placeholder="e.g. 12345" inputmode="numeric" maxlength="5">
               </div>
-            </div>
-
-            <div class="preset-chips">
-              <span class="chip" onclick="setPreset('Seattle WA', '98116')">📍 Seattle WA (LD 34)</span>
             </div>
 
             <div class="btn-row-address">
@@ -995,18 +991,6 @@
         }
       } catch (e) {}
       return null;
-    }
-
-    async function setPreset(neighborhood, zip) {
-      document.getElementById('input-address').value = `${neighborhood} Address`;
-      document.getElementById('input-zip').value = zip;
-      
-      const data = await loadDistrictByZip(zip);
-      if (data) {
-        showLookupMessage('');
-        activeDistrictData = data;
-        renderDistrictData();
-      }
     }
 
     async function handleAddressLookup(e) {
