@@ -643,6 +643,10 @@
       margin-bottom: 0.35rem;
     }
 
+    .overview-box p {
+      margin-top: 0.6rem;
+    }
+
     .source-link-row,
     .candidate-sources {
       display: flex;
@@ -1277,14 +1281,14 @@
         <!-- STEP 0: ADDRESS -->
         <div class="step-card address-card active" id="step-0">
           <h2>Find your ballot guide</h2>
-          <p class="lead">Enter your ZIP code to load the ballot guide for your area, if we have one.</p>
+          <p class="lead">Enter your street address and 5-digit ZIP code to see the contests, candidates and measures on your ballot.</p>
 
           <div class="election-notice" id="lookup-message" role="status" style="display: none;"></div>
 
           <form onsubmit="handleAddressLookup(event)">
             <div class="input-group">
               <div>
-                <label for="input-address"><span>Street address or city</span><span class="label-hint">Optional</span></label>
+                <label for="input-address"><span>Street address or city</span></label>
                 <input type="text" id="input-address" placeholder="e.g. 4500 SW Alaska St, Seattle WA" autocomplete="street-address">
               </div>
               <div>
@@ -1309,13 +1313,15 @@
     </div>
   </div>
 
+  <script src="./js/config.js"></script>
+  <script src="./js/civic.js"></script>
   <script>
     let activeDistrictData = null;
     let currentStep = 0;
     let selections = {};
 
-    // Next statewide election this guide is preparing voters for.
-    const UPCOMING_ELECTION = { name: '2026 U.S. General Election', date: '2026-11-03' };
+    const CONFIG = window.BALLOT_CONFIG || {};
+    const UPCOMING_ELECTION = CONFIG.upcomingElection || { name: '2026 U.S. General Election', date: '2026-11-03' };
 
     const OFFICIAL_LOOKUP_HTML = `Check your registration and see your official sample ballot at
       <a href="https://vote.gov" target="_blank" rel="noopener">vote.gov</a> or
@@ -1325,6 +1331,11 @@
       return String(value ?? '').replace(/[&<>"']/g, ch => ({
         '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
       })[ch]);
+    }
+
+    // Only allow http(s) links from data and API responses.
+    function safeUrl(url) {
+      return /^https?:\/\//i.test(url || '') ? url : '';
     }
 
     function formatElectionDate(isoDate) {
@@ -1386,13 +1397,29 @@
         return;
       }
 
-      const data = await loadDistrictByZip(zipMatch[0]);
+      let data = null;
+      let civicError = null;
+      if (CONFIG.civicApiKey && window.CivicBallot) {
+        const fullAddress = [rawAddress, rawZip].filter(Boolean).join(' ');
+        try {
+          data = await window.CivicBallot.fetchCivicBallot(fullAddress, CONFIG.civicApiKey);
+        } catch (err) {
+          civicError = err;
+        }
+      }
+
+      // Hand-curated guides are only a fallback when the live lookup has nothing.
+      if (!data && (!civicError || civicError.kind !== 'address')) {
+        data = await loadDistrictByZip(zipMatch[0]);
+      }
       btn.textContent = 'Find my ballot';
       btn.disabled = false;
 
-      // Never substitute another area's ballot for a ZIP we don't cover.
+      // Never substitute another area's ballot for an address we don't cover.
       if (!data) {
-        showLookupMessage(`We don't have a verified ballot guide for ZIP ${escapeHTML(zipMatch[0])} yet. ${OFFICIAL_LOOKUP_HTML}`);
+        const reason = civicError ? escapeHTML(civicError.message) : `We don't have a verified ballot guide for ZIP ${escapeHTML(zipMatch[0])} yet.`;
+        const hint = civicError && civicError.kind === 'address' ? ' Please include your street address and ZIP code.' : '';
+        showLookupMessage(`${reason}${hint} ${OFFICIAL_LOOKUP_HTML}`);
         return;
       }
 
@@ -1429,6 +1456,25 @@
         electionNoticeHTML = `<div class="election-notice">This guide covers the <strong>${escapeHTML(election.name)}</strong> (${escapeHTML(electionDateText)}), which has already happened. It has not been updated for the ${escapeHTML(UPCOMING_ELECTION.name)} on ${escapeHTML(formatElectionDate(UPCOMING_ELECTION.date))}, so candidates and measures on your ballot may differ. ${OFFICIAL_LOOKUP_HTML}</div>`;
       }
       document.getElementById('ballot-notice').innerHTML = electionNoticeHTML;
+
+      const info = activeDistrictData.votingInfo;
+      let votingInfoHTML = '';
+      if (info) {
+        const links = [
+          [info.ballotInfoUrl, 'Official sample ballot'],
+          [info.registrationUrl, 'Check registration'],
+          [info.electionInfoUrl, 'State election office']
+        ].filter(([url]) => safeUrl(url))
+          .map(([url, label]) => `<a href="${escapeHTML(safeUrl(url))}" target="_blank" rel="noopener">${label}</a>`)
+          .join(' • ');
+        const where = info.pollingLocation
+          ? `<strong>Your polling place:</strong> ${escapeHTML(info.pollingLocation)}${info.pollingHours ? ' (' + escapeHTML(info.pollingHours) + ')' : ''}.`
+          : '';
+        const extras = [info.hasEarlyVoting ? 'Early voting sites are available.' : '', info.hasDropOff ? 'Ballot drop boxes are available.' : ''].filter(Boolean).join(' ');
+        if (where || extras || links) {
+          votingInfoHTML = `<div class="election-notice info">${[where, extras, links].filter(Boolean).join(' ')}</div>`;
+        }
+      }
 
       selections = {};
 
@@ -1483,7 +1529,7 @@
 
         let sourcesHTML = '';
         if (race.sources && race.sources.length) {
-          sourcesHTML = `<div class="source-link-row">` + race.sources.map(s => `<a class="source-link" href="${escapeHTML(s.url)}" target="_blank" rel="noopener">${escapeHTML(stripLeadingEmoji(s.label))}${ICON_EXTERNAL}</a>`).join(' ') + `</div>`;
+          sourcesHTML = `<div class="source-link-row">` + race.sources.filter(s => safeUrl(s.url)).map(s => `<a class="source-link" href="${escapeHTML(safeUrl(s.url))}" target="_blank" rel="noopener">${escapeHTML(stripLeadingEmoji(s.label))}${ICON_EXTERNAL}</a>`).join(' ') + `</div>`;
         }
 
         let candidatesHTML = race.candidates.map((c, candIdx) => {
@@ -1506,8 +1552,8 @@
               </details>`;
           }
 
-          const siteHTML = c.site
-            ? `<div class="candidate-sources"><a class="source-link" href="${escapeHTML(c.site)}" target="_blank" rel="noopener" onclick="event.stopPropagation()">Official Site / Info${ICON_EXTERNAL}</a></div>`
+          const siteHTML = safeUrl(c.site)
+            ? `<div class="candidate-sources"><a class="source-link" href="${escapeHTML(safeUrl(c.site))}" target="_blank" rel="noopener" onclick="event.stopPropagation()">Candidate Website${ICON_EXTERNAL}</a></div>`
             : '';
 
           return `
@@ -1518,7 +1564,7 @@
               <div class="candidate-info">
                 <div class="candidate-header">
                   <span class="candidate-name">${escapeHTML(c.name)}</span>
-                  <span class="party-tag ${escapeHTML(c.partyClass)}">${escapeHTML(c.party)}</span>
+                  ${c.party && c.party !== 'Measure Response' ? `<span class="party-tag ${escapeHTML(c.partyClass)}">${escapeHTML(c.party)}</span>` : ''}
                 </div>
                 ${c.desc ? `<p class="candidate-desc">${escapeHTML(c.desc)}</p>` : ''}
                 ${prosConsGridHTML}
@@ -1529,14 +1575,17 @@
         }).join('');
 
         card.innerHTML = `
+          ${stepNum === 1 ? votingInfoHTML : ''}
           <div class="race-type">${escapeHTML(race.type)}</div>
           <h2 class="race-title">${escapeHTML(race.title)}</h2>
           
-          <div class="overview-box">
-            <h4>Race & Office Overview</h4>
+          ${race.overview || sourcesHTML || race.details ? `<div class="overview-box">
+            <h4>${race.category === 'Ballot Measure' ? 'About This Measure' : 'Race & Office Overview'}</h4>
             ${escapeHTML(race.overview)}
+            ${race.details && race.details.pro ? `<p><strong>Argument for:</strong> ${escapeHTML(race.details.pro)}</p>` : ''}
+            ${race.details && race.details.con ? `<p><strong>Argument against:</strong> ${escapeHTML(race.details.con)}</p>` : ''}
             ${sourcesHTML}
-          </div>
+          </div>` : ''}
 
           <div class="options-grid" role="radiogroup" aria-label="${escapeHTML(race.title)}">
             ${candidatesHTML}
