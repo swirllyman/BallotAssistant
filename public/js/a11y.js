@@ -128,6 +128,9 @@
       return any ? parts.join(sep) : null;
     }
 
+    const date = localizeDate(core, lang);
+    if (date != null) return date;
+
     const tpls = I18N.templates[lang] || {};
     for (const tpl of templates) {
       const m = core.match(tpl.re);
@@ -138,7 +141,40 @@
         return tr != null ? tr : part;
       });
     }
+
+    // Several known sentences in one text node. Only when every sentence is known,
+    // so a half-translated paragraph never appears. "U.S. General" is not a break.
+    const sentences = core.split(/(?<=[a-z0-9)][.!?])\s+(?=[A-Z(])/);
+    if (sentences.length > 1) {
+      const out = [];
+      for (const sentence of sentences) {
+        const tr = translateString(sentence, lang);
+        if (tr == null) return null;
+        out.push(tr);
+      }
+      return out.join(/^(zh|ja)/.test(lang) ? '' : ' ');
+    }
     return null;
+  }
+
+  const WEEKDAYS = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+  const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+  const DATE_RE = new RegExp('^(' + WEEKDAYS.join('|') + '), (' + MONTHS.join('|') + ') (\\d{1,2}), (\\d{4})$');
+
+  // "Tuesday, November 3, 2026" in the reader's language.
+  function localizeDate(text, lang) {
+    const m = text.match(DATE_RE);
+    if (!m) return null;
+    const date = new Date(Number(m[4]), MONTHS.indexOf(m[2]), Number(m[3]));
+    const meta = langMeta(lang);
+    if (meta.dateNames) {
+      return `${meta.dateNames.days[date.getDay()]} ${date.getDate()} ${meta.dateNames.months[date.getMonth()]} ${date.getFullYear()}`;
+    }
+    try {
+      return date.toLocaleDateString(meta.intl || meta.html, { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' });
+    } catch (e) {
+      return null;
+    }
   }
 
   function splitAffixes(text) {

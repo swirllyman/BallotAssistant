@@ -13,6 +13,8 @@
  * `strings` and `templates`. Translations should be reviewed by a native
  * speaker before they are relied on.
  *
+ * Dates written like "Tuesday, November 3, 2026" are localized with Intl.
+ *
  * `templates` hold text with variable parts; {0}, {1} are filled with the
  * matching part of the English text (translated too, when possible).
  */
@@ -99,6 +101,7 @@ window.BA_I18N = {
     "name": "Tagalog (Filipino)",
     "native": "Tagalog",
     "html": "tl",
+    "intl": "fil",
     "dir": "ltr",
     "tts": [
       "fil-PH",
@@ -174,7 +177,32 @@ window.BA_I18N = {
       "fr-CA",
       "fr"
     ],
-    "mt": "ht"
+    "mt": "ht",
+    "dateNames": {
+      "days": [
+        "dimanch",
+        "lendi",
+        "madi",
+        "mèkredi",
+        "jedi",
+        "vandredi",
+        "samdi"
+      ],
+      "months": [
+        "janvye",
+        "fevriye",
+        "mas",
+        "avril",
+        "me",
+        "jen",
+        "jiyè",
+        "out",
+        "septanm",
+        "oktòb",
+        "novanm",
+        "desanm"
+      ]
+    }
   },
   {
     "code": "ru",
@@ -279,7 +307,16 @@ window.BA_I18N = {
     "Race and candidate details were translated automatically by your browser and may contain errors. Always check your official voter guide.": "Los detalles de las contiendas y los candidatos fueron traducidos automáticamente por su navegador y pueden contener errores. Consulte siempre su guía oficial para votantes.",
     "Race and candidate details are shown in English because this browser cannot translate them automatically. Your county election office may provide an official voter guide in your language.": "Los detalles de las contiendas y los candidatos se muestran en inglés porque este navegador no puede traducirlos automáticamente. La oficina electoral de su condado puede ofrecer una guía oficial para votantes en su idioma.",
     "Translating…": "Traduciendo…",
-    "Turn on automatic translation": "Activar traducción automática"
+    "Turn on automatic translation": "Activar traducción automática",
+    "Find Your Ballot Guide": "Encuentre la guía de su boleta",
+    "Enter your street address and 5-digit ZIP code to load the ballot guide for your area, if we have one.": "Ingrese su dirección y su código postal de 5 dígitos para cargar la guía de la boleta de su zona, si la tenemos.",
+    "ZIP Code": "Código postal",
+    "Ballot guide for:": "Guía de la boleta para:",
+    "Please enter a 5-digit ZIP code.": "Ingrese un código postal de 5 dígitos.",
+    "Check your registration and see your official sample ballot at": "Verifique su inscripción y vea su boleta de muestra oficial en",
+    "or": "o",
+    "This guide covers the": "Esta guía corresponde a la",
+    "2026 U.S. General Election": "Elección general de EE. UU. de 2026"
   },
   "zh-Hans": {
     "U.S. Primary Ballot Assistant": "美国初选选票助手",
@@ -356,7 +393,16 @@ window.BA_I18N = {
     "Race and candidate details were translated automatically by your browser and may contain errors. Always check your official voter guide.": "选举和候选人详情由您的浏览器自动翻译，可能存在错误。请务必以官方选民指南为准。",
     "Race and candidate details are shown in English because this browser cannot translate them automatically. Your county election office may provide an official voter guide in your language.": "由于此浏览器无法自动翻译，选举和候选人详情以英文显示。您所在县的选举办公室可能提供您所用语言的官方选民指南。",
     "Translating…": "正在翻译…",
-    "Turn on automatic translation": "开启自动翻译"
+    "Turn on automatic translation": "开启自动翻译",
+    "Find Your Ballot Guide": "查找您的选票指南",
+    "Enter your street address and 5-digit ZIP code to load the ballot guide for your area, if we have one.": "输入您的街道地址和5位数邮政编码，即可加载您所在地区的选票指南（如有）。",
+    "ZIP Code": "邮政编码",
+    "Ballot guide for:": "选票指南地区：",
+    "Please enter a 5-digit ZIP code.": "请输入5位数邮政编码。",
+    "Check your registration and see your official sample ballot at": "查询选民登记并查看官方样本选票：",
+    "or": "或",
+    "This guide covers the": "本指南适用于",
+    "2026 U.S. General Election": "2026年美国大选"
   },
   "zh-Hant": {
     "U.S. Primary Ballot Assistant": "美國初選選票助手",
@@ -433,7 +479,16 @@ window.BA_I18N = {
     "Race and candidate details were translated automatically by your browser and may contain errors. Always check your official voter guide.": "選舉和候選人詳情由您的瀏覽器自動翻譯，可能有錯誤。請務必以官方選民指南為準。",
     "Race and candidate details are shown in English because this browser cannot translate them automatically. Your county election office may provide an official voter guide in your language.": "由於此瀏覽器無法自動翻譯，選舉和候選人詳情以英文顯示。您所在縣的選舉辦公室可能提供您所用語言的官方選民指南。",
     "Translating…": "正在翻譯…",
-    "Turn on automatic translation": "開啟自動翻譯"
+    "Turn on automatic translation": "開啟自動翻譯",
+    "Find Your Ballot Guide": "查詢您的選票指南",
+    "Enter your street address and 5-digit ZIP code to load the ballot guide for your area, if we have one.": "輸入您的街道地址和5位數郵遞區號，即可載入您所在地區的選票指南（如有）。",
+    "ZIP Code": "郵遞區號",
+    "Ballot guide for:": "選票指南地區：",
+    "Please enter a 5-digit ZIP code.": "請輸入5位數郵遞區號。",
+    "Check your registration and see your official sample ballot at": "查詢選民登記並查看官方樣本選票：",
+    "or": "或",
+    "This guide covers the": "本指南適用於",
+    "2026 U.S. General Election": "2026年美國大選"
   },
   "vi": {
     "U.S. Primary Ballot Assistant": "Trợ lý lá phiếu bầu cử sơ bộ Hoa Kỳ",
@@ -510,7 +565,16 @@ window.BA_I18N = {
     "Race and candidate details were translated automatically by your browser and may contain errors. Always check your official voter guide.": "Thông tin về cuộc đua và ứng cử viên được trình duyệt của bạn dịch tự động và có thể có lỗi. Hãy luôn kiểm tra hướng dẫn cử tri chính thức.",
     "Race and candidate details are shown in English because this browser cannot translate them automatically. Your county election office may provide an official voter guide in your language.": "Thông tin về cuộc đua và ứng cử viên được hiển thị bằng tiếng Anh vì trình duyệt này không thể tự động dịch. Văn phòng bầu cử quận của bạn có thể cung cấp hướng dẫn cử tri chính thức bằng ngôn ngữ của bạn.",
     "Translating…": "Đang dịch…",
-    "Turn on automatic translation": "Bật dịch tự động"
+    "Turn on automatic translation": "Bật dịch tự động",
+    "Find Your Ballot Guide": "Tìm hướng dẫn lá phiếu của bạn",
+    "Enter your street address and 5-digit ZIP code to load the ballot guide for your area, if we have one.": "Nhập địa chỉ và mã ZIP 5 chữ số để tải hướng dẫn lá phiếu cho khu vực của bạn, nếu chúng tôi có.",
+    "ZIP Code": "Mã ZIP",
+    "Ballot guide for:": "Hướng dẫn lá phiếu cho:",
+    "Please enter a 5-digit ZIP code.": "Vui lòng nhập mã ZIP 5 chữ số.",
+    "Check your registration and see your official sample ballot at": "Kiểm tra đăng ký cử tri và xem lá phiếu mẫu chính thức tại",
+    "or": "hoặc",
+    "This guide covers the": "Hướng dẫn này dành cho",
+    "2026 U.S. General Election": "Tổng tuyển cử Hoa Kỳ 2026"
   },
   "ko": {
     "U.S. Primary Ballot Assistant": "미국 예비선거 투표 도우미",
@@ -587,7 +651,16 @@ window.BA_I18N = {
     "Race and candidate details were translated automatically by your browser and may contain errors. Always check your official voter guide.": "선거 및 후보자 정보는 브라우저에서 자동으로 번역되었으며 오류가 있을 수 있습니다. 반드시 공식 유권자 안내서를 확인하세요.",
     "Race and candidate details are shown in English because this browser cannot translate them automatically. Your county election office may provide an official voter guide in your language.": "이 브라우저는 자동 번역을 지원하지 않아 선거 및 후보자 정보가 영어로 표시됩니다. 카운티 선거 사무소에서 한국어 공식 유권자 안내서를 제공할 수 있습니다.",
     "Translating…": "번역 중…",
-    "Turn on automatic translation": "자동 번역 켜기"
+    "Turn on automatic translation": "자동 번역 켜기",
+    "Find Your Ballot Guide": "내 투표 안내 찾기",
+    "Enter your street address and 5-digit ZIP code to load the ballot guide for your area, if we have one.": "도로명 주소와 5자리 우편번호를 입력하면 해당 지역의 투표 안내를 볼 수 있습니다(제공되는 경우).",
+    "ZIP Code": "우편번호",
+    "Ballot guide for:": "투표 안내 지역:",
+    "Please enter a 5-digit ZIP code.": "5자리 우편번호를 입력하세요.",
+    "Check your registration and see your official sample ballot at": "유권자 등록 확인 및 공식 견본 투표지 보기:",
+    "or": "또는",
+    "This guide covers the": "이 안내의 대상:",
+    "2026 U.S. General Election": "2026 미국 총선거"
   },
   "tl": {
     "U.S. Primary Ballot Assistant": "Katulong sa Balota ng Primary sa U.S.",
@@ -664,7 +737,16 @@ window.BA_I18N = {
     "Race and candidate details were translated automatically by your browser and may contain errors. Always check your official voter guide.": "Ang mga detalye ng halalan at kandidato ay awtomatikong isinalin ng iyong browser at maaaring may mga mali. Palaging tingnan ang iyong opisyal na gabay para sa botante.",
     "Race and candidate details are shown in English because this browser cannot translate them automatically. Your county election office may provide an official voter guide in your language.": "Ang mga detalye ng halalan at kandidato ay nasa Ingles dahil hindi ito awtomatikong maisalin ng browser na ito. Maaaring may opisyal na gabay para sa botante sa iyong wika ang tanggapan ng halalan ng iyong county.",
     "Translating…": "Isinasalin…",
-    "Turn on automatic translation": "I-on ang awtomatikong pagsasalin"
+    "Turn on automatic translation": "I-on ang awtomatikong pagsasalin",
+    "Find Your Ballot Guide": "Hanapin ang Gabay sa Iyong Balota",
+    "Enter your street address and 5-digit ZIP code to load the ballot guide for your area, if we have one.": "Ilagay ang iyong address at 5-digit na ZIP code para makita ang gabay sa balota ng iyong lugar, kung mayroon kami.",
+    "ZIP Code": "ZIP Code",
+    "Ballot guide for:": "Gabay sa balota para sa:",
+    "Please enter a 5-digit ZIP code.": "Pakilagay ang 5-digit na ZIP code.",
+    "Check your registration and see your official sample ballot at": "Tingnan ang iyong rehistro at ang iyong opisyal na sample na balota sa",
+    "or": "o",
+    "This guide covers the": "Ang gabay na ito ay para sa",
+    "2026 U.S. General Election": "Pangkalahatang Halalan sa U.S. 2026"
   },
   "ja": {
     "U.S. Primary Ballot Assistant": "米国予備選挙 投票アシスタント",
@@ -741,7 +823,16 @@ window.BA_I18N = {
     "Race and candidate details were translated automatically by your browser and may contain errors. Always check your official voter guide.": "選挙と候補者の詳細はブラウザによって自動翻訳されており、誤りが含まれる場合があります。必ず公式の有権者ガイドをご確認ください。",
     "Race and candidate details are shown in English because this browser cannot translate them automatically. Your county election office may provide an official voter guide in your language.": "このブラウザでは自動翻訳ができないため、選挙と候補者の詳細は英語で表示されます。郡の選挙管理事務所が日本語の公式有権者ガイドを提供している場合があります。",
     "Translating…": "翻訳中…",
-    "Turn on automatic translation": "自動翻訳をオンにする"
+    "Turn on automatic translation": "自動翻訳をオンにする",
+    "Find Your Ballot Guide": "投票ガイドを探す",
+    "Enter your street address and 5-digit ZIP code to load the ballot guide for your area, if we have one.": "住所と5桁の郵便番号を入力すると、お住まいの地域の投票ガイドが表示されます（ある場合）。",
+    "ZIP Code": "郵便番号",
+    "Ballot guide for:": "投票ガイドの対象地域：",
+    "Please enter a 5-digit ZIP code.": "5桁の郵便番号を入力してください。",
+    "Check your registration and see your official sample ballot at": "有権者登録の確認と公式見本投票用紙の閲覧はこちら：",
+    "or": "または",
+    "This guide covers the": "このガイドの対象：",
+    "2026 U.S. General Election": "2026年 米国本選挙"
   },
   "bn": {
     "U.S. Primary Ballot Assistant": "মার্কিন প্রাইমারি ব্যালট সহায়ক",
@@ -818,7 +909,16 @@ window.BA_I18N = {
     "Race and candidate details were translated automatically by your browser and may contain errors. Always check your official voter guide.": "নির্বাচন ও প্রার্থীদের তথ্য আপনার ব্রাউজার স্বয়ংক্রিয়ভাবে অনুবাদ করেছে এবং এতে ভুল থাকতে পারে। সবসময় আপনার সরকারি ভোটার নির্দেশিকা দেখে নিন।",
     "Race and candidate details are shown in English because this browser cannot translate them automatically. Your county election office may provide an official voter guide in your language.": "এই ব্রাউজার স্বয়ংক্রিয়ভাবে অনুবাদ করতে পারে না, তাই নির্বাচন ও প্রার্থীদের তথ্য ইংরেজিতে দেখানো হচ্ছে। আপনার কাউন্টির নির্বাচন অফিস আপনার ভাষায় সরকারি ভোটার নির্দেশিকা দিতে পারে।",
     "Translating…": "অনুবাদ হচ্ছে…",
-    "Turn on automatic translation": "স্বয়ংক্রিয় অনুবাদ চালু করুন"
+    "Turn on automatic translation": "স্বয়ংক্রিয় অনুবাদ চালু করুন",
+    "Find Your Ballot Guide": "আপনার ব্যালট নির্দেশিকা খুঁজুন",
+    "Enter your street address and 5-digit ZIP code to load the ballot guide for your area, if we have one.": "আপনার এলাকার ব্যালট নির্দেশিকা (যদি আমাদের কাছে থাকে) দেখতে আপনার রাস্তার ঠিকানা ও ৫ অঙ্কের জিপ কোড লিখুন।",
+    "ZIP Code": "জিপ কোড",
+    "Ballot guide for:": "ব্যালট নির্দেশিকা:",
+    "Please enter a 5-digit ZIP code.": "৫ অঙ্কের একটি জিপ কোড লিখুন।",
+    "Check your registration and see your official sample ballot at": "আপনার নিবন্ধন যাচাই করুন এবং সরকারি নমুনা ব্যালট দেখুন:",
+    "or": "অথবা",
+    "This guide covers the": "এই নির্দেশিকাটি এর জন্য:",
+    "2026 U.S. General Election": "২০২৬ মার্কিন সাধারণ নির্বাচন"
   },
   "hi": {
     "U.S. Primary Ballot Assistant": "अमेरिकी प्राइमरी मतपत्र सहायक",
@@ -895,7 +995,16 @@ window.BA_I18N = {
     "Race and candidate details were translated automatically by your browser and may contain errors. Always check your official voter guide.": "चुनाव और उम्मीदवारों की जानकारी का आपके ब्राउज़र ने अपने-आप अनुवाद किया है और इसमें गलतियाँ हो सकती हैं। हमेशा अपनी आधिकारिक मतदाता गाइड देखें।",
     "Race and candidate details are shown in English because this browser cannot translate them automatically. Your county election office may provide an official voter guide in your language.": "यह ब्राउज़र अपने-आप अनुवाद नहीं कर सकता, इसलिए चुनाव और उम्मीदवारों की जानकारी अंग्रेज़ी में दिखाई गई है। आपके काउंटी का चुनाव कार्यालय आपकी भाषा में आधिकारिक मतदाता गाइड दे सकता है।",
     "Translating…": "अनुवाद हो रहा है…",
-    "Turn on automatic translation": "स्वचालित अनुवाद चालू करें"
+    "Turn on automatic translation": "स्वचालित अनुवाद चालू करें",
+    "Find Your Ballot Guide": "अपनी मतपत्र गाइड खोजें",
+    "Enter your street address and 5-digit ZIP code to load the ballot guide for your area, if we have one.": "अपने क्षेत्र की मतपत्र गाइड (अगर हमारे पास है) देखने के लिए अपना पता और 5 अंकों का ज़िप कोड दर्ज करें।",
+    "ZIP Code": "ज़िप कोड",
+    "Ballot guide for:": "मतपत्र गाइड:",
+    "Please enter a 5-digit ZIP code.": "कृपया 5 अंकों का ज़िप कोड दर्ज करें।",
+    "Check your registration and see your official sample ballot at": "अपना पंजीकरण जाँचें और आधिकारिक नमूना मतपत्र यहाँ देखें:",
+    "or": "या",
+    "This guide covers the": "यह गाइड इसके लिए है:",
+    "2026 U.S. General Election": "2026 अमेरिकी आम चुनाव"
   },
   "ar": {
     "U.S. Primary Ballot Assistant": "مساعد بطاقة الاقتراع للانتخابات التمهيدية الأمريكية",
@@ -972,7 +1081,16 @@ window.BA_I18N = {
     "Race and candidate details were translated automatically by your browser and may contain errors. Always check your official voter guide.": "تمت ترجمة تفاصيل السباقات والمرشحين تلقائيًا بواسطة متصفحك وقد تحتوي على أخطاء. تحقق دائمًا من دليل الناخب الرسمي.",
     "Race and candidate details are shown in English because this browser cannot translate them automatically. Your county election office may provide an official voter guide in your language.": "تُعرض تفاصيل السباقات والمرشحين باللغة الإنجليزية لأن هذا المتصفح لا يستطيع ترجمتها تلقائيًا. قد يوفر مكتب الانتخابات في مقاطعتك دليل ناخب رسميًا بلغتك.",
     "Translating…": "جارٍ الترجمة…",
-    "Turn on automatic translation": "تشغيل الترجمة التلقائية"
+    "Turn on automatic translation": "تشغيل الترجمة التلقائية",
+    "Find Your Ballot Guide": "ابحث عن دليل بطاقة الاقتراع الخاص بك",
+    "Enter your street address and 5-digit ZIP code to load the ballot guide for your area, if we have one.": "أدخل عنوانك ورمزك البريدي المكوّن من 5 أرقام لعرض دليل بطاقة الاقتراع لمنطقتك، إن كان متوفرًا لدينا.",
+    "ZIP Code": "الرمز البريدي",
+    "Ballot guide for:": "دليل بطاقة الاقتراع لـ:",
+    "Please enter a 5-digit ZIP code.": "يرجى إدخال رمز بريدي من 5 أرقام.",
+    "Check your registration and see your official sample ballot at": "تحقق من تسجيلك واطّلع على نموذج بطاقة الاقتراع الرسمي على",
+    "or": "أو",
+    "This guide covers the": "يغطي هذا الدليل",
+    "2026 U.S. General Election": "الانتخابات العامة الأمريكية 2026"
   },
   "ht": {
     "U.S. Primary Ballot Assistant": "Asistan Bilten Vòt Primè Etazini",
@@ -1049,7 +1167,16 @@ window.BA_I18N = {
     "Race and candidate details were translated automatically by your browser and may contain errors. Always check your official voter guide.": "Navigatè w la tradui detay eleksyon yo ak kandida yo otomatikman, e yo ka gen erè. Toujou verifye gid ofisyèl pou votè a.",
     "Race and candidate details are shown in English because this browser cannot translate them automatically. Your county election office may provide an official voter guide in your language.": "Detay eleksyon yo ak kandida yo parèt an angle paske navigatè sa a pa ka tradui yo otomatikman. Biwo eleksyon konte w la ka genyen yon gid ofisyèl pou votè nan lang ou.",
     "Translating…": "N ap tradui…",
-    "Turn on automatic translation": "Aktive tradiksyon otomatik"
+    "Turn on automatic translation": "Aktive tradiksyon otomatik",
+    "Find Your Ballot Guide": "Jwenn Gid Bilten Vòt Ou",
+    "Enter your street address and 5-digit ZIP code to load the ballot guide for your area, if we have one.": "Antre adrès ou ak kòd postal 5 chif ou pou w wè gid bilten vòt zòn ou, si nou genyen l.",
+    "ZIP Code": "Kòd Postal",
+    "Ballot guide for:": "Gid bilten vòt pou:",
+    "Please enter a 5-digit ZIP code.": "Tanpri antre yon kòd postal 5 chif.",
+    "Check your registration and see your official sample ballot at": "Verifye enskripsyon ou epi gade echantiyon bilten vòt ofisyèl ou sou",
+    "or": "oswa",
+    "This guide covers the": "Gid sa a se pou",
+    "2026 U.S. General Election": "Eleksyon Jeneral Etazini 2026"
   },
   "ru": {
     "U.S. Primary Ballot Assistant": "Помощник по бюллетеням праймериз США",
@@ -1126,7 +1253,16 @@ window.BA_I18N = {
     "Race and candidate details were translated automatically by your browser and may contain errors. Always check your official voter guide.": "Сведения о выборах и кандидатах автоматически переведены вашим браузером и могут содержать ошибки. Всегда сверяйтесь с официальным руководством для избирателей.",
     "Race and candidate details are shown in English because this browser cannot translate them automatically. Your county election office may provide an official voter guide in your language.": "Сведения о выборах и кандидатах показаны на английском языке, потому что этот браузер не может перевести их автоматически. Избирательная комиссия вашего округа может предоставить официальное руководство для избирателей на вашем языке.",
     "Translating…": "Перевод…",
-    "Turn on automatic translation": "Включить автоматический перевод"
+    "Turn on automatic translation": "Включить автоматический перевод",
+    "Find Your Ballot Guide": "Найдите руководство по своему бюллетеню",
+    "Enter your street address and 5-digit ZIP code to load the ballot guide for your area, if we have one.": "Введите адрес и 5-значный почтовый индекс, чтобы загрузить руководство по бюллетеню для вашего района, если оно у нас есть.",
+    "ZIP Code": "Почтовый индекс",
+    "Ballot guide for:": "Руководство по бюллетеню для:",
+    "Please enter a 5-digit ZIP code.": "Введите 5-значный почтовый индекс.",
+    "Check your registration and see your official sample ballot at": "Проверьте регистрацию и посмотрите официальный образец бюллетеня на сайте",
+    "or": "или",
+    "This guide covers the": "Это руководство относится к выборам:",
+    "2026 U.S. General Election": "Всеобщие выборы в США 2026 года"
   },
   "pt": {
     "U.S. Primary Ballot Assistant": "Assistente de Cédula das Primárias dos EUA",
@@ -1203,7 +1339,16 @@ window.BA_I18N = {
     "Race and candidate details were translated automatically by your browser and may contain errors. Always check your official voter guide.": "Os detalhes das disputas e dos candidatos foram traduzidos automaticamente pelo seu navegador e podem conter erros. Sempre consulte o guia oficial do eleitor.",
     "Race and candidate details are shown in English because this browser cannot translate them automatically. Your county election office may provide an official voter guide in your language.": "Os detalhes das disputas e dos candidatos estão em inglês porque este navegador não consegue traduzi-los automaticamente. O escritório eleitoral do seu condado pode oferecer um guia oficial do eleitor no seu idioma.",
     "Translating…": "Traduzindo…",
-    "Turn on automatic translation": "Ativar tradução automática"
+    "Turn on automatic translation": "Ativar tradução automática",
+    "Find Your Ballot Guide": "Encontre o Guia da Sua Cédula",
+    "Enter your street address and 5-digit ZIP code to load the ballot guide for your area, if we have one.": "Digite seu endereço e CEP de 5 dígitos para carregar o guia da cédula da sua região, se tivermos um.",
+    "ZIP Code": "CEP",
+    "Ballot guide for:": "Guia da cédula para:",
+    "Please enter a 5-digit ZIP code.": "Digite um CEP de 5 dígitos.",
+    "Check your registration and see your official sample ballot at": "Verifique seu registro e veja sua cédula de amostra oficial em",
+    "or": "ou",
+    "This guide covers the": "Este guia é sobre a",
+    "2026 U.S. General Election": "Eleição Geral dos EUA de 2026"
   }
 },
 
@@ -1214,7 +1359,13 @@ window.BA_I18N = {
     "{0} General Election Ballot Assistant": "Asistente de boleta de la elección general de {0}",
     "{0} Ballot Assistant": "Asistente de boleta de {0}",
     "Your Completed {0} Ballot Selections": "Sus selecciones completas para la boleta de {0}",
-    "Prefers {0}": "Prefiere {0}"
+    "Prefers {0}": "Prefiere {0}",
+    "Election Day is {0}.": "El día de la elección es el {0}.",
+    "We don't have a verified ballot guide for ZIP {0} yet.": "Todavía no tenemos una guía de boleta verificada para el código postal {0}.",
+    "({0}), which has already happened.": "({0}), que ya se realizó.",
+    "It has not been updated for the {0} on {1}, so candidates and measures on your ballot may differ.": "No se ha actualizado para la {0} del {1}, por lo que los candidatos y las medidas de su boleta pueden ser diferentes.",
+    "{0} Primary Election": "Elección primaria de {0}",
+    "{0} General Election": "Elección general de {0}"
   },
   "zh-Hans": {
     "Step {0} of {1}": "第{0}步，共{1}步",
@@ -1222,7 +1373,13 @@ window.BA_I18N = {
     "{0} General Election Ballot Assistant": "{0}大选选票助手",
     "{0} Ballot Assistant": "{0}选票助手",
     "Your Completed {0} Ballot Selections": "您已完成的{0}选票选择",
-    "Prefers {0}": "倾向{0}"
+    "Prefers {0}": "倾向{0}",
+    "Election Day is {0}.": "选举日是{0}。",
+    "We don't have a verified ballot guide for ZIP {0} yet.": "我们暂时没有邮政编码{0}的已核实选票指南。",
+    "({0}), which has already happened.": "（{0}），该选举已经结束。",
+    "It has not been updated for the {0} on {1}, so candidates and measures on your ballot may differ.": "本指南尚未针对{1}举行的{0}进行更新，因此您选票上的候选人和提案可能有所不同。",
+    "{0} Primary Election": "{0}初选",
+    "{0} General Election": "{0}大选"
   },
   "zh-Hant": {
     "Step {0} of {1}": "第{0}步，共{1}步",
@@ -1230,7 +1387,13 @@ window.BA_I18N = {
     "{0} General Election Ballot Assistant": "{0}大選選票助手",
     "{0} Ballot Assistant": "{0}選票助手",
     "Your Completed {0} Ballot Selections": "您已完成的{0}選票選擇",
-    "Prefers {0}": "傾向{0}"
+    "Prefers {0}": "傾向{0}",
+    "Election Day is {0}.": "選舉日是{0}。",
+    "We don't have a verified ballot guide for ZIP {0} yet.": "我們暫時沒有郵遞區號{0}的已查證選票指南。",
+    "({0}), which has already happened.": "（{0}），該選舉已經結束。",
+    "It has not been updated for the {0} on {1}, so candidates and measures on your ballot may differ.": "本指南尚未針對{1}舉行的{0}進行更新，因此您選票上的候選人和提案可能有所不同。",
+    "{0} Primary Election": "{0}初選",
+    "{0} General Election": "{0}大選"
   },
   "vi": {
     "Step {0} of {1}": "Bước {0} / {1}",
@@ -1238,7 +1401,13 @@ window.BA_I18N = {
     "{0} General Election Ballot Assistant": "Trợ lý lá phiếu tổng tuyển cử {0}",
     "{0} Ballot Assistant": "Trợ lý lá phiếu {0}",
     "Your Completed {0} Ballot Selections": "Các lựa chọn lá phiếu {0} của bạn",
-    "Prefers {0}": "Ưu tiên {0}"
+    "Prefers {0}": "Ưu tiên {0}",
+    "Election Day is {0}.": "Ngày bầu cử là {0}.",
+    "We don't have a verified ballot guide for ZIP {0} yet.": "Chúng tôi chưa có hướng dẫn lá phiếu đã xác minh cho mã ZIP {0}.",
+    "({0}), which has already happened.": "({0}), cuộc bầu cử này đã diễn ra.",
+    "It has not been updated for the {0} on {1}, so candidates and measures on your ballot may differ.": "Hướng dẫn này chưa được cập nhật cho {0} vào {1}, nên các ứng cử viên và dự luật trên lá phiếu của bạn có thể khác.",
+    "{0} Primary Election": "Bầu cử sơ bộ {0}",
+    "{0} General Election": "Tổng tuyển cử {0}"
   },
   "ko": {
     "Step {0} of {1}": "{1}단계 중 {0}단계",
@@ -1246,7 +1415,13 @@ window.BA_I18N = {
     "{0} General Election Ballot Assistant": "{0} 총선거 투표 도우미",
     "{0} Ballot Assistant": "{0} 투표 도우미",
     "Your Completed {0} Ballot Selections": "{0} 투표 선택 완료 내역",
-    "Prefers {0}": "{0} 선호"
+    "Prefers {0}": "{0} 선호",
+    "Election Day is {0}.": "선거일은 {0}입니다.",
+    "We don't have a verified ballot guide for ZIP {0} yet.": "우편번호 {0}에 대한 검증된 투표 안내가 아직 없습니다.",
+    "({0}), which has already happened.": "({0}) 이 선거는 이미 끝났습니다.",
+    "It has not been updated for the {0} on {1}, so candidates and measures on your ballot may differ.": "이 안내는 {1}에 열리는 {0}에 맞게 업데이트되지 않았으므로 투표지의 후보자와 발의안이 다를 수 있습니다.",
+    "{0} Primary Election": "{0} 예비선거",
+    "{0} General Election": "{0} 총선거"
   },
   "tl": {
     "Step {0} of {1}": "Hakbang {0} ng {1}",
@@ -1254,7 +1429,13 @@ window.BA_I18N = {
     "{0} General Election Ballot Assistant": "Katulong sa Balota ng Pangkalahatang Halalan sa {0}",
     "{0} Ballot Assistant": "Katulong sa Balota ng {0}",
     "Your Completed {0} Ballot Selections": "Ang Iyong Kumpletong mga Pinili sa Balota ng {0}",
-    "Prefers {0}": "Mas gusto ang {0}"
+    "Prefers {0}": "Mas gusto ang {0}",
+    "Election Day is {0}.": "Ang Araw ng Halalan ay {0}.",
+    "We don't have a verified ballot guide for ZIP {0} yet.": "Wala pa kaming beripikadong gabay sa balota para sa ZIP {0}.",
+    "({0}), which has already happened.": "({0}), na tapos na.",
+    "It has not been updated for the {0} on {1}, so candidates and measures on your ballot may differ.": "Hindi pa ito na-update para sa {0} sa {1}, kaya maaaring iba ang mga kandidato at panukala sa iyong balota.",
+    "{0} Primary Election": "Primary na Halalan {0}",
+    "{0} General Election": "Pangkalahatang Halalan {0}"
   },
   "ja": {
     "Step {0} of {1}": "ステップ {0} / {1}",
@@ -1262,7 +1443,13 @@ window.BA_I18N = {
     "{0} General Election Ballot Assistant": "{0} 本選挙 投票アシスタント",
     "{0} Ballot Assistant": "{0} 投票アシスタント",
     "Your Completed {0} Ballot Selections": "{0} の投票選択内容",
-    "Prefers {0}": "{0}を支持"
+    "Prefers {0}": "{0}を支持",
+    "Election Day is {0}.": "投票日は{0}です。",
+    "We don't have a verified ballot guide for ZIP {0} yet.": "郵便番号{0}の確認済み投票ガイドはまだありません。",
+    "({0}), which has already happened.": "（{0}）この選挙はすでに終了しています。",
+    "It has not been updated for the {0} on {1}, so candidates and measures on your ballot may differ.": "このガイドは{1}の{0}に合わせて更新されていないため、投票用紙の候補者や住民投票案件が異なる場合があります。",
+    "{0} Primary Election": "{0} 予備選挙",
+    "{0} General Election": "{0} 本選挙"
   },
   "bn": {
     "Step {0} of {1}": "ধাপ {0} / {1}",
@@ -1270,7 +1457,13 @@ window.BA_I18N = {
     "{0} General Election Ballot Assistant": "{0} সাধারণ নির্বাচন ব্যালট সহায়ক",
     "{0} Ballot Assistant": "{0} ব্যালট সহায়ক",
     "Your Completed {0} Ballot Selections": "আপনার সম্পূর্ণ {0} ব্যালট বাছাই",
-    "Prefers {0}": "{0} পছন্দ করেন"
+    "Prefers {0}": "{0} পছন্দ করেন",
+    "Election Day is {0}.": "নির্বাচনের দিন {0}।",
+    "We don't have a verified ballot guide for ZIP {0} yet.": "জিপ কোড {0}-এর জন্য আমাদের কাছে এখনও যাচাইকৃত ব্যালট নির্দেশিকা নেই।",
+    "({0}), which has already happened.": "({0}), এই নির্বাচন ইতিমধ্যে হয়ে গেছে।",
+    "It has not been updated for the {0} on {1}, so candidates and measures on your ballot may differ.": "{1} তারিখের {0}-এর জন্য এটি হালনাগাদ করা হয়নি, তাই আপনার ব্যালটের প্রার্থী ও প্রস্তাব ভিন্ন হতে পারে।",
+    "{0} Primary Election": "{0} প্রাইমারি নির্বাচন",
+    "{0} General Election": "{0} সাধারণ নির্বাচন"
   },
   "hi": {
     "Step {0} of {1}": "चरण {0} / {1}",
@@ -1278,7 +1471,13 @@ window.BA_I18N = {
     "{0} General Election Ballot Assistant": "{0} आम चुनाव मतपत्र सहायक",
     "{0} Ballot Assistant": "{0} मतपत्र सहायक",
     "Your Completed {0} Ballot Selections": "आपके पूरे {0} मतपत्र चुनाव",
-    "Prefers {0}": "{0} को पसंद करते हैं"
+    "Prefers {0}": "{0} को पसंद करते हैं",
+    "Election Day is {0}.": "चुनाव का दिन {0} है।",
+    "We don't have a verified ballot guide for ZIP {0} yet.": "ज़िप कोड {0} के लिए अभी हमारे पास सत्यापित मतपत्र गाइड नहीं है।",
+    "({0}), which has already happened.": "({0}), यह चुनाव हो चुका है।",
+    "It has not been updated for the {0} on {1}, so candidates and measures on your ballot may differ.": "इसे {1} को होने वाले {0} के लिए अपडेट नहीं किया गया है, इसलिए आपके मतपत्र पर उम्मीदवार और प्रस्ताव अलग हो सकते हैं।",
+    "{0} Primary Election": "{0} प्राइमरी चुनाव",
+    "{0} General Election": "{0} आम चुनाव"
   },
   "ar": {
     "Step {0} of {1}": "الخطوة {0} من {1}",
@@ -1286,7 +1485,13 @@ window.BA_I18N = {
     "{0} General Election Ballot Assistant": "مساعد بطاقة الاقتراع للانتخابات العامة في {0}",
     "{0} Ballot Assistant": "مساعد بطاقة الاقتراع في {0}",
     "Your Completed {0} Ballot Selections": "اختياراتك المكتملة لبطاقة اقتراع {0}",
-    "Prefers {0}": "يفضّل {0}"
+    "Prefers {0}": "يفضّل {0}",
+    "Election Day is {0}.": "يوم الانتخابات هو {0}.",
+    "We don't have a verified ballot guide for ZIP {0} yet.": "ليس لدينا بعد دليل موثق لبطاقة الاقتراع للرمز البريدي {0}.",
+    "({0}), which has already happened.": "({0})، وقد جرت هذه الانتخابات بالفعل.",
+    "It has not been updated for the {0} on {1}, so candidates and measures on your ballot may differ.": "لم يتم تحديثه ليشمل {0} في {1}، لذا قد يختلف المرشحون والمقترحات في بطاقة اقتراعك.",
+    "{0} Primary Election": "الانتخابات التمهيدية {0}",
+    "{0} General Election": "الانتخابات العامة {0}"
   },
   "ht": {
     "Step {0} of {1}": "Etap {0} sou {1}",
@@ -1294,7 +1499,13 @@ window.BA_I18N = {
     "{0} General Election Ballot Assistant": "Asistan Bilten Vòt Eleksyon Jeneral {0}",
     "{0} Ballot Assistant": "Asistan Bilten Vòt {0}",
     "Your Completed {0} Ballot Selections": "Tout Chwa ou yo pou Bilten Vòt {0}",
-    "Prefers {0}": "Prefere {0}"
+    "Prefers {0}": "Prefere {0}",
+    "Election Day is {0}.": "Jou eleksyon an se {0}.",
+    "We don't have a verified ballot guide for ZIP {0} yet.": "Nou poko gen yon gid bilten vòt ki verifye pou kòd postal {0}.",
+    "({0}), which has already happened.": "({0}), eleksyon sa a fin fèt deja.",
+    "It has not been updated for the {0} on {1}, so candidates and measures on your ballot may differ.": "Li poko mete ajou pou {0} ki la {1}, kidonk kandida yo ak mezi ki sou bilten vòt ou ka diferan.",
+    "{0} Primary Election": "Eleksyon Primè {0}",
+    "{0} General Election": "Eleksyon Jeneral {0}"
   },
   "ru": {
     "Step {0} of {1}": "Шаг {0} из {1}",
@@ -1302,7 +1513,13 @@ window.BA_I18N = {
     "{0} General Election Ballot Assistant": "Помощник по бюллетеням всеобщих выборов: {0}",
     "{0} Ballot Assistant": "Помощник по бюллетеням: {0}",
     "Your Completed {0} Ballot Selections": "Ваш выбор в бюллетене: {0}",
-    "Prefers {0}": "Предпочитает: {0}"
+    "Prefers {0}": "Предпочитает: {0}",
+    "Election Day is {0}.": "День выборов: {0}.",
+    "We don't have a verified ballot guide for ZIP {0} yet.": "У нас пока нет проверенного руководства по бюллетеню для индекса {0}.",
+    "({0}), which has already happened.": "({0}). Эти выборы уже прошли.",
+    "It has not been updated for the {0} on {1}, so candidates and measures on your ballot may differ.": "Оно не обновлено для выборов «{0}» ({1}), поэтому кандидаты и вопросы в вашем бюллетене могут отличаться.",
+    "{0} Primary Election": "Праймериз: {0}",
+    "{0} General Election": "Всеобщие выборы: {0}"
   },
   "pt": {
     "Step {0} of {1}": "Etapa {0} de {1}",
@@ -1310,7 +1527,13 @@ window.BA_I18N = {
     "{0} General Election Ballot Assistant": "Assistente de Cédula da Eleição Geral de {0}",
     "{0} Ballot Assistant": "Assistente de Cédula de {0}",
     "Your Completed {0} Ballot Selections": "Suas Escolhas na Cédula de {0}",
-    "Prefers {0}": "Prefere {0}"
+    "Prefers {0}": "Prefere {0}",
+    "Election Day is {0}.": "O dia da eleição é {0}.",
+    "We don't have a verified ballot guide for ZIP {0} yet.": "Ainda não temos um guia de cédula verificado para o CEP {0}.",
+    "({0}), which has already happened.": "({0}), que já aconteceu.",
+    "It has not been updated for the {0} on {1}, so candidates and measures on your ballot may differ.": "Ele não foi atualizado para a {0} em {1}, portanto os candidatos e as medidas da sua cédula podem ser diferentes.",
+    "{0} Primary Election": "Eleição Primária de {0}",
+    "{0} General Election": "Eleição Geral de {0}"
   }
 }
 };
