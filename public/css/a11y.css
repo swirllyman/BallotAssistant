@@ -1,0 +1,209 @@
+/* Read-aloud and language toolbar (see js/a11y.js). */
+
+.a11y-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem 1rem;
+  width: 100%;
+  margin-bottom: 1.25rem;
+  padding: 0.7rem 1rem;
+  background: var(--card-bg, rgba(30, 41, 59, 0.75));
+  border: 1px solid var(--card-border, rgba(255, 255, 255, 0.12));
+  border-radius: 0.9rem;
+  color: var(--text-main, #f8fafc);
+  font-size: 0.9rem;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.a11y-field,
+.a11y-check {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--text-muted, #94a3b8);
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: none;
+  letter-spacing: normal;
+  margin: 0;
+  cursor: pointer;
+}
+
+.a11y-field select {
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.45rem;
+  border: 1px solid var(--card-border, rgba(255, 255, 255, 0.12));
+  background: rgba(15, 23, 42, 0.85);
+  color: var(--text-main, #f8fafc);
+  font-size: 0.9rem;
+}
+
+.a11y-check input {
+  width: 1.05rem;
+  height: 1.05rem;
+  accent-color: var(--accent, #6366f1);
+}
+
+.a11y-bar .a11y-btn,
+.a11y-player .a11y-btn,
+.a11y-notice .a11y-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.45rem 0.9rem;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--text-main, #f8fafc);
+}
+
+.a11y-bar .a11y-btn:hover,
+.a11y-player .a11y-btn:hover,
+.a11y-notice .a11y-btn:hover {
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.a11y-bar .a11y-primary {
+  background: var(--accent, #6366f1);
+  color: #fff;
+}
+
+.a11y-bar .a11y-primary:hover {
+  background: var(--accent-hover, #4f46e5);
+}
+
+.a11y-bar button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.a11y-notice {
+  flex-basis: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem 0.75rem;
+  padding: 0.55rem 0.75rem;
+  border-radius: 0.5rem;
+  background: rgba(245, 158, 11, 0.12);
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  color: #fde68a;
+  font-size: 0.85rem;
+  line-height: 1.45;
+}
+
+.a11y-notice[hidden] {
+  display: none;
+}
+
+.a11y-notice p {
+  flex-basis: 100%;
+}
+
+/* Floating controls while something is being read. */
+.a11y-player {
+  position: fixed;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 120;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.55rem 0.75rem;
+  max-width: calc(100vw - 2rem);
+  border-radius: 9999px;
+  background: rgba(15, 23, 42, 0.95);
+  border: 1px solid var(--accent, #6366f1);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  color: var(--text-main, #f8fafc);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.a11y-player[hidden] {
+  display: none;
+}
+
+.a11y-player-label {
+  padding: 0 0.35rem;
+  white-space: nowrap;
+}
+
+/* Small speaker button added to overviews and candidate cards. */
+.a11y-say {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  margin-inline-start: 0.4rem;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  font-size: 0.95rem;
+  line-height: 1;
+  vertical-align: middle;
+  flex-shrink: 0;
+}
+
+.a11y-say:hover,
+.a11y-say.a11y-say-active {
+  background: var(--accent, #6366f1);
+  border-color: var(--accent, #6366f1);
+}
+
+.summary-card > .a11y-say {
+  float: inline-end;
+}
+
+/* The block currently being read. */
+.a11y-speaking {
+  outline: 3px solid #facc15;
+  outline-offset: 3px;
+  border-radius: 0.35rem;
+  background-color: rgba(250, 204, 21, 0.1);
+}
+
+.a11y-bar :focus-visible,
+.a11y-player :focus-visible,
+.a11y-say:focus-visible {
+  outline: 3px solid #facc15;
+  outline-offset: 2px;
+}
+
+@media (max-width: 600px) {
+  .a11y-bar {
+    gap: 0.5rem 0.75rem;
+    padding: 0.65rem 0.75rem;
+  }
+  .a11y-field select {
+    max-width: 100%;
+  }
+  .a11y-bar .a11y-primary {
+    flex-grow: 1;
+    justify-content: center;
+  }
+}
+
+
+/* Right-to-left languages (Arabic). */
+[dir="rtl"] .pro-con-ul li {
+  padding-left: 0;
+  padding-right: 1rem;
+}
+
+[dir="rtl"] .pro-con-ul.pros-ul li::before,
+[dir="rtl"] .pro-con-ul.cons-ul li::before {
+  left: auto;
+  right: 0;
+}
+
+[dir="rtl"] .btn-next {
+  margin-left: 0;
+  margin-right: auto;
+}
