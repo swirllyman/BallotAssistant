@@ -290,7 +290,9 @@ window.BA_I18N = {
     "Finding your ballot": "Buscando su boleta",
     "Try an example": "Pruebe un ejemplo",
     "Strengths and considerations": "Fortalezas y consideraciones",
-    "Reading options": "Opciones de lectura"
+    "Reading options": "Opciones de lectura",
+    "Switch to dark mode": "Cambiar a modo oscuro",
+    "Switch to light mode": "Cambiar a modo claro"
   },
   "zh-Hans": {
     "U.S. Primary Ballot Assistant": "美国初选选票助手",
@@ -378,7 +380,9 @@ window.BA_I18N = {
     "Finding your ballot": "正在查找您的选票",
     "Try an example": "试试示例",
     "Strengths and considerations": "优势与考虑因素",
-    "Reading options": "朗读选项"
+    "Reading options": "朗读选项",
+    "Switch to dark mode": "切换到深色模式",
+    "Switch to light mode": "切换到浅色模式"
   },
   "zh-Hant": {
     "U.S. Primary Ballot Assistant": "美國初選選票助手",
@@ -466,7 +470,9 @@ window.BA_I18N = {
     "Finding your ballot": "正在查找您的選票",
     "Try an example": "試試範例",
     "Strengths and considerations": "優勢與考量因素",
-    "Reading options": "朗讀選項"
+    "Reading options": "朗讀選項",
+    "Switch to dark mode": "切換到深色模式",
+    "Switch to light mode": "切換到淺色模式"
   },
   "vi": {
     "U.S. Primary Ballot Assistant": "Trợ lý lá phiếu bầu cử sơ bộ Hoa Kỳ",
@@ -554,7 +560,9 @@ window.BA_I18N = {
     "Finding your ballot": "Đang tìm lá phiếu của bạn",
     "Try an example": "Thử một ví dụ",
     "Strengths and considerations": "Điểm mạnh và điều cần cân nhắc",
-    "Reading options": "Tùy chọn đọc"
+    "Reading options": "Tùy chọn đọc",
+    "Switch to dark mode": "Chuyển sang chế độ tối",
+    "Switch to light mode": "Chuyển sang chế độ sáng"
   },
   "ko": {
     "U.S. Primary Ballot Assistant": "미국 예비선거 투표 도우미",
@@ -642,7 +650,9 @@ window.BA_I18N = {
     "Finding your ballot": "투표용지를 찾는 중",
     "Try an example": "예시 보기",
     "Strengths and considerations": "강점 및 고려 사항",
-    "Reading options": "읽기 옵션"
+    "Reading options": "읽기 옵션",
+    "Switch to dark mode": "어두운 모드로 전환",
+    "Switch to light mode": "밝은 모드로 전환"
   },
   "tl": {
     "U.S. Primary Ballot Assistant": "Katulong sa Balota ng Primary sa U.S.",
@@ -730,7 +740,9 @@ window.BA_I18N = {
     "Finding your ballot": "Hinahanap ang iyong balota",
     "Try an example": "Subukan ang isang halimbawa",
     "Strengths and considerations": "Mga kalakasan at dapat isaalang-alang",
-    "Reading options": "Mga opsyon sa pagbasa"
+    "Reading options": "Mga opsyon sa pagbasa",
+    "Switch to dark mode": "Lumipat sa dark mode",
+    "Switch to light mode": "Lumipat sa light mode"
   },
   "ja": {
     "U.S. Primary Ballot Assistant": "米国予備選挙 投票アシスタント",
@@ -818,7 +830,9 @@ window.BA_I18N = {
     "Finding your ballot": "投票用紙を検索中",
     "Try an example": "例を試す",
     "Strengths and considerations": "強みと検討事項",
-    "Reading options": "読み上げオプション"
+    "Reading options": "読み上げオプション",
+    "Switch to dark mode": "ダークモードに切り替え",
+    "Switch to light mode": "ライトモードに切り替え"
   },
   "bn": {
     "U.S. Primary Ballot Assistant": "মার্কিন প্রাইমারি ব্যালট সহায়ক",
@@ -906,7 +920,9 @@ window.BA_I18N = {
     "Finding your ballot": "আপনার ব্যালট খোঁজা হচ্ছে",
     "Try an example": "একটি উদাহরণ দেখুন",
     "Strengths and considerations": "শক্তি ও বিবেচ্য বিষয়",
-    "Reading options": "পড়ার বিকল্প"
+    "Reading options": "পড়ার বিকল্প",
+    "Switch to dark mode": "ডার্ক মোডে যান",
+    "Switch to light mode": "লাইট মোডে যান"
   },
   "hi": {
     "U.S. Primary Ballot Assistant": "अमेरिकी प्राइमरी मतपत्र सहायक",
@@ -994,7 +1010,9 @@ window.BA_I18N = {
     "Finding your ballot": "आपका मतपत्र खोजा जा रहा है",
     "Try an example": "एक उदाहरण आज़माएँ",
     "Strengths and considerations": "खूबियाँ और विचारणीय बातें",
-    "Reading options": "पढ़ने के विकल्प"
+    "Reading options": "पढ़ने के विकल्प",
+    "Switch to dark mode": "डार्क मोड पर जाएँ",
+    "Switch to light mode": "लाइट मोड पर जाएँ"
   },
   "ar": {
     "U.S. Primary Ballot Assistant": "مساعد بطاقة الاقتراع للانتخابات التمهيدية الأمريكية",
@@ -1082,7 +1100,9 @@ window.BA_I18N = {
     "Finding your ballot": "جارٍ البحث عن بطاقة اقتراعك",
     "Try an example": "جرّب مثالًا",
     "Strengths and considerations": "نقاط القوة والاعتبارات",
-    "Reading options": "خيارات القراءة"
+    "Reading options": "خيارات القراءة",
+    "Switch to dark mode": "التبديل إلى الوضع الداكن",
+    "Switch to light mode": "التبديل إلى الوضع الفاتح"
   },
   "ht": {
     "U.S. Primary Ballot Assistant": "Asistan Bilten Vòt Primè Etazini",
@@ -1170,7 +1190,9 @@ window.BA_I18N = {
     "Finding your ballot": "N ap chèche bilten vòt ou",
     "Try an example": "Eseye yon egzanp",
     "Strengths and considerations": "Pwen fò ak sa pou konsidere",
-    "Reading options": "Opsyon lekti"
+    "Reading options": "Opsyon lekti",
+    "Switch to dark mode": "Pase nan mòd fènwa",
+    "Switch to light mode": "Pase nan mòd klè"
   },
   "ru": {
     "U.S. Primary Ballot Assistant": "Помощник по бюллетеням праймериз США",
@@ -1258,7 +1280,9 @@ window.BA_I18N = {
     "Finding your ballot": "Ищем ваш бюллетень",
     "Try an example": "Попробуйте пример",
     "Strengths and considerations": "Сильные стороны и соображения",
-    "Reading options": "Параметры чтения"
+    "Reading options": "Параметры чтения",
+    "Switch to dark mode": "Включить тёмную тему",
+    "Switch to light mode": "Включить светлую тему"
   },
   "pt": {
     "U.S. Primary Ballot Assistant": "Assistente de Cédula das Primárias dos EUA",
@@ -1346,7 +1370,9 @@ window.BA_I18N = {
     "Finding your ballot": "Procurando sua cédula",
     "Try an example": "Veja um exemplo",
     "Strengths and considerations": "Pontos fortes e pontos a considerar",
-    "Reading options": "Opções de leitura"
+    "Reading options": "Opções de leitura",
+    "Switch to dark mode": "Mudar para o modo escuro",
+    "Switch to light mode": "Mudar para o modo claro"
   }
 },
 
