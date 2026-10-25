@@ -1122,13 +1122,18 @@
         }
 
         let candidatesHTML = race.candidates.map((c, candIdx) => {
+          // Descriptions and pros/cons are only shown when the candidate entry
+          // cites sources; unsourced claims are never displayed.
+          const candSources = (c.sources || []).filter(s => safeUrl(s.url));
+          const showClaims = candSources.length > 0;
+
           let prosHTML = '';
-          if (c.pros && c.pros.length) {
+          if (showClaims && c.pros && c.pros.length) {
             prosHTML = `<div class="pros-box"><div class="pros-title">🟢 Key Strengths</div><ul class="pro-con-ul pros-ul">` + c.pros.map(p => `<li>${escapeHTML(p)}</li>`).join('') + `</ul></div>`;
           }
 
           let consHTML = '';
-          if (c.cons && c.cons.length) {
+          if (showClaims && c.cons && c.cons.length) {
             consHTML = `<div class="cons-box"><div class="cons-title">🟠 Key Considerations</div><ul class="pro-con-ul cons-ul">` + c.cons.map(cn => `<li>${escapeHTML(cn)}</li>`).join('') + `</ul></div>`;
           }
 
@@ -1143,12 +1148,13 @@
               <div class="candidate-info">
                 <div class="candidate-header">
                   <span class="candidate-name">${escapeHTML(c.name)}</span>
-                  <span class="party-tag ${escapeHTML(c.partyClass)}">${escapeHTML(c.party)}</span>
+                  ${c.party ? `<span class="party-tag ${escapeHTML(c.partyClass)}">${escapeHTML(c.party)}</span>` : ''}
                 </div>
-                ${c.desc ? `<p class="candidate-desc">${escapeHTML(c.desc)}</p>` : ''}
+                ${showClaims && c.desc ? `<p class="candidate-desc">${escapeHTML(c.desc)}</p>` : ''}
                 ${prosConsGridHTML}
-                ${safeUrl(c.site) ? `<div class="candidate-sources">
-                  <a class="source-link" href="${escapeHTML(safeUrl(c.site))}" target="_blank" rel="noopener" onclick="event.stopPropagation()">🌐 Candidate Website</a>
+                ${safeUrl(c.site) || showClaims ? `<div class="candidate-sources">
+                  ${safeUrl(c.site) ? `<a class="source-link" href="${escapeHTML(safeUrl(c.site))}" target="_blank" rel="noopener" onclick="event.stopPropagation()">🌐 Candidate Website</a>` : ''}
+                  ${candSources.map(src => `<a class="source-link" href="${escapeHTML(safeUrl(src.url))}" target="_blank" rel="noopener" onclick="event.stopPropagation()">${escapeHTML(src.label || 'Source')}</a>`).join(' ')}
                 </div>` : ''}
               </div>
             </div>
@@ -1173,8 +1179,9 @@
           ${race.overview || sourcesHTML || race.details ? `<div class="overview-box">
             <h4>${race.category === 'Ballot Measure' ? 'About This Measure' : 'Race & Office Overview'}</h4>
             ${escapeHTML(race.overview)}
-            ${race.details && race.details.pro ? `<p><strong>Argument for:</strong> ${escapeHTML(race.details.pro)}</p>` : ''}
-            ${race.details && race.details.con ? `<p><strong>Argument against:</strong> ${escapeHTML(race.details.con)}</p>` : ''}
+            ${race.details && (race.details.pro || race.details.con) ? `
+              <p><strong>Argument for:</strong> ${race.details.pro ? escapeHTML(race.details.pro) : '<em>No argument for was submitted.</em>'}</p>
+              <p><strong>Argument against:</strong> ${race.details.con ? escapeHTML(race.details.con) : '<em>No argument against was submitted.</em>'}</p>` : ''}
             ${sourcesHTML}
           </div>` : ''}
 
