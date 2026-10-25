@@ -28,7 +28,10 @@
   ];
 
   // Text under these is never rewritten by the translator.
-  const NO_TRANSLATE = 'script, style, noscript, textarea, select, option, .a11y-own, [translate="no"], .notranslate, .candidate-name';
+  const NO_TRANSLATE = 'script, style, noscript, textarea, select, option, .a11y-own, [translate="no"], .notranslate';
+  // Candidate names only get exact dictionary matches (ballot measure "Yes"/"No"),
+  // never machine translation.
+  const NAME = '.candidate-name';
   // Text under these is not read when reading a whole page or section.
   const NO_READ = 'script, style, noscript, textarea, select, option, button, .a11y-own, [aria-hidden="true"]';
   // Sections that get their own "read this" button.
@@ -142,16 +145,19 @@
       });
     }
 
-    // Several known sentences in one text node. Only when every sentence is known,
-    // so a half-translated paragraph never appears. "U.S. General" is not a break.
+    // Several sentences in one text node. If some are unknown (an address, say),
+    // leave the whole node to the machine translator when there is one, else
+    // translate the known sentences. "U.S. General" is not a sentence break.
     const sentences = core.split(/(?<=[a-z0-9)][.!?])\s+(?=[A-Z(])/);
     if (sentences.length > 1) {
-      const out = [];
-      for (const sentence of sentences) {
+      let known = 0;
+      const out = sentences.map(sentence => {
         const tr = translateString(sentence, lang);
-        if (tr == null) return null;
-        out.push(tr);
-      }
+        if (tr == null) return sentence;
+        known++;
+        return tr;
+      });
+      if (!known || (known < sentences.length && mt.status === 'ready')) return null;
       return out.join(/^(zh|ja)/.test(lang) ? '' : ' ');
     }
     return null;
@@ -222,6 +228,11 @@
 
     const ui = translateString(src, state.lang);
     if (ui != null) { setText(node, ui, 'ui'); return; }
+    if (node.parentElement.closest(NAME)) {
+      const exact = lookup(src.trim(), state.lang);
+      setText(node, exact != null ? src.replace(src.trim(), exact) : src, exact != null ? 'ui' : 'en');
+      return;
+    }
     const cached = mtCached(src);
     if (cached != null) { applyMT(node, src, cached); return; }
     setText(node, src, 'en');
@@ -489,7 +500,11 @@
       const el = blockAncestor(n.parentElement, root, cache);
       const lang = speechLangFor(n);
       if (cur && cur.el === el && cur.lang === lang) {
-        cur.text += (endsSentence(cur.text) || cur.lastParent === n.parentElement ? ' ' : ', ') + text;
+        // Items laid out side by side (name and party) get a pause; inline text runs on.
+        const display = cache.get(el) || getComputedStyle(el).display;
+        const sideBySide = /flex|grid/.test(display) || (cur.lastParent.closest('a') && n.parentElement.closest('a'));
+        const pause = sideBySide && cur.lastParent !== n.parentElement && !endsSentence(cur.text);
+        cur.text += (pause ? ', ' : ' ') + text;
       } else {
         cur = { el, lang, text };
         blocks.push(cur);
@@ -502,7 +517,7 @@
   // Break long text into sentence-sized pieces; some engines stop reading
   // utterances that run longer than about 15 seconds.
   function chunk(text, max) {
-    const sentences = text.split(/(?<=[.!?؟।])\s+|(?<=[。！？])\s*/u).filter(Boolean);
+    const sentences = text.split(/(?<=[\p{Ll}\d)][.!?])\s+|(?<=[؟।])\s+|(?<=[。！？])\s*/u).filter(Boolean);
     const out = [];
     let buf = '';
     for (let s of sentences) {
