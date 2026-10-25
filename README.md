@@ -1,6 +1,10 @@
-# 🗳️ U.S. Ballot Assistant (Nationwide Guided Primary Guide)
+# 🗳️ U.S. Ballot Assistant (Guided Ballot Guide)
 
-A lightweight, 0-API-cost, privacy-first web application that helps voters navigate their local U.S. primary & special election ballots step-by-step.
+A lightweight, 0-API-cost, privacy-first web application that helps voters navigate their local U.S. ballots step-by-step.
+
+> **Live ballots:** set `civicApiKey` in `public/js/config.js` to a Google Civic Information API browser key. The app then looks up the contests, candidates, ballot measures and polling place for any U.S. address with `voterInfoQuery`. Restrict the key to this site's URL and to the Civic Information API only, because it is visible in the page source. Street address plus ZIP gives district-level races; a ZIP alone may only return statewide ones.
+>
+> **Data rule:** a ZIP file in `public/data/zips/` is only shown to voters if it has an `election` block (`name`, `date`, `type`) saying which election it covers. Files without it are treated as unverified, and the app points voters to vote.gov / Vote411 instead. If the election date has passed, the app warns that the guide is out of date.
 
 ## 🚀 Architecture & Overview
 
