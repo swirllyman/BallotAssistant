@@ -116,6 +116,11 @@
         registrationUrl: admin.electionRegistrationUrl || '',
         ballotInfoUrl: admin.ballotInfoUrl || ''
       },
+      // Raw API fields, passed through for the voting recap on the summary step.
+      pollingLocations: res.pollingLocations || [],
+      earlyVoteSites: res.earlyVoteSites || [],
+      dropOffLocations: res.dropOffLocations || [],
+      electionAdministrationBody: admin,
       races: contests.map(toRace)
     };
   }
