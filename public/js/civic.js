@@ -35,6 +35,14 @@
     return [addr.locationName, street, cityLine].filter(Boolean).join(', ');
   }
 
+  function electionTypeFor(name) {
+    const n = (name || '').toLowerCase();
+    if (n.includes('runoff')) return 'runoff';
+    if (n.includes('primary')) return 'primary';
+    if (n.includes('special')) return 'special';
+    return 'general';
+  }
+
   function categoryFor(contest) {
     const level = (contest.level || [])[0];
     if (contest.type === 'Referendum') return 'Ballot Measure';
@@ -42,9 +50,12 @@
     return LEVEL_LABELS[level] || 'Office';
   }
 
+  // Every race loaded from the API cites where its data came from.
+  const DATA_SOURCE = { label: '🔗 Data: Voting Information Project via Google Civic API', url: 'https://www.votinginfoproject.org/' };
+
   function toRace(contest) {
-    const sourceUrl = contest.referendumUrl || (contest.sources || []).map(s => s.url).find(Boolean);
-    const sources = sourceUrl ? [{ label: '🔗 Official measure text', url: sourceUrl }] : [];
+    const sources = contest.referendumUrl ? [{ label: '🔗 Official measure text', url: contest.referendumUrl }] : [];
+    sources.push(DATA_SOURCE);
 
     if (contest.type === 'Referendum') {
       const title = contest.referendumTitle || 'Ballot Measure';
@@ -59,10 +70,13 @@
         overview: contest.referendumBrief || contest.referendumText || contest.referendumSubtitle || 'See the official measure text for details.',
         details: {
           pro: contest.referendumProStatement || '',
-          con: contest.referendumConStatement || ''
+          con: contest.referendumConStatement || '',
+          fullText: contest.referendumText || '',
+          passageThreshold: contest.referendumPassageThreshold || '',
+          effectOfAbstain: contest.referendumEffectOfAbstain || ''
         },
         sources,
-        candidates: responses.map(r => ({ name: r, party: 'Measure Response', partyClass: 'party-non' }))
+        candidates: responses.map(r => ({ name: r, party: '', partyClass: 'party-non' }))
       };
     }
 
@@ -76,12 +90,16 @@
       category,
       title: district && !office.includes(district) ? `${office} (${district})` : office,
       overview: district ? `This contest covers ${district}.` : '',
-      sources: [],
+      sources,
+      // Kept in the order the API returns, which follows the official ballot.
       candidates: (contest.candidates || []).map(c => ({
         name: c.name,
-        party: c.party || 'Nonpartisan',
+        party: c.party || '',
         partyClass: partyClassFor(c.party),
-        site: c.candidateUrl || ''
+        site: c.candidateUrl || '',
+        email: c.email || '',
+        phone: c.phone || '',
+        channels: (c.channels || []).filter(ch => ch && ch.type && ch.id)
       }))
     };
   }
@@ -105,7 +123,7 @@
       election: {
         name: res.election.name,
         date: res.election.electionDay,
-        type: 'general'
+        type: electionTypeFor(res.election.name)
       },
       votingInfo: {
         pollingLocation: pollingLocation ? formatAddress(pollingLocation.address) : '',

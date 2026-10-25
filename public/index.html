@@ -1403,10 +1403,6 @@
             <button type="submit" class="btn btn-submit-address" id="btn-submit-main">Find my ballot</button>
           </form>
 
-          <p class="example-row" id="example-row">
-            <span>Try an example</span>:
-            <button type="button" class="chip" onclick="setPreset('Seattle WA', '98116')">Seattle, WA 98116</button>
-          </p>
         </div>
 
         <div id="dynamic-step-cards-container"></div>
@@ -1467,18 +1463,6 @@
         }
       } catch (e) {}
       return null;
-    }
-
-    async function setPreset(neighborhood, zip) {
-      document.getElementById('input-address').value = '';
-      document.getElementById('input-zip').value = zip;
-      
-      const data = await loadDistrictByZip(zip);
-      if (data) {
-        showLookupMessage('');
-        activeDistrictData = data;
-        renderDistrictData();
-      }
     }
 
     async function handleAddressLookup(e) {
@@ -1634,13 +1618,18 @@
         }
 
         let candidatesHTML = race.candidates.map((c, candIdx) => {
+          // Descriptions and pros/cons are only shown when the candidate entry
+          // cites sources; unsourced claims are never displayed.
+          const candSources = (c.sources || []).filter(s => safeUrl(s.url));
+          const showClaims = candSources.length > 0;
+
           let prosHTML = '';
-          if (c.pros && c.pros.length) {
+          if (showClaims && c.pros && c.pros.length) {
             prosHTML = `<div class="pros-box"><div class="pros-title">Key Strengths</div><ul class="pro-con-ul pros-ul">` + c.pros.map(p => `<li>${escapeHTML(p)}</li>`).join('') + `</ul></div>`;
           }
 
           let consHTML = '';
-          if (c.cons && c.cons.length) {
+          if (showClaims && c.cons && c.cons.length) {
             consHTML = `<div class="cons-box"><div class="cons-title">Key Considerations</div><ul class="pro-con-ul cons-ul">` + c.cons.map(cn => `<li>${escapeHTML(cn)}</li>`).join('') + `</ul></div>`;
           }
 
@@ -1653,10 +1642,6 @@
               </details>`;
           }
 
-          const siteHTML = safeUrl(c.site)
-            ? `<div class="candidate-sources"><a class="source-link" href="${escapeHTML(safeUrl(c.site))}" target="_blank" rel="noopener" onclick="event.stopPropagation()">Candidate Website${ICON_EXTERNAL}</a></div>`
-            : '';
-
           return `
             <div class="candidate-card" data-cand-index="${candIdx}" role="radio" aria-checked="false" tabindex="0"
                  onclick="selectCandidate(${stepNum}, ${candIdx})"
@@ -1665,11 +1650,14 @@
               <div class="candidate-info">
                 <div class="candidate-header">
                   <span class="candidate-name">${escapeHTML(c.name)}</span>
-                  ${c.party && c.party !== 'Measure Response' ? `<span class="party-tag ${escapeHTML(c.partyClass)}">${escapeHTML(c.party)}</span>` : ''}
+                  ${c.party ? `<span class="party-tag ${escapeHTML(c.partyClass)}">${escapeHTML(c.party)}</span>` : ''}
                 </div>
-                ${c.desc ? `<p class="candidate-desc">${escapeHTML(c.desc)}</p>` : ''}
+                ${showClaims && c.desc ? `<p class="candidate-desc">${escapeHTML(c.desc)}</p>` : ''}
                 ${prosConsGridHTML}
-                ${siteHTML}
+                ${safeUrl(c.site) || showClaims ? `<div class="candidate-sources">
+                  ${safeUrl(c.site) ? `<a class="source-link" href="${escapeHTML(safeUrl(c.site))}" target="_blank" rel="noopener" onclick="event.stopPropagation()">Candidate Website${ICON_EXTERNAL}</a>` : ''}
+                  ${candSources.map(src => `<a class="source-link" href="${escapeHTML(safeUrl(src.url))}" target="_blank" rel="noopener" onclick="event.stopPropagation()">${escapeHTML(stripLeadingEmoji(src.label || 'Source'))}${ICON_EXTERNAL}</a>`).join(' ')}
+                </div>` : ''}
               </div>
             </div>
           `;
@@ -1683,8 +1671,9 @@
           ${race.overview || sourcesHTML || race.details ? `<div class="overview-box">
             <h4>${race.category === 'Ballot Measure' ? 'About This Measure' : 'Race & Office Overview'}</h4>
             ${escapeHTML(race.overview)}
-            ${race.details && race.details.pro ? `<p><strong>Argument for:</strong> ${escapeHTML(race.details.pro)}</p>` : ''}
-            ${race.details && race.details.con ? `<p><strong>Argument against:</strong> ${escapeHTML(race.details.con)}</p>` : ''}
+            ${race.details && (race.details.pro || race.details.con) ? `
+              <p><strong>Argument for:</strong> ${race.details.pro ? escapeHTML(race.details.pro) : '<em>No argument for was submitted.</em>'}</p>
+              <p><strong>Argument against:</strong> ${race.details.con ? escapeHTML(race.details.con) : '<em>No argument against was submitted.</em>'}</p>` : ''}
             ${sourcesHTML}
           </div>` : ''}
 
@@ -2168,8 +2157,6 @@
 
     window.addEventListener('DOMContentLoaded', () => {
       syncThemeButton();
-      // With live address lookup the hand-made Seattle example is only a stale demo.
-      if (CONFIG.civicApiKey) document.getElementById('example-row').hidden = true;
       document.getElementById('election-day-notice').innerHTML =
         `<strong>Election Day is ${escapeHTML(formatElectionDate(UPCOMING_ELECTION.date))}.</strong> ${OFFICIAL_LOOKUP_HTML}`;
       updateSidebarStatus();
