@@ -1744,9 +1744,20 @@
     }
 
     // Passage rules and the full measure text, shown at the Detailed level.
+    // Pamphlet text keeps its paragraphs (separated by blank lines in the data).
+    function paragraphsHTML(text) {
+      return String(text || '').split(/\n\s*\n/).map(p => p.trim()).filter(Boolean)
+        .map(p => `<p>${escapeHTML(p).replace(/\n/g, '<br>')}</p>`).join('');
+    }
+
     function renderMeasureFacts(race) {
       const d = race.details || {};
       const facts = [];
+      const folded = (title, text) => `<details class="pros-cons-details full-text-details"><summary>${ICON_CHEVRON}<span>${title}</span></summary><div class="full-text">${paragraphsHTML(text)}</div></details>`;
+      if (d.explanatory) facts.push(folded('Explanatory statement (what the law is now and what this would change)', d.explanatory));
+      if (d.fiscal) facts.push(folded('Fiscal impact statement', d.fiscal));
+      if (d.rebuttalFor) facts.push(folded('Rebuttal of the argument against', d.rebuttalFor));
+      if (d.rebuttalAgainst) facts.push(folded('Rebuttal of the argument for', d.rebuttalAgainst));
       if (d.passageThreshold) facts.push(`<p><strong>Needed to pass:</strong> ${escapeHTML(d.passageThreshold)}</p>`);
       if (d.effectOfAbstain) facts.push(`<p><strong>If you leave it blank:</strong> ${escapeHTML(d.effectOfAbstain)}</p>`);
       if (d.fullText && d.fullText !== race.overview) {
@@ -1914,8 +1925,8 @@
             ${race.overview ? `<p class="overview-text">${escapeHTML(race.overview)}</p>` : ''}
             ${race.details && (race.details.pro || race.details.con) ? `
               <div class="detail-standard">
-                <p><strong>Argument for:</strong> ${race.details.pro ? escapeHTML(race.details.pro) : '<em>No argument for was submitted.</em>'}</p>
-                <p><strong>Argument against:</strong> ${race.details.con ? escapeHTML(race.details.con) : '<em>No argument against was submitted.</em>'}</p>
+                <details class="pros-cons-details" open><summary>${ICON_CHEVRON}<span>Argument for</span></summary>${race.details.pro ? paragraphsHTML(race.details.pro) : '<p><em>No argument for was submitted.</em></p>'}</details>
+                <details class="pros-cons-details" open><summary>${ICON_CHEVRON}<span>Argument against</span></summary>${race.details.con ? paragraphsHTML(race.details.con) : '<p><em>No argument against was submitted.</em></p>'}</details>
               </div>` : ''}
             ${renderMeasureFacts(race)}
             <div class="detail-standard">${sourcesHTML}</div>
