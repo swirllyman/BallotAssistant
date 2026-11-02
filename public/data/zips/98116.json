@@ -1,406 +1,1128 @@
 {
   "state": "Washington",
   "locationName": "Seattle, WA (West Seattle)",
-  "districtText": "Legislative District 34 | Congressional District 7 | King County",
+  "districtText": "Legislative District 34 | Congressional District 7 | King County Council District 8 | City of Seattle",
   "election": {
-    "name": "2026 Washington Primary Election",
-    "date": "2026-08-04",
-    "type": "primary"
+    "name": "2026 Washington General Election",
+    "date": "2026-11-03",
+    "type": "general"
   },
+  "votingInfo": {
+    "ballotInfoUrl": "https://voter.votewa.gov/WhereToVote.aspx",
+    "registrationUrl": "https://voter.votewa.gov/WhereToVote.aspx",
+    "electionInfoUrl": "https://kingcounty.gov/en/dept/elections",
+    "hasDropOff": true
+  },
+  "dataNote": "Built from the Washington Secretary of State's online voters' pamphlet (VoteWA, election 899, King County) by scripts/build_wa_votewa.py. Check your own ballot at voter.votewa.gov.",
   "races": [
     {
-      "shortTitle": "US Rep Dist 7",
+      "shortTitle": "Initiative IP26-645",
+      "type": "Ballot Measure • Statewide",
+      "category": "Ballot Measure",
+      "title": "State Initiative Measure No. IP26-645",
+      "overview": "Initiative Measure No. IP26-645 concerns state and local taxes. This measure would repeal a 9.9% tax on annual individual income over $1,000,000; prohibit taxes measured by individual income and taxes on individual income or the receipt of individual income; and define “income.” This measure would decrease funding for public K-12 education, higher education (including universities and community colleges), and human services (primarily healthcare). Should this measure be enacted into law?",
+      "sources": [
+        {
+          "label": "WA Voters' Pamphlet: this measure",
+          "url": "https://voter.votewa.gov/GenericVoterGuide.aspx?e=899&c=17&language=en#/measure/7325"
+        },
+        {
+          "label": "Full text",
+          "url": "https://www.sos.wa.gov/sites/default/files/2026-07/Finaltext_IP26-645_fulltext.pdf"
+        }
+      ],
+      "details": {
+        "pro": "Vote Yes: Repeal the Income Tax, Make Olympia Keep Its Word\nTrust isn't built by passing another tax, it's earned by keeping promises. Over the last 90 years, Washingtonians have rejected an income tax ten times because they knew it would threaten economic growth, discourage investment, and reach beyond the people originally targeted. This year, the Legislature enacted a new income tax anyway. I-645 restores your right to decide.\n\nTaxes Always Expand\nSupporters insist the tax is narrow, applying only to income above $1 million. But lawmakers rejected opportunities to permanently limit its reach, giving Olympia the ability to expand the income tax to everyone. Before asking taxpayers for more, they should demonstrate they can keep the commitments they've already made.\n\nA History of Broken Promises\n80 times in the last five years Olympia has moved money from dedicated accounts to the general fund. They’ve taken money from state healthcare, flood control, pipeline safety, school employees’ insurance, and others to backfill the general fund. The capital gains tax was promised to support early learning and childcare, yet those commitments were delayed, reduced, or cancelled. First responders spent careers relying on promises about their retirements, only to watch the legislature raid their pensions to plug holes in the general fund. Trust erodes when dedicated funding doesn't produce the results people were promised.\n\nVoting Yes repeals the new income tax before it begins, preserves the Working Families Tax Credit, paid family leave, and small-business tax relief. Voters have the final say.",
+        "con": "Washington has one of the nation’s most upside-down tax systems, where working and middle class families pay a far higher tax rate than the wealthiest. I-645 would make that worse. I-645 is fiscally irresponsible, slashing billions in funding for education and healthcare, increasing taxes on 460,000 hard-working families, and jeopardizing tax cuts for thousands of small businesses.\n\nVote No: Stop a Tax Break for the Wealthiest\nHedge fund mogul Brian Heywood has spent millions backing I-645 because he wants a tax cut for the top 1%, while sticking working and middle class families and small businesses with higher costs. I-645 could mean higher taxes for thousands of small businesses, force families to pay sales tax for basic household items like diapers, and raise taxes for 460,000 Washington families – just so those making over a million dollars in a year get a tax break.\n\nVote No: Stop Cuts to Schools, Healthcare, and Childcare\nThis measure cuts funding for K-12 public schools, healthcare, childcare, and other important public services by $13 billion over four years. That means larger class sizes, higher costs for healthcare and childcare, and the elimination of free school lunches for many children.\n\nVote No: Stop Higher Costs for Working Families\nI-645 gives the wealthiest a big break while the rest of us face higher healthcare and childcare costs and cuts to public schools and higher education. Join Washington nurses, teachers, and small business owners. Vote No on I-645.",
+        "explanatory": "Written by the Office of the Attorney General\n\nThe Law As It Presently Exists\n\nThe State of Washington imposes various taxes to raise revenue to fund state government. Those taxes include the retail sales tax, the business and occupation tax, the state property tax, the capital gains tax, and other state taxes. In 2026, the Legislature passed a law imposing a 9.9 percent tax on an individual’s receipt of income over $1,000,000, beginning in calendar year 2028. Beginning in 2029, the $1,000,000 standard deduction is increased to account for inflation.\n\nThe amount of income subject to tax is based on adjusted gross income reported on federal income tax returns, with some modifications.\n\nIn addition to the $1,000,000 standard deduction, taxpayers may deduct up to $100,000 for charitable contributions. The $1,000,000 standard deduction and the possible $100,000 deduction for charitable contributions apply per household, so a married couple or domestic partnership shares a single $1,000,000 deduction and up to $100,000 for charitable contributions. Additional deductions are available for certain specific situations. Certain expenses related to pass-through entities that are deducted for federal tax purposes are added to the amount subject to Washington’s tax.\n\nThe law also allows certain tax credits, which lower the amount of taxes due. These credits are available for income tax paid to another state; amounts paid under Washington’s capital gains tax; and taxes owed for business and occupation taxes or public utility taxes paid on the same income subject to this tax.\n\nNonresidents of Washington are only subject to this tax based on income derived from sources within Washington. Income that they earn from other sources is not counted.\n\nFive percent of the money collected from this tax is deposited into an account that can only be used for childcare and early learning purposes. The remaining 95 percent of money collected from the tax and any interest and penalties is deposited into the state’s general fund.\n\nThe 2026 law enacting the tax on income above $1,000,000 also enacted or expanded various tax exemptions, deductions and credits. First, it eliminated sales tax on the sale of diapers, over-the-counter drugs, grooming and hygiene products, and certain software, digital services, data processing, and live presentations. Second, it reduced business and occupation taxes by increasing a small-business tax credit, increasing the minimum threshold for businesses to file taxes, and removing a surcharge on high grossing businesses for health care providers, hospitals, prescription drug resellers, and wholesale food sales. Third, it expanded eligibility for the Working Families Tax Credit, which provides a tax refund for qualifying low-income individuals.\n\nThe Effect of the Proposed Measure if Approved\n\nIf approved, the proposed measure would repeal the annual tax on individual income over $1,000,000. This would also eliminate the funding collected from the tax that would go to the general fund (which funds public K-12 education, higher education such as universities and community colleges, health care, and other human services) and childcare and early learning. The non-income tax credits, exemptions, and deductions that accompanied this tax would not be repealed and would remain in place.\n\nThe measure would also prohibit state and local governments from imposing taxes on individual income or the receipt of individual income and taxes measured by an individual’s income. The only tax explicitly listed and repealed by the measure is the tax on income over $1,000,000.\n\nThe measure would also provide definitions for some terms used in the measure. It would define “income” for purposes of excise taxes as “any gain or benefit measured in money derived from an individual’s capital, labor, property, or other source.” It would define “individual” for purposes of excise taxes as “a natural person.”",
+        "fiscal": "Written by the Office of Financial Management\n\nFor more information visit www.ofm.wa.gov/ballot\n\nSummary\n\nIf approved by voters, Initiative Measure No. IP26-645 will result in an estimated loss to state revenue of $11.4 billion over state fiscal years 2027-2031. This would reduce funding to the state general fund to support core government services, particularly public K-12 education, higher education (including universities and community colleges), and human services (primarily healthcare). The Legislature expressed an intent to use the additional revenue created by Engrossed Substitute Senate Bill 6346 (2026) (ESSB 6346) towards providing free school meals, transferring funds for childcare and early learning, and transferring funds to local governments to mitigate sales tax loss.\n\nGeneral assumptions\n\nA state tax equal to 9.9 percent on Washington taxable income greater than $1,000,000 per individual became law following the 2026 legislative session due to ESSB 6346 - Establishing a tax on millionaires. If approved, the initiative will repeal the tax such that it will no longer go into effect on January 1, 2028, and the state will no longer impose this tax.\n\n•\nThe effective date of the initiative is December 3, 2026.\n\n•\nThe provisions of the initiative apply prospectively, not retroactively.\n\n•\nThe Department of Revenue (DOR) ceases all implementation activities on the effective date, including those activities that are in progress.\n\n•\nEstimates use the state’s fiscal year (SFY) of July 1 through June 30. State fiscal year 2027 is July 1, 2026, to June 30, 2027.\n\n•\nCalendar year refers to January 1 to December 31.\n\n•\nRCW 29A.72.025 regarding fiscal impact statements indicates any such statement “must describe any projected increase or decrease in revenues, costs, expenditures, or indebtedness that the state or local governments will experience if the ballot measure were approved by state voters.” As such, impacts that might occur due to actions of a future Legislature or those only expressed through legislative intent, are not included.\n\nRevenue\n\nLocal Revenue\n\nThe initiative will not impact local revenue.\n\nState Revenue\n\nThe initiative is estimated to result in revenue loss of $11,432,414,000 over five fiscal years from the state general fund, federal general fund, and fair start for kids account. The general fund is the principal state fund supporting the operation of the state. The fair start for kids account is used only for childcare and early learning purposes.\n\nState Revenue Assumptions\n\nState General Fund\n\nRevenue estimates are based on several available data sources including:\n\n•\nDepartment of Revenue (DOR) excise data.\n\n•\nThe Economic and Revenue Forecast Council (ERFC) June 2026 tax revenue forecast.\n\n•\nThe Internal Revenue Service (IRS) publication 6149 calendar year projections by state for 2024.\n\n•\nIRS individual income tax returns for tax year 2022.\n\n•\nThe National Library of Medicine publication, “US Taxation of Gambling Winnings and Incentives to Bet.”\n\nThe following additional assumptions are made for calculation purposes:\n\n•\nThe first impacted year of tax collections is state fiscal year 2029.\n\n•\nThe only tax impacted is the tax described in ESSB 6346 from the 2026 Legislative Session.\n\n•\nThere are no estimated tax payments required in tax year 2028 (calendar year 2028), therefore the first payments are due from taxpayers in April 2029.\n\n•\nApproximately 89 percent of total tax payments will occur in April 2029 and the remaining 11 percent of payments will occur in October 2029, due to the six-month extension deadline.\n\n•\nThe first estimated tax payments, for the January 2029 to June 2029 period, are due July 1, 2029.\n\n•\nBased on information from the Institute on Taxation and Economic Policy (ITEP), it is assumed that there is a reduced IRS enforcement budget. Based on the ITEP analysis, a 4.71 percent downward adjustment is applied to taxpayers' Adjusted Gross Income (AGI) prior to estimating tax collections.\n\n•\nDue to assumed taxpayer behavior, an assumption about taxpayer compliance is applied to revenue estimates. It is assumed that 90 percent of tax revenue will be collected for tax year 2028 (calendar year 2028) and 95 percent of tax revenue will be collected for tax year 2029 (calendar year 2029) and thereafter.\n\nFederal General Fund\n\nESSB 6346 made state income tax refunds subject to child support collection action by the Department of Social and Health Services. To implement this provision, the Department of Social and Health Services anticipates receipt of federal funding for information technology updates, policy updates, and staff training. This federal revenue would be eliminated if the initiative was approved.\n\nFair Start for Kids Account\n\nESSB 6346 directed the Office of the State Treasurer to deposit five percent of the tax revenue collected to the fair start for kids account beginning July 1, 2029, and each July 1st thereafter. The repeal of the tax means that this transfer will no longer occur. The total amount that will no longer be transferred to the fair start for kids account is $377,000,000, including $155,400,000 in state fiscal year 2030 and $221,600,000 in state fiscal year 2031.\n\nState Revenue Impacts\n\nTable 1. Revenue loss, by account\n\nAccount\n\nSFY 2027\n\nSFY 2028\n\nSFY 2029\n\nSFY 2030\n\nSFY 2031\n\nState General Fund\n\n$0\n\n$0\n\n($3,108,000,000)\n\n($4,276,600,000)\n\n($3,670,400,000)\n\nFair Start for Kids Account\n\n$0\n\n$0\n\n$0\n\n($155,400,000)\n\n($221,600,000)\n\nFederal General Fund\n\n($271,000)\n\n($143,000)\n\n$0\n\n$0\n\n$0\n\nTotal\n\n($271,000)\n\n($143,000)\n\n($3,108,000,000)\n\n($4,432,000,000)\n\n($3,892,000,000)\n\nState Government Expenditures\n\nState Agency Implementation Cost Assumptions\n\nState agency savings are estimated to be a net total of $150,471,700 over five state fiscal years as a result of the initiative. Savings by agency are:\n\nTable 2. Expenditures, by agency (state general fund and federal general fund)\n\nAccount\n\nSFY 2027\n\nSFY 2028\n\nSFY 2029\n\nSFY 2030\n\nSFY 2031\n\nDepartment of Revenue\n\nUnknown\n\n($53,676,000)\n\n($35,696,900)\n\n($30,544,400)\n\n($29,927,400)\n\nOffice of the Attorney General\n\n$0\n\n$0\n\n$0\n\n$0\n\n$0\n\nDepartment of Social and Health Services – State General Fund\n\n($139,000)\n\n($74,000)\n\n$0\n\n$0\n\n$0\n\nDepartment of Social and Health Services – Federal General Fund\n\n($271,000)\n\n($143,000)\n\n$0\n\n$0\n\n$0\n\nOffice of the State Treasurer\n\n$0\n\n$0\n\n$0\n\n$0\n\n$0\n\nDepartment of Corrections\n\nIndeterminate\n\nIndeterminate\n\nIndeterminate\n\nIndeterminate\n\nIndeterminate\n\nDepartment of Children, Youth, and Families\n\nIndeterminate\n\nIndeterminate\n\nIndeterminate\n\nIndeterminate\n\nIndeterminate\n\nState General Fund Total\n\n($139,000)\n\n($53,750,000)\n\n($35,696,900)\n\n($30,544,400)\n\n($29,927,400)\n\nAll Funds Total\n\n($410,000)\n\n($53,893,000)\n\n($35,696,900)\n\n($30,544,400)\n\n($29,927,400)\n\nDepartment of Revenue\n\nThe Department will save a net of $149,844,700 over the five fiscal years between 2027 and 2031. It is assumed that the existing state general fund appropriation for administering the tax will end as of June 30, 2027. Impacts to expenditures and subsequent savings are estimated to occur on or after January 1, 2027.\n\nCurrently, the Department has received a total appropriation of $10,196,000 for state fiscal year 2027. The total appropriation for the period from January 2027 to June 2027 is $5,408,400. Unspent amounts from the general fund for state fiscal year 2027 are currently unknown due to potential contracts and vendor commitments. For state fiscal years 2028, 2029, 2030, and 2031 it is assumed that DOR would receive funding from the legislature in accordance with the fiscal note for parts I – VIII of ESSB 6346 – Establishing a tax on millionaires. Savings are assumed for tax administration duties for approximately 30,000 taxpayers that will no longer be required. These savings by state fiscal year are as follows:\n\n•\nSavings of $53,676,000 for state fiscal year 2028.\n\n•\nSavings of $35,696,900 for state fiscal year 2029.\n\n•\nSavings of $30,544,400 for state fiscal year 2030.\n\n•\nSavings of $29,927,400 for state fiscal year 2031.\n\nOffice of the Attorney General\n\nThe Office of the Attorney General (AGO) will have no increase or decrease in costs each state fiscal year from 2027 through 2031. The anticipated change in the amount of legal services workload is minimal. The AGO did not receive funding specific to implementing ESSB 6346.\n\nDepartment of Social and Health Services\n\nIn state fiscal year 2027, the Department of Social and Health Services (DSHS) will save $139,000 in state funds and $279,000 in federal funds. In state fiscal year 2028, DSHS will save $74,000 in state funds and $143,000 in federal funds. This funding was provided for information technology updates, policy updates, and staff training for the agency to implement child support collections on state tax refunds.\n\nOffice of the State Treasurer\n\nThe Office of the State Treasurer (OST) will have no increase or decrease in costs in state fiscal years 2030 and 2031 to administer the transfer to the fair start for kids account. The OST did not receive funding specific to implement ESSB 6346.\n\nDepartment of Corrections\n\nThe Department of Corrections will have indeterminate savings resulting from the elimination of the class C felony for evading this tax.\n\nDepartment of Children, Youth, and Families\n\nThe Department of Children, Youth, and Families will have indeterminate savings resulting from the elimination of the class C felony for evading this tax. It is unclear if these criminal offenses are limited to adult crimes.",
+        "rebuttalFor": "The Millionaires Tax only applies to those making above one million dollars per year. Any attempt to expand it to those of us making under a million would be decided on the ballot - voters always have the final say. I-645 blows a $13 billion hole in the budget - don’t believe lies that we can keep tax cuts for working families and small businesses but eliminate the tax on the wealthy few that pays for them.",
+        "rebuttalAgainst": "The No campaign's claims are false. I-645 repeals the income tax. Without I-645, Olympia can expand the income tax to reach into your paycheck with the simple stroke of a pen. No public vote and no permission required, any time they want. This was never about schools or diapers, that's a scare tactic. Washington has record revenues. An income tax on anyone will become an income tax on everyone. Vote Yes."
+      },
+      "candidates": [
+        {
+          "name": "Yes"
+        },
+        {
+          "name": "No"
+        }
+      ]
+    },
+    {
+      "shortTitle": "Initiative IL26-001",
+      "type": "Ballot Measure • Statewide",
+      "category": "Ballot Measure",
+      "title": "State Initiative Measure No. IL26-001",
+      "overview": "Initiative Measure No. IL26-001 concerns parental rights relating to their children in public school. This measure would repeal amendments to a statute listing certain rights of parents and guardians of public-school children and re-enact the law as it was originally enacted by Initiative to the Legislature 2081. Should this measure be enacted into law?",
+      "sources": [
+        {
+          "label": "WA Voters' Pamphlet: this measure",
+          "url": "https://voter.votewa.gov/GenericVoterGuide.aspx?e=899&c=17&language=en#/measure/7326"
+        },
+        {
+          "label": "Full text",
+          "url": "https://www.sos.wa.gov/sites/default/files/2026-03/INITIATIVE%20IL26-001%20fulltext.pdf"
+        }
+      ],
+      "details": {
+        "pro": "Vote Yes to Restore Parents’ Rights in Education\nThese rights include access to their child’s instructional materials and student records, notice of medical services, opt-outs from certain activities and instruction, and immediate notification when law enforcement questions their child or their child is removed from campus without parental permission.\n\nProtecting Vulnerable Children\nSchool staff remain mandatory reporters of suspected child abuse or neglect. Privacy for vulnerable children remains paramount. But safeguards designed for children at risk should not become a default policy of withholding information from all parents.\n\nSupport Families, Not Secrecy\nParents must give permission for schools to administer medication, apply sunscreen, or take students on field trips. Yet current policies allow schools to withhold critical information when a child expresses a new gender identity at school. These policies may require staff to conceal this information from parents, even when doing so conflicts with their conscience or professional judgment. Opponents call sharing this information with parents “outing” even when significant changes to a minor’s school life may already be known to classmates, teachers, and staff. Deliberately excluding parents treats them as inherently unsafe without an individualized assessment. This undermines the vital parent-child relationship and denies families the opportunity to navigate consequential questions about health and well-being together.\n\nRestore Trust in Washington Schools\nSchools are essential partners in a child’s educational success, while parents are responsible for raising their children. Respecting these distinct roles is essential to restoring trust. Vote yes.",
+        "con": "Vote No On Removing Commonsense Protections For Child Abuse Victims\nWhile most parents are loving, the sad reality is there were 117,000 reports of child abuse or neglect in WA in 2024 alone. This poorly written measure further endangers vulnerable child abuse victims by requiring schools to hand over sensitive information to parents under criminal investigation for raping, abusing or otherwise harming their own child. That’s why it’s opposed by law enforcement and the WA Coalition Against Domestic Violence and Sexual Assault.\n\nVote No On Delaying Parental Notification When Children Are Crime Victims\nIf a student is the victim of a serious crime at school, parents should not have to wait to find out. An unintended consequence of IL26-001 is ending Washington’s legal requirement that schools immediately notify parents when the crime is reported. Experts say delayed notification only adds to the child’s trauma and can prevent a child from getting immediate help and support from loved ones and professionals.\n\nVote No On Worsening The Teen Mental Health And Homelessness Crisis\nSchool nurses and counselors say this measure, bankrolled by ultra-conservatives, discourages students facing domestic violence, sexual abuse, or bullying from seeking help from trusted teachers and school counselors, who would be required to release students’ confidential records. It also forces schools to knowingly put LGBTQ+ kids in increased danger of violence and homelessness by outing them to potentially abusive families.That’s why the WA State Nurses Association, doctors, and school counselors oppose this measure.",
+        "explanatory": "Written by the Office of the Attorney General\n\nThe Law as It Presently Exists\n\nIn 2024, the Legislature passed Initiative to the Legislature 2081, which listed certain rights of parents and guardians of public-school children. Many of those rights were already set forth elsewhere in state or federal law. In 2025, the Legislature made several changes to this list of parental and guardian rights, which again restated many rights that already existed elsewhere in state and federal law. Currently, the list of parent and guardian rights is set forth in statute at RCW 28A.605.005 and provides:\n\nAccess to Educational Materials and Records: Parents and legal guardians have the right to access their child’s classroom and school-sponsored activities to observe and to examine textbooks, curriculum, and supplemental materials used in their child’s classroom in accordance with policies and procedures. Parents and legal guardians have the right to review their child’s education records by submitting a written request. Records must be provided within a reasonable period of time not to exceed 45 days. Education records are defined as official records, files, and data directly related to a student and maintained by the public school, including records in a child’s cumulative folder, records of attendance and academic work completed, records of achievement and evaluative tests, disciplinary status, test protocols, and individualized education programs. Education records do not include records that are kept in the sole possession of the maker, are used only as a personal memory aid, and are not accessible or revealed to any other person except a temporary substitute for the maker of the record. Schools may charge a reasonable fee for copying education records for parents and guardians so long as the fee does not prevent a parent or guardian from accessing the records. Parents and guardians are not required to appear in person to request education records, provided the public school can ascertain the identity of the requestor. Access and disclosure of health care information is governed by state health-care disclosure laws.\n\nStudent Performance and Attendance: Parents and legal guardians have the right to be informed of their child’s academic performance, including the child’s performance on state learning standards tests and assessments. A parent or legal guardian has the right to request an in-person meeting with the child’s classroom teacher and principal to discuss resources or strategies to support and encourage the child’s academic improvement. Parents and legal guardians also have the right to be notified of unexcused absences and to engage in efforts to eliminate or reduce the child’s absences in accordance with other state law.\n\nCriminal Action and Law Enforcement: Parents and legal guardians have the right to receive immediate notification when a criminal action is alleged to have been committed against their child on school property during the school day or during a school sponsored activity or when their child has been detained based on probable cause of involvement in criminal activity on school property during the school day. Parents and legal guardians also have the right to receive immediate notification if their child is subject to custodial interrogation at the school during the school day, except in cases where the parent or legal guardian has been accused of abuse or neglect against the child being questioned. Public schools must also give notice to parents and guardians upon receipt of reports that their child is the alleged victim of physical or sexual abuse, misconduct, or assault by a school employee or contractor.\n\nRemoval from Campus: Parents and legal guardians have the right for their child not to be removed from school grounds or buildings during school hours without the authorization of a parent or legal guardian according to other provisions of state law. Notice to parents provided by youth shelters, law enforcement agencies, and the Department of Children, Youth, and Families when they provide shelter to or take custody of children are governed by other laws.\n\nNon-Discrimination: Parents and legal guardians have a right to have their child receive a public education in a setting that prohibits discrimination on the basis of sex, race, creed, religion, color, national origin, honorably discharged veteran or military status, sexual orientation, gender expression, gender identity, the presence of any sensory, mental or physical disability, or the use of a trained dog guide or service animal by a person with a disability.\n\nHarassment, Intimidation, and Bullying: Parents and guardians have the right to file a complaint on behalf of their child relating to harassment, intimidation, and bullying, as set forth in other state law.\n\nNotification and Opt Out Rights: Parents and legal guardians have the right to receive written notice and to opt their children out of surveys, analyses, or evaluations that reveal information concerning categories listed in federal opt-out laws, including political affiliation or beliefs; mental or psychological problems of the student or student’s family; sex behavior and attitudes; illegal, anti-social, self-incriminating, or demeaning behavior; critical appraisals of people with close relationships to the child or the child’s family; religious practices, affiliations, or beliefs of the child or the child’s family; and income. Parents and legal guardians also have the right to opt their child out of comprehensive sexual education as required by other state law.\n\nEnrollment Rights: Parents and legal guardians have a right to have their child qualify for enrollment in a school district if they are transferred to, or pending transfer to, a military installation within the state. Parents and legal guardians have a right to have their child qualify without a legal residence for enrollment in a school district. Parents and legal guardians also have the right to request enrollment for their child in a nonresident school district. Parents and legal guardians have a right to request enrollment for their child in a charter school.\n\nLanguage Access Rights: Parents and legal guardians have a right to receive annual notice of the public school’s language access policies and services and the parents’ right to free language access services. Parents and legal guardians also have a right to have their child whose primary language is not English to access supplemental instruction and services through a transitional bilingual instruction program.\n\nSpecial Education Rights: Parents and legal guardians have the right to request special education programs and assistance for their child if their child is eligible for, but not receiving, special education services, including due to illness. Parents and legal guardians also have the right to request an appeal to the superintendent of public instruction if their child with disabilities has been denied the opportunity of a special education program by a school district or public school, and to access special education due process hearings regarding their child.\n\nSchool Calendar: Parents and legal guardians have a right to receive the annual school calendar no later than 30 days prior to the beginning of the school year, and to be notified of any revisions to the calendar. The calendar must be posted to the school’s website and must include student attendance days and events that require parent or student attendance outside of normal school days or hours.\n\nRequired Fees: Parents and legal guardians have a right to be informed of required fees and their purpose and use, and how economic hardships may be addressed.\n\nDress Code or Uniform: Parents and legal guardians have a right to be informed of a description of any required dress code or uniform.\n\nPrivate Right of Action: Nothing in the statute setting forth rights of parents and legal guardians creates a private right of action.\n\nThe Effect of the Proposed Measure if Approved\n\nIf approved, the proposed measure would undo all of the changes made by the 2025 Legislature, and re-institute the list of rights as enacted in 2024 by Initiative to the Legislature 2081. Specifically, the proposal would modify current law in the following ways:\n\nAccess to Educational Materials and Records: Parents and legal guardians would have a right to examine the textbooks, curriculum, and supplemental material used in their child’s classroom. The limitation that parental and guardian access is according to the provisions of other law and in conformity with school policies would be removed. With respect to records, schools would be prohibited from requiring that parents appear in person to make a records request. The exception for cases where the school could not verify the identity of the parent or guardian would be eliminated. Schools would be prohibited from charging for electronic copies, and could charge a reasonable fee for copies of paper records. Records would have to be produced within ten business days instead of the 45 days allowed by current law. The kinds of records that schools would be required to produce would be broadened to include any student-specific files, documents, or other materials that are maintained by the school. The exception for documents kept in the sole possession of the maker would be eliminated. The provision specifying that health care records are controlled by separate laws about disclosure of health care records would be eliminated.\n\nMedical Services and Treatment: The measure would add that parents and legal guardians have a right to receive prior notification when medical services are being offered to their child (except emergency medical treatment), to receive notification when any medical service has been provided to their child that could result in financial impact to the parent or legal guardian, and to receive notification when the school has arranged for medical treatment that results in follow-up care beyond normal school hours.\n\nCriminal Action and Law Enforcement: The specification that parents and guardians are only entitled to notice from public schools when the crime or law enforcement engagement occurs on school property and during school hours would be removed. The right to receive immediate notification when a child is alleged to be the victim, target, or recipient of physical or sexual abuse, sexual misconduct, or assault by a school employee or contractor would be removed.\n\nRemoval from Campus: The provision specifying that parental and legal guardian notification by youth shelters, law enforcement, and the Department of Children, Youth, and Families is governed by other laws would be removed. Public schools would be required to notify parents if a child is taken or removed from a public school without parental permission, including to stay at a youth shelter.\n\nNon-Discrimination: The provision specifying that parents and legal guardians have a right to have their child receive an education in a setting that prohibits discrimination on a number of bases would be removed. The measure would instead state a right of parents and legal guardians to receive assurance that their child’s public school will not discriminate against their child based upon the sincerely held religious beliefs of the child’s family.\n\nNotification and Opt Out: Parents and legal guardians would continue to have the right from federal law to receive written notice and to opt their children out of surveys, analyses, or evaluations that reveal information concerning political affiliation or beliefs; mental or psychological problems of the student or student’s family; sex behavior and attitudes; illegal, anti-social, self-incriminating, or demeaning behavior; critical appraisals of people with close relationships to the child or the child’s family; religious practices, affiliations, or beliefs of the child or the child’s family; and income. The measure would add to the list of topics for which parents and legal guardians have the right to receive notice and opt-out the child’s sexual experiences or attractions, the child’s family beliefs, morality, or religion, or political affiliations; and any mental health or psychological problems of the child or a family member.\n\nThe right to opt a child out of comprehensive sexual education would be rewritten to state a right to receive written notice and the option to opt a child out of instruction on topics associated with sexual activity in accordance with state law.\n\nOther Provisions Removed: The right of a parent or legal guardian to file a complaint on behalf of their child relating to harassment, intimidation, and bullying, as set forth in other state law, would be removed. The statement that nothing in the statute setting forth rights of parents and legal guardians creates a private right of action would be removed. The provisions regarding enrollment rights, language access rights, and special education rights would be removed.\n\nCalendar, Fees, and Dress Code: No changes would be made to the provisions regarding the school calendar, required fees, or the dress code or uniform.",
+        "fiscal": "Written by the Office of Financial Management\n\nFor more information visit www.ofm.wa.gov/ballot\n\nSummary\n\nIf approved by voters, Initiative Measure No. IL26-001 would restore RCW 28A.605.005 as originally passed by the Legislature in the 2024 session. It would list certain rights of parents and guardians of public-school children, such as the right to review their child’s school records, receive notifications, and opt their child out of certain activities. It would repeal amendments made in the 2025 legislative session. The initiative would have no fiscal impact on the state. Local school districts may incur minor costs to update policies and procedures, but this fiscal impact is indeterminate.\n\nGeneral assumptions\n\n•\nThe effective date of the initiative is December 3, 2026.\n\n•\nThe provisions of the initiative apply prospectively, not retroactively.\n\nRevenue\n\nThe initiative would not impact state or local revenue.\n\nExpenditures\n\nThe initiative would have no fiscal impact on state government. Local school districts could incur minor costs to update policies and procedures, but this fiscal impact is indeterminate.",
+        "rebuttalFor": "IL26-001, bankrolled by ultra-conservative interests, is so poorly written it would eliminate key existing parental rights. It will repeal current state laws that guarantee parents’ rights to immediate notification if their child is a victim of a crime at school. It ends commonsense protections for child abuse victims whose parents are accused of child abuse and rape. That’s why it’s opposed by the WA Coalition Against Domestic Violence and Sexual Assault. Vote No.",
+        "rebuttalAgainst": "Don’t be misled. IL26-001 expressly states that schools “shall not be required to release” mental health counseling records when a parent is the target of a child abuse or neglect investigation; requires “immediate notification” if a criminal action is deemed committed against or by their child; and contains zero mandates placing students in danger. The measure preserves safeguards while ensuring parents receive consequential information about their children. Vote yes."
+      },
+      "candidates": [
+        {
+          "name": "Yes"
+        },
+        {
+          "name": "No"
+        }
+      ]
+    },
+    {
+      "shortTitle": "Initiative IL26-638",
+      "type": "Ballot Measure • Statewide",
+      "category": "Ballot Measure",
+      "title": "State Initiative Measure No. IL26-638",
+      "overview": "Initiative Measure No. IL26-638 concerns participation in athletics at K-12 schools. This measure would prohibit students it defines as “biologically male” from competing in certain school athletic activities intended for female students only. It would require verification of biological sex by students’ healthcare providers. Should this measure be enacted into law?",
+      "sources": [
+        {
+          "label": "WA Voters' Pamphlet: this measure",
+          "url": "https://voter.votewa.gov/GenericVoterGuide.aspx?e=899&c=17&language=en#/measure/7327"
+        },
+        {
+          "label": "Full text",
+          "url": "https://www.sos.wa.gov/sites/default/files/2026-03/INITIATIVE%20IL26-638%20fulltext.pdf"
+        }
+      ],
+      "details": {
+        "pro": "Vote yes to protect fairness in girls' sports.\nFemale athletes deserve fair opportunities to build confidence, develop skills, and pursue goals. Let’s protect those opportunities and affirm the hard-fought rights established through Title IX in 1972, which expanded athletic access for women by recognizing the necessity of the female category. Washington currently allows males to compete against girls, undermining opportunities generations before them fought to secure.\n\nApproving IL26-638 would align Washington with world sports policies.\nFederal law, the Women's Tennis Association, World Athletics, and the International Olympic Committee have all adopted policies to protect eligibility for the female category. In March 2026, the IOC president stated, “It is absolutely clear that it would not be fair for biological males to compete in the female category.”\n\nVoting yes gives all students the opportunity to participate in interscholastic sports.\nMedical clearance is already required to participate safely. Students would compete in the category that aligns with their sex, verified during routine, medically necessary primary care recommended by the American Academy of Pediatrics. During a private, consented visit, a licensed medical professional would verify sex based on the student's birth records, medical history and/or a standard, non-invasive physical examination.\n\nWashington can respect every student while recognizing that sex-based athletic categories are necessary.\nA female athlete should not lose a starting position, medal, championship, or college recruiting opportunity because the category created for her was not protected.",
+        "con": "Vote No To Protect All Girls\nWe all want fairness and safety in sports, but this poorly written measure would require girls as young as 8 to undergo intrusive medical sex certification as a new part of sports physicals. It bans parents from using birth certificates. Section 2 says doctors must subject girls to invasive examinations of their “reproductive organs,” or expensive genetic or hormone tests. These requirements apply to girls only, boys are exempt.\n\nVote No Because It’s the Most Extreme Proposal of Its Kind In The U.S\nThis initiative is bankrolled by an ultra-conservative mega-donor to distract from rising costs, foster hate, and divide our communities. It’s playing politics with kids, and putting girls at risk.\n\nVote No Because Doctors and Nurses Warn It Requires Invasive Genital Exams On Girls\nThe WA State Nurses Association, Planned Parenthood Alliance Advocates, and doctors warn this measure would subject girls to medically unnecessary, embarrassing, and potentially harmful genital exams. Today, students remain fully clothed during sports physicals. Many of Washington’s 147,500 girls without a regular family doctor would be subject to genital examinations by total strangers.\n\nVote No Because It Discourages Girls From Playing Sports\nCoaches and athletes say if we truly cared about girls' sports we would not put up more barriers for girls like invasive genital exam requirements. This statewide blanket ban to kick 5 - 10 trans girls off school teams will negatively impact all girls, leaving no room for case by case decisions.",
+        "explanatory": "Written by the Office of the Attorney General\n\nThe Law as It Presently Exists\n\nIn Washington, school districts may offer extracurricular sports opportunities for students. Those sports must be offered to all public school students without regard to sex, but public schools may provide separate athletic teams based on sex. The Office of the Superintendent of Public Instruction also creates regulations and guidelines to eliminate discrimination in sports for students, and these regulations prohibit discrimination based on sex and gender identity.\n\nPublic and private K-12 schools in Washington may allow individual athletes and teams to compete against athletes and teams from other schools. For public schools, a school district’s board of directors is responsible for regulating these athletic activities but may delegate that responsibility to a nonprofit organization, such as the Washington Interscholastic Activities Association (WIAA). A nonprofit organization that regulates interschool sports may not discriminate on the basis of sex and must have written rules and policies regarding student participation.\n\nThe Effect of the Proposed Measure if Approved\n\nIf approved, this initiative would change participation rules for interschool sports. This initiative would, in its own language, prohibit “biologically male students from competing with and against female students” on sports teams or in individual events that are designated for female students only. This would generally prevent transgender girls from participating on girls’ sports teams. This prohibition would affect public K-12 schools and also private schools that participate in the WIAA or similar nonprofit organizations.\n\nStudents who want to participate in interschool sports teams or individual events that are designated for female students only would have to provide a form that verifies the student’s “biological sex.” That form must be signed by the student’s personal health care provider. The verification would have to be based on the student’s reproductive anatomy, genetic makeup, or normal endogenously produced testosterone levels. Students would thus have to undergo some type of medical evaluation of their sex to participate in interschool sports designated for female students only.",
+        "fiscal": "Written by the Office of Financial Management\n\nFor more information visit www.ofm.wa.gov/ballot\n\nSummary\n\nIf approved by voters, Initiative Measure No. IL26-638 would prohibit students it defines as “biologically male” from competing in certain school athletic activities intended for female students only. It requires verification of biological sex by students’ healthcare providers. The Office of the Superintendent of Public Instruction would incur minor costs to update current guidance. Local school districts may also incur costs to revise existing policies, procedures, rules, and other requirements, but this fiscal impact is indeterminate.\n\nGeneral assumptions\n\n• The effective date of the initiative is December 3, 2026.\n\n• The provisions of the initiative apply prospectively, not retroactively.\n\n• The estimates use the state’s fiscal year (SFY) of July 1 through June 30. State fiscal year 2026 is July 1, 2025, through June 30, 2026.\n\nRevenue\n\nThe initiative would not impact state or local revenue.\n\nExpenditures\n\nThe Office of the Superintendent of Public Instruction would incur a one-time cost of approximately $21,000 in SFY 2026 to update existing guidelines to align with the initiative’s requirements. Local school districts would likely also incur costs to revise existing policies, procedures, rules, and other requirements, but this fiscal impact is indeterminate.",
+        "rebuttalFor": "IL26-638 is opposed by pediatricians, nurses, parents, and sexual assault prevention groups because it discriminates against girls and puts them at risk of harm. Today girls in elementary, middle, and high school remain fully clothed during sports physicals. Doctors say this poorly written measure will subject girls to new invasive genital examinations. This measure - the most extreme in the nation - exempts boys, and bans parents from using birth certificates. Vote No to protect girls.",
+        "rebuttalAgainst": "Don’t be misled by the opposition. IL26-638 doesn’t require invasive or expensive exams. Standard primary pediatric care already verifies sex; transferring that record to sports is sufficient. Male athletic advantage is well established. Washington competition results document at least 269 placements by male athletes competing in girls’ interscholastic categories, including 74 firsts and 156 top-three finishes. The initiative doesn’t ban anyone from sports. It simply requires participation consistent with one’s sex. Vote yes."
+      },
+      "candidates": [
+        {
+          "name": "Yes"
+        },
+        {
+          "name": "No"
+        }
+      ]
+    },
+    {
+      "shortTitle": "Seattle Prop 1",
+      "type": "Ballot Measure • Local",
+      "category": "Ballot Measure",
+      "title": "City of Seattle - Proposition No. 1: Seattle Transit Measure",
+      "overview": "The City of Seattle adopted Ordinance No. 127474 concerning funding for transit service and related transportation needs in Seattle. The City of Seattle’s Proposition 1 would dedicate funding to transit services benefiting Seattle residents, including more frequent service; affordable fare programs for qualifying individuals; reliability, access, and climate projects; enhanced service on RapidRide and routes serving regional centers and high equity priority areas; facilitation of Sound Transit expansion; and others as provided in Ordinance 127474. It authorizes a 0.3% sales and use tax for up to ten years to replace the current voter-approved 0.15% sales tax expiring March 31, 2027. Should this Proposition be approved?",
+      "sources": [
+        {
+          "label": "WA Voters' Pamphlet: this measure",
+          "url": "https://voter.votewa.gov/GenericVoterGuide.aspx?e=899&c=17&language=en#/measure/7258"
+        }
+      ],
+      "details": {
+        "pro": "Seattle needs great transit. Without it, riders with disabilities, older adults, youth, and working families are stuck waiting for the bus and miss opportunities. Transit should be a seamless part of peoples’ lives, not a burden to plan around.\n\nIn 2020, we voted to improve bus service across Seattle. That measure has delivered: buses run more often, and 10,000 of our neighbors receive free transit passes. But this funding runs out in 2027 unless we renew it.\n\nFor just $29 more per year per household, Proposition 1 will ensure buses come more often, later at night, and on weekends. It will double the free passes for low income Seattleites. With buses we can count on, more families can skip the expense of gas or a second car. And we can all enjoy less traffic and cleaner air. Vote “Yes” to keep Seattle's buses coming.\n\nEndorsed by Mayor Katie Wilson, King County Executive Girmay Zahilay, Seattle City Councilmembers Hollingsworth, Saka, Foster, Juarez, Kettle, Lin, Rinck, Rivera, and Saka, King County Councilmembers Barón, Dembowski, Lewis and Mosqueda, MLK Labor, ATU 587, King County Democrats, Seattle Streets Alliance, 350 Seattle, Transit Riders Union, Transportation Choices Coalition, The Urbanist, and more.",
+        "con": "Seattle politicians say they care about affordability, then ask residents to approve another regressive sales tax. Proposition 1 would double the Seattle Transit Measure sales tax from 0.15% to 0.30%, putting our sales tax at 10.7%, among the highest rates of any major city in America. Before demanding more from taxpayers, government should demonstrate accountability for the money it already receives.\n\nThe measure includes funding connected to Sound Transit, even as the agency struggles to deliver projects voters were promised. Ballard and West Seattle residents have paid Sound Transit taxes for years while planned light-rail expansions face enormous financial challenges and uncertainty. Meanwhile, transit agencies are leaving fare revenue uncollected. At least one-third of riders on Sound Transit boarded without paying during the World Cup. Taxpayers should not continually be asked to pay more while agencies fail to collect fares from riders.\n\nSeattle families already face high housing, food, utility, and transportation costs. Sales taxes disproportionately burden working families and people with lower incomes because they consume a larger share of household earnings. Reliable transit matters. So does accountability. City Hall should prioritize existing resources, demand responsible management, and improve fare collection before raising taxes.\n\nVote No on Proposition 1.",
+        "explanatory": "In 2020, Ordinance 126250 enacted a 0.15 percent, six-year sales and use tax for transportation purposes. The tax was enacted under authority granted to the City by Seattle voters in approving Ordinance 126115. The tax expires March 31, 2027.\n\nTo replace this funding, Proposition 1 proposes granting the City authority to enact a sales and use tax for transit purposes by a future ordinance, with a maximum rate of 0.3 percent and a maximum length of ten years. The new tax cannot take effect earlier than April 1, 2027.\n\nTax revenue would be only for purposes described in Ordinance 127474, including (among others): King County Metro services with over 65 percent of stops within Seattle; implementing King County Regional Transit Safety Task Force recommendations; service hours on current and future RapidRide lines serving Seattle, connections to regional centers, and routes serving high equity priority areas; programs supporting transit access for qualifying seniors, individuals with disabilities, residents of low-income housing, youth and young adults, students, and others; planning for and deployment of increased electric transit in certain pollution-impacted communities; transit infrastructure maintenance and capital improvements; and staffing of programs to facilitate Sound Transit 3 projects.\n\nThe Seattle Transit Advisory Board will serve as the public oversight committee charged with advising on spending of Proposition 1 revenues. Annual and midterm City reports, as well as reports requested in partnership with King County Metro, will evaluate the effectiveness of money spent and services provided.\n\nFor questions about this measure, contact: Polly Grow, Seattle Ethics and Elections Commission, (206) 615-1248, polly.grow@seattle.gov",
+        "rebuttalFor": "The proponents call Proposition 1 “just $29 more,” but that minimizes the real issue: Seattle’s sales tax would climb to 10.7%, hitting working families and low-income residents hardest. Doubling this regressive tax is not affordability.\n\nReliable transit deserves responsible management. Before demanding more, City Hall and transit agencies should prioritize existing revenue, collect unpaid fares, and prove taxpayers are getting results. Seattleites already pay heavily for promised transit projects. Vote no until accountability comes first.",
+        "rebuttalAgainst": "This measure funds bus service from King County Metro. Voting no cuts bus service working people rely on. Without it, late night and shift workers lose out. This measure helps us afford to live in our expensive city.\n\nThe measure costs a low income household $17 a year. Owning a car costs $11,577 a year. Proposition 1 provides free ORCA cards to 22,000 of the lowest income riders. Vote yes on Proposition 1."
+      },
+      "candidates": [
+        {
+          "name": "Yes"
+        },
+        {
+          "name": "No"
+        }
+      ]
+    },
+    {
+      "shortTitle": "US Rep CD 7",
       "type": "Federal Partisan Office • Vote for One",
       "category": "Federal Office",
-      "title": "United States Representative, Congressional District No. 7",
-      "overview": "The U.S. Representative for Washington's 7th Congressional District represents residents across Seattle, Vashon Island, Shoreline, and portions of Burien in the United States House of Representatives. Members of Congress are responsible for drafting, debating, and voting on federal legislation that shapes national policies and spending. They manage annual federal budget appropriations, oversee federal regulatory agencies, and serve on active legislative committees. Additionally, congressional offices provide vital constituent services, helping local residents navigate federal benefit programs like Social Security, Medicare, and veterans' assistance. Representatives also secure crucial federal grant funding for regional infrastructure, public transit, environmental restoration, and economic development projects across King County.",
+      "title": "United States Representative, Congressional District 7",
       "sources": [
-        { "label": "🔗 WA Secretary of State Pamphlet", "url": "https://voter.votewa.gov" },
-        { "label": "🔗 Ballotpedia CD 7 Page", "url": "https://ballotpedia.org/Washington%27s_7th_Congressional_District_election,_2026" }
+        {
+          "label": "WA Voters' Pamphlet: this contest",
+          "url": "https://voter.votewa.gov/GenericVoterGuide.aspx?e=899&c=17&language=en#/candidates/186953"
+        },
+        {
+          "label": "King County Elections candidate list",
+          "url": "https://info.kingcounty.gov/kcelections/Vote/contests/candidates.aspx?eid=55"
+        }
       ],
       "candidates": [
         {
           "name": "Pramila Jayapal",
           "party": "Prefers Democratic Party",
           "partyClass": "party-dem",
-          "desc": "Pramila Jayapal is the incumbent U.S. Representative for Congressional District 7, serving in office since 2017. As Chair of the Congressional Progressive Caucus, she advocates for Medicare for All, climate action, consumer protection, and expanded workers' rights. Her legislative focus includes securing federal funding for Puget Sound environmental restoration, expanding affordable housing initiatives, and protecting reproductive healthcare rights nationwide. She emphasizes strong constituent advocacy, federal oversight, and progressive economic reforms to support working families across King County.",
-          "pros": [
-            "Secured over $250 Million in direct federal infrastructure grants for King County transit and electrification projects.",
-            "Serves as Chair of the 100+ member Congressional Progressive Caucus with 8+ years of federal legislative experience.",
-            "Maintains a 98% voting attendance record and resolved over 12,000 constituent case inquiries in 2025.",
-            "Co-authored landmark federal bills expanding Medicare benefits and environmental protection standards."
+          "desc": "Elected Experience\n\nU.S. Representative, 2017-current; Washington State Senator, 2015-2017\n\nOther Professional Experience\n\nFounder/Executive Director, OneAmerica; Director, PATH Fund for Technology Transfer; Financial Analyst; Author\n\nEducation\n\nBA in English & Economics, Georgetown University; MBA, Northwestern University\n\nCommunity Service\n\nMember: House Judiciary Committee, House Foreign Affairs Committee, and Budget Committee. Ranking Member of the Immigration Subcommittee. Chair Emerita and Executive Board Member, Congressional Progressive Caucus. Co-Chair, Monopoly Busters Caucus. Co-Chair, Trans Equality Task Force. Member: Congressional Equality Caucus, Congressional Asian Pacific American Caucus, Pro-Choice Caucus. Champion of Change Award from President Obama. Formerly Seattle Income Inequality Advisory Committee ($15 minimum wage) Member.\n\nStatement\n\nI am proud to represent Washington’s 7th district and stand up for working people every single day. As your Congresswoman, I've worked to protect our democracy, raise wages, lower costs, build affordable housing, protect abortion rights, and fight climate change.\n\nI’m leading the fight for the Medicare for All Act to ensure that universal healthcare is a right, not a privilege. I also lead landmark legislation to make higher education tuition-free, guarantee housing as a human right, expand workers’ rights, raise the federal minimum wage, implement humane immigration reform, and establish an ultra-millionaire wealth tax. I lead bipartisan bills that ban stock trading for Members of Congress and protect Americans from government spying. I’m doing everything possible to get money out of politics and reform the Supreme Court.\n\nI’ve been on the frontlines of holding Trump accountable, including around the lawless ICE and CBP actions that have kidnapped and disappeared our neighbors. I established the Monopoly Busters Caucus to fight consolidation, corporate greed, and price-gouging. I have authored a War Powers Resolution to end Trump’s illegal war in Iran and worked with Epstein survivors to get justice against predators and pedophiles.\n\nI’ve held over 130 town halls and helped thousands of constituents, including veterans and seniors, secure over $25 million in federal benefits. My office has brought home more than $70 million in new federal investments for housing, transportation, jobs, and public safety.\n\nI’m proud to represent a diverse, innovative and compassionate district. I have never taken corporate PAC money because I fight for working people, not the billionaires and giant corporations. I would be deeply honored to have your vote.\n\nEndorsements: Labor unions including Washington State Labor Council, WFSE, UFCW 3000, NEA/WEA, and Washington State Building & Construction Trades Council. Planned Parenthood, Sierra Club, and the King County Democrats.",
+          "sources": [
+            {
+              "label": "WA Voters' Pamphlet (candidate statement)",
+              "url": "https://voter.votewa.gov/GenericVoterGuide.aspx?e=899&c=17&language=en#/candidates/186953/1601900"
+            }
           ],
-          "cons": [
-            "Ranked among top 10% most partisan House members by Georgetown Lugar Center Bipartisan Index.",
-            "Proposed $3.2 Trillion Medicare for All legislation faces scrutiny over federal tax burden increases.",
-            "Federal environmental mandates opposed by regional maritime industry groups concerned over compliance costs.",
-            "High national media profile draws criticism over reduced emphasis on moderate swing-voter policy priorities."
-          ],
-          "site": "https://pramilaforcongress.com"
+          "site": "https://www.pramilaforcongress.com",
+          "email": "info@pramilaforcongress.com",
+          "phone": "(206) 604-4543"
         },
         {
           "name": "Nirav Sheth",
           "party": "Prefers Republican Party",
           "partyClass": "party-rep",
-          "desc": "Nirav Sheth is a local small business owner and fiscal conservative campaigning to represent Congressional District 7. His platform focuses on reducing federal government spending, combating inflation, and supporting small business growth through tax incentives and regulatory relief. He prioritizes strengthening public safety, funding law enforcement agencies, and implementing stricter border security policies. Sheth advocates for balanced federal budgets and market-driven solutions to improve energy independence and economic opportunities throughout the Puget Sound region.",
-          "pros": [
-            "20+ years of private sector experience managing small business payrolls and commercial budgets.",
-            "Platform aims to reduce 7% regional inflation through federal deregulation and targeted tax cuts.",
-            "Advocates allocating $50 Million in federal public safety grants to recruit 200+ local law enforcement officers.",
-            "Pledges 100% support for balanced budget amendments to curb the $34 Trillion national debt."
+          "desc": "Elected Experience\n\nNo previous elected position however strong business background\n\nOther Professional Experience\n\nChief Financial Officer at Sheth Groups (Meineke Franchises 2017 to Present; Co-Owner at Bistro Baffi Restaurant 2018 to 2025; Police officer at Lakewood PD 2017 Resign due to partial hearing loss; US Marines 2011 to 2014 Honorable Discharge\n\nEducation\n\nAn associate degree in electrical engineering & Computer Science. Airframe Mechanic, Business Administration and strategist, Human Resource Management\n\nCommunity Service\n\nFour Years in United States Marine Corp, Police officer in Lakewood, WA. A Volunteer as an Intelligence liason at U.S. Border Patrol Yuma, AZ during Enlisted service in United States Marine Corp. American Red Cross Volunteer\n\nStatement\n\nMy goal is to create sustainable & affordable housing to solve homelessness, bringing law & order back to Seattle & cheaper cost of living for everyone.\n\nMy name is Nirav Sheth. My journey from a modest home in India to this stage was built on one belief: the American Dream is not a gift—it is a promise worth fighting for. I didn't just come to this country; I earned my place here. I swore an oath to protect our nation, first as a United States Marine and later as a Police Officer. I know the grit it takes to keep a community safe and the discipline required to lead when there is no room for error. Today, our district is at a breaking point. If you believe our community is thriving, stay the course. But if you feel the higher cost of living & energy, unsafe neighbourhood, and the fading light of opportunity, it is time to turn the tide. I’ve felt this failure personally. My business, Bistro Baffi, was a victim of the very policies that are driving employers away and letting our neighborhoods crumble. I am also running for Congress to bring military-grade accountability to Washington, D.C. I also want to work on Real Solutions to help homeless people & Energy Independence.\n\nIn the Marines and in business, I’ve managed budgets where every cent mattered. I will treat your tax dollars with that same sacred respect. My life has been defined by service; now, I ask for the honor of being your voice.\n\nTogether, we will secure a legacy of prosperity for our children and bring growth back to our community.",
+          "sources": [
+            {
+              "label": "WA Voters' Pamphlet (candidate statement)",
+              "url": "https://voter.votewa.gov/GenericVoterGuide.aspx?e=899&c=17&language=en#/candidates/186953/1601901"
+            }
           ],
-          "cons": [
-            "Faces a 45+ point party registration deficit in a district that voted 86% Democratic in 2024.",
-            "Lacks prior public elected experience or state/federal legislative voting records.",
-            "Proposed federal spending cuts would reduce local public housing and transit operating subsidies by 15%.",
-            "Market-based healthcare proposals oppose government price caps on prescription medication."
-          ],
-          "site": "https://voter.votewa.gov"
-        },
-        {
-          "name": "Gwen Kirkland",
-          "party": "Prefers Democratic Party",
-          "partyClass": "party-dem",
-          "desc": "Gwen Kirkland is a community organizer and small business advocate focused on grassroots neighborhood revitalization. Her platform centers on increasing federal grants for affordable housing development, expanded childcare subsidies, and public transit safety. She advocates for targeted financial support for women- and minority-owned small businesses navigating rising operational costs. Kirkland emphasizes community-led public safety initiatives, universal mental health access, and environmental sustainability for urban neighborhoods.",
-          "pros": [
-            "15+ years of grassroots community organizing focused on minority- and women-owned small businesses.",
-            "Platform targets expanding local childcare subsidies to save working families up to $8,000 annually.",
-            "Proposes directing 25% of district federal grants to urban mental health crisis response teams.",
-            "Strong local ties to West Seattle and South King County neighborhood commercial associations."
-          ],
-          "cons": [
-            "Has not held federal or state elected legislative office or managed congressional budgets.",
-            "Campaign fundraising under $50,000 compared to multi-million dollar incumbent war chests.",
-            "Lacks formal endorsement from major statewide labor unions or party organization committees.",
-            "Specific legislative strategy for passing bills in a divided U.S. House remains undeveloped."
-          ],
-          "site": "https://voter.votewa.gov"
-        },
-        {
-          "name": "David W. Blomstrom",
-          "party": "Prefers Fifth Republic",
-          "partyClass": "party-non",
-          "desc": "David W. Blomstrom is an anti-establishment candidate and author running under the Fifth Republic party banner. He advocates for sweeping institutional reforms, increased political transparency, and strict campaign finance limitations. His platform challenges corporate lobbyist influence in federal lawmaking and calls for public auditing of governmental agencies. Blomstrom focuses on public education reform, wildlife conservation, and ending foreign corporate subsidies.",
-          "pros": [
-            "Pledges 100% rejection of corporate PAC funds and lobbyist campaign donations.",
-            "Authored 5+ books detailing government transparency, anti-corruption, and campaign finance reform.",
-            "Proposes auditing 100% of federal executive agency spending to eliminate waste.",
-            "Advocates strict conservation metrics for protecting 30% of state wilderness by 2030."
-          ],
-          "cons": [
-            "Third-party Fifth Republic banner holds less than 0.5% registered voter affiliation in WA.",
-            "Radical structural proposals lack legislative sponsorship or co-sponsor commitments in Congress.",
-            "Campaign does not operate a traditional field office or field staff organization.",
-            "Historical election results show under 2% total vote share in prior congressional bids."
-          ],
-          "site": "https://voter.votewa.gov"
+          "site": "https://www.shethforcongress.com",
+          "email": "campaign@shethforcongress.com",
+          "phone": "(206) 816-2977"
         }
       ]
     },
     {
       "shortTitle": "LD 34 Senator",
-      "type": "State Partisan Office • Vote for One",
-      "category": "State Legislative Office",
-      "title": "Legislative District No. 34 – State Senator",
-      "overview": "The Washington State Senator for Legislative District 34 represents West Seattle, White Center, Vashon Island, and Maury Island in the State Senate in Olympia. State Senators serve four-year terms and are responsible for crafting state statutes, establishing state tax policy, and enacting the biennium operating and capital budgets. They exercise legislative authority over public K-12 education, state transportation systems, environmental protection regulations, and public healthcare networks. The Senator works closely with executive state agencies to ensure regional infrastructure priorities, such as ferry service reliability and bridge maintenance, receive proper state funding. Legislative District 34 plays a key policy role in shaping progressive state laws regarding tenant protections, clean energy transitions, and tax equity.",
-      "sources": [{ "label": "🔗 WA Voters' Pamphlet", "url": "https://voter.votewa.gov" }],
+      "type": "State Partisan Office • Vote for One • Unopposed",
+      "category": "State Legislature",
+      "title": "Legislative District 34, State Senator",
+      "sources": [
+        {
+          "label": "WA Voters' Pamphlet: this contest",
+          "url": "https://voter.votewa.gov/GenericVoterGuide.aspx?e=899&c=17&language=en#/candidates/187035"
+        },
+        {
+          "label": "King County Elections candidate list",
+          "url": "https://info.kingcounty.gov/kcelections/Vote/contests/candidates.aspx?eid=55"
+        }
+      ],
       "candidates": [
         {
           "name": "Emily Alvarado",
           "party": "Prefers Democratic Party",
           "partyClass": "party-dem",
-          "desc": "Emily Alvarado is the incumbent State Senator for District 34 and a former Director of the Seattle Office of Housing. She focuses on expanding state investments in affordable housing construction, strengthening tenant protections, and funding public education. Her legislative priorities include enhancing ferry system reliability for Vashon Island residents, reducing carbon emissions, and protecting behavioral health services. Alvarado is endorsed by major labor organizations, environmental groups, and working-family advocacy coalitions across Washington State.",
-          "pros": [
-            "Oversaw $250 Million Seattle Housing Levy funding construction of 3,500+ affordable units.",
-            "Passed 12+ state bills protecting tenant rights and expanding K-12 public education funding.",
-            "Secured $45 Million in state capital budget grants for Vashon ferry dock & vessel maintenance.",
-            "Endorsed by 30+ labor unions representing over 200,000 Washington State workers."
+          "desc": "Elected Experience\n\nState Senator (2025-2026); State Representative (2023-2025)\n\nOther Professional Experience\n\nNon-profit leader building quality affordable housing and\nchildcare; former Seattle Office of Housing Director investing $290 million to\nprevent displacement, support climate resilience, build supportive housing to address homelessness, protect renters, and expand homeownership; award-winning\nPlanned Parenthood organizer; Attorney\n\nEducation\n\nBA, Scripps College (summa cum laude); JD, University of\nWashington School of Law (Gates Public Service Law Scholar)\n\nCommunity Service\n\nFormer Board Member, Washington Low Income Housing Alliance;\nformer member, Seattle Women’s Commission; former Volunteer Attorney, Latino Bar\nAssociation of Washington Community Legal Clinic; PTA parent of two Seattle\nPublic School students\n\nStatement\n\nIt’s a privilege to represent you\nin the State Senate. As a lifelong advocate for affordable housing and economic opportunity, I bring deep experience and a proven track record of delivering\nresults. As your Senator, I’ve moved us forward on what matters: high-quality public\nschools, affordable housing, and access to childcare and healthcare. I’m proud\nto have championed policies that address the high cost of living by passing historic\ntax reform to fund schools and services, tax relief for working families and\nsmall businesses, and protections for renters, workers, and consumers.\n\nI will continue to push for a\nfair economy with good-paying jobs and reforms that make homeownership, healthcare,\nchildcare, and groceries more affordable. I’ll fight to improve educational\noutcomes for kids and strengthen the social safety net for youth and seniors.\nWe all deserve reliable public services, and I’ll keep advocating for the investments\nneeded to make our communities healthy and safe.\n\nYou can count on me to stand up\nfor our democracy and civil rights, for reproductive freedom, common sense gun\nreform, and climate action. I’m committed to making government work for\npeople—not special interests. I’d be honored to earn your continued support.",
+          "sources": [
+            {
+              "label": "WA Voters' Pamphlet (candidate statement)",
+              "url": "https://voter.votewa.gov/GenericVoterGuide.aspx?e=899&c=17&language=en#/candidates/187035/1602053"
+            }
           ],
-          "cons": [
-            "State housing density mandates criticized by single-family home protection groups in West Seattle.",
-            "Vashon Island ferry reliability metrics still lag behind 95% on-time target operational goals.",
-            "Supported state real estate excise tax increases opposed by commercial landlord associations.",
-            "Faced scrutiny over state budget growth during periods of projected $2.2 Billion revenue shortfalls."
-          ],
-          "site": "https://emilyalvarado.org"
+          "site": "https://emilyalvarado.com/",
+          "email": "emily@emilyalvarado.com",
+          "phone": "(206) 745-2010"
         }
       ]
     },
     {
-      "shortTitle": "Rep Position 1",
-      "type": "State Partisan Office • Vote for One",
-      "category": "State Legislative Office",
-      "title": "Legislative District No. 34 – Representative Position No. 1",
-      "overview": "State Representatives serve two-year terms representing Legislative District 34 in the Washington State House of Representatives. As members of the legislature's lower chamber, Representatives introduce revenue bills, evaluate executive appointments, and write statewide statutory laws. They work directly on state fiscal policy, evaluating capital budget requests for local parks, schools, and community centers. Representatives advocate for district-specific transportation needs, including roadway safety, transit frequency, and maritime infrastructure. They also serve on specialized legislative committees covering labor relations, environmental health, civil rights, and state finance.",
-      "sources": [{ "label": "🔗 WA Voters' Pamphlet", "url": "https://voter.votewa.gov" }],
+      "shortTitle": "LD 34 Rep Pos. 1",
+      "type": "State Partisan Office • Vote for One • Unopposed",
+      "category": "State Legislature",
+      "title": "Legislative District 34, State Representative Position No. 1",
+      "sources": [
+        {
+          "label": "WA Voters' Pamphlet: this contest",
+          "url": "https://voter.votewa.gov/GenericVoterGuide.aspx?e=899&c=17&language=en#/candidates/187036"
+        },
+        {
+          "label": "King County Elections candidate list",
+          "url": "https://info.kingcounty.gov/kcelections/Vote/contests/candidates.aspx?eid=55"
+        }
+      ],
       "candidates": [
         {
           "name": "Brianna K. Thomas",
           "party": "Prefers Democratic Party",
           "partyClass": "party-dem",
-          "desc": "Brianna K. Thomas is the incumbent State Representative for District 34 Position 1 and a veteran labor advocate. She focuses on expanding collective bargaining rights, raising state minimum wage standards, and protecting low-income working families. Her legislative platform prioritizes equitable public school funding, reproductive healthcare protections, and environmental justice for frontline communities. Thomas actively works to secure state funding for local youth programs, affordable housing developments, and public safety infrastructure.",
-          "pros": [
-            "Led coalition passing $16.28/hr state minimum wage indexing and paid family leave expansion.",
-            "Secured $18 Million in state budget grants for South King County youth & mental health centers.",
-            "100% voting record with Washington State Labor Council and Washington Conservation Voters.",
-            "Authored state legislation protecting 100% of reproductive healthcare access statewide."
+          "desc": "Elected Experience\n\nProudly serving as your State Representative since 2025.\n\nOther Professional Experience\n\nCurrently serving as Senior Policy Advisor for Seattle’s Human Services Department. Previously served as Chief of Staff for City Council President, Mayor’s Office Labor Liaison, and Campaign Director for multiple progressive initiatives/candidates.\n\nEducation\n\nUniversity of Washington, BA in Political Science 2010\n\nCommunity Service\n\nSeasoned track record of results working for our community. Managed SeaTac's $15 minimum wage campaign in 2013, first in the country to pass on the ballot. Led Seattle's Honest Elections initiative, which established the city's democracy voucher program and served as Field Director for the Washington Low Income Housing Alliance Action Fund.\n\nStatement\n\nMy life’s work is about building a better and more just world, and that drives the legislation I have sponsored and passed. This biennium, I contributed to passing the Millionaires Tax, delivering long awaited tax reform to benefit working Washingtonians. I passed bills to guarantee meal and rest breaks for healthcare workers, give domestic workers the protections they’ve long deserved, keep transit moving, and ensure employees’ privacy and bodily autonomy. I’m honored to continue fighting for you and the Fighting 34th!\n\nEndorsements: 34thLD Democrats, WA State Labor Council, AG Nick Brown, County Councilmember Teresa Mosqueda, UFCW, WFSE/AFSCME and many more.",
+          "sources": [
+            {
+              "label": "WA Voters' Pamphlet (candidate statement)",
+              "url": "https://voter.votewa.gov/GenericVoterGuide.aspx?e=899&c=17&language=en#/candidates/187036/1602054"
+            }
           ],
-          "cons": [
-            "Pro-worker regulatory mandates opposed by Washington Retail Association due to small business costs.",
-            "Supported state B&O tax adjustments opposed by commercial business trade groups.",
-            "District 34 business groups request more direct focus on commercial property crime reduction.",
-            "Key labor bills faced legislative delays in Senate financial committee negotiations."
-          ],
-          "site": "https://electbriannathomas.com"
+          "site": "https://Briannathomas.org",
+          "email": "brianna4the34th@gmail.com",
+          "phone": "(206) 321-9890"
         }
       ]
     },
     {
-      "shortTitle": "Rep Position 2",
+      "shortTitle": "LD 34 Rep Pos. 2",
       "type": "State Partisan Office • Vote for One",
-      "category": "State Legislative Office",
-      "title": "Legislative District No. 34 – Representative Position No. 2",
-      "overview": "Representative Position 2 holds one of the two seats representing District 34 in the Washington State House of Representatives. Members of the House manage statewide statutory laws, state tax codes, and regulatory oversight across Washington. They collaborate with local municipal leaders to deliver state funding for critical municipal projects, environmental cleanup, and coastal protection. Representatives play a pivotal role in formulating state climate policy, renewable energy standards, and state transit grants. They also review legislative proposals affecting civil rights, judicial procedures, public safety, and higher education tuition funding.",
-      "sources": [{ "label": "🔗 WA Voters' Pamphlet", "url": "https://voter.votewa.gov" }],
+      "category": "State Legislature",
+      "title": "Legislative District 34, State Representative Position No. 2",
+      "sources": [
+        {
+          "label": "WA Voters' Pamphlet: this contest",
+          "url": "https://voter.votewa.gov/GenericVoterGuide.aspx?e=899&c=17&language=en#/candidates/187037"
+        },
+        {
+          "label": "King County Elections candidate list",
+          "url": "https://info.kingcounty.gov/kcelections/Vote/contests/candidates.aspx?eid=55"
+        }
+      ],
       "candidates": [
         {
           "name": "Joe Fitzgibbon",
           "party": "Prefers Democratic Party",
           "partyClass": "party-dem",
-          "desc": "Joe Fitzgibbon serves as the House Majority Leader and incumbent Representative for District 34 Position 2. He is a primary author of Washington's landmark Climate Commitment Act and Clean Fuel Standard laws aimed at reducing greenhouse gas emissions. His legislative priorities include expanding regional light rail and transit networks, preserving salmon habitats, and modernizing state tax policy. Fitzgibbon works extensively on state budget negotiations, public education funding, and legislative strategy in Olympia.",
-          "pros": [
-            "House Majority Leader managing state's $70 Billion biennial operating budget negotiations.",
-            "Primary author of Climate Commitment Act generating $1.8 Billion for clean energy investments.",
-            "Secured over $120 Million for West Seattle Bridge repairs and RapidRide bus corridor expansion.",
-            "14+ years of legislative experience with 45+ prime-sponsored bills enacted into state law."
+          "desc": "Elected Experience\n\nState Representative, 2010-present; House Majority Leader, 2022-present; Chair, House Environment & Energy Committee, 2014-2022\n\nOther Professional Experience\n\nlegislative assistant; environmental policy consultant\n\nEducation\n\nBA, History and Political Science, Principia College\n\nCommunity Service\n\nBoard of Directors, Democratic Legislative Campaign Committee, 2019-2025; Board of Directors, Futurewise (statewide environmental nonprofit), 2016-2019\n\nStatement\n\nIt's an honor to represent you and fight for our communities. My record is one of an effective progressive who delivers results. I passed the nation’s strongest climate laws; defended Washington from federal attacks; secured investments in education, healthcare, transit, public safety, and the environment; and helped stabilize our budget.\n\nI led passage of landmark tax reform — a millionaires’ tax paired with tax cuts for working families and small businesses. A new parent of two young children, I’m fighting for safe communities, better school funding, affordable clean energy, fair taxes, and a sustainable future. I ask for your vote.",
+          "sources": [
+            {
+              "label": "WA Voters' Pamphlet (candidate statement)",
+              "url": "https://voter.votewa.gov/GenericVoterGuide.aspx?e=899&c=17&language=en#/candidates/187037/1602055"
+            }
           ],
-          "cons": [
-            "Climate Commitment Act carbon auctions faced public scrutiny over $0.30/gal gas price impacts.",
-            "Longtime 14-year tenure draws calls from reform groups for legislative term limits.",
-            "Supported state capital gains tax upheld by Supreme Court but challenged by conservative PACs.",
-            "Faced opposition from rural state lawmakers regarding urban transit budget allocations."
+          "site": "https://www.joefitzgibbon.com",
+          "email": "jcfitzgibbon@gmail.com",
+          "phone": "(206) 949-5127"
+        },
+        {
+          "name": "Mary Anito",
+          "party": "Prefers Democratic Party",
+          "partyClass": "party-dem",
+          "desc": "Elected Experience\n\nFiduciary, Retirement Plan Committee Member, REI CO-OP\n\nOther Professional Experience\n\nPublic School Mom of Three; Renovator, Jenito Homes (Seattle); Head of Field Operations, Shelf Engine (Seattle); VP of Operations, Hum Nutrition (California); Senior Manager Operations, REI (Sumner); Director, Supplier Management, Wayfair (Boston); Senior Manager Operations, Caterpillar (Illinois); Graduate Researcher, Novartis (Switzerland); Pb-Free Engineer, Cisco Systems (Boston)\n\nEducation\n\nBS Materials Science and Engineering, Johns Hopkins University, MBA and MS, MIT Leaders for Global Operations Fellow, Conversational Spanish/Italian\n\nCommunity Service\n\nBoard of ROOTS Young Adult Shelter, Secretary and Treasurer; Board of Coop Preschools; CORE Covid Response; Volunteer with Habitat for Humanity and Junior Achievement, PTA Enrichment Coordinator\n\nStatement\n\nFiscal responsibility and strong public investment are not mutually exclusive. Balancing our budget while funding critical infrastructure, education, and healthcare is essential to the long-term strength, stability, and well-being of our communities.\n\nAs a working mom handling operations, housing, and small business, I understand the challenges families, workers, and local businesses face - and the urgency of delivering solutions. Y hablo español. I’m ready to serve the 34th LD by bringing my collaborative leadership experience successfully tackling complex challenges to advocate for our community’s needs, drive results, and enact meaningful change so future generations are proud to call Washington home.",
+          "sources": [
+            {
+              "label": "WA Voters' Pamphlet (candidate statement)",
+              "url": "https://voter.votewa.gov/GenericVoterGuide.aspx?e=899&c=17&language=en#/candidates/187037/1602056"
+            }
           ],
-          "site": "https://joefitzgibbon.com"
+          "site": "https://Maryforwa.com",
+          "email": "Maryforseattle@gmail.com"
         }
       ]
     },
     {
-      "shortTitle": "County Assessor",
-      "type": "County Nonpartisan Office • Vote for One",
-      "category": "County Office",
-      "title": "King County Assessor",
-      "overview": "The King County Assessor is an independently elected, nonpartisan official responsible for establishing fair and equitable property valuations for all taxable real estate across King County. The Assessor's Department evaluates hundreds of thousands of residential, commercial, and industrial properties annually to form the county tax roll. While the Assessor does not set property tax rates or collect taxes, valuation determinations directly establish how property tax burdens are distributed among property owners. The office administers property tax exemption and deferral programs for senior citizens, low-income homeowners, disabled veterans, and non-profit organizations. Additionally, the Assessor provides public real estate data, manages valuation appeals processes, and ensures statutory compliance under Washington State tax laws.",
-      "sources": [{ "label": "🔗 King County Elections", "url": "https://kingcounty.gov/elections" }],
-      "candidates": [
+      "shortTitle": "Supreme Court Pos. 1",
+      "type": "Nonpartisan Office • Vote for One",
+      "category": "State Courts",
+      "title": "State Supreme Court, Justice Position No. 1",
+      "sources": [
         {
-          "name": "Al Dams",
-          "party": "Nonpartisan",
-          "partyClass": "party-non",
-          "desc": "Al Dams is the Chief Deputy Assessor for King County with over 30 years of executive management experience within the Assessor's Department. He emphasizes operational stability, advanced computer-assisted mass appraisal technology, and strict adherence to statutory valuation rules. His platform focuses on expanding property tax relief outreach to senior citizens and disabled homeowners across all King County communities. Dams prioritizes staff training, transparent public reporting, and efficient property tax appeal processing.",
-          "pros": [
-            "30+ years of direct technical mass appraisal experience managing 700,000+ King County property parcels.",
-            "Oversaw digital modernization resulting in 99.4% property assessment accuracy and compliance.",
-            "Expanded senior property tax exemption program enrollment by 18% (12,000+ new households).",
-            "Maintains 95% audit approval rating from the Washington State Department of Revenue."
-          ],
-          "cons": [
-            "Associated with executive leadership during period where median home valuations rose 85%.",
-            "Department property tax appeal resolution times average 120+ days during peak assessment cycles.",
-            "Opposes structural changes to assessment algorithms without prior state legislative authorization.",
-            "Lower public campaign visibility compared to candidates backed by municipal political figures."
-          ],
-          "site": ""
+          "label": "WA Voters' Pamphlet: this contest",
+          "url": "https://voter.votewa.gov/GenericVoterGuide.aspx?e=899&c=17&language=en#/candidates/187079"
         },
         {
-          "name": "Rob Foxcurran",
-          "party": "Nonpartisan",
-          "partyClass": "party-non",
-          "desc": "Rob Foxcurran is a Senior City Appraiser and professional real estate analyst endorsed by labor unions including PROTEC17. He advocates for modernizing property assessment algorithms to ensure accurate valuation adjustments for small business properties and residential homes. His platform emphasizes enhanced public transparency, accessible property valuation appeal resources, and equitable tax distribution. Foxcurran aims to streamline property assessment reviews and expand technical assistance for first-time home buyers.",
-          "pros": [
-            "20+ years of certified commercial and residential real estate appraisal experience.",
-            "Endorsed by PROTEC17 union representing 500+ regional technical and professional appraisers.",
-            "Platform aims to reduce commercial valuation discrepancies by 15% to protect small businesses.",
-            "Pledges to reduce property tax appeal processing times from 120 days down to 45 days."
-          ],
-          "cons": [
-            "Has not managed a county department budget exceeding $30 Million or 200+ employees.",
-            "Proposed valuation algorithm changes require complex state regulatory approval under RCW 84.40.",
-            "Opponents question feasibility of 45-day appeal target without significant staff budget increases.",
-            "Lacks previous executive election campaign experience."
-          ],
-          "site": "https://voterobfoxcurran.com"
-        },
-        {
-          "name": "Christopher Roberts",
-          "party": "Nonpartisan",
-          "partyClass": "party-non",
-          "desc": "Christopher Roberts is a former Mayor of Shoreline who holds a Ph.D. in Political Science. He advocates for policy reforms that expand state property tax relief eligibility for low- and middle-income homeowners facing rising housing costs. His platform focuses on improving customer service accessibility, multi-lingual public outreach, and transparent valuation methodology. Roberts seeks to partner with local city councils to align property assessment practices with regional housing affordability goals.",
-          "pros": [
-            "Served 2 terms as Mayor of Shoreline managing $100M+ municipal budgets and city operations.",
-            "Holds a Ph.D. in Political Science specializing in local government finance and housing equity.",
-            "Proposed expanding property tax exemption outreach to non-English speaking communities by 40%.",
-            "Endorsed by 15+ local mayors, city councilmembers, and regional housing advocates."
-          ],
-          "cons": [
-            "Does not hold a professional state real estate appraisal license or assessor certification.",
-            "Lacks direct operational experience inside the King County Assessor's Department.",
-            "May face technical learning curve regarding mass appraisal software systems (CAMA).",
-            "Policy focus on tax relief requires state legislative law changes outside Assessor's direct control."
-          ],
-          "site": ""
-        },
-        {
-          "name": "Dominique M. Scarimbolo",
-          "party": "Nonpartisan",
-          "partyClass": "party-non",
-          "desc": "Dominique M. Scarimbolo is a local small business owner and real estate advocate campaigning for property tax fairness. Her platform advocates for capping annual property tax assessment increases to protect fixed-income homeowners from tax displacement. She focuses on administrative transparency, simplifying valuation appeal procedures, and auditing assessment consistency across urban and rural King County precincts. Scarimbolo emphasizes consumer protection, fiscal accountability, and reducing government overhead costs.",
-          "pros": [
-            "Proposes a 5% cap on annual property assessment increases to prevent homeowner displacement.",
-            "15+ years of private sector small business accounting and consumer advocacy experience.",
-            "Pledges to conduct 100% independent audits of commercial tax assessment consistency.",
-            "Focuses on reducing department administrative overhead to save taxpayers $2 Million annually."
-          ],
-          "cons": [
-            "State Constitution (Article VII) prohibits Assessor from capping valuations without statewide amendment.",
-            "Lacks prior public sector property appraisal or governmental department management experience.",
-            "Proposed 5% assessment cap would create legal conflicts with current Washington State tax laws.",
-            "Has not received endorsements from major regional appraiser or municipal labor associations."
-          ],
-          "site": "https://domscarimboloforassessor.com"
+          "label": "King County Elections candidate list",
+          "url": "https://info.kingcounty.gov/kcelections/Vote/contests/candidates.aspx?eid=55"
         }
-      ]
-    },
-    {
-      "shortTitle": "Council Dist 8",
-      "type": "County Nonpartisan Office • Vote for One",
-      "category": "County Office",
-      "title": "Metropolitan King County Council, District No. 8",
-      "overview": "District 8 of the Metropolitan King County Council represents urban and unincorporated communities including West Seattle, White Center, Vashon Island, Maury Island, and downtown Seattle. Councilmembers exercise legislative authority over county government operations, approving a multi-billion dollar biennial budget for regional services. They govern Metro transit bus and water taxi systems, county public health clinics, regional parks, wastewater treatment, and sheriff public safety operations. The Council sets regional land-use policies, zoning regulations for unincorporated areas, and environmental conservation frameworks. Councilmembers also oversee county housing levies, behavioral health crisis centers, and regional homelessness response programs.",
-      "sources": [{ "label": "🔗 King County Elections", "url": "https://kingcounty.gov/elections" }],
-      "candidates": [
-        {
-          "name": "Teresa Mosqueda",
-          "party": "Nonpartisan",
-          "partyClass": "party-non",
-          "desc": "Teresa Mosqueda is the incumbent King County Councilmember for District 8 and former Seattle City Councilmember. She prioritizes regional investments in affordable housing, expanded Metro transit services, and crisis mental health facilities. Her legislative focus includes supporting working families through childcare subsidies, environmental health protections, and workforce development. Mosqueda is endorsed by labor organizations, housing advocates, and civic leaders across King County.",
-          "pros": [
-            "Authored JumpStart Seattle tax generating $200M+ annually for affordable housing & childcare.",
-            "7+ years of municipal legislative experience managing regional public health & transit budgets.",
-            "Secured $15 Million for Vashon Island water taxi electrification and rapid bus connections.",
-            "Endorsed by 40+ labor, environmental, healthcare, and working-family organizations."
-          ],
-          "cons": [
-            "JumpStart payroll tax opposed by Downtown Seattle Association over commercial competitiveness.",
-            "Regional homelessness numbers increased 12% during tenure despite expanded county funding.",
-            "Progressive public safety platform criticized by conservative police advocacy groups.",
-            "Faced pushback over county budget deficits exceeding $50 Million in public health operations."
-          ],
-          "site": "https://teresamosqueda.org"
-        },
-        {
-          "name": "Mia Jacobson",
-          "party": "Nonpartisan",
-          "partyClass": "party-non",
-          "desc": "Mia Jacobson is a neighborhood safety advocate and community volunteer focusing on urban revitalization. Her platform centers on increasing public safety resources, supporting local small businesses, and improving county budget transparency. She advocates for expanded behavioral health response teams, improved road infrastructure, and reliable ferry transit for Vashon Island. Jacobson emphasizes fiscal accountability, public safety collaboration, and constituent advocacy.",
-          "pros": [
-            "10+ years of active community leadership in West Seattle and Vashon Island neighborhood groups.",
-            "Advocates allocating $20 Million to deploy 50+ dedicated non-police mental health crisis responders.",
-            "Strong focus on supporting 1,200+ small businesses affected by downtown commercial vacancy rates.",
-            "Grassroots campaign backed by local neighborhood safety coalitions and small business owners."
-          ],
-          "cons": [
-            "Lacks previous elected office experience or formal legislative voting record.",
-            "Campaign fundraising footprint under $75,000 compared to well-funded incumbent operations.",
-            "Lacks formal endorsement from countywide labor unions or political party organizations.",
-            "Specific plan to address King County's $50M transit operating deficit requires further detail."
-          ],
-          "site": "https://kingcounty.gov/elections"
-        },
-        {
-          "name": "Nick Duda",
-          "party": "Nonpartisan",
-          "partyClass": "party-non",
-          "desc": "Nick Duda is a civic leader and business professional campaigning for public safety and fiscal discipline on the County Council. He advocates for expanding Sheriff's deputy staffing, modernizing emergency response systems, and auditing county spending programs. His platform focuses on streamlining commercial permitting processes to encourage local economic investment and job growth. Duda prioritizes practical infrastructure maintenance, park safety, and balanced county budget allocations.",
-          "pros": [
-            "Proposes recruiting 150+ King County Sheriff's deputies to address regional 911 response delays.",
-            "15+ years of corporate business operations and project management background.",
-            "Advocates auditing 100% of county homelessness contracts to measure housing retention KPIs.",
-            "Platform aims to reduce county commercial permit approval timelines from 180 days to 60 days."
-          ],
-          "cons": [
-            "Proposed $30 Million law enforcement expansion opposes progressive criminal justice reform goals.",
-            "First-time political candidate with limited background in county legislative procedures.",
-            "Budget audit proposals do not specify which social service programs would face funding cuts.",
-            "Endorsed primarily by law enforcement associations rather than environmental or labor groups."
-          ],
-          "site": "https://kingcounty.gov/elections"
-        }
-      ]
-    },
-    {
-      "shortTitle": "Supreme Court Pos 1",
-      "type": "State Judicial Nonpartisan Office • Vote for One",
-      "category": "State Judicial Office",
-      "title": "State Supreme Court – Justice Position No. 1 (Unexpired Term)",
-      "overview": "Justices of the Washington State Supreme Court sit on the state's highest judicial tribunal, reviewing major legal, constitutional, and statutory challenges. The Supreme Court has ultimate appellate jurisdiction over state legal matters, evaluating decisions issued by lower trial and appellate courts. Justices interpret the Washington State Constitution, review complex civil and criminal statutory appeals, and establish legal precedents binding on all state courts. The Court also exercises administrative oversight over the Washington legal system, governing attorney licensing, judicial conduct standards, and court rules of procedure. Supreme Court Justices serve nonpartisan, six-year staggered terms and must maintain judicial impartiality, constitutional fidelity, and commitment to equal access to justice.",
-      "sources": [{ "label": "🔗 WA Judicial Guide", "url": "https://voter.votewa.gov" }],
+      ],
       "candidates": [
         {
           "name": "Colleen Melody",
-          "party": "Nonpartisan",
-          "partyClass": "party-non",
-          "desc": "Colleen Melody is a Senior Assistant Attorney General and former Chief of the Civil Rights Division in the Washington Attorney General's Office. She brings extensive appellate litigation experience arguing constitutional and statutory cases before state and federal courts. Her platform emphasizes strict adherence to constitutional protections, judicial neutrality, and equal access to legal remedies for all residents. Melody is endorsed by legal scholars, retired judges, and statewide legal organizations.",
-          "pros": [
-            "15+ years of high-level appellate practice arguing 50+ constitutional cases before state Supreme Court.",
-            "Former Civil Rights Division Chief leading landmark consumer protection & anti-discrimination enforcement.",
-            "Rated 'Exceptionally Well Qualified' by Washington State Veterans and Specialty Bar Associations.",
-            "Endorsed by 20+ retired state judges and law school deans across Washington."
+          "desc": "Legal/Judicial Experience\n\nSupreme Court Justice. Colleen Melody works every day to uphold the rule of law, improve access to justice, and protect the rights of Washingtonians.\n\nOther Professional Experience\n\nColleen was a career civil rights lawyer and public servant. She taught at the University of Washington and brought pro bono cases on behalf of immigrants and veterans. She worked at a pizza shop in high school and waited tables through college.\n\nEducation\n\nUW for college and law school, both with high honors.\n\nCommunity Service\n\nColleen worked to improve access to services in her rural community, including better resources for seniors, increased healthcare services, and more affordable childcare.\n\nStatement\n\nColleen grew up in Spokane, the daughter of a teacher and a healthcare advocate. As a civil rights lawyer, she protected Washingtonians whose rights were violated by multinational corporations, special interests, and the federal government. Colleen returned millions in wages owed to workers and protected employees from pregnancy discrimination and sexual harassment. As the leader of the Attorney General’s Civil Rights Division, she beat the Trump Administration when it tried to impose its unconstitutional Muslim Ban and separate families at the border.\n\nNow more than ever, state courts must safeguard our rights with independence and impartiality. Washington’s laws provide broad protections in privacy, the workplace, housing, healthcare, and education. State courts must be places where victims of crime and discrimination may seek justice with safety and dignity.\n\nColleen is a working mom who lives in rural Western Washington with her husband and two public-school daughters. She is endorsed by every sitting Supreme Court Justice; retired Justices Yu and Madsen; Governors Ferguson, Inslee, and Gregoire; Attorney General Brown; hundreds of judges and elected leaders statewide, and the Washington State Labor Council.\n\nYour rights matter. Justice Colleen Melody has worked her entire career to protect them.",
+          "sources": [
+            {
+              "label": "WA Voters' Pamphlet (candidate statement)",
+              "url": "https://voter.votewa.gov/GenericVoterGuide.aspx?e=899&c=17&language=en#/candidates/187079/1602132"
+            }
           ],
-          "cons": [
-            "Career spent as an executive advocate/litigator rather than serving as a trial court judge.",
-            "Civil rights enforcement record criticized by business defense groups as overly litigious.",
-            "Has not managed trial court dockets or jury selection procedures as a bench judge.",
-            "Opponents question transition from executive state attorney to impartial judicial bench."
-          ],
-          "site": "https://voter.votewa.gov"
-        },
-        {
-          "name": "Laura Christensen Colberg",
-          "party": "Nonpartisan",
-          "partyClass": "party-non",
-          "desc": "Laura Christensen Colberg is an experienced trial and appellate attorney specializing in statutory interpretation and administrative law. She advocates for judicial restraint, maintaining clear legal precedents, and ensuring impartial legal analysis free from political influence. Her platform focuses on improving court efficiency, expanding pro bono legal resources, and protecting constitutional due process rights. Colberg emphasizes judicial independence and respectful civil discourse across the state court system.",
-          "pros": [
-            "18+ years of balanced trial and appellate practice in administrative and statutory law.",
-            "Platform prioritizes expanding pro bono legal assistance to 10,000+ low-income state litigants.",
-            "Strong commitment to judicial restraint and maintaining stable legal precedent under state law.",
-            "Rated 'Well Qualified' by King County Bar Association judicial evaluation committee."
-          ],
-          "cons": [
-            "Has not previously served as an elected or appointed judge on trial or appellate benches.",
-            "Lower statewide candidate name recognition compared to Assistant Attorney General opponents.",
-            "Campaign fundraising footprint significantly smaller than rival judicial candidates.",
-            "Lacks high-profile media trial background."
-          ],
-          "site": "https://voter.votewa.gov"
+          "site": "https://melodyforjustice.com/",
+          "email": "hello@melodyforjustice.com",
+          "phone": "(206) 745-2010"
         },
         {
           "name": "Scott Edwards",
-          "party": "Nonpartisan",
-          "partyClass": "party-non",
-          "desc": "Scott Edwards is a civil litigation attorney with decades of trial experience representing individuals, small businesses, and municipalities. He advocates for strict constitutional interpretation, protecting individual liberties, and maintaining predictable legal standards for state businesses. His platform emphasizes expanding public access to judicial records, modernizing court technology, and ensuring fair trial procedures. Edwards prioritizes judicial accountability, integrity, and timely court decisions.",
-          "pros": [
-            "25+ years of private civil trial practice representing 500+ individuals, businesses, and cities.",
-            "Pledges to mandate electronic filing and free public record access across all 39 county courts.",
-            "Strong focus on reducing Supreme Court case backlog to issue decisions within 60 days of argument.",
-            "Rated 'Well Qualified' by multiple municipal legal and business attorney groups."
+          "desc": "Legal/Judicial Experience\n\nBallard Spahr/Lane Powell (2010-present) (Practice Chair 2010-2024) (Board 2017-2019, 2023-24); Perkins Coie (1999-2010); Bogle & Gates (1996-1999). Significant experience before Washington courts on constitutional and other complex issues; Ranked as among the top in my field: Super Lawyers, Best Lawyers in America, and Chambers.\n\nOther Professional Experience\n\nAdjunct Professor, University of Washington School of Law (2002-present); Washington State Bar Association; American Bar Association; Council on State Taxation.\n\nEducation\n\nUniversity of Washington School of Law (with Honors) 1991; Princeton University (magna cum laude) 1988, Economics - Paul Volcker Award recipient.\n\nCommunity Service\n\nAmerican Red Cross; St. Cecilia Parish; Scouting America; Bainbridge Island Youth Orchestra; Kids in Concert.\n\nStatement\n\nI am running to bring independence, principled judgment, and respect for the rule of law to the Washington Supreme Court. An independent court protects constitutional rights, ensures equal justice, and serves as a final and balanced check within our system of government. The role of the Supreme Court is to apply the constitution and laws as written, not rewrite them.\n\nFor more than 30 years I have represented clients at all levels of Washington’s court system, including more than a dozen Washington Supreme Court cases. As a tax and constitutional attorney, I work on complex issues that directly affect Washington families and businesses. I have also taught at the University of Washington School of Law for over 20 years.\n\nI learned the value of hard work, integrity, and public service early, working at my grandparents’ restaurant and watching my father serve as Alaska’s attorney general. Washington deserves justices who will apply the law predictably, as written, and without favoring any political agenda. My commitment is to protect your constitutional rights and work to make the Washington Supreme Court accountable and worthy of your trust.\n\nTake politics out of the courtroom. Vote Scott Edwards, Position 1.",
+          "sources": [
+            {
+              "label": "WA Voters' Pamphlet (candidate statement)",
+              "url": "https://voter.votewa.gov/GenericVoterGuide.aspx?e=899&c=17&language=en#/candidates/187079/1602133"
+            }
           ],
-          "cons": [
-            "Lacks prior judicial bench service as a judge or judicial magistrate.",
-            "Private civil litigation focus requires orientation on complex state criminal procedure appeals.",
-            "Strict constitutional interpretation approach opposed by some progressive legal advocacy groups.",
-            "Endorsed primarily by civil defense attorneys rather than public interest legal organizations."
+          "site": "https://votescottedwards.com",
+          "email": "info@votescottedwards.com",
+          "phone": "(206) 201-1108"
+        }
+      ]
+    },
+    {
+      "shortTitle": "Supreme Court Pos. 3",
+      "type": "Nonpartisan Office • Vote for One",
+      "category": "State Courts",
+      "title": "State Supreme Court, Justice Position No. 3",
+      "sources": [
+        {
+          "label": "WA Voters' Pamphlet: this contest",
+          "url": "https://voter.votewa.gov/GenericVoterGuide.aspx?e=899&c=17&language=en#/candidates/187080"
+        },
+        {
+          "label": "King County Elections candidate list",
+          "url": "https://info.kingcounty.gov/kcelections/Vote/contests/candidates.aspx?eid=55"
+        }
+      ],
+      "candidates": [
+        {
+          "name": "David Stevens",
+          "desc": "Legal/Judicial Experience\n\nSuperior Court Judge; Senior Felony Prosecutor; Federal\nPublic Defender, Chief Public Defender Colville Confederated Tribes; Federal\nProsecutor; International Prosecutor in Pristina, Kosovo; Justice Advisor in\nBamiyan, Afghanistan.\n\nOther Professional Experience\n\nFederal Civil Rights Investigator; U.S. Navy Veteran;\npresenter: legal education seminars in Beirut, Lebanon, Kolasin and Budva,\nMontenegro, and for the Washington Association of Prosecuting Attorneys.\n\nEducation\n\nJuris Doctor, University of Washington School of Law;\nBachelor of Arts, University of Washington. Department of State Certificate in\nIslamic Jurisprudence.\n\nCommunity Service\n\nDeacon, Mount Olive Lutheran Church; VFW Larry\nGodwin Post 1694 Honor Guard; Skookum Rotary; UW Law School Mentor; YMCA and UW Law school mock trial judge.\n\nStatement\n\nThe duty of the Washington State Supreme Court is to uphold our\nconstitution and to protect our rights and freedoms. Public policy is the\nprovince of the political branches and not the courts.\n\nIn the last two decades, direct appointment of judges by the\ngovernor rather than election of judges by the people has become a longstanding tradition.\nOur State Constitution mandated the election of judges because direct appointment leads to ideological and political decisions. Appointments were\nreserved for vacancies. Judge Stevens was elected and not appointed. His\nelection will bring common sense and balance to the Supreme Court.\n\nAfter High School, Judge Stevens joined the Navy. After his\nenlistment, he used his veteran’s benefits to attend the University of\nWashington where he met his wife Pam. After graduating, he worked as a Federal\nCivil Rights Investigator for the Fair Housing Enforcement Center Seattle\nfighting racial, ethnic, and religious discrimination. He then went to the UW\nSchool of Law. Judge Stevens and his wife live in Shelton close to six of their\nnine grandchildren.\n\nAs a lawyer and judge he has tried more than two hundred\njury trials. His supporters include tribes, judges, public defenders,\nprosecutors, attorneys, and law enforcement.",
+          "sources": [
+            {
+              "label": "WA Voters' Pamphlet (candidate statement)",
+              "url": "https://voter.votewa.gov/GenericVoterGuide.aspx?e=899&c=17&language=en#/candidates/187080/1602134"
+            }
           ],
-          "site": "https://voter.votewa.gov"
+          "site": "https://JudgeStevensforWA.com",
+          "email": "DavidforJustice@yahoo.com",
+          "phone": "(360) 789-1405"
+        },
+        {
+          "name": "Jaime Michelle Hawk",
+          "desc": "Legal/Judicial Experience\n\nJudge Jaime Hawk has been a state and national legal leader for over 20 years. As a Superior Court Judge, federal public defender, and ACLU civil rights attorney, she has protected our rights and freedoms.\n\nOther Professional Experience\n\nAdjunct Professor of Law. Supreme Court Minority and Justice Commission. In work before law school, Judge Hawk supported domestic violence survivors and found them safe shelter.\n\nEducation\n\nRaised by a single mom, Judge Hawk was the first in her family to attend college, graduating with honors from Gonzaga University Law School.\n\nCommunity Service\n\nJudge Hawk has advocated on boards for immigrant children, voting rights, veterans, and women’s rights.\n\nStatement\n\nJudge Hawk fought in the courtroom for those who could not afford a lawyer. She handled trials and appeals, and defended Washingtonians against the federal government. She is the first attorney with the ACLU of Washington to become a judge. Congresswoman Pramila Jayapal and Governor Bob Ferguson endorse Judge Hawk.\n\nJudge Hawk is a trusted, experienced legal leader. Senators Murray and Cantwell appointed her to their federal judge selection committee. The American Bar Association selected her to observe Guantanamo Bay military hearings, and later chose her to assist families at the border torn apart by Trump-era immigration policies.\n\nJudge Hawk has presided over hundreds of criminal, civil, and family law cases, as well as appeals from lower courts. She has never had a trial overturned for legal error. She follows the law. More than 100 current and retired judges and justices from across Washington endorse Judge Hawk.\n\nJudge Hawk will bring a strong, independent voice. Endorsed by the National Women’s Political Caucus, local and county Democratic organizations, and the State Labor Council, she understands the concerns of women and working families and will bring that perspective to the Court. Judge Hawk will protect our rights and the rule of law.",
+          "sources": [
+            {
+              "label": "WA Voters' Pamphlet (candidate statement)",
+              "url": "https://voter.votewa.gov/GenericVoterGuide.aspx?e=899&c=17&language=en#/candidates/187080/1602135"
+            }
+          ],
+          "site": "https://www.judgehawk.com",
+          "email": "info@judgehawk.com",
+          "phone": "(206) 486-2959"
+        }
+      ]
+    },
+    {
+      "shortTitle": "Supreme Court Pos. 4",
+      "type": "Nonpartisan Office • Vote for One",
+      "category": "State Courts",
+      "title": "State Supreme Court, Justice Position No. 4",
+      "sources": [
+        {
+          "label": "WA Voters' Pamphlet: this contest",
+          "url": "https://voter.votewa.gov/GenericVoterGuide.aspx?e=899&c=17&language=en#/candidates/187081"
+        },
+        {
+          "label": "King County Elections candidate list",
+          "url": "https://info.kingcounty.gov/kcelections/Vote/contests/candidates.aspx?eid=55"
+        }
+      ],
+      "candidates": [
+        {
+          "name": "Ian Birk",
+          "desc": "Legal/Judicial Experience\n\nJudge, State Court of Appeals, appointed by Governor Jay Inslee, then elected. I am proud to serve the state’s second highest court, hearing cases statewide.\n\nOther Professional Experience\n\nTwo decades in private practice, representing individuals, families, and small businesses—often against powerful corporate interests—in cases involving insurance claims, consumer protection, workplace discrimination, and complex civil litigation.\n\nEducation\n\nBA and JD, University of Washington\n\nCommunity Service\n\nMore than 10 years service to King County Bar Association Neighborhood Legal Clinics, providing free legal assistance to people who could not afford an attorney. Many cases involved renters, consumers, and working families facing immediate financial or housing insecurity.\n\nStatement\n\nI’m proud to be the only candidate in this position with statewide judicial experience and an appellate track record demonstrating respect for the rule of law, its impacts on communities, and all people we serve. With my background representing everyday Washingtonians, I will bring a unique perspective to the Supreme Court, where I’ll continue authoring opinions that are independent, fair, and grounded in shared values.\n\nIn every case I have taken as a lawyer, and heard as a judge, I have focused on the right of every person to equal access to justice, equal treatment under the law, and fair outcomes. I’ve written hundreds of decisions across civil, criminal, family, administrative, and constitutional law, an unmatched breadth of experience rated “exceptionally well qualified” by Washington Women Lawyers and the Cardozo Society.\n\nI’m proudly endorsed by AG Nick Brown, Justices Gonzalez, Gordon-McCloud, Whitener, Montoya-Lewis, Mungia, Angelis, former Justices Ireland and Yu, over 100 judicial colleagues elected from all 39 counties in Washington, US Rep Pramila Jayapal, King County Exec Girmay Zahilay, WA State Labor Council, Machinists, Teachers, King County Democrats, and more.\n\nTogether, we can maintain the integrity and independence of our courts in challenging times. I ask for your vote.",
+          "sources": [
+            {
+              "label": "WA Voters' Pamphlet (candidate statement)",
+              "url": "https://voter.votewa.gov/GenericVoterGuide.aspx?e=899&c=17&language=en#/candidates/187081/1602270"
+            }
+          ],
+          "site": "https://www.ianbirk.com",
+          "email": "info@ianbirk.com"
+        },
+        {
+          "name": "Sean O'Donnell",
+          "desc": "Legal/Judicial Experience\n\nJudge on King County Superior Court since 2013; Washington State Supreme Court Justice Pro Tem; elected Superior Court Judges’ Association President by judges statewide; Chief of King County’s Family Law and Criminal Departments; Special Inquiry Judge; mental health court lead judge; prosecutor for 12 years, served on the Green River Task Force and tried Washington’s first human trafficking case; Special Assistant United States Attorney; statewide court security task force chair.\n\nOther Professional Experience\n\nAdjunct Faculty, Seattle University School of Law\n\nEducation\n\nSeattle University School of Law, J.D. cum laude; Georgetown University, B.A.\n\nCommunity Service\n\nRainier Scholars Resource Council; volunteer mediator; volunteer mock trial judge\n\nStatement\n\nI have been in public service for 25 years as a trial judge, Supreme Court Justice Pro Tem, and prosecutor. I have protected individuals’ constitutional rights, upheld the rule of law, and centered crime victims' voices in our justice system.\n\nI know the role the law plays to protect and serve us all. I began my legal career helping bring the Green River Killer to justice. As Chief Family Law Judge, I helped start a protection order court that resulted in hundreds of firearms being surrendered by people who committed acts of domestic violence. We live in unprecedented times for our democracy. As a Justice, I will defend our rights and the Constitution, maintain impartiality, and always remember that my rulings affect real people.\n\nI am proud to be rated “Exceptionally Well Qualified” for the Supreme Court by multiple bar associations and named “Judge of the Year” by the Washington Chapter of the American Board of Trial Advocates.\n\nEndorsements: Governor Christine Gregoire, Congressman Adam Smith, Congresswoman Marilyn Strickland, Lands Commissioner Dave Upthegrove, Seattle City Council President Joy Hollingsworth, 15 mayors, county executives, Washington Farm Bureau, Washington Council of Police and Sheriffs, and over 200 trial and appellate court judicial officers.",
+          "sources": [
+            {
+              "label": "WA Voters' Pamphlet (candidate statement)",
+              "url": "https://voter.votewa.gov/GenericVoterGuide.aspx?e=899&c=17&language=en#/candidates/187081/1602271"
+            }
+          ],
+          "site": "https://odonnellforjustice.com",
+          "email": "campaign@odonnellforjustice.com",
+          "phone": "(206) 588-6172"
+        }
+      ]
+    },
+    {
+      "shortTitle": "Supreme Court Pos. 5",
+      "type": "Nonpartisan Office • Vote for One",
+      "category": "State Courts",
+      "title": "State Supreme Court, Justice Position No. 5",
+      "sources": [
+        {
+          "label": "WA Voters' Pamphlet: this contest",
+          "url": "https://voter.votewa.gov/GenericVoterGuide.aspx?e=899&c=17&language=en#/candidates/187082"
+        },
+        {
+          "label": "King County Elections candidate list",
+          "url": "https://info.kingcounty.gov/kcelections/Vote/contests/candidates.aspx?eid=55"
+        }
+      ],
+      "candidates": [
+        {
+          "name": "Theo Angelis",
+          "desc": "Legal/Judicial Experience\n\nCurrent Supreme Court Justice appointed by Governor Ferguson following a diverse, award-winning 26-year legal career as a Partner at K&L Gates.\n\nOther Professional Experience\n\nThroughout career, led Appellate and Intellectual Property teams, and pro bono cases representing immigrant children, veterans, refugees, small businesses, and people experiencing homelessness.\n\nEducation\n\nBA, Claremont McKenna College; MA, Oxford University; MA, London School of Economics; JD, Yale University\n\nCommunity Service\n\nTrustee, King County Bar Association; President, Middle Eastern Legal Association of Washington; Member, Attorney General's Youth Internet Safety Task Force; Founders Award, Kids in Need of Defense; ACLU Humanitarian Award; Mentor of the Year, King County Bar Association\n\nStatement\n\nAs a Justice and throughout my legal career, I’ve fought for the rule of law, the rights of all individuals, and to ensure our courts remain fair, independent, and accessible. Before joining the Supreme Court, I frequently volunteered to help people who couldn’t afford lawyers. I sued the federal government when they forced children—as young as 4 years old—to appear without lawyers in immigration court. The federal government eventually agreed to pay for lawyers, and the ACLU gave me the Humanitarian Award.\n\nI also represented an Army veteran, a naturalized U.S. citizen, after ICE wrongly detained him for seven months. The Northwest Immigrant Rights Project gave me the Amicus Award for my “groundbreaking work”.\n\nI’ve worked to mentor attorneys to expand diversity in our profession, and with Turkish and Greek ancestry, I am proud to be the first Justice of Middle Eastern descent on our highest court.\n\nI am endorsed by all of my colleagues on the Supreme Court; Governors Ferguson and Gregoire; former U.S. Attorneys Durkan, Gorman, and McKay; over 500 Judges and attorneys statewide; 52 State Legislators; Executive Zahilay; mayors statewide; WA State Labor Council; King County and numerous LD Democrats; and more!",
+          "sources": [
+            {
+              "label": "WA Voters' Pamphlet (candidate statement)",
+              "url": "https://voter.votewa.gov/GenericVoterGuide.aspx?e=899&c=17&language=en#/candidates/187082/1602136"
+            }
+          ],
+          "site": "https://justiceangelis.com",
+          "email": "info@justiceangelis.com"
+        },
+        {
+          "name": "Dave Larson",
+          "desc": "Legal/Judicial Experience\n\n41 years legal experience; trial judge (18 years, Ret.), trial lawyer (23 years). Rated AV Preeminent as a trial lawyer and Exceptionally Well Qualified (Judge and Supreme Court candidate).\n\nOther Professional Experience\n\nMediator and arbitrator (1990-2008); President, Federal Way School Board\n\nEducation\n\nJD, Seattle University School of Law; BA, University of Puget Sound.\n\nCommunity Service\n\nDMCJA President’s Award for Protecting Judicial Independence (2018); Judge William Nevins Award (2014) and Hero of Federal Way Schools (2018, 2022) for Commitment to Civics Education; Best City Leader (2022); Kiwanis (Everyday Hero Award and more); Founder, Aktion Club of Federal Way (service club for adults with developmental disabilities), and more.\n\nStatement\n\nJudge Dave Larson's 41 years of distinguished experience, 18 years as a trial judge, 23 as a trial lawyer, form an unrivaled record making him the most qualified and best prepared candidate for our state’s highest court.\n\nDave will restore trust in our courts by rising above partisan interests, applying the law without fear or favor, and restoring judicial independence. A truly nonpartisan candidate, Dave reaches out to Democrats, Republicans, Labor, Business, and voters across Eastern and Western Washington, because justice that serves only some of us serves none of us. He will protect your individual rights and the judicial independence that is currently under threat.\n\nDave’s innovative criminal justice reforms have been recognized nationwide. He has collaborated with legislative Democrats and Republicans to help our trial courts address crime and addiction with compassion and accountability. However, our Supreme Court’s decisions have weakened that response. As a justice, he will help fix current problems and build towards lasting and effective solutions.\n\nOur Supreme Court needs Dave’s unique perspective gained from his significant trial judge experience. That experience, integrity, and steady judgment are exactly what’s needed to restore trust in, and improve, our courts. Vote Judge Dave Larson for Supreme Court.",
+          "sources": [
+            {
+              "label": "WA Voters' Pamphlet (candidate statement)",
+              "url": "https://voter.votewa.gov/GenericVoterGuide.aspx?e=899&c=17&language=en#/candidates/187082/1602137"
+            }
+          ],
+          "site": "https://www.larsonforjustice.com",
+          "email": "campaign@larsonforjustice.com",
+          "phone": "(206) 207-2903"
+        }
+      ]
+    },
+    {
+      "shortTitle": "Supreme Court Pos. 7",
+      "type": "Nonpartisan Office • Vote for One",
+      "category": "State Courts",
+      "title": "State Supreme Court, Justice Position No. 7",
+      "sources": [
+        {
+          "label": "WA Voters' Pamphlet: this contest",
+          "url": "https://voter.votewa.gov/GenericVoterGuide.aspx?e=899&c=17&language=en#/candidates/187083"
+        },
+        {
+          "label": "King County Elections candidate list",
+          "url": "https://info.kingcounty.gov/kcelections/Vote/contests/candidates.aspx?eid=55"
+        }
+      ],
+      "candidates": [
+        {
+          "name": "Debra L. Stephens",
+          "desc": "Legal/Judicial Experience\n\nCurrent Chief Justice and Justice since 2008. Court of Appeals Judge, Eastern Washington (2007). Appellate Attorney & adjunct professor, Gonzaga University (1993-2007).\n\nOther Professional Experience\n\nBoard for Judicial Administration Co-Chair, National Association of Women Judges, Judicial Independence Committee Co-Chair, Chief Justices Conference Executive Committee, National Courts & Sciences Institute Director, National Judicial College Instructor, WA Civic Learning Council, former Spokane Community College instructor.\n\nEducation\n\nGonzaga University, J.D., B.A. West Valley High, Spokane.\n\nCommunity Service\n\nFormer school board chair, Upward Bound mentor, Minority & Justice Commission, YMCA Youth & Government, Sacred Heart Children’s Hospital, Habitat for Humanity, Past Rotary President, Washington Center for Performing Arts board member.\n\nStatement\n\nAs Washington’s Chief Justice, I am dedicated to upholding the rule of law and delivering fair and impartial justice. Courts are a critical branch of government, where every person must be treated fairly and with dignity, and decisions must be based on the law and the facts. In an era of growing attempts to politicize the judiciary, I work every day to maintain the integrity and independence of our courts and safeguard access to justice for every person.\n\nAs a former constitutional law professor, I respect legal traditions and constitutional principles. As a parent and former school board chair, I understand how court decisions impact the lives of Washington families. As the first woman from Eastern Washington on the Court, I know that lived experience and diverse perspectives matter in making sound decisions.\n\nI have a proven record of expanding access to justice, improving efficiency and transparency, addressing the evolving challenges facing our legal system, and protecting individual rights. I have always enjoyed broad support and am endorsed by my current and former colleagues, judges statewide, WA State Labor Council, elected officials, and education and community leaders. I ask for your vote to continue serving you on our Supreme Court.",
+          "sources": [
+            {
+              "label": "WA Voters' Pamphlet (candidate statement)",
+              "url": "https://voter.votewa.gov/GenericVoterGuide.aspx?e=899&c=17&language=en#/candidates/187083/1602139"
+            }
+          ],
+          "site": "https://justicestephens.com",
+          "email": "debra@debrastephenslaw.com",
+          "phone": "(206) 382-5552"
+        },
+        {
+          "name": "Todd A. Bloom",
+          "desc": "Legal/Judicial Experience\n\nOver two decades of providing legal and professional services to private and publicly-held companies, executives, business owners and Washington families; served as an Arbitrator for FINRA from 1999 to 2020.\n\nOther Professional Experience\n\nOver a decade\nas tax attorney and senior manager in major accounting firms. Active-duty Navy officer from 2002 to 2013. Additional professional designations: CPA, CFA and CFP.\n\nEducation\n\nLL.M. - University of Washington; J.D., M.B.A. - Tulane University; M.A. - Naval War College; B.A. - Simpson College; College of Naval Command & Staff; Warfare Qualified.\n\nCommunity Service\n\nWSBA - Board of Governors; Nonprofit Finance Council; Adjunct faculty (UW, Tulane); Gallon+ Blood Donor\n\nStatement\n\nThroughout my career, I've worked to solve complex problems thoughtfully, collaboratively, and fairly. And my background has given me a deep appreciation for hard work, sacrifice, and the experiences of everyday people. To pay for school, I worked farm, grocery and restaurant jobs and later earned my commission from the enlisted ranks.\n\nFollowing 9/11, I was called from the Naval Reserve to active duty, where I served for more than a decade. I placed my civilian career on hold and left my wife and children to deploy to the Persian Gulf. That experience had a big impact on my understanding of duty, accountability, and leadership under pressure. Since returning to civilian life, I've continued my public service through the WSBA Board of Governors. It was there, I was encouraged to seek election to the Supreme Court.\n\nThis year's election is a choice--whether to retain the current justices or to give someone new your vote. I believe I represent meaningful new perspective, experience, and common sense which will bring balance to the court.\n\nIf elected, I promise to uphold and apply the law impartially and fairly. I respectfully ask for your vote for Supreme Court Justice, Position #7.",
+          "sources": [
+            {
+              "label": "WA Voters' Pamphlet (candidate statement)",
+              "url": "https://voter.votewa.gov/GenericVoterGuide.aspx?e=899&c=17&language=en#/candidates/187083/1602138"
+            }
+          ],
+          "site": "",
+          "email": "electtoddbloom@gmail.com",
+          "phone": "(360) 876-2588"
+        }
+      ]
+    },
+    {
+      "shortTitle": "Appeals Court Pos. 5",
+      "type": "Nonpartisan Office • Vote for One • Unopposed",
+      "category": "State Courts",
+      "title": "Court of Appeals, Division 1, District 1, Judge Position No. 5",
+      "sources": [
+        {
+          "label": "WA Voters' Pamphlet: this contest",
+          "url": "https://voter.votewa.gov/GenericVoterGuide.aspx?e=899&c=17&language=en#/candidates/187084"
+        },
+        {
+          "label": "King County Elections candidate list",
+          "url": "https://info.kingcounty.gov/kcelections/Vote/contests/candidates.aspx?eid=55"
+        }
+      ],
+      "candidates": [
+        {
+          "name": "David S. Mann",
+          "desc": "Legal/Judicial Experience\n\nJudge, Division I, Court of Appeals, serving since 2016 and authoring more than 500 opinions. Private practice emphasizing environmental law and policy, civil rights, public records, land use, and open government litigation for 25 years. Major cases included helping protect the Maury Island Marine Reserve from a proposed major barge terminal. Successfully argued a landmark Freedom of Information Act case before the U.S. Supreme Court.\n\nOther Professional Experience\n\nProfessional geologist/geophysicist\n\nEducation\n\nJ.D., Northwestern School of Law, Lewis & Clark College; B.A., University of California, Santa Barbara\n\nCommunity Service\n\nPrior board member – Conservation Northwest, Northwest Fund for the Environment, Washington Environmental Council, Marymoor Velodrome Association\n\nStatement\n\nJudge David Mann was appointed by Governor Jay Inslee to the State Court of Appeals in 2016, elected to retain his position in 2017, and re-elected in 2020. He has served as the Chief Judge for Division I and is currently the most senior judge on the ten-member court. He is also a member of the State Board of Judicial Administration.\n\nFollowing a career as a geophysicist, Judge Mann earned a law degree 35 years ago and began a successful practice as an environmental and land use lawyer. His skill, depth of knowledge, and commitment to our Northwest values, benefited citizens’ groups, tribes, and individual property owners across the state. He argued significant cases before state and Federal courts, including a successful Freedom of Information Action appeal to the U.S. Supreme Court.\n\nMost cases appealed from Superior Courts go directly to the Court of Appeals, and the Court must accept all appeals filed. Judge Mann has proven himself to be a hard-working member of the judiciary, authoring more than 65 opinions each year dealing with every area of Washington law. He is endorsed by a majority of the current appellate judges and justices in the state.",
+          "sources": [
+            {
+              "label": "WA Voters' Pamphlet (candidate statement)",
+              "url": "https://voter.votewa.gov/GenericVoterGuide.aspx?e=899&c=17&language=en#/candidates/187084/1602259"
+            }
+          ],
+          "site": "",
+          "email": "judgedavidmann@gmail.com",
+          "phone": "(425) 466-0619"
+        }
+      ]
+    },
+    {
+      "shortTitle": "Appeals Court Pos. 6",
+      "type": "Nonpartisan Office • Vote for One • Unopposed",
+      "category": "State Courts",
+      "title": "Court of Appeals, Division 1, District 1, Judge Position No. 6",
+      "sources": [
+        {
+          "label": "WA Voters' Pamphlet: this contest",
+          "url": "https://voter.votewa.gov/GenericVoterGuide.aspx?e=899&c=17&language=en#/candidates/187085"
+        },
+        {
+          "label": "King County Elections candidate list",
+          "url": "https://info.kingcounty.gov/kcelections/Vote/contests/candidates.aspx?eid=55"
+        }
+      ],
+      "candidates": [
+        {
+          "name": "Bill A. Bowman",
+          "desc": "Legal/Judicial Experience\n\nAppointed by Governor Jay Inslee to the Washington Court of Appeals in January 2020; King County Superior Court Judge (2011-2020); Black Diamond Municipal Court Presiding Judge (2011); King County Public Defender, King County Deputy Prosecuting Attorney and an attorney in private practice for nearly two decades\n\nOther Professional Experience\n\nAdjunct Trial Advocacy Professor, University of Washington School of Law (2014-2026); Dean of Washington State Judicial College (2017)\n\nEducation\n\nB.A., University of Washington; J.D., California Western School of Law\n\nCommunity Service\n\nActive in civics education in elementary grades through high school and regularly mentors young lawyers and law students\n\nStatement\n\nIn appointing Judge Bowman to the Court of Appeals, Governor Inslee said: “Judge Bowman is one of the most highly regarded judges in King County. In addition to his strong trial management skills, he has an understanding of court administration and a reputation as a great team player.”\n\nJudge Bowman held several leadership roles on the King County Superior Court bench and worked collaboratively with his judicial colleagues and community groups to make important resources available to underserved parts of King County and safely reduce pretrial incarceration.\n\nHe is currently Acting Chief Judge for Division One and serves as Chair of the Court of Appeals Legislative Committee. At King County Superior Court, Judge Bowman served as Assistant Presiding Judge, Chief Judge of the Maleng Regional Justice Center, Chief Judge of the Civil Department and Assistant Chief Judge of the Criminal Department. He also chaired the Technology and Budget committees and served for several years on the Executive Committee.\n\nJudge Bowman grew up in Laurel, Washington and graduated from Sehome High School. He currently lives on a small farm with his wife in south King County and enjoys running the trails of the Cascades and surfing the breaks in Westport.",
+          "sources": [
+            {
+              "label": "WA Voters' Pamphlet (candidate statement)",
+              "url": "https://voter.votewa.gov/GenericVoterGuide.aspx?e=899&c=17&language=en#/candidates/187085/1602260"
+            }
+          ],
+          "site": "",
+          "email": "judgebillbowman@gmail.com",
+          "phone": "(425) 466-0619"
+        }
+      ]
+    },
+    {
+      "shortTitle": "King County Prosecuting Attorney",
+      "type": "Nonpartisan Office • Vote for One • Unopposed",
+      "category": "King County & Seattle",
+      "title": "King County Prosecuting Attorney",
+      "sources": [
+        {
+          "label": "WA Voters' Pamphlet: this contest",
+          "url": "https://voter.votewa.gov/GenericVoterGuide.aspx?e=899&c=17&language=en#/candidates/186671"
+        },
+        {
+          "label": "King County Elections candidate list",
+          "url": "https://info.kingcounty.gov/kcelections/Vote/contests/candidates.aspx?eid=55"
+        }
+      ],
+      "candidates": [
+        {
+          "name": "Leesa Manion",
+          "desc": "Education: JD, Seattle University School of Law; BA, Northern Kentucky University\n\nOccupation: King County Prosecutor; formerly Chief of Staff and Deputy Prosecutor\n\nStatement: As King County’s first woman and first person of color to serve as Prosecutor, I have spent the past four years fulfilling my promise to keep our neighborhoods safe, reduce property crime, and protect survivors and the most vulnerable. Keeping that commitment requires proven vision, hands-on leadership and experience – qualities I possess and have strengthened since entering office.\n\nUnder my leadership, the Prosecutor’s Office prosecutes violent crimes, sexual assaults, and property crimes daily. Since my election, I have expanded support for survivors of domestic violence and sexual assault, invested in alternative sentencing for veterans, youth, and individuals facing behavioral health and addiction challenges, and prioritized juvenile justice reform.\n\nMy commitment to reducing gun violence shows in a nearly 50% reduction in gun homicides since 2023. I also worked to enact Washington’s strongest Extreme Risk Protection Order policies, a statewide ban on high-capacity magazines and ghost guns, and tools that help law enforcement track weapons used in crime.\n\nI am proud of the work accomplished over the past four years: developing fair and effective criminal justice policies and reforms, leading a team of nearly 600 professionals, building trusted partnerships with law enforcement, public defenders, business and community leaders, and advocates for equity and justice. There is still important work to do, and I am ready to continue to ensure that our county is safe for everyone.\n\nI am proudly endorsed by former Governors Gary Locke and Christine Gregoire; Executive Girmay Zahilay; former Seattle Mayor Bruce Harrell; the Alliance for Gun Responsibility; labor unions, King County Democrat organizations; dozens of county and city leaders; retired justices; and former U.S. Attorneys.",
+          "sources": [
+            {
+              "label": "WA Voters' Pamphlet (candidate statement)",
+              "url": "https://voter.votewa.gov/GenericVoterGuide.aspx?e=899&c=17&language=en#/candidates/186671/1602180"
+            }
+          ],
+          "site": "https://leesamanion.com",
+          "email": "info@leesamanion.com",
+          "phone": "(206) 282-1805"
+        }
+      ]
+    },
+    {
+      "shortTitle": "King County Assessor",
+      "type": "Nonpartisan Office • Vote for One",
+      "category": "King County & Seattle",
+      "title": "King County Assessor",
+      "sources": [
+        {
+          "label": "WA Voters' Pamphlet: this contest",
+          "url": "https://voter.votewa.gov/GenericVoterGuide.aspx?e=899&c=17&language=en#/candidates/186672"
+        },
+        {
+          "label": "King County Elections candidate list",
+          "url": "https://info.kingcounty.gov/kcelections/Vote/contests/candidates.aspx?eid=55"
+        }
+      ],
+      "candidates": [
+        {
+          "name": "Rob Foxcurran",
+          "desc": "Education: University of Washington, B.A.; Certified General Real Estate Appraiser; Seattle Public Schools graduate\n\nOccupation: Senior Appraiser, City of Seattle; Former King County Hearing Examiner\n\nStatement: The Assessor's office touches every person's ability to stay in their home. Rising property taxes are pushing homeowners, renters, and small businesses out of their communities, and too many people don't trust that the system is treating them fairly. King County needs an accurate, fair, and transparent Assessor's office that works for everyone.\n\nI'm a fifth-generation Seattleite and the only candidate in this race who has actually done the valuation work this office depends on. As Senior Appraiser for the City of Seattle, I appraise public properties daily, ensuring real estate decisions serve the public interest. My career has included commercial valuation in the private sector. Serving as a Hearing Examiner on the King County Board of Appeals and Equalization, I've sat across the table from homeowners fighting to stay in their communities while corporate landowners brought teams of experts to secure tax reductions. I understand both sides of this system.\n\nI've lived in income-restricted housing. I know what financial pressure looks like from the inside, and it's why I'm a proud PROTEC17 shop steward.\n\nI'll bring real relief for homeowners and renters, and transparency and accountability to a system many people don't fully understand. In Olympia, I'll push to establish homestead protections for primary residences to help homeowners manage rising costs, and create a renter's tax credit to give tenants relief from rising housing costs as well.\n\nI'm proud to be endorsed by the Seattle Times, the Stranger, King County Executive Girmay Zahilay, Chief Deputy Assessor Al Dams, King County Councilmembers Claudia Balducci, Sarah Perry, and Rhonda Lewis, King County Democrats, eleven legislative district Democratic organizations, Seattle Councilmembers Eddie Lin and Dionne Foster, multiple labor unions, and Danny Hagen, President of the Washington State Association of County Assessors, among others. They trust my professional expertise to lead this department.",
+          "sources": [
+            {
+              "label": "WA Voters' Pamphlet (candidate statement)",
+              "url": "https://voter.votewa.gov/GenericVoterGuide.aspx?e=899&c=17&language=en#/candidates/186672/1601659"
+            }
+          ],
+          "site": "https://voterobfoxcurran.com",
+          "email": "rob@voterobfoxcurran.com",
+          "phone": "(206) 593-2203"
+        },
+        {
+          "name": "Dominique M Scarimbolo",
+          "desc": "Education: B.A. Criminal Justice, Washington State University\n\nOccupation: Small Family Business Owner, CAPR King County Chapter President\n\nStatement: The King County Assessor is far more than an appraiser—it’s absolutely a leadership role, of one of the largest public offices affecting every property owner. While the office does employ appraisal staff, the Assessor's responsibility ensures the entire system operates transparently, consistently, fairly, and in accordance with the law.\n\nI have studied our property tax system from the taxpayers perspective, analyzing assessment data, researching mass appraisal practices, public records requests, appealing assessments, reviewing BoE decisions, and developed comprehensive audit proposals identifying significant areas for reform. That experience gives me something many candidates cannot claim: a taxpayer's perspective on how the system actually functions in practice.\n\nMy campaign isn’t about making minor adjustments to the status quo. It’s about pursuing meaningful, system-wide reforms that protect taxpayers, strengthen property rights, ensures due process and helps ensure people aren’t taxed out of their homes.\n\nGovernment should be judged by results—not intentions. Our current assessment system is required to produce fair and uniform assessments, but if that system does not produce the results required by law, we have a responsibility to examine it honestly, measure its performance, and improve it.\n\nProperty owners deserve information they can understand. They deserve parcel-specific breakdowns on their individual property valuations—not simply a final number. They deserve due process, timely appeals and logical evidentiary standards, and should never need to become valuation experts or pay for professional help, simply to challenge their assessment.\n\nI’m a King County resident, small business owner, and President of the King County CAPR chapter. I’m not a politician. Government works best being fully transparent and accountable, and we demand fiscal responsibility. I will continue to work relentlessly to change the status quo, strengthen taxpayer protections, and advocate for significant reforms that restore fairness and accountability in one of King County’s most important public offices.",
+          "sources": [
+            {
+              "label": "WA Voters' Pamphlet (candidate statement)",
+              "url": "https://voter.votewa.gov/GenericVoterGuide.aspx?e=899&c=17&language=en#/candidates/186672/1601660"
+            }
+          ],
+          "site": "https://www.domscarimboloforassessor.com",
+          "email": "domscarimboloforkcassessor@gmail.com",
+          "phone": "(253) 256-5279"
+        }
+      ]
+    },
+    {
+      "shortTitle": "King County Director of Elections",
+      "type": "Nonpartisan Office • Vote for One • Unopposed",
+      "category": "King County & Seattle",
+      "title": "King County Director of Elections",
+      "sources": [
+        {
+          "label": "WA Voters' Pamphlet: this contest",
+          "url": "https://voter.votewa.gov/GenericVoterGuide.aspx?e=899&c=17&language=en#/candidates/186673"
+        },
+        {
+          "label": "King County Elections candidate list",
+          "url": "https://info.kingcounty.gov/kcelections/Vote/contests/candidates.aspx?eid=55"
+        }
+      ],
+      "candidates": [
+        {
+          "name": "Julie Wise",
+          "desc": "Education: Certified National and Washington State Election Administrator; AA Degree, Green River College\n\nOccupation: Current King County Director of Elections, 26-year election administrator, farmer\n\nStatement: Thank you for entrusting me to lead the Department of Elections for the past decade. In that time, we have added more than 80 secure ballot drop boxes, in-person voting centers, election materials in four new languages, ballot alerts, and new layers of physical and cybersecurity. We have also implemented national award-winning programs like the Voter Education Fund, our Civic Engagement Internship, and a robust Bipartisan Observer Program.\n\nMy parents instilled a sense of responsibility in my sister and me to contribute to our community and serve a greater purpose. In fact, it was when my father was running for Mayor of Enumclaw that I saw and applied for a job at the Department of Elections, twenty-six years ago. I fell in love with the work – ensuring every eligible voter could have their voice heard and working to protect one of our most critical institutions.\n\nI remain just as passionate and committed today to improving our voting experience and maintaining a steadfast, transparent, and nonpartisan elections department. From Olympia to D.C., I will continue to advocate to ensure every person has meaningful access to their right to vote.\n\nThank you for voting!",
+          "sources": [
+            {
+              "label": "WA Voters' Pamphlet (candidate statement)",
+              "url": "https://voter.votewa.gov/GenericVoterGuide.aspx?e=899&c=17&language=en#/candidates/186673/1602181"
+            }
+          ],
+          "site": "https://facebook.com/ElectJulieWise",
+          "email": "wise.julie@me.com"
+        }
+      ]
+    },
+    {
+      "shortTitle": "KC Council Dist 8",
+      "type": "Nonpartisan Office • Vote for One",
+      "category": "King County & Seattle",
+      "title": "Metropolitan King County Council District No. 8",
+      "sources": [
+        {
+          "label": "WA Voters' Pamphlet: this contest",
+          "url": "https://voter.votewa.gov/GenericVoterGuide.aspx?e=899&c=17&language=en#/candidates/186677"
+        },
+        {
+          "label": "King County Elections candidate list",
+          "url": "https://info.kingcounty.gov/kcelections/Vote/contests/candidates.aspx?eid=55"
+        }
+      ],
+      "candidates": [
+        {
+          "name": "Teresa Mosqueda",
+          "desc": "Education: Masters in Public Administration, focus in health policy, Evergreen State College; BA, University of Washington\n\nOccupation: County Councilmember; labor champion, children’s advocate, public health policy leader\n\nStatement: I’m running for re-election to the County Council to continue building a healthier, safer, more affordable King County where working families can thrive. At a time when costs are rising and many neighbors are struggling to stay housed, maintain access to care, and make ends meet - we need bold leadership that delivers real results for our communities.\n\nI’ve spent my career fighting for workers, kiddos, and healthy communities. At the Children’s Alliance and the Washington State Labor Council, I helped win paid sick leave, minimum wage increases, and stronger protections for workers and immigrants. On the Seattle City Council and now at King County, I’ve built coalitions to expand affordable housing, strengthen worker protections, invest in behavioral health, and support small businesses and community safety.\n\nAt King County, I’ve worked to increase investments in affordable and supportive housing, improve behavioral health services, protect immigrant and refugee communities, and strengthen our public health infrastructure. I’ve also championed investments in transit, childcare, and workforce development to help families stay and succeed in our region.\n\nMy priorities remain expanding affordable housing and preventing displacement; improving community safety through behavioral health and gun violence prevention; and investing in working families with accessible transit, childcare, healthcare, and union job opportunities.\n\nI believe King County works best when we lead with compassion, accountability, and commitment to opportunity for everyone – regardless of zip code, income, or background. Together, we can continue building a King County where every person has the opportunity to be healthy, housed, safe, and resilient.\n\nProudly endorsed by Congresswoman Jayapal; Governor Ferguson; AG Nick Brown; all endorsing unions including MLK Labor, SEIU locals, UFCW 3000, and Seattle Building Trades; 34th, 33rd, 11th District Dems; Progreso Latino Progress; Washington Conservation Action; WA Housing Alliance Action Fund; NW Women’s Political Caucus; and 200+ more!",
+          "sources": [
+            {
+              "label": "WA Voters' Pamphlet (candidate statement)",
+              "url": "https://voter.votewa.gov/GenericVoterGuide.aspx?e=899&c=17&language=en#/candidates/186677/1601663"
+            }
+          ],
+          "site": "https://TeamTeresa.org",
+          "email": "info@TeamTeresa.org"
+        },
+        {
+          "name": "Nick Duda",
+          "desc": "Education: Bachelor's of Arts, Political Science, University of Notre Dame\n\nOccupation: Former data analytics consultant; recent City Councilmember Policy Lead\n\nStatement: Everyone I talk with in our district wants the same things: safe streets, good schools, treatment for those who are suffering, clean air and water, an affordable place to raise a family or start a business, and a government responsive to its community.\n\nAs a lifelong Democrat, I share those values, but it’s clear we’re not delivering on them. This position has oversight over the public health crises on our streets and has major influence on fiscal policy. Not using that authority effectively has resulted in our region now ranking among the nation’s worst for homelessness, overdose deaths, property crime, cost of living, and commercial sex trafficking. These results aren’t for lack of funding; we’ve consistently increased taxes and spent more on homelessness than almost any region in America, all while we've also seen declines in school enrollment, housing construction, office occupancy, and employment. These are uncomfortable, but honest facts.\n\nOur leaders often measure success by how much they spend, not how effectively those dollars are spent. Ask yourself honestly: is our region better off than it was nine years ago?\n\nMy campaign is about improving our outcomes. That means public safety with real accountability. It means compassionate, treatment-required paths off the street for those struggling with addiction. It means building more housing by fixing permitting and reducing barriers to new construction, and public housing that is safe and stabilizing for our most vulnerable.\n\nWhether you're a young person priced out of the market, a parent worried about your kid’s future, or a longtime resident being taxed out of your home, our government should work for you, not for special interests and failed programs.\n\nProgress isn’t just about spending more; progress is about delivering better results. I’m asking for your vote to deliver those results that meet our region's values.",
+          "sources": [
+            {
+              "label": "WA Voters' Pamphlet (candidate statement)",
+              "url": "https://voter.votewa.gov/GenericVoterGuide.aspx?e=899&c=17&language=en#/candidates/186677/1601664"
+            }
+          ],
+          "site": "https://www.nickduda.com",
+          "email": "info@nickduda.com",
+          "phone": "(206) 261-4416"
+        }
+      ]
+    },
+    {
+      "shortTitle": "District Court Pos. 1",
+      "type": "Nonpartisan Office • Vote for One",
+      "category": "King County & Seattle",
+      "title": "King County District Court, West Electoral District, Judge Position No. 1",
+      "sources": [
+        {
+          "label": "WA Voters' Pamphlet: this contest",
+          "url": "https://voter.votewa.gov/GenericVoterGuide.aspx?e=899&c=17&language=en#/candidates/186698"
+        },
+        {
+          "label": "King County Elections candidate list",
+          "url": "https://info.kingcounty.gov/kcelections/Vote/contests/candidates.aspx?eid=55"
+        }
+      ],
+      "candidates": [
+        {
+          "name": "Bardi Martin",
+          "desc": "Education: Seattle University School of Law, Juris Doctorate; University of Washington, Bachelor of Arts\n\nOccupation: King County District Court Judge, Attorney, 19 years\n\nStatement: Unanimously appointed by the King County Council, Judge Bardi Martin proudly serves as your King County District Court Judge, bringing proven courtroom experience, steady judgment, and a lifelong commitment to King County.\n\nAdopted at birth, Bardi was raised by a public-school teacher and a combat-decorated veteran in a multiracial and multiethnic family. His Puerto Rican heritage, experiences as an adoptee, and first career as a professional musician taught him to listen deeply, see people as individuals, and treat everyone with dignity.\n\nA graduate of University of Washington and Seattle University School of Law, Bardi has spent 19 years in our courts. He began as a public defender, built a successful Seattle law practice, and served as a judge pro tempore. Today, Judge Martin presides over civil and criminal matters and Shoreline and Kenmore’s Community Court, which connects individuals charged with low-level offenses to housing, mental health, and substance abuse resources, promoting accountability while reducing repeat offenses.\n\nJudge Martin is endorsed by over 50 judges and earned the sole endorsement of the King County Democrats and The Stranger. As court caseloads skyrocket, experience on the bench matters more than ever. Please vote to retain Judge Bardi Martin—experience you can trust.",
+          "sources": [
+            {
+              "label": "WA Voters' Pamphlet (candidate statement)",
+              "url": "https://voter.votewa.gov/GenericVoterGuide.aspx?e=899&c=17&language=en#/candidates/186698/1602254"
+            }
+          ],
+          "site": "https://www.retainjudgebardi.com",
+          "email": "judgebardimartin@gmail.com",
+          "phone": "(206) 385-2724"
+        },
+        {
+          "name": "Nyjat Rose-Akins",
+          "desc": "Education: B.B.A., International Business and Finance, Howard University; JD, Seattle University School of Law\n\nOccupation: King County Court Pro Tem Judge; former Assistant City Attorney\n\nStatement: Judicial decisions affect individual lives, families, and communities. For 16 years, I have dedicated my career to serving King County with fairness, integrity, and respect.\n\nAs an immigrant, I have personally navigated the civil legal system. As an Assistant City Attorney, I advised city leaders on homelessness and police accountability. As a Judge Pro Tem, I have presided over thousands of cases, including protection orders, domestic violence, small claims, and DUIs. As a community advocate, I have visited prisons and served on the boards of legal aid organizations.\n\nTogether, these experiences prepared me to make impartial decisions that protect public safety while ensuring fairness. I believe equal justice depends on listening, applying the law fairly, and treating people with dignity and respect. My philosophy is simple: listen first, decide last.\n\nRated “Exceptionally Well-Qualified” by the Cardozo Society, Joint Asian Judicial Committee, King County, Latino Bar, and Loren Miller Bar associations. Endorsed by the 32nd, 34th, 36th, 37th, and 46th Legislative District Democrats; Justices Whitener, Mungia, and Angelis; Attorney General Nick Brown; Councilmember Joy Hollingsworth; Former Mayor Bruce Harrell; Senator Rebecca Saldana; Representative Brianna Thomas; and more than 100 judges and attorneys. I would be honored to have your vote.",
+          "sources": [
+            {
+              "label": "WA Voters' Pamphlet (candidate statement)",
+              "url": "https://voter.votewa.gov/GenericVoterGuide.aspx?e=899&c=17&language=en#/candidates/186698/1602253"
+            }
+          ],
+          "site": "https://electnyjatforjudge.com/",
+          "email": "info@electnyjatforjudge.com",
+          "phone": "(206) 745-2010"
+        }
+      ]
+    },
+    {
+      "shortTitle": "District Court Pos. 2",
+      "type": "Nonpartisan Office • Vote for One • Unopposed",
+      "category": "King County & Seattle",
+      "title": "King County District Court, West Electoral District, Judge Position No. 2",
+      "sources": [
+        {
+          "label": "WA Voters' Pamphlet: this contest",
+          "url": "https://voter.votewa.gov/GenericVoterGuide.aspx?e=899&c=17&language=en#/candidates/186699"
+        },
+        {
+          "label": "King County Elections candidate list",
+          "url": "https://info.kingcounty.gov/kcelections/Vote/contests/candidates.aspx?eid=55"
+        }
+      ],
+      "candidates": [
+        {
+          "name": "Kuljinder K. Dhillon",
+          "desc": "Education: JD, Gonzaga University School of Law, 2002; B.A., Communications, Washington State University, 1995\n\nOccupation: King County District Court Judge\n\nStatement: Judge Dhillon served King County for more than 30 years, prior to her appointment to the King County District Court in 2021. Before law school, she gave voice to crime victims as a Domestic Violence Victim Advocate at the King County Prosecutor’s Office. As an advocate, she brought first-hand perspective from different cultures about how domestic violence is regarded in other communities. Her unique perspective greatly assisted domestic violence victim/survivors. As a lawyer, she represented indigent defendants, earning a reputation as a highly regarded public defender, then private defense attorney.\n\nJudge Dhillon’s breadth of experience in the justice system serves her well as a judge, where she currently hears hundreds of criminal, small claim, and protection order cases in Seattle. She was also the judge for the Regional Domestic Violence Court, presiding over two years. In all cases she hears, Judge Dhillon strongly believes that everyone who comes before the court should be treated with respect, fairness, and impartiality.\n\nJudge Dhillon served as an advisory board member for The Judicial Institute 2021-2022, which is dedicated to diversifying Washington State’s judiciary. She currently serves on the Court’s Personnel Committee. Judge Dhillon would appreciate your vote in November!",
+          "sources": [
+            {
+              "label": "WA Voters' Pamphlet (candidate statement)",
+              "url": "https://voter.votewa.gov/GenericVoterGuide.aspx?e=899&c=17&language=en#/candidates/186699/1602255"
+            }
+          ],
+          "site": "",
+          "email": "judgekuljinderdhillon@gmail.com",
+          "phone": "(206) 334-3777"
+        }
+      ]
+    },
+    {
+      "shortTitle": "District Court Pos. 3",
+      "type": "Nonpartisan Office • Vote for One • Unopposed",
+      "category": "King County & Seattle",
+      "title": "King County District Court, West Electoral District, Judge Position No. 3",
+      "sources": [
+        {
+          "label": "WA Voters' Pamphlet: this contest",
+          "url": "https://voter.votewa.gov/GenericVoterGuide.aspx?e=899&c=17&language=en#/candidates/186700"
+        },
+        {
+          "label": "King County Elections candidate list",
+          "url": "https://info.kingcounty.gov/kcelections/Vote/contests/candidates.aspx?eid=55"
+        }
+      ],
+      "candidates": [
+        {
+          "name": "Rebecca Robertson",
+          "desc": "Education: BA Political Science UW 1996 / Juris Doctorate Seattle University Law School 2000\n\nOccupation: Judge, King County District Court\n\nStatement: Judge Robertson has been on the bench since 2010. In 2021 she was unanimously appointed to the King County District Court by the King County Council, and was elected in 2022. Prior to taking the bench in King County, she served as a municipal court judge in Federal Way. She is currently the King County District Court's Chief Presiding Judge.\n\nJudge Robertson is on the statewide Board for Judicial Administration(BJA), is a past President of the District and Municipal Court Judges’ Association (DMCJA), and is the former Chair of the BJA's Policy and Planning Committee and Co-Chair of the Trial Court Security Task Force. She also serves on the DMCJA's Council on Independent Courts.\n\nJudge Robertson teaches court budgeting, judicial independence, and law and procedure to other judges, lawyers, executive and legislative branch leaders, and students.\n\nPrior to joining the judiciary, Judge Robertson was a prosecuting attorney and Judge Pro Tem in a variety of courts. She chaired the Washington State Bar Association’s Criminal Law Section and published and taught courses on Domestic Violence and DUI issues. Judge Robertson would be honored to receive your vote.",
+          "sources": [
+            {
+              "label": "WA Voters' Pamphlet (candidate statement)",
+              "url": "https://voter.votewa.gov/GenericVoterGuide.aspx?e=899&c=17&language=en#/candidates/186700/1602256"
+            }
+          ],
+          "site": "",
+          "email": "judgerebeccarobertson@gmail.com",
+          "phone": "(253) 237-4233"
+        }
+      ]
+    },
+    {
+      "shortTitle": "District Court Pos. 4",
+      "type": "Nonpartisan Office • Vote for One • Unopposed",
+      "category": "King County & Seattle",
+      "title": "King County District Court, West Electoral District, Judge Position No. 4",
+      "sources": [
+        {
+          "label": "WA Voters' Pamphlet: this contest",
+          "url": "https://voter.votewa.gov/GenericVoterGuide.aspx?e=899&c=17&language=en#/candidates/186701"
+        },
+        {
+          "label": "King County Elections candidate list",
+          "url": "https://info.kingcounty.gov/kcelections/Vote/contests/candidates.aspx?eid=55"
+        }
+      ],
+      "candidates": [
+        {
+          "name": "Yvonne Chin",
+          "desc": "Education: J.D., DePaul University, College of Law; B.A., Vassar College\n\nOccupation: King County District Court Judge\n\nStatement: Judge Yvonne Chin is rated “Exceptionally Well Qualified” by the King County Bar Association, King County Women Lawyers, the Latina/o Bar Association, and the Loren Miller Bar Association (“the local affiliate . . . of African-American attorneys” in Washington). In 2026, the King County Council unanimously appointed her to the District Court.\n\nBefore joining the bench, Judge Chin was a dedicated civil legal aid and public interest attorney. As Legal Director of the Sexual Violence Law Center and Senior Staff Attorney at the ACLU of Washington, she represented people confronting some of life’s most difficult challenges.\n\nHer broad legal experience spans civil, criminal, constitutional, and administrative law. She has successfully represented clients in both trial and appellate courts in Washington, Illinois, and federal court. She also served as a Judge and Magistrate Pro Tempore in Seattle Municipal Court.\n\nJudge Chin brings years of public service experience and a deep commitment to the fair and respectful treatment of everyone who appears before her. Her independence, careful preparation, and respect for every person’s dignity help ensure our courts are fair, accessible, and grounded in the law.",
+          "sources": [
+            {
+              "label": "WA Voters' Pamphlet (candidate statement)",
+              "url": "https://voter.votewa.gov/GenericVoterGuide.aspx?e=899&c=17&language=en#/candidates/186701/1602257"
+            }
+          ],
+          "site": ""
+        }
+      ]
+    },
+    {
+      "shortTitle": "District Court Pos. 5",
+      "type": "Nonpartisan Office • Vote for One • Unopposed",
+      "category": "King County & Seattle",
+      "title": "King County District Court, West Electoral District, Judge Position No. 5",
+      "sources": [
+        {
+          "label": "WA Voters' Pamphlet: this contest",
+          "url": "https://voter.votewa.gov/GenericVoterGuide.aspx?e=899&c=17&language=en#/candidates/186702"
+        },
+        {
+          "label": "King County Elections candidate list",
+          "url": "https://info.kingcounty.gov/kcelections/Vote/contests/candidates.aspx?eid=55"
+        }
+      ],
+      "candidates": [
+        {
+          "name": "Kristin Shotwell",
+          "desc": "Education: B.A. Yale University; M.S.W. University of Washington; J.D. University of Hawai'i\n\nOccupation: King County District Court Judge\n\nStatement: Following 23 years of professional experience in the criminal justice and social services systems, Judge Shotwell was appointed to the King County District Court bench in 2021. She was then elected in 2022.\n\nAs an attorney, Judge Shotwell served as a public defender, trial attorney and attorney supervisor for civil commitments and felonies.\n\nThroughout her career, Judge Shotwell has been committed to reducing criminal recidivism to improve public safety and the lives of individuals involved in the justice system.\n\nJudge Shotwell earned a Juris Doctor Degree from the University of Hawai’i Law School, where she was valedictorian; a master’s in social work from the University of Washington; and a B.A. in psychology from Yale University. She has been a state-certified Spanish language interpreter for more than 25 years.",
+          "sources": [
+            {
+              "label": "WA Voters' Pamphlet (candidate statement)",
+              "url": "https://voter.votewa.gov/GenericVoterGuide.aspx?e=899&c=17&language=en#/candidates/186702/1602258"
+            }
+          ],
+          "site": "",
+          "email": "judgeshotwell@gmail.com",
+          "phone": "(206) 337-2256"
+        }
+      ]
+    },
+    {
+      "shortTitle": "Seattle Muni Court Pos. 1",
+      "type": "Nonpartisan Office • Vote for One • Unopposed",
+      "category": "King County & Seattle",
+      "title": "City of Seattle, Municipal Court Judge Position No. 1",
+      "sources": [
+        {
+          "label": "WA Voters' Pamphlet: this contest",
+          "url": "https://voter.votewa.gov/GenericVoterGuide.aspx?e=899&c=17&language=en#/candidates/186704"
+        },
+        {
+          "label": "King County Elections candidate list",
+          "url": "https://info.kingcounty.gov/kcelections/Vote/contests/candidates.aspx?eid=55"
+        }
+      ],
+      "candidates": [
+        {
+          "name": "Cat McDowall",
+          "desc": "Education: Juris Doctor, University of Virginia School of Law; B.A., Northwestern University\n\nOccupation: Seattle Municipal Court Judge\n\nStatement: Serving as a Seattle Municipal Court Judge has been an honor. Every day, I strive to ensure that all who enter my courtroom are treated with fairness, dignity, and respect, and that every decision is guided by the law, careful preparation, and impartial judgment.\n\nBefore joining the Seattle Municipal Court in 2020, I presided as a Judge Pro Tempore in Seattle Municipal Court, King County District Court, and King County Superior Court (Juvenile Division). I also spent decades serving our legal system as a civil attorney and Senior Deputy Prosecuting Attorney. Those experiences gave me a broad understanding of our justice system and reinforced my commitment to equal justice under the law.\n\nAs a Municipal Court Judge, I have helped strengthen public confidence in our courts by improving access to justice, modernizing court operations, and supporting innovative approaches that improve public safety. I currently preside over the Domestic Violence Intervention Project, an innovative court program that combines accountability with individualized treatment to reduce repeat violence and improve outcomes for survivors, families, and our community. I also serve on the Board of Governors of the District and Municipal Court Judges' Association, co-chair its Rules Committee, and co-direct Seattle Youth Traffic Court, a restorative justice program that helps young people learn responsibility and civic engagement.\n\nOutside the courtroom, I have been an active volunteer in Seattle schools, youth sports, and community organizations while raising four children with my husband.\n\nI am proud to serve with independence, integrity, and compassion. I respectfully ask for your vote so I can continue upholding the rule of law, protecting equal justice, and serving the people of Seattle with fairness and respect.",
+          "sources": [
+            {
+              "label": "WA Voters' Pamphlet (candidate statement)",
+              "url": "https://voter.votewa.gov/GenericVoterGuide.aspx?e=899&c=17&language=en#/candidates/186704/1602225"
+            }
+          ],
+          "site": "https://judgecatmcdowall.com",
+          "email": "judgecatmcdowall@gmail.com"
+        }
+      ]
+    },
+    {
+      "shortTitle": "Seattle Muni Court Pos. 2",
+      "type": "Nonpartisan Office • Vote for One • Unopposed",
+      "category": "King County & Seattle",
+      "title": "City of Seattle, Municipal Court Judge Position No. 2",
+      "sources": [
+        {
+          "label": "WA Voters' Pamphlet: this contest",
+          "url": "https://voter.votewa.gov/GenericVoterGuide.aspx?e=899&c=17&language=en#/candidates/186705"
+        },
+        {
+          "label": "King County Elections candidate list",
+          "url": "https://info.kingcounty.gov/kcelections/Vote/contests/candidates.aspx?eid=55"
+        }
+      ],
+      "candidates": [
+        {
+          "name": "Katharine Edwards",
+          "desc": "Education: Macalester College; Lewis and Clark Law School\n\nOccupation: Supervising Public Defender\n\nStatement: I first walked into Seattle Municipal Court as an eighth grader, working on a school project about public defense. I did not plan on a career there. I have spent the last 16 years in that courtroom and others across King County, standing next to people on the hardest days of their lives.\n\nI have represented people facing misdemeanors and people facing serious felonies. I have tried homicide cases, negotiated treatment alternatives, and stood beside kids in foster care. That work showed me what addiction, poverty, and lack of treatment do to a person long before a judge opens the file.\n\nMunicipal Court handles misdemeanors, the lowest criminal charge in Washington, but small cases still carry heavy consequences. A person can sit in jail on a misdemeanor while someone charged with a felony goes home the same afternoon. Judges lose the public's trust when the punishment stops matching the charge.\n\nAs a judge I will hear both sides in full and hold the prosecution and the defense to the same standard. Before I order anyone into a program, I want to see the research behind it and the data on whether it works. The people who run those programs should have a say in how they change. Accountability should fit the offense and leave the person better able to stay out of court.\n\nI am asking for your vote.\n\nEndorsed by: Seattle Municipal Court Judges Anita Crawford Willis, Damon Shadid, and Pooja Vaddadi, King County Democrats, the 32nd, 34th, 36th, 37th, 43rd, and 46th LD Democrats, Former Supreme Court Justice Mary Yu, King County Superior Court Judges Rothrock, Larranaga, Hecklinger, Vargas, Keenan, and McKee, King County District Court Judges Shotwell, Dhillon, Peaquin, and Paglisotti, National Women's Political Caucus, Machinists Local 751, Ironworkers Local 86, UAW 4121, and many more.",
+          "sources": [
+            {
+              "label": "WA Voters' Pamphlet (candidate statement)",
+              "url": "https://voter.votewa.gov/GenericVoterGuide.aspx?e=899&c=17&language=en#/candidates/186705/1602222"
+            }
+          ],
+          "site": "https://edwardsforsmc.com",
+          "email": "katharineedwardsforjudge@gmail.com",
+          "phone": "(425) 466-5296"
+        }
+      ]
+    },
+    {
+      "shortTitle": "Seattle Muni Court Pos. 3",
+      "type": "Nonpartisan Office • Vote for One • Unopposed",
+      "category": "King County & Seattle",
+      "title": "City of Seattle, Municipal Court Judge Position No. 3",
+      "sources": [
+        {
+          "label": "WA Voters' Pamphlet: this contest",
+          "url": "https://voter.votewa.gov/GenericVoterGuide.aspx?e=899&c=17&language=en#/candidates/186706"
+        },
+        {
+          "label": "King County Elections candidate list",
+          "url": "https://info.kingcounty.gov/kcelections/Vote/contests/candidates.aspx?eid=55"
+        }
+      ],
+      "candidates": [
+        {
+          "name": "Pooja Vaddadi",
+          "desc": "No statement submitted.",
+          "sources": [
+            {
+              "label": "WA Voters' Pamphlet (candidate statement)",
+              "url": "https://voter.votewa.gov/GenericVoterGuide.aspx?e=899&c=17&language=en#/candidates/186706/1602226"
+            }
+          ],
+          "site": "",
+          "email": "pooja@electjudgevaddadi.com",
+          "phone": "(253) 765-8179"
+        }
+      ]
+    },
+    {
+      "shortTitle": "Seattle Muni Court Pos. 4",
+      "type": "Nonpartisan Office • Vote for One • Unopposed",
+      "category": "King County & Seattle",
+      "title": "City of Seattle, Municipal Court Judge Position No. 4",
+      "sources": [
+        {
+          "label": "WA Voters' Pamphlet: this contest",
+          "url": "https://voter.votewa.gov/GenericVoterGuide.aspx?e=899&c=17&language=en#/candidates/186707"
+        },
+        {
+          "label": "King County Elections candidate list",
+          "url": "https://info.kingcounty.gov/kcelections/Vote/contests/candidates.aspx?eid=55"
+        }
+      ],
+      "candidates": [
+        {
+          "name": "Anita Crawford-Willis",
+          "desc": "Education: J.D., Seattle University School of Law; B.A., Seattle University\n\nOccupation: Presiding Judge, Municipal Court of Seattle\n\nStatement: I was born and raised in Seattle’s Central District, where I learned the values of hard work, fairness, and service from my parents, who both worked on Boeing’s production line and were proud union members. Those values have guided me throughout my career in public service.\n\nAfter serving for more than 30 years as a public defender, Administrative Law Judge, and Judge Pro Tem at Seattle Municipal Court, I was appointed to the Seattle Municipal Court in 2017 and was honored to be re-elected in 2018 and 2022.\n\nAs a graduate of Seattle University and Seattle University School of Law, I have remained deeply committed to my alma mater, and currently serve as a member of the Board of Trustees.\n\nMy commitment to service extends beyond the courtroom. I have been privileged to serve as Chair of the King County Boys & Girls Clubs, as an officer of the Loren Miller Bar Association, as President of the District and Municipal Court Judges Association, and as a member of the Washington Supreme Court’s Gender and Justice Commission. I have also been humbled to receive the Washington State Bar Association Outstanding Judge of the Year Award and the Loren Miller Bar Association Lifetime Achievement Award.\n\nThroughout my judicial career, my focus has remained constant: ensuring equal access to justice while treating every person with dignity and respect. As Presiding Judge, I am proud to help launch our Connection Court and expand our Community Resource Center. I believe accountability and compassion are complementary values, and I want every person who enters my courtroom to leave knowing they were seen, heard, and treated with respect.\n\nMy husband and I are proud to call Seattle home. We enjoy spending time with our daughter, traveling, supporting local philanthropic organizations, and cheering on the Seattle University Redhawks.",
+          "sources": [
+            {
+              "label": "WA Voters' Pamphlet (candidate statement)",
+              "url": "https://voter.votewa.gov/GenericVoterGuide.aspx?e=899&c=17&language=en#/candidates/186707/1602223"
+            }
+          ],
+          "site": "https://judgecrawford-willis.com",
+          "email": "judgecrawfordwillis@gmail.com",
+          "phone": "(206) 395-5694"
+        }
+      ]
+    },
+    {
+      "shortTitle": "Seattle Muni Court Pos. 5",
+      "type": "Nonpartisan Office • Vote for One",
+      "category": "King County & Seattle",
+      "title": "City of Seattle, Municipal Court Judge Position No. 5",
+      "sources": [
+        {
+          "label": "WA Voters' Pamphlet: this contest",
+          "url": "https://voter.votewa.gov/GenericVoterGuide.aspx?e=899&c=17&language=en#/candidates/186708"
+        },
+        {
+          "label": "King County Elections candidate list",
+          "url": "https://info.kingcounty.gov/kcelections/Vote/contests/candidates.aspx?eid=55"
+        }
+      ],
+      "candidates": [
+        {
+          "name": "Gabe Rothstein",
+          "desc": "Education: BA Sociology, Emory University, JD UCLA School of Law,\n\nOccupation: Public Defender, Judge Pro tempore\n\nStatement: For more than twenty years, Gabe Rothstein has advocated for poor and underserved communities. People who often feel unheard.\n\nBefore becoming a public defender, Gabe volunteered with the Housing Justice Project and the Unemployment Law Project, helping Seattle residents facing eviction and protecting workers’ rights to unemployment benefits.\n\nIn 2005, Gabe became a public defender—a role he continues to hold with pride. Since then, he has represented thousands of people, many of whom were both survivors of abuse and individuals caught in the criminal legal system. He has tried more than seventy cases to verdict.\n\nThis work has taught Gabe that too many people leave court feeling unheard. He is running for judge to change that. Every person who enters the courtroom—victims, defendants, and those who cannot afford an attorney—deserves dignity, respect, and fairness. Seattle Municipal Court is the people’s court, and everyone deserves to be listened to and heard.\n\nPublic defense is Gabe’s full-time work, but he also serves as a pro-tem judge in municipal and district courts throughout Washington. He chairs the Washington State Bar Association Character and Fitness Board, which evaluates applicants seeking admission to the practice of law. On evenings and weekends, he takes calls from the Youth Access to Counsel Line, ensuring that children can speak with a lawyer before being questioned by police. He also serves on the board of the Holman Recovery Center an in-patient substance abuse treatment facility. Gabe believes in treatment, the accountability that comes with recovery, redemption, and second chances.\n\nEndorsements: The Stranger, The Progressive Voter Guide, King County Democrats, 32nd, 34th, 37th, 43rd, and 46th District Democrats, SEIU 925 Public Defense Chapter, Stonewall Democrats, King County Executive Girmay Zahilay, Supreme Court Justices Gordon McCloud and Melody, Representative Chipalo Street, Representative Rebecca Saldana, and many other judges and community leaders.",
+          "sources": [
+            {
+              "label": "WA Voters' Pamphlet (candidate statement)",
+              "url": "https://voter.votewa.gov/GenericVoterGuide.aspx?e=899&c=17&language=en#/candidates/186708/1601669"
+            }
+          ],
+          "site": "https://www.gabeforjudge.com/",
+          "email": "gabrielrothstein1975@yahoo.com",
+          "phone": "(201) 877-1869"
+        },
+        {
+          "name": "Garmon Newsom",
+          "desc": "Education: BA Political Science, Morehouse College; JD, George Washington University Law School\n\nOccupation: Seattle Municipal Court Pro Tem Judge; former City Attorney\n\nStatement: Seattle Municipal Court needs experienced judges with sound judgment and a commitment to access, fairness, and dignity, who are not focused on politics and ideology. With your vote, I will deliver fair, pragmatic, and equitable outcomes that build trust and public safety.\n\nFor 34 years, I have served as a public servant—as a felony and misdemeanor prosecutor, municipal attorney, civil litigator, King County Ethics Board member, and Judge Pro Tem. I became a lawyer to eliminate inequities and unfairness in our justice system. I am focused on protecting the community while providing defendants with the opportunity for diversion, services, treatment, and support.\n\nAs the son of a first-generation immigrant mother and a union autoworker father in Detroit, I learned the value of hard work, integrity, and caring for others, which I have demonstrated professionally and through youth mentorship, community service, and coaching.\n\nI am thankful and proud to be endorsed by caring, skilled, and respected jurists, based on my experience, character, and sincere commitment to justice. Judiciary: Washington State Supreme Court Justices Sal Mungia, Mary Yu (ret.), and Barbara Madsen (ret.), and the most present and retired King County judges than any candidate in this race, including Presiding Judge Rothrock, Assistant Presiding Judge Thorp, former Presiding Judge Shah, and Judges Galvan, Amato, Hawkins, Gipe, Chief Presiding Judge York, and retired Judges McCullough, Kondo, and McKenna. Seattle Municipal Court: Presiding Judge Anita Crawford-Willis, former Presiding Judge Faye Chess, and retiring Judge Willie Gregory. Media & Community: The Seattle Times Editorial Board and 32nd LD Democrats.\n\nI am the only candidate in this race with the highest possible rating for Seattle Municipal Court - Exceptionally Well-Qualified from the Cardozo Society, the Latina/o Bar, and Joint Asian Bar Associations.\n\nI would be honored to be your judge. Learn More: https://newsomforjudge.com/",
+          "sources": [
+            {
+              "label": "WA Voters' Pamphlet (candidate statement)",
+              "url": "https://voter.votewa.gov/GenericVoterGuide.aspx?e=899&c=17&language=en#/candidates/186708/1601670"
+            }
+          ],
+          "site": "https://NewsomforJudge.com",
+          "email": "info@NewsomforJudge.com",
+          "phone": "(206) 745-2010"
+        }
+      ]
+    },
+    {
+      "shortTitle": "Seattle Muni Court Pos. 6",
+      "type": "Nonpartisan Office • Vote for One • Unopposed",
+      "category": "King County & Seattle",
+      "title": "City of Seattle, Municipal Court Judge Position No. 6",
+      "sources": [
+        {
+          "label": "WA Voters' Pamphlet: this contest",
+          "url": "https://voter.votewa.gov/GenericVoterGuide.aspx?e=899&c=17&language=en#/candidates/186709"
+        },
+        {
+          "label": "King County Elections candidate list",
+          "url": "https://info.kingcounty.gov/kcelections/Vote/contests/candidates.aspx?eid=55"
+        }
+      ],
+      "candidates": [
+        {
+          "name": "Shantrice Anderson",
+          "desc": "Education: B.A., Gonzaga University; JD, Seattle University School of Law\n\nOccupation: Civil Attorney, Pro Tem Judge/Magistrate\n\nStatement: I believe that everyone who walks through Seattle Municipal Court’s doors deserves to be treated with fairness, dignity, and respect. Often the first and most frequent point of contact Seattleites have with their elected officials, the Court and its Judges must be equitable, accessible, and just.\n\nI have over a decade of diverse legal experience as a public defender in King County and Colorado, handling misdemeanors, juvenile cases, and felonies. I worked with specialty/community courts, in and out of Washington state, and saw the benefits that they can bring to individuals, families, and the broader community. I currently practice civil law and appear in state and federal courts around the state and country. In my spare time, I am also a Pro Tem Judge in Seattle Municipal Court, presiding over pretrial hearings, motions, pleas, and sentencings. These experiences all inform my commitment to justice and community service.\n\nBeing the first member of my family to graduate from college and law school has helped underscore my priorities: expand meaningful access to justice, reduce barriers for underrepresented communities, and ensure that the Court is truly reflective of this diverse and vibrant city. The Court’s rulings should be firmly rooted in the law yet echo the values of its citizens. As a Judge, I will recognize the humanity of each court participant and my decisions will be based on careful listening, sound judgment, accountability, and rehabilitation.\n\nMy commitment to equity and justice is reflected in my judicial ratings: Exceptionally Well-Qualified by the Joint Asian Evaluations Committee, Latina/o, and Loren Miller Bar Associations; and Well-Qualified by Q-Law and the King County Bar Association. I am proudly endorsed by retiring Judge Faye Chess, Judge Haydee Vargas, District and County Democrats; Justice Mungia; and more.\n\nIt will be an honor to serve you.",
+          "sources": [
+            {
+              "label": "WA Voters' Pamphlet (candidate statement)",
+              "url": "https://voter.votewa.gov/GenericVoterGuide.aspx?e=899&c=17&language=en#/candidates/186709/1602227"
+            }
+          ],
+          "site": "https://andersonforjudge.com/",
+          "email": "shantrice@andersonforjudge.com",
+          "phone": "(206) 745-2010"
+        }
+      ]
+    },
+    {
+      "shortTitle": "Seattle Muni Court Pos. 7",
+      "type": "Nonpartisan Office • Vote for One • Unopposed",
+      "category": "King County & Seattle",
+      "title": "City of Seattle, Municipal Court Judge Position No. 7",
+      "sources": [
+        {
+          "label": "WA Voters' Pamphlet: this contest",
+          "url": "https://voter.votewa.gov/GenericVoterGuide.aspx?e=899&c=17&language=en#/candidates/186710"
+        },
+        {
+          "label": "King County Elections candidate list",
+          "url": "https://info.kingcounty.gov/kcelections/Vote/contests/candidates.aspx?eid=55"
+        }
+      ],
+      "candidates": [
+        {
+          "name": "Damon Shadid",
+          "desc": "Education: Juris Doctor\n\nOccupation: Seattle Municipal Court Judge\n\nStatement: Judge Damon Shadid has dedicated his time at the Seattle Municipal Court trying to find better ways of approaching criminal justice. He has a deep understanding that the criminal legal system should have two primary and complementary objectives: keep the community safe and help people obtain the services they need to exit the criminal legal system.\n\nWith these objectives in mind, Judge Shadid’s colleagues on the court have tapped him to work with the Seattle City Attorney and the Department of Public Defense to form a new “Connection Court” which is being built on the foundation of Judge Shadid’s work in the former Community Court. Connection Court gives participants the option of being quickly connected with services in the community to address the underlying causes of their crimes.\n\nJudge Shadid has also been instrumental in re-building the Seattle Mental Health Court, where he presided for 4 years. He was able to work with the City Attorney’s Office and the Department of Public Defense to improve the Mental Health Court and to encourage more individuals with mental health barriers get the vital services they need.\n\nFinally, Judge Shadid started the “Consolidated Calendar.” This court allows individuals who have case workers in the community to come to one calendar each week in order to help their clients receive services and exit from the criminal legal system.\n\nBut the work is not done. Seattle faces profound challenges stemming from a lack of vital services like housing, substance abuse treatment and mental health treatment which cause public safety issues in our community. Judge Shadid believes that the Municipal Court should play a central role in improving access to these services, and will continue to work hard every day to ensure that all people are treated with fairness and compassion.",
+          "sources": [
+            {
+              "label": "WA Voters' Pamphlet (candidate statement)",
+              "url": "https://voter.votewa.gov/GenericVoterGuide.aspx?e=899&c=17&language=en#/candidates/186710/1602224"
+            }
+          ],
+          "site": "https://www.shadidforseattle.com",
+          "email": "shadidforseattle@gmail.com",
+          "phone": "(206) 651-4380"
         }
       ]
     }
